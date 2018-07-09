@@ -1,0 +1,17 @@
+{{ if or ((.Paginator 5).HasNext) ((.Paginator 5).HasPrev) }}
+<div class="pagination">
+  <nav role="pagination" class="post-list-pagination">
+      {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}" class="post-list-pagination-item post-list-pagination-item-prev">
+        &nbsp;&laquo;
+      </a>
+      {{ end }}
+    <span class="post-list-pagination-item post-list-pagination-item-current">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
+    {{ if (.Paginator 5).HasNext }}
+      <a href="{{ .Paginator.Next.URL }}" class="post-list-pagination-item post-list-pagination-item-next">
+        &raquo;&nbsp;
+      </a>
+    {{ end }}
+  </nav>
+</div>
+{{ end }}

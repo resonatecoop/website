@@ -1,0 +1,38 @@
+@import 'tachyons/variables';
+
+.btn {
+  height: 44px;
+  background: #fff;
+  border: solid 1px $near-black;
+  color: $near-black;
+  text-align: center;
+  font-family: 'Graphik Semibold';
+  padding: 0 $spacing-small;
+  cursor: pointer;
+}
+
+a.btn {
+  display: inline-block;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: solid 1px $black;
+  color: $black;
+}
+
+.btn-noPad {
+  padding: 0;
+}
+
+.btn-white {
+  background: none;
+  border-color: $light-gray;
+  color: $light-gray;
+}
+
+.btn-white:hover {
+  border-color: $white;
+  color: $white;
+}

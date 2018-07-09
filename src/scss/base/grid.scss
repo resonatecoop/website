@@ -1,0 +1,11 @@
+@import 'tachyons/variables';
+
+.g1 { width: 20%; }
+.g2 { width: 40%; }
+.g3 { width: 60%; }
+.g4 { width: 80%; }
+.g5 { width: 100%; }
+
+.g1, .g2, .g3, .g4, .g5 {
+  padding: 0 $spacing-small;
+}

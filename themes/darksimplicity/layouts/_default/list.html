@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+{{ range (.Paginator 5).Pages }}{{ if eq .Type "post"}}
+<div class="empty">&nbsp;</div>
+  <div class="post-title">
+    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+  </div>{{ if isset .Params "tags" }}
+      <div class="tags">tags:</br>
+        {{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }} </a>{{ end }}
+    </div>
+    <div class="content-tags"><p>{{.Summary}}</p></div>{{ else }}
+    <div class="content-full"><p>{{.Summary}}</p></div>  {{ end }}{{ end }}{{ end }}{{ partial "pagination.html" . }}{{ partial "footer.html" . }}

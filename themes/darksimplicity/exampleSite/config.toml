@@ -1,0 +1,33 @@
+languageCode = "en-us"
+title = "Dark Simplicity"
+baseurl = "http://example.org/"
+theme = "darksimplicity"
+min_version = 0.18
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+
+
+[params]
+description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framework"
+copyright = "&copy Copyright 2017. Matt Rhone and Dark Simplicity."
+#google_analytics_id=""
+#disqus_shortname=""
+
+
+[taxonomies]
+tag = "tags"
+
+[menu]
+  [[menu.top]]
+  name = "Twitter"
+  pre = ""
+  weight = -100
+  url = "http://www.twitter.com/Username"
+  [[menu.top]]
+  name = "RSS"
+  pre = ""
+  weight = -90
+  url = "index.xml"

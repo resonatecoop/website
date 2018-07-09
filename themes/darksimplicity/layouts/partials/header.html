@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta name="theme" content="darksimplicity">
+  {{ .Hugo.Generator }}
+  {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
+  <base href="{{ .Site.BaseURL }}">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}">
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="navbar">
+        <ul class="navbar-list">
+          {{ range .Site.Menus.top }}
+          <li class="navbar-item"><a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+        </ul>
+    </div>
+    <div class="header">
+      <a href="{{ .Site.BaseURL  }}" class="title">{{ .Site.Title }}</a>
+      {{ if .Site.Params.description }}<span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i> </span>{{end}}
+    </div>
