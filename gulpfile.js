@@ -54,9 +54,6 @@ gulp.task("js", function () {
     .pipe(gulp.dest("data/js"));
 })
 
-
-
-
 // Hash fonts
 gulp.task("fonts", function () {
     return gulp.src("src/fonts/**/*")

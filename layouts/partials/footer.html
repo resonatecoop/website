@@ -1,0 +1,4 @@
+<span>This is the footer partial</span>
+{{ range .Site.Menus.footer }}
+<a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+{{ end }}

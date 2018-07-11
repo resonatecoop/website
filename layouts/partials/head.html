@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ .Description }}">
+
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+</head>

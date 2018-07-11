@@ -1,0 +1,51 @@
+baseURL: http://resonate.coop/
+languageCode: en-us
+title: Resonate
+menu:
+  main:
+  - identifier: about
+    name: About
+    title: About Resonate
+    url: /about/
+    weight: -110
+  - identifier: pricing
+    name: Pricing
+    title: Resonate Pricing
+    url: /pricing/
+    weight: -109
+  footer:
+  - identifier: manifesto
+    name: Manifesto
+    title: Resonate Manifesto
+    url: /manifesto/
+    weight: -108
+  - identifier: about
+    name: About
+    title: About Resonate
+    url: /about/
+    weight: -107
+  - identifier: pricing
+    name: Pricing
+    title: Resonate Pricing
+    url: /pricing/
+    weight: -106
+  - identifier: editorial
+    name: Editorial
+    title: Resonate Editorial
+    url: /editorial/
+    weight: -105
+  - identifier: press
+    name: Press
+    title: Resonate Press
+    url: /press/
+    weight: -104
+  - identifier: team
+    name: Team
+    title: Resonate Pricing
+    url: /team/
+    weight: -103
+  - identifier: contact
+    name: Contact
+    title: Contact Resonate
+    url: /contact/
+    weight: -102
