@@ -3,7 +3,7 @@ title: "Rewiring the music industry"
 layout: single
 ---
 
-Resonate is building a new music industry based on fairness, transparency and cooperation.
+<p class="w-60 f4">Resonate is building a new music industry based on fairness, transparency and cooperation.</p>
 
 For listeners Resonate involves owning something of real value in a digital economy. It’s also about a shift away ‘passive’ consumption, towards a new mode of discovering and engaging.
 

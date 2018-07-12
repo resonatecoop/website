@@ -13,7 +13,7 @@ menu:
     title: Resonate Pricing
     url: /pricing/
     weight: -109
-  footer:
+  footer1:
   - identifier: manifesto
     name: Manifesto
     title: Resonate Manifesto
@@ -34,6 +34,7 @@ menu:
     title: Resonate Editorial
     url: /editorial/
     weight: -105
+  footer2:
   - identifier: press
     name: Press
     title: Resonate Press
@@ -41,7 +42,7 @@ menu:
     weight: -104
   - identifier: team
     name: Team
-    title: Resonate Pricing
+    title: Resonate Team
     url: /team/
     weight: -103
   - identifier: contact

@@ -1,4 +1,46 @@
-<span>This is the footer partial</span>
-{{ range .Site.Menus.footer }}
-<a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
-{{ end }}
+<section class="mani-outro w-100 white">
+  <div class="flex justify-between w-100">
+    <div class="w-20"></div>
+    <div class="w-60 pl3">
+      <h2 class="f2">
+        <strong>Invest in the future of music</strong>
+        <br />
+        <br />
+        <span class="f3">The Resonate Token Generation Event is open.</span>
+      </h2>
+      <div class="w-100 mt3">
+        <a href="/tge" class="btn g1 mt1 btn-white"/>
+          Learn more
+        </a>
+      </div>
+    </div>
+    <div class="w-20"></div>
+  </div>
+
+  <div class="flex justify-between w-100">
+    <div class="g1">
+      resonate
+    </div>
+
+    <div class="w-40 pl3">
+      <nav class="g2 flex items-center">
+        <ul class="w-100 list ma0 pa0 flex flex-column">
+          {{ range .Site.Menus.footer1 }}
+          <li class="">
+            <a href="{{ .URL }}" class="flex items-center no-underline ph3 pv1 ttc" title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <ul class="w-100 list ma0 pa0 flex flex-column">
+          {{ range .Site.Menus.footer2 }}
+          <li class="">
+            <a href="{{ .URL }}" class="flex items-center no-underline ph3 pv1 ttc" title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+
+    <div class="w-40"></div>
+  </div>
+</section>

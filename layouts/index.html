@@ -1,16 +1,57 @@
 {{ partial "head.html" . }}
-<body>
+  <body>
   {{ partial "nav.html" . }}
-  {{ .Title }}
-  {{ .Content }}
-  {{ partial "footer.html" . }}
+    <section class="w-100 ph3">
+      <h1 class="home-f1"><strong>{{ .Title }}</strong></h1>
+      <div class="w-100 mt3">
+        <a href="/tge" class="btn home-btn g1 mt1 ttu"/>
+          Join Now
+        </a>
+        <span class="f4 pl3">The community-owned music streaming service.</span>
+      </div>
+      {{ partial "player.html" . }}
+      <div class="section-black w-100 mt3 flex">
+        <div class="w-60 pl3 pv4">The Resonate Token Generation Event is now open.</div>
+        <div class="w-40">
+          <a href="/tge" class="btn mt1 w-100 ttu"/>
+            Learn More
+          </a>
+        </div>
+      </div>
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" type="text/javascript"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous">
-  </script>
-  <script type="text/javascript" src="/js/{{ index .Site.Data.js.hash "main.js" }}"></script>
+      <div class="section-white w-100 mt3 flex">
+        <div class="w-60 pl3 pv4">
+          <span>Join Resonate today.</span>
+          <ul class="list">
+            <li>Support the artists you love.
+            What takes other services 200 plays, we do in 9 with stream2own.
+            </li>
+            <li>
+            Co-own your platform.
+            Be a part of an active community; share in decisions and in profits.
+            </li>
+            <li>
+            Set the terms on which you share. Have a say in how your information is used; decide how to distribute your music.
+            </li>
+        </div>
+        <div class="w-40">
+          <div class="w-100 pa4 bg-light-gray">
+            <span>HOW MUCH?<br>Based on average listening habits Resonate costs</span>
+            <a href="/tge" class="btn mt1 w-100 ttu"/>
+              Join Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/js/{{ index .Site.Data.js.hash "main.js" }}"></script>
   </body>
 <html>

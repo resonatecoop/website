@@ -2,7 +2,7 @@
 
 .btn {
   height: 44px;
-  background: #fff;
+  //background: #fff;
   border: solid 1px $near-black;
   color: $near-black;
   text-align: center;
@@ -35,4 +35,9 @@ a.btn {
 .btn-white:hover {
   border-color: $white;
   color: $white;
+}
+
+.section-black .btn,
+.section-white .btn {
+  font-size: 1rem;
 }
