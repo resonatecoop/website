@@ -1,0 +1,6 @@
+<div class="mb5">
+  {{ .paragraph | safeHTML  }}
+  {{ if .links }}
+    {{ .links | safeHTML  }}
+  {{ end }}
+</div>

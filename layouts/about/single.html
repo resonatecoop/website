@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="w-100 ph1 ph3-ns">
+  {{ partial "titleblock.html" . }}
+  {{ $hash := .Site.Data.images.hash }}
+  {{ range .Params.paragraphs }}
+      {{ if .icon }}
+        {{ $icon := .icon }}
+       <img src='/images/{{ index $hash $icon }}' />
+      {{ end }}
+     {{ partial "paragraphs/paragraph.html" . }}
+  {{ end }}
+</section>
+{{end}}

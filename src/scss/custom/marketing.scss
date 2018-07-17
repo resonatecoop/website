@@ -14,6 +14,11 @@
 .section-white {
   color: #000;
   background-color: #FFF;
+  z-index: 1;
+}
+
+.mani-black .f-mani span {
+  border-color: #fff;
 }
 
 // Home page
@@ -24,8 +29,48 @@
   margin: 7.3rem 0 2.9rem 0;
 }
 
+@media screen and (min-width: 30em) {
+  .home-f1-ns {
+    font-size: 11.13rem;
+    letter-spacing: -15px;
+    line-height: 6.200rem;
+    margin: 7.3rem 0 2.9rem 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .home-f1-l {
+    font-size: 11.13rem;
+    letter-spacing: -15px;
+    line-height: 6.200rem;
+    margin: 7.3rem 0 2.9rem 0;
+  }
+}
+
 a.home-btn {
   width:160px;
   height: 66px;
   line-height: 66px;
+}
+
+// Manifesto
+.mani-outro {
+  background: #000;
+}
+
+// pricing
+.pricing-dots{
+  width: 1026px;
+  margin-right: -346px;
+}
+
+.pricing-lines {
+  height: 1px;
+  top: 50%;
+  right: 16%;
+  left: 20%;
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
 }
