@@ -1,10 +1,10 @@
 {{ define "main" }}
 <section class="w-100 ph1 ph3-ns">
-  <h1 class="f2 mt3 mb2 home-f1-l">{{ .Title }}</h1>
-  <div class="w-100 mt3">
+  <h1 class="f2-home">{{ .Title }}</h1>
+  <div class="w-100 pt3-l">
     <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
     <span class="w-100 w-auto-l dib">
-      <a href="/tge" class="btn home-btn g1 mt1 ttu"/>
+      <a href="/tge" class="btn btn-fat mt1 ttu"/>
         Join Now
       </a>
     </span>
@@ -13,18 +13,21 @@
 
   {{ partial "player.html" . }}
 
-  <div class="section-white w-100 mt3 flex">
-    <div class="w-60 pl3 pv4">
-      <span>Join Resonate today.</span>
+  <div class="w-100 pt5 flex">
+    <div id="home-paragraphs" class="w-100 w-60-l">
       {{ range .Params.paragraphs }}
          {{ partial "paragraphs/paragraph.html" . }}
       {{ end }}
     </div>
-    <div class="w-40">
-      <div class="w-100 pa4 bg-light-gray">
-        <span>HOW MUCH?<br>Based on average listening habits Resonate costs</span>
-        <a href="/tge" class="btn mt1 w-100 ttu"/>
-          Join Now
+    <div class="w-40 h-100 dn db-l">
+      <div id="join-sidebar" class="pl4">
+        <div class="bl bw3 b--light-gray pl2">
+          <span class="f4 pa0 pb1 dib">Pay as you play</span><br>
+          <span class="f4 pa0 pb1 dib">No monthly fees</span><br>
+          <span class="f4 pa0">Own and download music</span>
+        </div>
+        <a href="/tge" class="btn btn-fat mt3 ttu"/>
+          Join Resonate Now
         </a>
       </div>
     </div>

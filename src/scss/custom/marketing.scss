@@ -1,33 +1,21 @@
+@import '../base/tachyons/variables';
+
 // Home page
-/*.home-f1 {
-  font-size: 11.13rem;
+.f2-home {
+  font-size: $font-size-2;
+  font-weight: 400;
   letter-spacing: -15px;
   line-height: 6.200rem;
-  margin: 7.3rem 0 2.9rem 0;
+  margin: 7.3rem 0 0.5rem 0;
 }
 
 @media screen and (min-width: 30em) {
-  .home-f1-ns {
+  .f2-home {
     font-size: 11.13rem;
     letter-spacing: -15px;
     line-height: 6.200rem;
     margin: 7.3rem 0 2.9rem 0;
   }
-}*/
-
-@media screen and (min-width: 60em) {
-  .home-f1-l {
-    font-size: 11.13rem;
-    letter-spacing: -15px;
-    line-height: 6.200rem;
-    margin: 7.3rem 0 2.9rem 0;
-  }
-}
-
-a.home-btn {
-  width:160px;
-  height: 66px;
-  line-height: 66px;
 }
 
 // Manifesto
@@ -76,10 +64,4 @@ a.home-btn {
   color: #6CF289;
   font-weight: 600;
   padding:0;
-}
-
-
-// flex
-.flex-grow{
-  flex-grow: 1;
 }

@@ -13,11 +13,6 @@ menu:
     title: Resonate Pricing
     url: /pricing/
     weight: -109
-  - identifier: joinus
-    name: Join Us
-    title: Join Resonate
-    url: /coop/
-    weight: -108
   footer1:
   - identifier: manifesto
     name: Manifesto
@@ -50,8 +45,13 @@ menu:
     title: Resonate Team
     url: /team/
     weight: -102
+  - identifier: coop
+    name: Co-op
+    title: We're a co-op
+    url: /coop/
+    weight: -101
   - identifier: contact
     name: Contact
     title: Contact Resonate
     url: /contact/
-    weight: -101
+    weight: -100
