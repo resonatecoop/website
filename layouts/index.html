@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="w-100 ph1 ph3-ns">
-  <h1 class="f2 mt3 mb2 home-f1-l"><strong>{{ .Title }}</strong></h1>
+  <h1 class="f2 mt3 mb2 home-f1-l">{{ .Title }}</h1>
   <div class="w-100 mt3">
     <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
     <span class="w-100 w-auto-l dib">
@@ -10,15 +10,8 @@
     </span>
     <span class="f4 pl3 w-100 w-auto-l dn dib-l">{{ .Params.subhead }}</span>
   </div>
+
   {{ partial "player.html" . }}
-  <div class="section-black w-100 mt3 flex">
-    <div class="w-60 pl3 pv4">The Resonate Token Generation Event is now open.</div>
-    <div class="w-40">
-      <a href="/tge" class="btn mt1 w-100 ttu"/>
-        Learn More
-      </a>
-    </div>
-  </div>
 
   <div class="section-white w-100 mt3 flex">
     <div class="w-60 pl3 pv4">

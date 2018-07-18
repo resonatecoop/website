@@ -6,8 +6,10 @@
   border: solid 1px $near-black;
   color: $near-black;
   text-align: center;
-  font-family: 'Graphik Semibold';
-  padding: 0 $spacing-small;
+  font-family: 'Graphik';
+  font-weight: 600;
+  letter-spacing: 0px;
+  padding: 0 $spacing-medium;
   cursor: pointer;
 }
 
@@ -37,7 +39,27 @@ a.btn {
   color: $white;
 }
 
+.btn-true-white {
+  background: none;
+  border-color: $white;
+  color: $white;
+}
+
+.btn-true-white:hover {
+  border-color: $light-gray;
+  color: $light-gray;
+}
+
 .section-black .btn,
 .section-white .btn {
   font-size: 1rem;
+}
+
+.btn-fat {
+  height: 66px;
+  letter-spacing: 0;
+}
+
+a.btn-fat {
+  line-height: 66px;
 }

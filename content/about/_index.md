@@ -14,5 +14,5 @@ paragraphs:
     links: "What Resonate means for the industry<br><a href='/'>We are transforming the music industry, everyone’s invited</a>"
   - icon: "placeholder-icon.svg"
     paragraph: "<span>For everyone</span> this is about co-owning a platform. We think that this one-member, one-vote system gives everyone a voice, and supports the community in a crucial way."
-    links: "Why we're a co-op<br><a href='/'>We’re doing things differently — learn more</a>"
+    links: "Why we're a co-op<br><a href='/coop'>We’re doing things differently — learn more</a>"
 ---

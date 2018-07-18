@@ -13,40 +13,45 @@ menu:
     title: Resonate Pricing
     url: /pricing/
     weight: -109
+  - identifier: joinus
+    name: Join Us
+    title: Join Resonate
+    url: /coop/
+    weight: -108
   footer1:
   - identifier: manifesto
     name: Manifesto
     title: Resonate Manifesto
     url: /manifesto/
-    weight: -108
+    weight: -107
   - identifier: about
     name: About
     title: About Resonate
     url: /about/
-    weight: -107
+    weight: -106
   - identifier: pricing
     name: Pricing
     title: Resonate Pricing
     url: /pricing/
-    weight: -106
+    weight: -105
   - identifier: editorial
     name: Editorial
     title: Resonate Editorial
     url: /editorial/
-    weight: -105
+    weight: -104
   footer2:
   - identifier: press
     name: Press
     title: Resonate Press
     url: /press/
-    weight: -104
+    weight: -103
   - identifier: team
     name: Team
     title: Resonate Team
     url: /team/
-    weight: -103
+    weight: -102
   - identifier: contact
     name: Contact
     title: Contact Resonate
     url: /contact/
-    weight: -102
+    weight: -101
