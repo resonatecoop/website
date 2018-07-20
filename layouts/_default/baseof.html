@@ -1,9 +1,11 @@
 {{ partial "head.html" . }}
 <body>
   {{ partial "tge-banner.html" . }}
-  {{ partial "nav.html" . }}
-  {{ block "main" . -}}
-  {{- end }}
+  <section id="site-wrap">
+    {{ partial "nav.html" . }}
+    {{ block "main" . -}}
+    {{- end }}
+  </section>
   {{ partial "footer.html" . }}
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js" type="text/javascript"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js" type="text/javascript"></script>

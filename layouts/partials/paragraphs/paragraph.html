@@ -1,6 +1,10 @@
-<div class="f3 mb5">
+<div class="mb4 mb5-l">
+  <span class="dib pa0">
   {{ .paragraph | safeHTML  }}
+  </span>
+  <span class="dib pa0">
   {{ if .links }}
     {{ .links | safeHTML  }}
   {{ end }}
+  </span>
 </div>

@@ -1,13 +1,22 @@
 {{ define "main" }}
-<section class="w-100 ph1 ph3-ns">
+<section class="w-100 ph1 ph3-ns pt2 pt4-l">
   {{ partial "titleblock.html" . }}
-  {{ $hash := .Site.Data.images.hash }}
-  {{ range .Params.paragraphs }}
-      {{ if .icon }}
-        {{ $icon := .icon }}
-       <img src='/images/{{ index $hash $icon }}' />
-      {{ end }}
-     {{ partial "paragraphs/paragraph.html" . }}
-  {{ end }}
+  <p class="w-60-l f5 f4-l mt1">Resonate gives everyone the chance to own something real in the digital age.</p>
+  <section class="f4 pt3 pt4-l">
+    {{ $hash := .Site.Data.images.hash }}
+    {{ range .Params.paragraphs }}
+    <div class="w-100 flex flex-column flex-row-l">
+        <div class="w-100 w-20-l tc-l pt3-l">
+          {{ if .icon }}
+          {{ $icon := .icon }}
+           <img src='/images/{{ index $hash $icon }}' />
+          {{ end }}
+        </div>
+        <div class="w-100 w-80-l pr5-l">
+       {{ partial "paragraphs/paragraph.html" . }}
+       </div>
+     </div>
+     {{ end }}
+  </section>
 </section>
 {{end}}

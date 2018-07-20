@@ -63,3 +63,11 @@ a.btn {
 a.btn-fat {
   line-height: 66px;
 }
+
+//nav 
+nav > ul > li > a {
+  color: grey;
+}
+nav > ul > li > a.active {
+  color: black;
+}

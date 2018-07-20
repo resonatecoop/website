@@ -1,0 +1,41 @@
+.sticky {
+  position: sticky;
+}
+
+#sticky-nav {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#sticky-nav.mainnav-opacity {
+  opacity: 0;
+}
+
+#sticky-nav.stickynav-opacity {
+  opacity: 1;
+}
+
+#sticky-nav li {
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+}
+
+#sticky-nav.sticky li {
+  padding-top: .533rem;
+  padding-bottom: .533rem;
+}
+
+#sticky-nav #main-nav-logo {
+  display: flex;
+}
+
+#sticky-nav #sticky-nav-logo {
+  display: none;
+}
+
+#sticky-nav.sticky #main-nav-logo{
+  display: none;
+}
+
+#sticky-nav.sticky #sticky-nav-logo {
+  display: flex;
+}

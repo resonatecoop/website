@@ -3,7 +3,7 @@
   <h1 class="f2-home">{{ .Title }}</h1>
   <div class="w-100 pt3-l">
     <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
-    <span class="w-100 w-auto-l dib">
+    <span class="w-100 w-auto-l dib pa0">
       <a href="/tge" class="btn btn-fat mt1 ttu"/>
         Join Now
       </a>
@@ -13,8 +13,8 @@
 
   {{ partial "player.html" . }}
 
-  <div class="w-100 pt5 flex">
-    <div id="home-paragraphs" class="w-100 w-60-l">
+  <div class="w-100 pt3 pt5-l flex">
+    <div id="home-paragraphs" class="f3 w-100 w-60-l">
       {{ range .Params.paragraphs }}
          {{ partial "paragraphs/paragraph.html" . }}
       {{ end }}
