@@ -1,0 +1,24 @@
+<header id="sticky-nav" class="z-9999 flex bg-white-90 w-100 ph3-ns overflow-hidden ph2">
+  <a href="/" class="flex items-center no-underline pv1 grow">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 28px; width: auto;" viewBox="0 0 100 100">
+      <path d="M100 50c0-12.9-5.5-24.5-14.2-33l-18 17.3a21.7 21.7 0 0 1 0 31.5l18 17.3a45.7 45.7 0 0 0 14.2-33zm-74.6 0c0-6 2.6-11.6 6.8-15.7L14.2 17a45.7 45.7 0 0 0 0 66.1l18-17.3c-4.2-4-6.8-9.6-6.8-15.7z"/>
+    </svg>
+  </a>
+
+  <div class="flex flex-auto justify-center items-center"></div>
+  <nav class="w-60">
+    <ul class="w-100 list ma0 pa0 flex flex-end justify-between tr ">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+      <li class="w-30 pv3 tr">
+        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn dib-l" title="{{ .Name }}">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn-l dib body2" title="{{ .Name }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      <li class="w-30 pv3 tr">
+        <a href="/" class="no-underline ph0 ttc dn dib-l" title="Join Us">Join Us</a>
+        <a href="/" class="no-underline ph0 ttc dn-l dib body2" title="Join Us">Join Us</a>
+      </li>
+    </ul>
+  </nav>
+</header>

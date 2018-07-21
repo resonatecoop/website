@@ -1,45 +1,23 @@
-.sticky {
+#sticky-nav {
+  max-height: 0;
   top: -1px;
   right: 0;
   left: 0;
   position: sticky;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
 
-#sticky-nav {
-
-}
-
-#sticky-nav.mainnav-opacity {
-  opacity: 0;
-}
-
-#sticky-nav.sticky {
+#sticky-nav.visible {
+  max-height: 50px;
+  visibility: visible;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
 
 #sticky-nav li {
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
-}
-
-#sticky-nav.sticky li {
   padding-top: .533rem;
   padding-bottom: .533rem;
-}
-
-#sticky-nav #main-nav-logo {
-  display: flex;
-}
-
-#sticky-nav #sticky-nav-logo {
-  display: none;
-}
-
-#sticky-nav.sticky #main-nav-logo{
-  display: none;
-}
-
-#sticky-nav.sticky #sticky-nav-logo {
-  display: flex;
 }
