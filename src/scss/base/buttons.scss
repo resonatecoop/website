@@ -64,7 +64,27 @@ a.btn-fat {
   line-height: 66px;
 }
 
-//nav 
+.btn-fat-reponsive {
+  height: 34px;
+  letter-spacing: 0;
+}
+
+a.btn-fat-reponsive {
+  line-height: 34px;
+}
+
+@media screen and (min-width: 30em) {
+  .btn-fat-reponsive {
+    height: 66px;
+    letter-spacing: 0;
+  }
+
+  a.btn-fat-reponsive {
+    line-height: 66px;
+  }
+}
+
+//nav
 nav > ul > li > a {
   color: grey;
 }

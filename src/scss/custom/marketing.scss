@@ -6,7 +6,7 @@
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 6.200rem;
-  margin: 2.4rem 0 0rem 0;
+  margin: 1.4rem 0 0rem 0;
 }
 
 @media screen and (min-width: 30em) {
@@ -16,6 +16,11 @@
     line-height: 11.13rem;
     margin: 7.3rem 0 2.9rem 0;
   }
+}
+
+// paragraphs
+.paragraph-link::before {
+  content: url("/images/link-arrow-5ac28138.svg");
 }
 
 // Manifesto
@@ -28,7 +33,7 @@
 }
 
 // pricing
-.pricing-dots{
+.pricing-dots {
   width: 1026px;
   margin-right: -346px;
 }

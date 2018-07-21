@@ -1,17 +1,21 @@
 .sticky {
+  top: -1px;
+  right: 0;
+  left: 0;
   position: sticky;
 }
 
 #sticky-nav {
-  transition: opacity 0.5s ease-in-out;
+
 }
 
 #sticky-nav.mainnav-opacity {
   opacity: 0;
 }
 
-#sticky-nav.stickynav-opacity {
+#sticky-nav.sticky {
   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #sticky-nav li {

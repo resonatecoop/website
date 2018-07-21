@@ -35,9 +35,10 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
     triggerElement: '#site-wrap',
 		triggerHook: 0,
-    offset: 500
+    offset: 600
 	})
   .setClassToggle("#sticky-nav", "sticky")
+  //.addIndicators()
 	.addTo(controller);
 
 // main nav opacity
@@ -47,13 +48,15 @@ new ScrollMagic.Scene({
     offset: 100
 	})
   .setClassToggle("#sticky-nav", "mainnav-opacity")
+  //.addIndicators()
 	.addTo(controller);
 
 // sticky nav opacity
-new ScrollMagic.Scene({
+/*new ScrollMagic.Scene({
     triggerElement: '#site-wrap',
 		triggerHook: 0,
-    offset: 700
+    offset: 600
 	})
   .setClassToggle("#sticky-nav", "stickynav-opacity")
-	.addTo(controller);
+  .addIndicators()
+	.addTo(controller);*/
