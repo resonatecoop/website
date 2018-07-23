@@ -1,16 +1,14 @@
 #sticky-nav {
-  max-height: 0;
   visibility: hidden;
   position: sticky;
   top: -1px;
   right: 0;
   left: 0;
   opacity: 0;
-  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 #sticky-nav.visible {
-  max-height: 50px;
   visibility: visible;
   opacity: 1;
 }
