@@ -24,15 +24,14 @@ module.exports = function () {
         setHeights()
       }
       function getHeights() {
-        console.log(scrollHeight)
         return scrollHeight
       }
       new ScrollMagic.Scene({
           triggerElement: '#scroll-trigger',
       		duration: getHeights
       	})
-      	.setPin("#sticky-sidebar") // pins the element for the the scene's duration
+      	.setPin("#sticky-sidebar")
         //.addIndicators()
-      	.addTo(controller); // assign the scene to the controller
+      	.addTo(controller);
     }
 }

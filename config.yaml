@@ -59,35 +59,35 @@ menu:
   - identifier: who
     name: who
     title: who
-    url: /token-generation-event#who
+    url: '#who'
     weight: -99
   - identifier: why
     name: why
     title: why
-    url: /token-generation-event#why
+    url: '#why'
     weight: -98
   - identifier: how
     name: how
     title: how
-    url: /token-generation-event#how
+    url: '#how'
     weight: -97
-  - identifier: roadmap
-    name: roadmap
-    title: roadmap
-    url: /token-generation-event#roadmap
-    weight: -96
   - identifier: token
     name: token
     title: token
-    url: /token-generation-event#token
+    url: '#token'
+    weight: -96
+  - identifier: roadmap
+    name: roadmap
+    title: roadmap
+    url: '#roadmap'
     weight: -95
-  - identifier: collborators
-    name: collborators
-    title: collborators
-    url: /token-generation-event#collborators
+  - identifier: collaborators
+    name: collaborators
+    title: collaborators
+    url: '#collaborators'
     weight: -94
   - identifier: press
     name: press
     title: press
-    url: /token-generation-event#press
+    url: '#press'
     weight: -93

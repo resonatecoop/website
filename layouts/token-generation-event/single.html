@@ -20,22 +20,23 @@
 <section class="w-100 pt2 pt4-l flex">
   {{ partial "nav-tge.html" . }}
   <main id="scroll-trigger" class="w-80 h-auto">
-    <article>
+    <article id="who">
     {{ range .Params.paragraphs_1 }}
        {{ partial "paragraphs/paragraph.html" . }}
     {{ end }}
     </article>
-    <article class="white bg-black" style="width: 125%; margin-left: -25%; padding-left: 25%;">
-      <h3 class="f1">Why</h3>
-      <p>The music industry desperately needs to be reconfigured. As our networked world develops, the way people listen to music has changed drastically, resulting in an unsustainable model that can't support the industry ecosystem long-term.</p>
-    </article>
-    <article>
+
+    <article id="why">
+      <div class="white bg-black" style="width: 125%; margin-left: -25%; padding-left: 25%;">
+        <h3 class="f1">Why</h3>
+        <p>The music industry desperately needs to be reconfigured. As our networked world develops, the way people listen to music has changed drastically, resulting in an unsustainable model that can't support the industry ecosystem long-term.</p>
+      </div>
     {{ range .Params.paragraphs_2 }}
        {{ partial "paragraphs/paragraph.html" . }}
     {{ end }}
     </article>
 
-    <article>
+    <article id="how">
       <h3 class="f1">How</h3>
       {{ $hash := .Site.Data.images.hash }}
       {{ range .Params.paragraphs_3 }}
@@ -57,22 +58,55 @@
        {{ end }}
     </article>
 
-    <article>
+    <article id="token">
       <h3 class="f2">The Token</h3>
       {{ .Content }}
     </article>
-    <article>
+
+    <article id="roadmap">
       <h3 class="f2">Roadmap</h3>
     </article>
-    <article>
+
+    <article id="collaborators">
       <h3 class="f2">Collaborators</h3>
     </article>
+
     <article>
       <h3 class="f2">Team</h3>
     </article>
-    <article>
+
+    <article id="press">
       <h3 class="f2">Press</h3>
     </article>
   </main>
 </section>
+
+<div class="w-100 mt5 mb5 overflow-hidden cf">
+  <h2 class="f3">Be part of the future of music.</h2>
+
+  <div class="counter-big fl w-100">
+    <div class="g1 tc fl br b--black">
+      <div class="f2">01</div>
+      <div>DAYS</div>
+    </div>
+    <div class="g1 tc fl br b--black">
+      <div class="f2">01</div>
+      <div>HOURS</div>
+    </div>
+    <div class="g1 tc fl br b--black">
+      <div class="f2">01</div>
+      <div>MINUTES</div>
+    </div>
+    <div class="g1 tc fl">
+      <div class="f2">01</div>
+      <div>SECONDS</div>
+    </div>
+  </div>
+
+  <div class="w-100 fl mt3">
+    <a href="/tge" class="btn g1 mt1"/>
+      Learn more
+    </a>
+  </div>
+</div>
 {{end}}
