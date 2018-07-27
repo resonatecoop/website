@@ -19,6 +19,20 @@
 }
 
 // paragraphs
+.paragraphs {
+  margin-bottom: 5.867rem;
+}
+
+.paragraphs:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 60em) {
+  .paragraphs {
+    margin-bottom: 3.667rem;
+  }
+}
+
 .paragraph-link::before {
   content: url("/images/link-arrow-5ac28138.svg");
 }

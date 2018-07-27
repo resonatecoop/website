@@ -13,14 +13,14 @@
 
   {{ partial "player.html" . }}
 
-  <div class="w-100 pt3 pt5-l flex">
-    <div id="home-paragraphs" class="f3 w-100 w-60-l">
+  <div class="w-100 pt3 pt5-l mb4 mb5-l cf">
+    <div id="scroll-trigger" class="f3 w-100 w-60-l fl">
       {{ range .Params.paragraphs }}
          {{ partial "paragraphs/paragraph.html" . }}
       {{ end }}
     </div>
-    <div class="w-40 h-100 dn db-l">
-      <div id="join-sidebar" class="pl4">
+    <aside class="w-40 h-100 dn db-l fl">
+      <div id="sticky-sidebar" class="pl4">
         <div class="bl bw3 b--light-gray pl2">
           <span class="f4 pa0 pb1 dib">Pay as you play</span><br>
           <span class="f4 pa0 pb1 dib">No monthly fees</span><br>
@@ -30,7 +30,7 @@
           Join Resonate Now
         </a>
       </div>
-    </div>
+    </aside>
   </div>
 </section>
 <span class="f4 pb1 ph1 ph3-ns dib mid-gray">As seen in</span>

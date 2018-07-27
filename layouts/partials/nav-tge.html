@@ -1,0 +1,10 @@
+<aside class="w-20">
+  <ul id="sticky-sidebar" class="w-100 list ma0 pa0 flex flex-column">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.tge }}
+    <li class="w-30 pv1">
+      <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "tge" . }}active{{ end }} no-underline ph0 ttu" title="{{ .Name }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</aside>

@@ -55,3 +55,39 @@ menu:
     title: Contact Resonate
     url: /contact/
     weight: -100
+  tge:
+  - identifier: who
+    name: who
+    title: who
+    url: /token-generation-event#who
+    weight: -99
+  - identifier: why
+    name: why
+    title: why
+    url: /token-generation-event#why
+    weight: -98
+  - identifier: how
+    name: how
+    title: how
+    url: /token-generation-event#how
+    weight: -97
+  - identifier: roadmap
+    name: roadmap
+    title: roadmap
+    url: /token-generation-event#roadmap
+    weight: -96
+  - identifier: token
+    name: token
+    title: token
+    url: /token-generation-event#token
+    weight: -95
+  - identifier: collborators
+    name: collborators
+    title: collborators
+    url: /token-generation-event#collborators
+    weight: -94
+  - identifier: press
+    name: press
+    title: press
+    url: /token-generation-event#press
+    weight: -93

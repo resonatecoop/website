@@ -1,6 +1,9 @@
 {{ partial "head.html" . }}
 <body>
+  {{ if eq .Section "token-generation-event"}}
+  {{ else }}
   {{ partial "tge-banner.html" . }}
+  {{ end }}
   <section id="site-wrap" class="pa0 ma0">
     {{ partial "nav.html" . }}
     {{ partial "nav-scroll.html" . }}
