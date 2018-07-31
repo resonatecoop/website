@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="w-100 ph1 ph3-ns pt2 pt4-l">
-  {{ partial "titleblock.html" . }}
+  {{ partial "components/titleblock.html" . }}
   <p class="w-60-l f5 f4-l mt1">Resonate gives everyone the chance to own something real in the digital age.</p>
   <section class="f4 pt3 pt4-l">
     {{ $hash := .Site.Data.images.hash }}
@@ -9,11 +9,11 @@
         <div class="w-100 w-20-l tc-l pt3-l">
           {{ if .icon }}
           {{ $icon := .icon }}
-           <img src='/images/{{ index $hash $icon }}' />
+          {{ partial "icons/svg.html" (dict "svg" $icon "color" "fill-black") }}
           {{ end }}
         </div>
         <div class="w-100 w-80-l pr5-l">
-       {{ partial "paragraphs/paragraph.html" . }}
+       {{ partial "components/paragraph.html" . }}
        </div>
      </div>
      {{ end }}

@@ -11,12 +11,12 @@
     <span class="f4 pl3 w-100 w-auto-l dn dib-l">{{ .Params.subhead }}</span>
   </div>
 
-  {{ partial "player.html" . }}
+  {{ partial "components/player.html" . }}
 
   <div class="w-100 pt3 pt5-l mb4 mb5-l cf">
     <div id="scroll-trigger" class="f3 w-100 w-60-l fl">
       {{ range .Params.paragraphs }}
-         {{ partial "paragraphs/paragraph.html" . }}
+         {{ partial "components/paragraph.html" . }}
       {{ end }}
     </div>
     <aside class="w-40 h-100 dn db-l fl">
@@ -35,9 +35,9 @@
 </section>
 <span class="f4 pb1 ph1 ph3-ns dib mid-gray">As seen in</span>
 <section class="w-100 flex flex-wrap">
-  {{ $logoimages := .Site.Data.logoimages.logoimages }}
+  {{ $press := .Site.Data.sections.press }}
   {{ $hash := .Site.Data.images.hash }}
-  {{ range $logoimages.logoimages }}
+  {{ range $press.presslogos }}
     {{ $img := .image }}
     <a class="flex item-center w-50 w-20-ns tc bt br b--mid-gray dib relative overflow-hidden logoimage-wrapper" href="{{ .link }}" alt="{{ .title }}">
       <img class="ma0 pa0 db absolute logoimage" src='/images/{{ index $hash $img }}' />

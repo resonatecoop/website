@@ -1,5 +1,9 @@
 @import '../base/tachyons/variables';
 
+article:focus {
+  outline: 0;
+}
+
 // Home page
 .f2-home {
   font-size: $font-size-2;

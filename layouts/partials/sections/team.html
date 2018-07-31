@@ -1,0 +1,25 @@
+{{ $hash := .Site.Data.images.hash }}
+{{ $team := .Site.Data.sections.team }}
+<article class="w-100 flex flex-column">
+  <h3 class="f2">Team</h3>
+  <section class="flex flex-wrap justify-between">
+  {{ range $team.management }}
+    {{ partial "components/teammember.html" ( dict "context" . "hash" $hash ) }}
+  {{ end }}
+  </section>
+  <section class="flex flex-wrap justify-between">
+  {{ range $team.development }}
+    {{ partial "components/teammember.html" ( dict "context" . "hash" $hash ) }}
+  {{ end }}
+  </section>
+  <section class="flex flex-wrap justify-between">
+  {{ range $team.marketing }}
+    {{ partial "components/teammember.html" ( dict "context" . "hash" $hash ) }}
+  {{ end }}
+  </section>
+  <section class="flex flex-wrap justify-between">
+  {{ range $team.design }}
+    {{ partial "components/teammember.html" ( dict "context" . "hash" $hash ) }}
+  {{ end }}
+  </section>
+</article>

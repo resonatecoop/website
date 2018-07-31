@@ -1,0 +1,21 @@
+<article id="how" tabindex="2">
+  <h3 class="f1">How</h3>
+  {{ $hash := .Site.Data.images.hash }}
+  {{ range .Params.how }}
+  <div class="w-100 flex flex-column flex-row-l bg-black white mb2">
+      <div class="w-100 w-20-l tc-l pt3-l">
+        {{ if .icon }}
+        {{ $icon := .icon }}
+        {{ partial "icons/svg.html" (dict "svg" $icon "color" "fill-white") }}
+        {{ end }}
+      </div>
+      <div class="w-100 w-80-l pr5-l">
+        <div class="mb4 mb5-l pa0">
+          <p>
+            {{ .paragraph | safeHTML  }}
+          </p>
+        </div>
+     </div>
+   </div>
+   {{ end }}
+</article>

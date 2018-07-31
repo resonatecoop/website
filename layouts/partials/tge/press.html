@@ -1,0 +1,15 @@
+{{ $hash := .Site.Data.images.hash }}
+{{ $press := .Site.Data.sections.press }}
+<article id="press" tabindex="6">
+  <h3 class="f2">Press</h3>
+  {{ range $press.tge_press }}
+  {{ $img := .img }}
+  <blockquote class="w-100 flex">
+    <div class="w2">{{ partial "icons/svg.html" (dict "svg" "quotes" "color" "fill-mid-gray") }}</div>
+    <span class="w-70 f4">{{ .quote }}</span>
+    <div class="w-20 bl b--mid-gray">
+      <img class="w-100 h-auto ma0 db" src='/images/{{ index $hash $img }}' />
+    </div>
+  </blockquote>
+  {{ end }}
+</article>

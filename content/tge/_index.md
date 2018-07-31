@@ -12,20 +12,20 @@ paragraphs_2:
   - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>INEFFICIENCIES plague the music industry and often lead to slow, inaccurate royalty payouts.</p>"
   - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>PRIVACY is sorely lacking; fans often need to surrender personal information to stay informed.</p>"
   - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>CONTROL is needed by all. Artists should have a say in how their music is distributed, users should control their information.</p>"
-paragraphs_3:
-  - icon: ""
+how:
+  - icon: "ring"
     paragraph: "THE CO-OPERATIVE model fundamentally differentiates Resonate from other services. A one-member, one-share, one-vote system brings democracy to the platform, and gives all members a voice."
-  - icon: ""
+  - icon: "stream2own"
     paragraph: "STREAM2OWN is brand new model for listening. Splitting the cost of a digital download into 9 plays, it enables artists to get paid per play, and fans to own music again."
-  - icon: ""
+  - icon: "fingerprint"
     paragraph: "IDENTITY SOCIAL GRAPH puts control back in the hands of users. Choose who your data is shared with and how; verify your identity without the expense of sensitive information."
-  - icon: ""
+  - icon: "text"
     paragraph: "EDITORIAL will be aggregated within a system that allows micro-payments, ensuring that publishers have a source of revenue beyond ad-supported models."
-  - icon: ""
+  - icon: "blockchain"
     paragraph: "BLOCKCHAIN DATABASES will help streamline royalty payments, and ensure that the wider independent music ecosystem has a reliable source for metadata."
-  - icon: ""
+  - icon: "brackets"
     paragraph: "OPEN-SOURCE fits naturally with our ethos of openness, collaboration and transparency. We’ll work with anyone so long as they share our values."
-  - icon: ""
+  - icon: "book"
     paragraph: "ETHICS come first. We’re considering the impact of everything that we do, from ensuring our operation is environmentally-friendly to making an effort to build an inclusive platform."
 ---
 
