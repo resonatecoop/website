@@ -1,0 +1,8 @@
+<article id="token" tabindex="3">
+  <div class="w3">
+  {{ partial "icons/svg.html" (dict "svg" "token" "color" "fill-mid-gray") }}
+  </div>
+  <h3 class="f2">The Token</h3>
+  {{ .Content }}
+  <img class="w-100 h-auto ma0 db" src="/images/{{ index .Site.Data.images.hash "tge/token-allocation.svg" }}" />
+</article>

@@ -1,94 +1,35 @@
 {{ define "main" }}
-<section class="w-100 ph1 ph3-ns pt2 pt4-l relative z-9999">
-  {{ partial "components/titleblock.html" . }}
-  <div class="flex">
-    <p class="w-60-l f5 f4-l mt1">Resonate is a decentralized music streaming service that’s owned by its users. We’re using blockchain tech to build a sustainable industry based on fairness, transparency and cooperation.</p>
-    <div class="mw7 flex flex-column white bg-black pa2 pa3 overflow-hidden">
-      <div class="f3">
-        <span class="f5 dark-gray ttu mb1 pa0">Closing in</span><br>
-        1d&nbsp;&nbsp;21h&nbsp;&nbsp;43m&nbsp;&nbsp;21s
-      </div>
-      <span class="pa0">
-        <a href="/tge" class="btn btn-fat btn-true-white ttu"/>
-          Learn More
-        </a>
-      </span>
-    </div>
-  </div>
+<section class="w-100 ph1 ph3-ns pt2 pt4-l relative z-9090">
+  {{ partial "components/titleblock" . }}
 </section>
 
 <div class="w-100 cf" style="margin-top: -150px; z-index: 0;">
-  {{ partial "tge/halftone_img_tge.html" . }}
+  {{ partial "tge/halftone_img_tge" . }}
   <img class="w-70 h-auto db fr relative z-9000" style="margin-top: -30%;" src="/images/{{ index .Site.Data.images.hash "tge/player-ui.jpg" }}" />
 </div>
 
-<section class="w-100 pt2 pt4-l flex">
+<!--<section class="w-100 pt2 pt4-l flex">
   {{ partial "components/nav-tge.html" . }}
+
   <main id="scroll-trigger" class="w-80 h-auto">
-    <article id="who" tabindex="0">
-    {{ range .Params.paragraphs_1 }}
-       {{ partial "components/paragraph.html" . }}
-    {{ end }}
-    </article>
+    {{ partial "tge/who" . }}
 
-    <article id="why" tabindex="1">
-      <div class="white bg-black" style="width: 125%; margin-left: -25%; padding-left: 25%;">
-        <h3 class="f1">Why</h3>
-        <p>The music industry desperately needs to be reconfigured. As our networked world develops, the way people listen to music has changed drastically, resulting in an unsustainable model that can't support the industry ecosystem long-term.</p>
-      </div>
-    {{ range .Params.paragraphs_2 }}
-       {{ partial "components/paragraph.html" . }}
-    {{ end }}
-    </article>
+    {{ partial "tge/why" . }}
 
-    {{ partial "tge/how.html" . }}
+    {{ partial "tge/how" . }}
 
-    <article id="token" tabindex="3">
-      <div class="w3">
-      {{ partial "icons/svg.html" (dict "svg" "token" "color" "fill-mid-gray") }}
-      </div>
-      <h3 class="f2">The Token</h3>
-      {{ .Content }}
-      <img class="w-100 h-auto ma0 db" src="/images/{{ index .Site.Data.images.hash "tge/token-allocation.svg" }}" />
-    </article>
+    {{ partial "tge/token" . }}
 
-    {{ partial "tge/roadmap.html" . }}
+    {{ partial "tge/roadmap" . }}
 
-    {{ partial "sections/collaborators.html" . }}
+    {{ partial "sections/collaborators" . }}
 
-    {{ partial "sections/team.html" . }}
+    {{ partial "sections/team" . }}
 
-
-    {{ partial "tge/press.html" . }}
+    {{ partial "tge/press" . }}
   </main>
 </section>
 
-<div class="w-100 mt5 mb5 overflow-hidden cf">
-  <h2 class="f3">Be part of the future of music.</h2>
+{{ partial "tge/subfooter-tge" . }}-->
 
-  <div class="counter-big fl w-100">
-    <div class="g1 tc fl br b--black">
-      <div class="f2">01</div>
-      <div>DAYS</div>
-    </div>
-    <div class="g1 tc fl br b--black">
-      <div class="f2">01</div>
-      <div>HOURS</div>
-    </div>
-    <div class="g1 tc fl br b--black">
-      <div class="f2">01</div>
-      <div>MINUTES</div>
-    </div>
-    <div class="g1 tc fl">
-      <div class="f2">01</div>
-      <div>SECONDS</div>
-    </div>
-  </div>
-
-  <div class="w-100 fl mt3">
-    <a href="/tge" class="btn g1 mt1"/>
-      Learn more
-    </a>
-  </div>
-</div>
 {{end}}

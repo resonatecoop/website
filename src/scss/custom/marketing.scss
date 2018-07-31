@@ -25,6 +25,7 @@ article:focus {
 // paragraphs
 .paragraphs {
   margin-bottom: 5.867rem;
+  padding: 0;
 }
 
 .paragraphs:last-child {
@@ -35,10 +36,6 @@ article:focus {
   .paragraphs {
     margin-bottom: 3.667rem;
   }
-}
-
-.paragraph-link::before {
-  content: url("/images/link-arrow-5ac28138.svg");
 }
 
 // Manifesto

@@ -1,5 +1,42 @@
-<h1 class="f3 dib dn-l mb1 mb3-l">{{ .Title | safeHTML }}</h1>
-<h1 class="f2 dib-l dn mb1 mb3-l w-60">{{ .Title | safeHTML }}</h1>
+{{ if eq .Section ""}}
+<h1 class="f2-home">{{ .Title }}</h1>
+<div class="w-100 pt3-l">
+  <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
+  <span class="w-100 w-auto-l dib pa0">
+    <a href="/tge" class="btn btn-fat btn-fat-reponsive mt1 ttu"/>
+      Join Now
+    </a>
+  </span>
+  <span class="f4 pl3 w-100 w-auto-l dn dib-l">{{ .Params.subhead }}</span>
+</div>
+
+{{ else if eq .Section "tge"}}
+<h1 class="f3 f2-ns lh-title lh-solid-ns mb1 mb3-l w-60-l">{{ .Title | safeHTML }}</h1>
+<div class="flex flex-column flex-row-l">
+  <span class="w-100 w-60-l dib mt1">
+    <p class="near-black f5 f4-ns lh-copy pr4">Resonate is a decentralized music streaming service that’s owned by its users. We’re using blockchain tech to build a sustainable industry based on fairness, transparency and cooperation.</p>
+  </span>
+
+  <div class="w-100 w-40-l flex flex-column white bg-black pa3 overflow-hidden">
+    <span class="f5 lh-copy dark-gray ttu pa0">Closing in</span>
+    <div class="f3 lh-title pb3 mb4 bb b--mid-gray">1d&nbsp;&nbsp;21h&nbsp;&nbsp;43m&nbsp;&nbsp;21s</div>
+    <span class="pa0 flex justify-between">
+      <a href="" class="link mid-gray">
+        WHITEPAPER<br>
+        <span class="body2 pa0">Download now</span>
+      </a>
+      <a href="/tge" class="btn btn-fat btn-true-white ttu"/>
+        Learn More
+      </a>
+    </span>
+  </div>
+
+</div>
+
+{{ else }}
+<h1 class="f3 f2-ns lh-title lh-solid-ns mb1 mb3-l w-60-l">{{ .Title | safeHTML }}</h1>
 {{ if .Params.subhead}}
-<p class="w-60-l f5 f4-l mt1">{{ .Params.subhead | safeHTML }}</p>
+<p class="w-60-l f5 f4-ns lh-title mt1">{{ .Params.subhead | safeHTML }}</p>
+{{ end }}
+
 {{ end }}

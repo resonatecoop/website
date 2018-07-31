@@ -1,38 +1,24 @@
 {{ define "main" }}
 <section class="w-100 ph1 ph3-ns">
-  <h1 class="f2-home">{{ .Title }}</h1>
-  <div class="w-100 pt3-l">
-    <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
-    <span class="w-100 w-auto-l dib pa0">
-      <a href="/tge" class="btn btn-fat btn-fat-reponsive mt1 ttu"/>
-        Join Now
-      </a>
-    </span>
-    <span class="f4 pl3 w-100 w-auto-l dn dib-l">{{ .Params.subhead }}</span>
-  </div>
 
-  {{ partial "components/player.html" . }}
+  {{ partial "components/titleblock" . }}
+
+  {{ partial "components/player" . }}
 
   <div class="w-100 pt3 pt5-l mb4 mb5-l cf">
     <div id="scroll-trigger" class="f3 w-100 w-60-l fl">
       {{ range .Params.paragraphs }}
-         {{ partial "components/paragraph.html" . }}
+        <span class="paragraphs dib">
+         {{ partial "components/paragraph" . }}
+       </span>
       {{ end }}
     </div>
     <aside class="w-40 h-100 dn db-l fl">
-      <div id="sticky-sidebar" class="pl4">
-        <div class="bl bw3 b--light-gray pl2">
-          <span class="f4 pa0 pb1 dib">Pay as you play</span><br>
-          <span class="f4 pa0 pb1 dib">No monthly fees</span><br>
-          <span class="f4 pa0">Own and download music</span>
-        </div>
-        <a href="/tge" class="btn btn-fat mt3 ttu"/>
-          Join Resonate Now
-        </a>
-      </div>
+      {{ partial "components/sticky-sidebar" . }}
     </aside>
   </div>
 </section>
+
 <span class="f4 pb1 ph1 ph3-ns dib mid-gray">As seen in</span>
 <section class="w-100 flex flex-wrap">
   {{ $press := .Site.Data.sections.press }}
