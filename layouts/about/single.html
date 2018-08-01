@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="w-100 ph1 ph3-ns pt2 pt4-l">
+  {{ partial "components/titleblock.html" . }}
+  <p class="w-60-l f5 f4-ns lh-title mt1">Resonate gives everyone the chance to own something real in the digital age.</p>
+  <section class="f4 pt3 pt4-l mb4 mb5-l ">
+    {{ $hash := .Site.Data.images.hash }}
+    {{ range .Params.paragraphs }}
+    <div class="paragraphs w-100 flex flex-column flex-row-l pr5-l">
+        <div class="w-100 w-20-l">
+          <div class="w4 center-l">
+            {{ if .icon }}
+            {{ $icon := .icon }}
+            {{ partial "icons/svg.html" (dict "svg" $icon "color" "fill-black") }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="w-100 w-80-l">
+       {{ partial "components/paragraph" . }}
+       {{ partial "components/link" . }}
+       </div>
+     </div>
+     {{ end }}
+  </section>
+</section>
+{{end}}

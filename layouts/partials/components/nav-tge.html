@@ -1,0 +1,19 @@
+<aside class="w-20 pl3 border-box pb3 z-9090 relative">
+  <ul id="sticky-sidebar" class="w-100 list ma0 pa0 flex flex-column">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.tge }}
+    <li class="pv1">
+      <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "tge" . }}active{{ end }} link mid-gray no-underline ph0 ttu" title="{{ .Name }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    <li class="pv3 mid-gray">
+      <span class="w1 dib pa0 v-btm">{{ partial "icons/svg.html" (dict "svg" "download" "color" "fill-mid-gray") }}</span>
+      <span class="dib">WHITEPAPER</span>
+    </li>
+    <li>
+      <a href="/" class="btn btn-sml ttu"/>
+        Register Now
+      </a>
+    </li>
+  </ul>
+</aside>

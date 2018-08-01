@@ -1,0 +1,16 @@
+stage1:
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+stage2:
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+stage3:
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+stage4:
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+  - bullet: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."

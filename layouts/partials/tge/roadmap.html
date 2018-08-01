@@ -1,0 +1,44 @@
+{{ $roadmap := .Site.Data.sections.roadmap }}
+<article id="roadmap" tabindex="4" class="pr3">
+  <h3 class="f2">Roadmap</h3>
+  <section class="w-100 flex">
+    <div class="w-50 flex flex-column br b--black">
+      <span class="f4 dib w-100 bt bl b-black pa2 border-box">Stage 1</span>
+      <span class="f4 dib w-100 bt bb bl b-black pa2 border-box">Stream 2 own</span>
+      {{ range $roadmap.stage1 }}
+         <p class="ph2"><span class='f2 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>{{ .bullet }}</p>
+      {{ end }}
+    </div>
+    <div class="w-50"></div>
+  </section>
+  <section class="w-100 flex">
+    <div class="w-50"></div>
+    <div class="w-50 flex flex-column bl b--black" style="margin-left: -1px;">
+      <span class="f4 dib w-100 bt br b-black pa2 border-box">Stage 2</span>
+      <span class="f4 dib w-100 bt bb br b-black pa2 border-box">Stream 2 own</span>
+      {{ range $roadmap.stage2 }}
+         <p class="ph2"><span class='f2 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>{{ .bullet }}</p>
+      {{ end }}
+    </div>
+  </section>
+  <section class="w-100 flex">
+    <div class="w-50 flex flex-column br b--black">
+      <span class="f4 dib w-100 bt bl b-black pa2 border-box">Stage 3</span>
+      <span class="f4 dib w-100 bt bb bl b-black pa2 border-box">Stream 2 own</span>
+      {{ range $roadmap.stage3 }}
+         <p class="ph2"><span class='f2 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>{{ .bullet }}</p>
+      {{ end }}
+    </div>
+    <div class="w-50"></div>
+  </section>
+  <section class="w-100 flex">
+    <div class="w-50"></div>
+    <div class="w-50 flex flex-column" style="margin-left: -1px;">
+      <span class="f4 dib w-100 bt bl br b-black pa2 border-box">Stage 4</span>
+      <span class="f4 dib w-100 bt bb bl br b-black pa2 border-box">Stream 2 own</span>
+      {{ range $roadmap.stage4 }}
+         <p class="ph2"><span class='f2 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>{{ .bullet }}</p>
+      {{ end }}
+    </div>
+  </section>
+</article>

@@ -1,0 +1,34 @@
+@import 'tachyons/variables';
+.bg-white-05 {
+  background-color: $white-05;
+}
+
+.bg-white-06 {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.bg-white-07 {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.fill-black {
+  fill: $black;
+}
+.fill-near-black {
+  fill: $near-black;
+}
+.fill-dark-gray{
+  fill: $dark-gray
+}
+.fill-mid-gray {
+  fill: $mid-gray;
+}
+.fill-gray {
+  fill: $gray;
+}
+.fill-light-gray{
+  fill: $light-gray;
+}
+.fill-white {
+  fill: $white;
+}
