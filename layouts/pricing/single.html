@@ -1,31 +1,38 @@
 {{ define "main" }}
 <section class="w-100 ph1 ph3-ns">
   {{ partial "components/titleblock.html" . }}
-  <div>
-  Our brand new Stream2own model splits the cost of a digital download into 9 plays.
-  Plays start off cheap when you’re discovering and as you fall in love with a song, you come to pay the full price.
-  There’s no transition out of Resonate to buy a song or album. Purchase it directly, or just keep listening.
-  Resonate pays artists directly and per-play. For listeners, the overall cost is similar to that of the average monthly streaming subscription.
-  </div>
 </section>
+<section class="w-100 ph1 ph3-ns mb5 flex">
+  <span class="w-60 pr3 border-box">{{ .Content }}</span>
+  <div class="w-40 pv3 ph5 border-box">{{ partial "icons/stream2own.html" (dict "stream2own" "two") }}</div>
+</section>
+<section class="pt3">
+  <span class="f4 lh-title ph1 ph3-ns pb4 dib">How much does each play cost?</span>
   {{ range .Params.pricerows }}
-  <div class="w-100 overflow-hidden clear flex items-center justify-between pb4 relative">
+  <div class="w-100 overflow-hidden flex items-center justify-between mb4 relative">
     <div class="ph1 ph3-ns">
       <div class="w2 dib v-mid">
       {{ if .stream2own }}
       {{ partial "icons/stream2own.html" . }}
       {{ end }}
       </div>
-      <span class="v-mid">
+      <span class="v-mid pl3">
         {{ .playcount | safeHTML }}
       </span>
     </div>
-    <div class="pricing-lines absolute"></div>
-    <div class="pricing-dots">
+    <div class="pricing-lines flex-grow-1"></div>
+    <div class="pricing-dots relative">
+      {{ if .paragraph }}
+      <div class="absolute flex ph4 border-box" style="top:40%; right: 346px;">
+        <div class="w4 pt3">{{ partial "icons/stream2own.html" ( dict "stream2own" "download" "fill" "#FFF") }}</div>
+        <div class="white ph4 border-box">{{ .paragraph | safeHTML }}</div>
+      </div>
+      {{ end }}
       <div class="center" style="width: {{ .width }}%">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-100"  viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle fill="#18191A" cx="50" cy="50" r="50" fill-rule="evenodd"/></svg>
       </div>
     </div>
   </div>
   {{ end }}
+</section>
 {{end}}

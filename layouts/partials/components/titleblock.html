@@ -10,6 +10,9 @@
   <span class="f4 pl3 w-100 w-auto-l dn dib-l">{{ .Params.subhead }}</span>
 </div>
 
+{{ else if eq .Section "pricing" }}
+<h1 class="f3 f2-ns lh-title lh-solid-ns mb1 mb3-l">{{ .Params.subhead | safeHTML }}</h1>
+
 {{ else if eq .Section "tge"}}
 <h1 class="f3 f2-ns lh-title lh-solid-ns mb1 mb3-l w-60-l">{{ .Title | safeHTML }}</h1>
 <div class="flex flex-column flex-row-l">

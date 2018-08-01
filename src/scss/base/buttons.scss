@@ -96,8 +96,8 @@ a.btn-sml {
 
 //nav
 nav > ul > li > a {
-  color: grey;
+  color: rgba(24,25,26,.5);
 }
 nav > ul > li > a.active {
-  color: black;
+  color: $black;
 }
