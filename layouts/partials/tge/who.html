@@ -1,5 +1,7 @@
-<article id="who" tabindex="0">
+<article id="who" tabindex="0" class="f4 pr5-l">
 {{ range .Params.paragraphs_1 }}
+    <span class="paragraphs dib">
    {{ partial "components/paragraph.html" . }}
+   </span>
 {{ end }}
 </article>

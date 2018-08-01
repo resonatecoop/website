@@ -1,14 +1,18 @@
 {{ $hash := .Site.Data.images.hash }}
 {{ $press := .Site.Data.sections.press }}
-<article id="press" tabindex="6">
+<article id="press" tabindex="6" class="mb5">
   <h3 class="f2">Press</h3>
   {{ range $press.tge_press }}
   {{ $img := .img }}
-  <blockquote class="w-100 flex">
-    <div class="w2">{{ partial "icons/svg.html" (dict "svg" "quotes" "color" "fill-mid-gray") }}</div>
-    <span class="w-70 f4">{{ .quote }}</span>
-    <div class="w-20 bl b--mid-gray">
-      <img class="w-100 h-auto ma0 db" src='/images/{{ index $hash $img }}' />
+  <blockquote class="flex dib">
+    <div class="w-75 flex">
+      <div class="w-10">
+        <span class="w2 pa0 dib">{{ partial "icons/svg.html" (dict "svg" "quotes" "color" "fill-mid-gray") }}</span>
+      </div>
+      <span class="f4 w-90 dib lh-copy pr3 border-box">{{ .quote }}</span>
+    </div>
+    <div class="w-25 bl b--mid-gray">
+      <img class="h-auto ma0 center db" src='/images/{{ index $hash $img }}' />
     </div>
   </blockquote>
   {{ end }}

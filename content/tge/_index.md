@@ -2,16 +2,16 @@
 title: "The community-owned music network"
 layout: single
 paragraphs_1:
-  - paragraph: "<p><span class='ba'>For listeners</span> Resonate involves owning something of real value in a digital economy. It’s also about a shift away ‘passive’ consumption, towards a new mode of discovering and engaging.</p>"
-  - paragraph: "<p><span class='ba'>For artists</span> this means owning their work, and owning their networks. Resonate is about fairness and control; we allow creators to set the terms on which to distribute their art.</p>"
-  - paragraph: "<p><span class='ba'>For industry</span> we are rewiring terms of business, transforming an industry that’s currently based on exclusivity and inequity into one based on openness, transparency, and collaboration.</p>"
-  - paragraph: "<p><span class='ba'>For everyone</span> this is about co-owning a platform. We think that this one-member, one-vote system gives everyone a voice, and supports the community in a crucial way.</p>"
+  - paragraph: "<span class='ba'>For listeners</span> Resonate involves owning something of real value in a digital economy. It’s also about a shift away ‘passive’ consumption, towards a new mode of discovering and engaging."
+  - paragraph: "<span class='ba'>For artists</span> this means owning their work, and owning their networks. Resonate is about fairness and control; we allow creators to set the terms on which to distribute their art."
+  - paragraph: "<span class='ba'>For industry</span> we are rewiring terms of business, transforming an industry that’s currently based on exclusivity and inequity into one based on openness, transparency, and collaboration."
+  - paragraph: "<span class='ba'>For everyone</span> this is about co-owning a platform. We think that this one-member, one-vote system gives everyone a voice, and supports the community in a crucial way."
 paragraphs_2:
-  - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>STREAMING services wield too much power over discovery, and “big pool” methods of splitting royalties are unfair. Music has been turned into content, and fans into passive listeners.</p>"
-  - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>INEQUITIES have been exacerbated. Power has been consolidated not in the hands of creators, but in those of dominant tech companies and major labels.</p>"
-  - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>INEFFICIENCIES plague the music industry and often lead to slow, inaccurate royalty payouts.</p>"
-  - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>PRIVACY is sorely lacking; fans often need to surrender personal information to stay informed.</p>"
-  - paragraph: "<p><span class='f1 dib v-top' style='line-height: 2rem'>&bull;</span>CONTROL is needed by all. Artists should have a say in how their music is distributed, users should control their information.</p>"
+  - paragraph: "<span class='f1 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>STREAMING services wield too much power over discovery, and “big pool” methods of splitting royalties are unfair. Music has been turned into content, and fans into passive listeners."
+  - paragraph: "<span class='f1 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>INEQUITIES have been exacerbated. Power has been consolidated not in the hands of creators, but in those of dominant tech companies and major labels."
+  - paragraph: "<span class='f1 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>INEFFICIENCIES plague the music industry and often lead to slow, inaccurate royalty payouts."
+  - paragraph: "<span class='f1 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>PRIVACY is sorely lacking; fans often need to surrender personal information to stay informed."
+  - paragraph: "<span class='f1 dib v-top pl0' style='line-height: 0.9rem'>&bull;</span>CONTROL is needed by all. Artists should have a say in how their music is distributed, users should control their information."
 how:
   - icon: "ring"
     paragraph: "THE CO-OPERATIVE model fundamentally differentiates Resonate from other services. A one-member, one-share, one-vote system brings democracy to the platform, and gives all members a voice."
@@ -29,7 +29,7 @@ how:
     paragraph: "ETHICS come first. We’re considering the impact of everything that we do, from ensuring our operation is environmentally-friendly to making an effort to build an inclusive platform."
 ---
 
-Resonate’s long-term vision is to decentralize as many processes as possible. For this to happen, we need a utility token to transact events across all functions, and cover basic operating costs.
+<p class="f4 lh-title">Resonate’s long-term vision is to decentralize as many processes as possible. For this to happen, we need a utility token to transact events across all functions, and cover basic operating costs.</p>
 
 Our initial token will be an ERC-20 compliant token, trading on Ethereum’s mainnet. (After an infrastructural transition to RChain, the token will be converted.)
 
@@ -40,6 +40,6 @@ We care about access, so the token will eventually be made available to other us
 
 The Token Generation Event, as well as all future decisions regarding Resonate’s token system, will be managed by the co-op’s board.
 
-TOKEN ALLOCATION
+<p class="f4 lh-title">TOKEN ALLOCATION</p>
 
 Instead of having founders or early adopters percentages in our allocations, we are allocating tokens to organizations and platforms that share this aim. This way we can support the community, while incentivizing participation in the Resonate ecosystem.

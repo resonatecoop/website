@@ -1,10 +1,10 @@
-<div class="w-25">
+<div class="w-25 pt4">
   {{ if .context.name }}
   <div class="w-70 h-auto relative">
     <div class="absolute ba b-black w-90" style="left: 5%; top: 5%; padding-bottom:90%;"></div>
     <img class="w-100 h-auto ma0 db" src='/images/{{ index .hash .context.img }}' />
   </div>
-  {{ .context.name }}
-  {{ .context.title }}
+  <span class="f5 dib pa0 mt2 near-black ttu">{{ .context.name }}</span><br>
+  <span class="body2 dib w-70 pa0 lh-title dark-gray">{{ .context.title }}</span>
   {{ end }}
 </div>

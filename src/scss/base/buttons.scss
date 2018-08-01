@@ -73,6 +73,16 @@ a.btn-fat-reponsive {
   line-height: 32px;
 }
 
+.btn-sml {
+  height: 36px;
+  font-weight: 400;
+  padding: 0 $spacing-small;
+}
+
+a.btn-sml {
+  line-height: 36px;
+}
+
 @media screen and (min-width: 30em) {
   .btn-fat-reponsive {
     height: 66px;

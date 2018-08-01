@@ -5,10 +5,10 @@
 
 <div class="w-100 cf" style="margin-top: -150px; z-index: 0;">
   {{ partial "tge/halftone_img_tge" . }}
-  <img class="w-70 h-auto db fr relative z-9000" style="margin-top: -30%;" src="/images/{{ index .Site.Data.images.hash "tge/player-ui.jpg" }}" />
+  <img class="w-80 h-auto db fr relative z-9000" style="margin-top: -30%;" src="/images/{{ index .Site.Data.images.hash "tge/player-ui.jpg" }}" />
 </div>
 
-<!--<section class="w-100 pt2 pt4-l flex">
+<section class="w-100 pt2 pt4-l flex">
   {{ partial "components/nav-tge.html" . }}
 
   <main id="scroll-trigger" class="w-80 h-auto">
@@ -27,9 +27,10 @@
     {{ partial "sections/team" . }}
 
     {{ partial "tge/press" . }}
+
+    {{ partial "tge/whitepaper" . }}
+
+    {{ partial "tge/subfooter-tge" . }}
   </main>
 </section>
-
-{{ partial "tge/subfooter-tge" . }}-->
-
 {{end}}

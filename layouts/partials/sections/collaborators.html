@@ -1,10 +1,10 @@
 {{ $hash := .Site.Data.images.hash }}
 {{ $colabs := .Site.Data.sections.collaborators }}
-<article id="collaborators" tabindex="5">
+<article id="collaborators" tabindex="5" class="pb5">
   <h2 class="f2">Collaborators</h2>
-  <h4 class="f4">Resonate has a strong network of collaborators that extends across the independent music space and beyond.</h4>
+  <h4 class="f4 lh-title near-black">Resonate has a strong network of collaborators that extends across the independent music space and beyond.</h4>
 
-  <section class="flex">
+  <section class="flex mt5">
     {{ range $colabs.featured }}
     {{ $img := .img }}
     <div class="w-25">
@@ -12,20 +12,24 @@
         <img class="w-100 h-auto ma0 db" src="/images/{{ index $hash $img }}" />
       </div>
     </div>
-    <span class="dib w-75">
-      <h4 class="f4"><a href="{{ .link }}" target="_blank" class="link">{{ .name }}</a></h4>
-      <p>{{ .description }}</p>
+    <span class="dib w-75 pl0 pr3 border-box">
+      <h4 class="f4 lh-title ma0"><a href="{{ .link }}" target="_blank" class="near-black link">{{ .name }}</a>
+      <span class="w1 pr2 dib v-btm">{{ partial "icons/svg.html" (dict "svg" "linkarrow" "color" "fill-dark-gray") }}</span>
+      </h4>
+      <p class="near-black">{{ .description }}</p>
     </span>
     {{ end }}
   </section>
   <section class="flex flex-wrap justify-between">
     {{ range $colabs.collaborators }}
     {{ $img := .img }}
-    <div class="w-25">
+    <div class="w-25 mt4">
       <div class="w-80 h-auto ba b-black">
         <img class="w-100 h-auto ma0 db" src='/images/{{ index $hash $img }}' />
       </div>
-      {{ .name }}
+      <span class="f5 dib pa0 mt2"><a href="{{ .link }}" target="_blank" class="near-black link">{{ .name }}</a>
+        <span class="w1 pr2 dib v-btm">{{ partial "icons/svg.html" (dict "svg" "linkarrow" "color" "fill-dark-gray") }}</span>
+      </span>
     </div>
     {{ end }}
   </section>

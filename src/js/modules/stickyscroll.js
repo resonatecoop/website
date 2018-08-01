@@ -18,6 +18,7 @@ module.exports = function () {
         triggerHeight = $("#scroll-trigger").height()
         stickySidebarHeight = $("#sticky-sidebar").height()
         scrollHeight = triggerHeight - stickySidebarHeight
+        scrollOffset = stickySidebarHeight / 2
       }
       setHeights()
       window.onresize = function() {
@@ -28,7 +29,8 @@ module.exports = function () {
       }
       new ScrollMagic.Scene({
           triggerElement: '#scroll-trigger',
-      		duration: getHeights
+      		duration: getHeights,
+          offset: scrollOffset
       	})
       	.setPin("#sticky-sidebar")
         //.addIndicators()

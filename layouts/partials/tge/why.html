@@ -1,9 +1,13 @@
-<article id="why" tabindex="1">
-  <div class="white bg-black" style="width: 125%; margin-left: -25%; padding-left: 25%;">
-    <h3 class="f1">Why</h3>
-    <p>The music industry desperately needs to be reconfigured. As our networked world develops, the way people listen to music has changed drastically, resulting in an unsustainable model that can't support the industry ecosystem long-term.</p>
+<article id="why" tabindex="1" class="pt4">
+  <div class="white bg-black pt2 pr3 pb3 mv4" style="width: 125%; margin-left: -25%; padding-left: 25%;">
+    <h3 class="f2">Why</h3>
+    <p class="f4 lh-copy">The music industry desperately needs to be reconfigured. As our networked world develops, the way people listen to music has changed drastically, resulting in an unsustainable model that can't support the industry ecosystem long-term.</p>
   </div>
-{{ range .Params.paragraphs_2 }}
-   {{ partial "components/paragraph.html" . }}
-{{ end }}
+  <span class="f4 pr5-l dib">
+  {{ range .Params.paragraphs_2 }}
+    <span class="paragraphs dib">
+     {{ partial "components/paragraph.html" . }}
+   </span>
+  {{ end }}
+  </span>
 </article>
