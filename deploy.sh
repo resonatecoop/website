@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+set -o xtrace
 
 ROOTDIR="/var/www/coop/resonate/root/"
 PUBLICDIR="public/"
