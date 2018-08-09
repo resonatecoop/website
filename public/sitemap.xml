@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://resonate.coop/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/editorial/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/manifesto/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/press/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/team/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/pricing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/coop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://resonate.coop/tge/</loc>
+  </url>
+  
+</urlset>
