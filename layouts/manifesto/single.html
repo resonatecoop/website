@@ -9,13 +9,15 @@
     </div>
 
     <div class="manifesto">
-      <!-- custom/mainfesto/paragraph missing from repo -->
+      {{ range .Params.paragraphs }}
+         {{ partial "manifesto/paragraph" . }}
+      {{ end }}
     </div>
 
   </div>
 </div>
 
-<!-- custom/manifesto/halftone_img_horz missing from repo -->
+{{ partial "manifesto/halftone_img_horz" . }}
 <div class="mani-outro pa5 fl white">
   <div class="cta w-75 mt4">
     <h2 class="f3">
