@@ -19,5 +19,7 @@
 <g fill="none" fill-rule="nonzero"><rect fill="#18191A" width="20" height="20" rx="10"/><rect fill="#18191A" x="40" width="20" height="20" rx="10"/><rect fill="#BDBDBD" x="80" width="20" height="20" rx="10"/><rect fill="#18191A" y="40" width="20" height="20" rx="10"/><rect fill="#18191A" x="40" y="40" width="20" height="20" rx="10"/><rect fill="#18191A" x="80" y="40" width="20" height="20" rx="10"/><rect fill="#18191A" y="80" width="20" height="20" rx="10"/><rect fill="#18191A" x="40" y="80" width="20" height="20" rx="10"/><rect fill="#18191A" x="80" y="80" width="20" height="20" rx="10"/></g>
 {{ else if eq .stream2own "nine" }}
 <g fill="#18191A" fill-rule="nonzero"><rect width="20" height="20" rx="10"/><rect x="40" width="20" height="20" rx="10"/><rect x="80" width="20" height="20" rx="10"/><rect y="40" width="20" height="20" rx="10"/><rect x="40" y="40" width="20" height="20" rx="10"/><rect x="80" y="40" width="20" height="20" rx="10"/><rect y="80" width="20" height="20" rx="10"/><rect x="40" y="80" width="20" height="20" rx="10"/><rect x="80" y="80" width="20" height="20" rx="10"/></g>
+{{ else if eq .stream2own "download" }}
+<g {{ if .fill }}fill="{{ .fill }}"{{ else }}fill="#18191A"{{ end }} fill-rule="nonzero"><path d="M89 80a10 10 0 0 1 10 10 10 10 0 0 1-10 10H10A10 10 0 0 1 0 90a10 10 0 0 1 10-10h79zM96.3 17a10 10 0 0 0 2.7-7A10 10 0 0 0 89 0H10a10 10 0 0 0-7 17l39.2 39.8.6.5v.2a10 10 0 0 0 6.7 2.5c2.8 0 5.2-1 7-3L96 17.2h.2v-.2z"/></g>
 {{ end }}
 </svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rewiring the music industry on Resonate</title>
+    <link>http://resonate.coop/about/</link>
+    <description>Recent content in Rewiring the music industry on Resonate</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://resonate.coop/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
