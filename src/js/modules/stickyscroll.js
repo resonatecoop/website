@@ -6,11 +6,16 @@ module.exports = function () {
     new ScrollMagic.Scene({
         triggerElement: '#site-wrap',
     		triggerHook: 0,
-        offset: 600
+        offset: 100,
+        duration: 600
     	})
-      .setClassToggle("#sticky-nav", "visible")
+      .setClassToggle("#sticky-nav", "hidden")
       //.addIndicators()
     	.addTo(controller);
+
+
+
+
 
     // sticky sidebar
     if ($('#scroll-trigger').length > 0) {

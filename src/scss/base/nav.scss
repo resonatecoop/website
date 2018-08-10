@@ -1,5 +1,5 @@
 #sticky-nav {
-  visibility: hidden;
+  visibility: visible;
   position: sticky;
   top: -1px;
   right: 0;
@@ -8,8 +8,8 @@
   transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-#sticky-nav.visible {
-  visibility: visible;
+#sticky-nav.hidden {
+  visibility: hidden;
   opacity: 1;
 }
 

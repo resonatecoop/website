@@ -3,6 +3,9 @@ npm-debug.log*
 
 public/
 static/
+data/css/hash.json
+data/js/hash.json
+data/images/hash.json
 
 # Compiled source #
 ###################

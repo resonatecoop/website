@@ -6,19 +6,5 @@
   </a>
 
   <div class="flex flex-auto justify-center items-center"></div>
-  <nav class="w-60">
-    <ul class="w-100 list ma0 pa0 flex flex-end justify-between tr">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-      <li class="w-30 pv3 tr">
-        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn dib-l" title="{{ .Name }}">{{ .Name }}</a>
-        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn-l dib body2" title="{{ .Name }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-      <li class="w-30 pv3 tr">
-        <a href="/" class="no-underline ph0 ttc dn dib-l" title="Join Us">Join Us</a>
-        <a href="/" class="no-underline ph0 ttc dn-l dib body2" title="Join Us">Join Us</a>
-      </li>
-    </ul>
-  </nav>
+  {{ partial "components/nav" . }}
 </header>
