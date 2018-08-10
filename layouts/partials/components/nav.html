@@ -18,9 +18,7 @@
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
       <li class="w-30 pv3 tr">
-        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn dib-l" title="{{ .Name }}">{{ .Name }}</a>
-        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc dn-l dib body2" title="{{ .Name }}">{{ .Name }}</a>
-      </li>
+        <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline ph0 ttc body2 body-l lh-copy" title="{{ .Name }}">{{ .Name }}</a>
       {{ end }}
       <li class="w-30 pv3 tr">
         <a href="/" class="no-underline ph0 ttc dn dib-l" title="Join Us">Join Us</a>

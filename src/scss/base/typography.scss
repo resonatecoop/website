@@ -19,7 +19,7 @@ body {
 
 .f1 {
   letter-spacing: -5px;
-  //line-height: 6.200rem;
+  line-height: 6.200rem;
 }
 
 .f2 {
@@ -29,15 +29,13 @@ body {
 
 
 .f3 {
-  font-family: 'Graphik', sans-serif;
   letter-spacing: -2px;
   //line-height: 2.933rem;
 }
 
 .f4 {
-  font-family: 'Graphik', sans-serif;
   letter-spacing: -1px;
-  //line-height: 2.2rem;
+  line-height: 2.2rem;
 }
 
 .f5 {
@@ -57,6 +55,39 @@ body {
   font-size: 4.200em;
   line-height: 4.067rem;
   letter-spacing: -2px;
+}
+
+@media #{$breakpoint-not-small}{
+  .body-ns {
+    font-size: 1rem;
+    line-height: 1.467rem;
+  }
+
+  .body2-ns {
+    font-size: 0.8rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .body-m {
+    font-size: 1rem;
+    line-height: 1.467rem;
+  }
+
+  .body2-m {
+    font-size: 0.8rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .body-l {
+    font-size: 1rem;
+    line-height: 1.467rem;
+  }
+
+  .body2-l {
+    font-size: 0.8rem;
+  }
 }
 
 span {
