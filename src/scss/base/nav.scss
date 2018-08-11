@@ -3,17 +3,28 @@
   position: sticky;
   top: -1px;
   right: 0;
-  left: 0;
-  opacity: 0;
-  transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 #sticky-nav.hidden {
-  visibility: hidden;
-  opacity: 1;
+  top: -100px;
 }
 
 #sticky-nav li {
   padding-top: .533rem;
   padding-bottom: .533rem;
+}
+
+#nav-logo {
+  width: 58px;
+  height: 58px;
+}
+
+#nav-logo.scrolled {
+  width: 28px;
+  height: 28px;
+}
+
+#nav-logo.scrolled + span {
+  display: none;
 }
