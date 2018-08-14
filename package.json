@@ -24,6 +24,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "@resonate/resonate-tachyons": "^1.0.0"
+    "@resonate/resonate-tachyons": "^1.0.0",
+    "countdown": "^2.6.0"
   }
 }

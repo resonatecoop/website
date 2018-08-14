@@ -4,6 +4,14 @@ article:focus {
   outline: 0;
 }
 
+//monospace
+.monospace .char {
+    display: inline-block;
+    width: .63em;
+    text-align: center;
+    padding: 0;
+}
+
 // Home page
 .f2-home {
   font-size: $font-size-2;
