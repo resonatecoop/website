@@ -2,16 +2,18 @@
 <section class="w-100 ph1 ph3-ns">
   {{ partial "components/titleblock.html" . }}
 </section>
+
 <section class="w-100 ph1 ph3-ns mb5 flex">
   <span class="w-60 pr3 border-box">{{ .Content }}</span>
   <div class="w-40 pv3 ph5 border-box">{{ partial "icons/stream2own.html" (dict "stream2own" "two") }}</div>
 </section>
+
 <section class="pt3">
   <span class="f4 lh-title ph1 ph3-ns pb4 dib">How much does each play cost?</span>
   {{ range .Params.pricerows }}
-  <div class="w-100 overflow-hidden flex items-center justify-between mb4 relative">
-    <div class="ph1 ph3-ns">
-      <div class="w2 dib v-mid">
+  <div class="w-100 overflow-hidden flex items-center justify-between mb4">
+    <div class="ph1 ph3-ns flex items-center">
+      <div class="w2 flex items-center">
       {{ if .stream2own }}
       {{ partial "icons/stream2own.html" . }}
       {{ end }}
@@ -20,7 +22,9 @@
         {{ .playcount | safeHTML }}
       </span>
     </div>
+
     <div class="pricing-lines flex-grow-1"></div>
+
     <div class="pricing-dots relative">
       {{ if .paragraph }}
       <div class="absolute flex ph4 border-box" style="top:40%; right: 346px;">
@@ -28,7 +32,7 @@
         <div class="white ph4 border-box">{{ .paragraph | safeHTML }}</div>
       </div>
       {{ end }}
-      <div class="center" style="width: {{ .width }}%">
+      <div class="center flex items-center" style="width: {{ .width }}%">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-100"  viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle fill="#18191A" cx="50" cy="50" r="50" fill-rule="evenodd"/></svg>
       </div>
     </div>

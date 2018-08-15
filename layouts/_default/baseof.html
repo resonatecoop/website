@@ -1,9 +1,5 @@
 {{ partial "head.html" . }}
 <body>
-  {{ if eq .Section "tge"}}
-  {{ else }}
-  {{ partial "tge/tge-banner" . }}
-  {{ end }}
   <section id="site-wrap">
     {{ partial "components/navbar" . }}
     {{ block "main" . -}}
