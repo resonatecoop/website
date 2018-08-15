@@ -58,6 +58,8 @@ article:focus {
 // pricing
 .pricing-dots {
   width: 1026px;
+  max-height: 400px;
+  overflow: visible;
   margin-right: -346px;
 }
 

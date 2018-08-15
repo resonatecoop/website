@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@resonate/resonate-tachyons": "^1.0.0",
-    "countdown": "^2.6.0"
+    "countdown": "^2.6.0",
+    "sine-waves": "^0.3.0"
   }
 }

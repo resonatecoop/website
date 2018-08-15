@@ -3,6 +3,7 @@ var tge = require('./modules/tge')
 var manifesto = require('./modules/manifesto')
 var stickyscroll = require('./modules/stickyscroll')
 var smoothscroll = require('./modules/smoothscroll')
+var waves = require('./modules/waves')
 var countdown = require('countdown')
 
 if ($('.ht-img-horz').length > 0) {
@@ -13,11 +14,11 @@ if ($('.ht-img-tge').length > 0) {
   halftone()
   tge()
 }
+
 stickyscroll()
 smoothscroll()
 
-
-var endDate = new Date('November 17, 2018 03:24:00');
+/*var endDate = new Date('November 17, 2018 03:24:00');
 
 var timerId =
   countdown(
@@ -67,4 +68,4 @@ var timerId =
       wrap_letters(document.querySelectorAll('.monospace')[2])
       wrap_letters(document.querySelectorAll('.monospace')[3])
     },
-    countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+    countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);*/

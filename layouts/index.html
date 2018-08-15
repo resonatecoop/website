@@ -1,7 +1,9 @@
 {{ define "main" }}
-<section class="w-100 ph1 ph3-ns">
+<section class="w-100">
   {{ partial "components/titleblock" . }}
+</section>
 
+<section class="w-100 ph1 ph3-ns">
   {{ $release := .Site.Data.featured.release }}
   {{ $hash := .Site.Data.images.hash }}
   {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
