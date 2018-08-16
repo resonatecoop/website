@@ -56,11 +56,34 @@ article:focus {
 }
 
 // pricing
+
 .pricing-dots {
-  width: 1026px;
-  max-height: 400px;
-  overflow: visible;
-  margin-right: -346px;
+  box-sizing: content-box;
+  width: 100%;
+  padding-left: 40%;
+  margin-right: 0;
+}
+
+.pricing-paragraph {
+  color: $black;
+  position: relative;
+  margin-left: -40%;
+}
+
+@media screen and (min-width: 60em) {
+  .pricing-dots {
+    width: 1026px;
+    padding-left: 0;
+    margin-right: -346px;
+  }
+
+  .pricing-paragraph {
+    color: $white;
+    position: absolute;
+    top:40%;
+    right: 346px;
+    margin-left: 0;
+  }
 }
 
 .pricing-lines {

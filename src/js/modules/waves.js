@@ -16,7 +16,7 @@ if ($('#waves').length > 0) {
       return $("#waves-wrapper").height();
     },
 
-    ease: 'SineIn',
+    ease: 'SineInOut',
 
     wavesWidth: '90%',
 
