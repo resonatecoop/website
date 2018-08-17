@@ -1,19 +1,7 @@
-{{ if .link_title }}
 <div class="pb2">
-  <p class="pa0 mt4 mb2">
+  <p class="pa0 mt2 mt4-ns mb2">
     {{ .link_title | safeHTML  }}
   </p>
-  <span class="w1 pr2 dib v-btm">{{ partial "icons/svg.html" (dict "svg" "linkarrow" "color" "fill-dark-gray") }}</span>
-  <a href='{{ .href }}' class='f5 link bb pv1 black dark-gray hover-bg-light-gray'>{{ .link_text | safeHTML  }}</a>
+  <span class="w1 pr2 v-btm dn dib-ns">{{ partial "icons/svg.html" (dict "svg" "linkarrow" "color" "fill-dark-gray") }}</span>
+  <a href='{{ .href }}' class='link bb pv1 black dark-gray hover-bg-light-gray'>{{ .link_text | safeHTML  }}</a>
 </div>
-{{ end }}
-
-{{ if .link_title_2 }}
-<div class="pb2">
-  <p class="pa0 mt4 mb2">
-    {{ .link_title_2 | safeHTML  }}
-  </p>
-  <span class="w1 pr2 dib v-btm">{{ partial "icons/svg.html" (dict "svg" "linkarrow" "color" "fill-dark-gray") }}</span>
-  <a href='{{ .href_2 }}' class='f5 link bb pv1 black dark-gray hover-bg-light-gray'>{{ .link_text_2 | safeHTML  }}</a>
-</div>
-{{ end }}

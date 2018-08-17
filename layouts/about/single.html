@@ -2,8 +2,8 @@
 <section class="w-100 ph1 ph3-ns pt2 pt6-l">
   {{ partial "components/titleblock.html" . }}
   <p class="w-60-l f5 f4-ns lh-title mt1">Resonate gives everyone the chance to own something real in the digital age.</p>
-  
-  <section class="f4 pt3 pt5-l mb4 mb5-l ">
+
+  <section class="f5 f4-ns lh-copy pt3 pt5-l mb4 mb5-l ">
     {{ $hash := .Site.Data.images.hash }}
     {{ range .Params.paragraphs }}
     <div class="paragraphs w-100 flex flex-column flex-row-l pr5-l">
@@ -17,7 +17,11 @@
         </div>
         <div class="w-100 w-80-l">
        {{ partial "components/paragraph" . }}
+       {{ if .links }}
+       {{ range .links }}
        {{ partial "components/link" . }}
+       {{ end }}
+       {{ end }}
        </div>
      </div>
      {{ end }}

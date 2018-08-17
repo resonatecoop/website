@@ -1,3 +1,14 @@
+@import 'tachyons/variables';
+
+//nav
+nav > ul > li > a {
+  color: rgba(24,25,26,.5);
+}
+nav > ul > li > a.active {
+  color: $black;
+  font-weight: 600;
+}
+
 #sticky-nav {
   visibility: visible;
   position: sticky;
