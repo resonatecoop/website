@@ -3,7 +3,6 @@ var tge = require('./modules/tge')
 var manifesto = require('./modules/manifesto')
 var stickyscroll = require('./modules/stickyscroll')
 var smoothscroll = require('./modules/smoothscroll')
-var waves = require('./modules/waves')
 var countdown = require('countdown')
 
 if ($('.ht-img-horz').length > 0) {
