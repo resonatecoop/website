@@ -1,7 +1,6 @@
 {{ $hash := .Site.Data.images.hash }}
 {{ $press := .Site.Data.sections.press }}
 <article id="press" tabindex="6" class="mb5">
-  <h3 class="f2">Press</h3>
   {{ range $press.tge_press }}
   {{ $img := .img }}
   <blockquote class="flex dib">
@@ -11,9 +10,9 @@
       </div>
       <span class="f4 w-90 dib lh-copy pr3 border-box">{{ .quote }}</span>
     </div>
-    <div class="w-25 bl b--mid-gray">
+    <a href="{{ .link }}" target="_blank" class="w-25 dib bl b--mid-gray">
       <img class="h-auto ma0 center db" src='/images/{{ index $hash $img }}' />
-    </div>
+    </a>
   </blockquote>
   {{ end }}
 </article>

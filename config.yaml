@@ -17,7 +17,7 @@ menu:
   - identifier: manifesto
     name: Manifesto
     title: Resonate Manifesto
-    url: /manifesto/
+    url:
     weight: -107
   - identifier: about
     name: About

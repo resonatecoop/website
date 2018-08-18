@@ -28,7 +28,7 @@
   {{ $hash := .Site.Data.images.hash }}
   {{ range $press.presslogos }}
     {{ $img := .image }}
-    <a class="flex item-center w-50 w-20-ns tc bt br b--mid-gray dib relative overflow-hidden logoimage-wrapper" href="{{ .link }}" alt="{{ .title }}">
+    <a class="flex item-center w-50 w-20-ns tc bt br b--mid-gray dib relative overflow-hidden logoimage-wrapper" href="{{ .link }}" target="_blank" alt="{{ .title }}">
       <img class="ma0 pa0 db absolute logoimage" src='/images/{{ index $hash $img }}' />
     </a>
   {{ end }}
