@@ -19,7 +19,7 @@
     <div class="ph1 ph3-ns flex items-center">
       <div class="w2 flex items-center">
       {{ if .stream2own }}
-      {{ partial "icons/stream2own.html" . }}
+      {{ partial "icons/stream2own" . }}
       {{ end }}
       </div>
       <span class="v-mid pl3">
@@ -31,11 +31,11 @@
 
     <div class="pricing-dots relative overflow-hidden z-5">
       <div class="center flex items-center" style="width: {{ .width }}%">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-100"  viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle fill="#18191A" cx="50" cy="50" r="50" fill-rule="evenodd"/></svg>
+        {{ partial "icons/svg.html" (dict "svg" "bubble" "color" "black") }}
       </div>
       {{ if .paragraph }}
       <div class="pricing-paragraph w-100 w-auto-ns flex flex-row ph4-l border-box z-999">
-        <div class="w4 pt3 dn db-l">{{ partial "icons/stream2own.html" ( dict "stream2own" "download" "fill" "#FFF") }}</div>
+        <div class="w4 pt3 dn db-l">{{ partial "icons/stream2own" ( dict "stream2own" "download" "fill" "#FFF") }}</div>
         <div class="ph4 border-box">{{ .paragraph | safeHTML }}</div>
       </div>
       {{ end }}

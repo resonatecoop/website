@@ -1,6 +1,29 @@
 {{ define "main" }}
-<section class="w-100 ph1 ph3-ns">
+<section class="w-100 ph1 ph6-ns pt2 pt5-l">
   {{ partial "components/titleblock" . }}
-  {{ .Content }}
+  <section class="w-100 w-70-l pb5-l">
+  {{ $hash := .Site.Data.images.hash }}
+  {{ range .Params.sections }}
+    {{ if .title }}
+    <h4 class="f4">{{ .title }}</h4>
+    {{ end }}
+    {{ range .paragraphs }}
+      <p>{{ .paragraph | safeHTML }}</p>
+      {{ if .graphic }}
+      {{ $graphic := .graphic }}
+      <img class="w-100 h-auto mh0 mv3 db" src='/images/{{ index $hash $graphic }}' />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  <hr class="bn bg-black mv5" style="height: 1px;">
+  <h4 class="f4">Streaming is just the start.<br>Sign up for our mailing list.</h4>
+  <form>
+      <input class="g2 gray" type="text" placeholder="Email" />
+      <br />
+      <button class="btn g1 mt1 btn" type="submit" />
+        Subscribe
+      </button>
+  </form>
+  </section>
 </section>
 {{end}}

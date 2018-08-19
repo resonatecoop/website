@@ -8,7 +8,7 @@ paragraphs:
     links:
       - link_title: "Pay for what you play"
         link_text: "Learn more about pricing"
-        href: ""
+        href: "/pricing"
   - icon: "ring"
     paragraph: "<span class='ba'>For artists</span> this means owning their work, and owning their networks. Resonate is about fairness and control; we allow creators to set the terms on which to distribute their art."
     links:
@@ -29,6 +29,6 @@ paragraphs:
     links:
       - link_title: "The Resonate co-op"
         link_text: "Find out why co-ownership is important"
-        href: ""
+        href: "/coop"
   - paragraph: "We’re building a fairer future for music.<br><br>Join Us"
 ---
