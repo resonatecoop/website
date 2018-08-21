@@ -1,6 +1,6 @@
 ---
-title: "Pay as you play. No Monthly fees. Own and download music."
-subhead: "Pay as you play<br>No Monthly fees<br>Own and download music"
+title: "Pay as you play. No monthly fees. Own and download music."
+subhead: "Pay as you play<br>No monthly fees<br>Own and download music"
 layout: single
 pricerows:
   - playcount: "<strong>1st play</strong> $0.002"

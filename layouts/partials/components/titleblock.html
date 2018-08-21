@@ -4,7 +4,7 @@
   <div class="w-100 pt3-l">
     <span class="f4 pa0 w-100 dn-l">{{ .Params.subhead }}</span>
     <span class="w-100 w-auto-l dib pa0">
-      <a href="/tge" class="btn btn-fat btn-fat-reponsive mt1 ttu"/>
+      <a href="" class="btn btn-fat btn-fat-reponsive mt1 ttu"/>
         Join Now
       </a>
     </span>
@@ -38,10 +38,16 @@
   </div>
 </div>
 
-{{ else if eq .Section "coop"}}
+{{ else if eq .Section "coop" }}
 <h1 class="f3 f1-ns lh-title lh-solid-ns mb1 mb3-l">{{ .Title | safeHTML }}</h1>
 {{ if .Params.subhead}}
 <p class="mw7 f5 f4-ns lh-title mt1">{{ .Params.subhead | safeHTML }}</p>
+{{ end }}
+
+{{ else if eq .Section "team" }}
+<h1 class="f3 f2-ns lh-title lh-solid-ns mb1 mb3-l">{{ .Title | safeHTML }}</h1>
+{{ if .Params.subhead}}
+<p class="f5 f4-ns lh-title mt1">{{ .Params.subhead | safeHTML }}</p>
 {{ end }}
 
 {{ else }}

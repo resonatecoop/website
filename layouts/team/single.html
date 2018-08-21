@@ -1,1 +1,18 @@
-
+{{ define "main" }}
+<section class="ph1 ph3-ns pt2 pt6-l">
+  {{ $hash := .Site.Data.images.hash }}
+  {{ $img := .Params.img }}
+  <section class="flex flex-column flex-row-l">
+    <div class="w-100 w-50-m w-25-l mr4 relative">
+      <div class="absolute ba b--black w-90" style="left: 5%; top: 5%; padding-bottom:88%;"></div>
+      <img class="w-100 h-auto ma0 db" src='/images/{{ index $hash $img }}' />
+    </div>
+    <div>
+    {{ partial "components/titleblock" . }}
+    </div>
+  </section>
+  <section class="w-50-l pt3 pb5">
+    {{ .Content }}
+  </section>
+</section>
+{{end}}
