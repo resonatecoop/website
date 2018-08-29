@@ -1,13 +1,14 @@
 // All tachyon files are here so we can extend styles
-@import "base/tachyons.scss";
+@import "base/tachyons";
 
-@import "base/colors.scss";
-@import "base/fontface.scss";
-@import "base/typography.scss";
-@import "base/forms.scss";
-@import "base/buttons.scss";
-@import "base/grid.scss";
-@import "base/nav.scss";
+@import "base/colors";
+@import "base/fontface";
+@import "base/typography";
+@import "base/forms";
+@import "base/buttons";
+@import "base/grid";
+@import "base/nav";
+@import "base/icons";
 
-@import "custom/marketing.scss";
-@import "custom/manifesto.scss";
+@import "custom/marketing";
+@import "custom/manifesto";

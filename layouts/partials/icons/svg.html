@@ -1,4 +1,4 @@
-<svg mlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="{{ .color }}">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="w-100 {{ .color }}">
 {{ if eq .svg "logo" }}
 <g fill-rule="evenodd"><path d="M100 50c0-12.9-5.4-24.6-14.2-33L68 34.3a21.7 21.7 0 0 1 0 31.4L85.8 83A45.7 45.7 0 0 0 100 50zM25.2 50c0-6.1 2.6-11.7 6.8-15.7L14.2 17a45.8 45.8 0 0 0 0 66L32 65.7c-4.2-4-6.8-9.6-6.8-15.7z"/></g>
 {{ else if eq .svg "logotype"}}
@@ -6,7 +6,7 @@
 {{ else if eq .svg "token" }}
 <path fill-rule="evenodd" d="M24.7 29.9V10h24.1c4 0 7.4.7 10.4 2a23 23 0 0 1 12.3 13A26.6 26.6 0 0 1 67 51a23.8 23.8 0 0 1-17 7.6L24.8 29.9zm33.4 37.5l.7-.1A34 34 0 0 0 84 34a34.9 34.9 0 0 0-9.4-23.9A32.5 32.5 0 0 0 50 0H14v100h10.9V44.9L73.3 100H87L58.1 67.4z"/>
 {{ else if eq .svg "stream2own" }}
-<g fill-rule="nonzero"><rect width="20" height="20" rx="10"/><rect x="40" width="20" height="20" rx="10"/><rect x="80" width="20" height="20" rx="10"/><rect y="40" width="20" height="20" rx="10"/><rect x="40" y="40" width="20" height="20" rx="10"/><rect x="80" y="40" width="20" height="20" rx="10"/><rect y="80" width="20" height="20" rx="10"/><rect x="40" y="80" width="20" height="20" rx="10"/><rect x="80" y="80" width="20" height="20" rx="10"/></g>
+<g fill-rule="nonzero"><rect rx="10"/><rect x="40" width="20" height="20" rx="10"/><rect x="80" width="20" height="20" rx="10"/><rect y="40" width="20" height="20" rx="10"/><rect x="40" y="40" width="20" height="20" rx="10"/><rect x="80" y="40" width="20" height="20" rx="10"/><rect y="80" width="20" height="20" rx="10"/><rect x="40" y="80" width="20" height="20" rx="10"/><rect x="80" y="80" width="20" height="20" rx="10"/></g>
 {{ else if eq .svg "quotes" }}
 <path fill-rule="nonzero" d="M39.6 96V52H21.3c0-6.7 1-12.6 3.6-17.4 3-4.8 7.4-8.5 14.7-11.1V5a44.6 44.6 0 0 0-37 30.3A54 54 0 0 0 0 52.7v43h39.6v.3zM99 96V52H80.7c0-6.7 1-12.6 3.6-17.4C87 29.8 91.7 26 99 23.5V5a44.6 44.6 0 0 0-28.6 15.5 45.5 45.5 0 0 0-11 31.8v43h39.2l.4.7z"/>
 {{ else if eq .svg "ring"}}
