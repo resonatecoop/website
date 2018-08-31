@@ -1,9 +1,8 @@
 var halftone = require('./lib/halftone')
 var tge = require('./modules/tge')
 var manifesto = require('./modules/manifesto')
-var stickyscroll = require('./modules/stickyscroll')
-var smoothscroll = require('./modules/smoothscroll')
-var countdown = require('countdown')
+//var stickyscroll = require('./modules/stickyscroll')
+//var smoothscroll = require('./modules/smoothscroll')
 
 if ($('.ht-img-horz').length > 0) {
   halftone()
@@ -14,8 +13,8 @@ if ($('.ht-img-tge').length > 0) {
   tge()
 }
 
-stickyscroll()
-smoothscroll()
+//stickyscroll()
+//smoothscroll()
 
 /*var endDate = new Date('November 17, 2018 03:24:00');
 

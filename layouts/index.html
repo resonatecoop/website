@@ -8,15 +8,15 @@
   {{ $hash := .Site.Data.images.hash }}
   {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
 
-  <div class="w-100 pt3 pt5-l mb4 mb5-l cf">
-    <div id="scroll-trigger" class="f3 w-100 w-60-l fl">
+  <div class="w-100 pt3 pt5-l mb4 mb5-l flex">
+    <div id="scroll-trigger" class="f3 w-100 w-60-l">
       {{ range .Params.paragraphs }}
         <span class="paragraphs dib">
          {{ partial "components/paragraph" . }}
        </span>
       {{ end }}
     </div>
-    <aside class="w-40 h-100 dn db-l fl">
+    <aside class="w-40 dn db-l">
       {{ partial "components/sticky-sidebar" . }}
     </aside>
   </div>

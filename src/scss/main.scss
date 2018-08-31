@@ -1,9 +1,8 @@
-// All tachyon files are here so we can extend styles
-@import "base/tachyons";
-
+@import "../../node_modules/@resonate/resonate-tachyons/index";
+//@import "base/tachyons";
 @import "base/colors";
 @import "base/fontface";
-@import "base/typography";
+//@import "base/typography";
 @import "base/forms";
 @import "base/buttons";
 @import "base/grid";
@@ -11,4 +10,5 @@
 @import "base/icons";
 
 @import "custom/marketing";
+@import "custom/marketing-home";
 @import "custom/manifesto";

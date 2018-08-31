@@ -4,30 +4,9 @@ article:focus {
   outline: 0;
 }
 
-//monospace
-.monospace .char {
-    display: inline-block;
-    width: .63em;
-    text-align: center;
-    padding: 0;
-}
-
-// Home page
-.f2-home {
-  font-size: $font-size-2;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 6.200rem;
-  margin: 1.4rem 0 0rem 0;
-}
-
-@media screen and (min-width: 30em) {
-  .f2-home {
-    font-size: 11.13rem;
-    letter-spacing: -15px;
-    line-height: 11.13rem;
-    margin: 7.3rem 0 2.9rem 0;
-  }
+#sticky-sidebar {
+  position: sticky;
+  top: calc(50% - 192px);
 }
 
 // paragraphs
@@ -44,15 +23,6 @@ article:focus {
   .paragraphs {
     margin-bottom: 5.867rem;
   }
-}
-
-// Manifesto
-.mani-outro {
-  background: #000;
-}
-
-.mani-black .f-mani span {
-  border-color: #fff;
 }
 
 // pricing
