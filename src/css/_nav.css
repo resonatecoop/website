@@ -1,0 +1,39 @@
+//nav
+nav > ul > li > a {
+  color: rgba(24,25,26,.5);
+}
+nav > ul > li > a.active {
+  color: $black;
+  font-weight: 600;
+}
+
+#sticky-nav {
+  visibility: visible;
+  position: sticky;
+  top: -1px;
+  right: 0;
+  transition: top 0.2s ease-in-out;
+}
+
+#sticky-nav.hidden {
+  top: -100px;
+}
+
+#sticky-nav li {
+  padding-top: .533rem;
+  padding-bottom: .533rem;
+}
+
+#nav-logo {
+  width: 58px;
+  height: 58px;
+}
+
+#nav-logo.scrolled {
+  width: 28px;
+  height: 28px;
+}
+
+#nav-logo.scrolled + span {
+  display: none;
+}

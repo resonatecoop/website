@@ -1,0 +1,11 @@
+{{ partial "head.html" . }}
+<body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <section id="site-wrap">
+    {{ partial "components/navbar" . }}
+    {{ block "main" . -}}
+    {{- end }}
+  </section>
+  {{ partial "components/footer" . }}
+  <script type="text/javascript" src="/dist/js/{{ index .Site.Data.js.hash "main.js" }}"></script>
+  </body>
+<html>
