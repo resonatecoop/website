@@ -9,7 +9,7 @@ const postcss = require('gulp-postcss')
 const critical = require('critical').stream
 const logger = require('gulplog')
 const htmlmin = require('gulp-htmlmin')
-const run = require('gulp-run')
+// const run = require('gulp-run')
 
 function javascript () {
   const b = browserify({
@@ -68,17 +68,17 @@ function css () {
 }
 
 function minifyHtml () {
-  return gulp.src('../**/*.html')
+  return gulp.src('./public/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('./public'))
 }
 
 function inlineCritical () {
   const hash = require('./data/css/hash.json')
   return gulp
-    .src(['../index.html', '../articles/**/*.html', '../about/**/*.html'])
+    .src(['./public/index.html', './public/articles/**/*.html', './public/about/**/*.html'])
     .pipe(critical({
-      base: '../',
+      base: './public',
       inline: true,
       minify: true,
       dimensions: [
@@ -91,14 +91,10 @@ function inlineCritical () {
           width: 960
         }
       ],
-      css: [`../dist/css/${hash['main.css']}`]
+      css: [`./public/dist/css/${hash['main.css']}`]
     }))
     .on('error', (err) => logger.error(err.message))
-    .pipe(gulp.dest('../'))
-}
-
-function hugo () {
-  return run('npm run build').exec()
+    .pipe(gulp.dest('./public'))
 }
 
 gulp.task('javascript', javascript)
@@ -106,11 +102,10 @@ gulp.task('images', images)
 gulp.task('css', css)
 gulp.task('critical', inlineCritical)
 gulp.task('minify-html', minifyHtml)
-gulp.task('hugo', hugo)
 
 gulp.task('watch', () => {
   gulp.watch('./css/**/*', css)
   gulp.watch('./js/**/*', javascript)
 })
 
-gulp.task('default', gulp.series(gulp.parallel('javascript', 'css', 'images'), 'hugo', 'critical'))
+gulp.task('default', gulp.series(gulp.parallel('javascript', 'css', 'images')))

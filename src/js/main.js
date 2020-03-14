@@ -1,10 +1,7 @@
 import onIntersect from 'on-intersect'
 import inViewPort from './in-viewport'
 
-import './desamber'
-
 document.addEventListener('DOMContentLoaded', (event) => {
-  desamber()
   nav()
 })
 
@@ -20,13 +17,5 @@ function nav () {
     nav.style.backgroundColor = 'transparent'
   }, () => {
     nav.style.backgroundColor = '#000'
-  })
-}
-
-function desamber () {
-  const dates = document.querySelectorAll('time')
-
-  dates.forEach((elem, index) => {
-    elem.innerHTML = new Date(elem.dateTime).desamber().toString()
   })
 }

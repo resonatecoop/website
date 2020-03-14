@@ -1,0 +1,43 @@
+--- 
+services: 
+  website:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    networks:
+      - hugo-network
+    volumes:
+      - /var/www/website
+    restart: always
+    ports: 
+      - "1313:1313"
+    command: hugo server -s /var/www/website --config /var/www/website/config.toml --baseURL https://resonate.localhost/ --bind "0.0.0.0" --appendPort=false --verbose
+
+  webserver:
+    image: nginx:mainline-alpine
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - web-root:/var/www/html
+      - ./nginx-conf:/etc/nginx/conf.d
+    depends_on:
+      - website
+    networks:
+      - hugo-network
+
+networks:
+  hugo-network:
+    driver: bridge
+
+volumes:
+  web-root:
+    driver: local
+    driver_opts:
+      type: none
+      device: "${PWD}/public/"
+      o: bind
+
+version: "3.7"

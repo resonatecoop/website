@@ -1,5 +1,11 @@
 node_modules/
 npm-debug.log*
+dhparam/
+htpasswd/
+ssl_renew.sh
+nginx-conf/
+
+docker-compose-*
 
 public/
 static/
