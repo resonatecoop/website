@@ -2,9 +2,6 @@
   <ul id="sticky-sidebar" class="w-100 list ma0 pa0 flex flex-column">
     {{ $currentPage := . }}
     {{ range .Site.Menus.about }}
-    <li class="pv1">
-      <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "tge" . }}active{{ end }} link mid-gray no-underline ph0 ttu" title="{{ .Name }}">{{ .Name }}</a>
-    </li>
     {{ end }}
     <li>
       <a href="/" class="btn btn-sml ttu"/>
