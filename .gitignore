@@ -9,9 +9,9 @@ docker-compose-*
 
 public/
 static/
-data/css/hash.json
-data/js/hash.json
-data/images/hash.json
+src/data/css/hash.json
+src/data/js/hash.json
+src/data/images/hash.json
 
 # Compiled source #
 ###################
