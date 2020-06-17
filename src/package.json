@@ -9,8 +9,8 @@
   "keywords": [
     "hugo"
   ],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "license": "MIT",
+  "author": "Resonate Coop <members@resonate.is>",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@resonate/tachyons": "^1.3.2",
     "nanoanimation": "^2.1.0",
