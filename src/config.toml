@@ -92,51 +92,30 @@ pygmentsUseClasses = true
   url = "/contact/"
   weight = -100.0
 
-  [[menu.tge]]
+  [[menu.about]]
   identifier = "who"
   name = "who"
   title = "who"
   url = "#who"
   weight = -99.0
 
-  [[menu.tge]]
+  [[menu.about]]
   identifier = "why"
   name = "why"
   title = "why"
   url = "#why"
   weight = -98.0
 
-  [[menu.tge]]
+  [[menu.about]]
   identifier = "how"
   name = "how"
   title = "how"
   url = "#how"
   weight = -97.0
 
-  [[menu.tge]]
-  identifier = "token"
-  name = "token"
-  title = "token"
-  url = "#token"
-  weight = -96.0
-
-  [[menu.tge]]
+  [[menu.about]]
   identifier = "roadmap"
   name = "roadmap"
   title = "roadmap"
   url = "#roadmap"
   weight = -95.0
-
-  [[menu.tge]]
-  identifier = "collaborators"
-  name = "collaborators"
-  title = "collaborators"
-  url = "#collaborators"
-  weight = -94.0
-
-  [[menu.tge]]
-  identifier = "press"
-  name = "press"
-  title = "press"
-  url = "#press"
-  weight = -93.0
