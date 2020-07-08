@@ -119,3 +119,52 @@ pygmentsUseClasses = true
   title = "roadmap"
   url = "#roadmap"
   weight = -95.0
+
+  [[menu.growthcampaign]]
+  identifier = "who"
+  name = "who"
+  title = "who"
+  url = "#who"
+  weight = -99.0
+
+  [[menu.growthcampaign]]
+  identifier = "why"
+  name = "why"
+  title = "why"
+  url = "#why"
+  weight = -98.0
+
+  [[menu.growthcampaign]]
+  identifier = "how"
+  name = "how"
+  title = "how"
+  url = "#how"
+  weight = -97.0
+
+  [[menu.growthcampaign]]
+  identifier = "journey"
+  name = "journey"
+  title = "journey"
+  url = "#journey"
+  weight = -96.0
+
+  [[menu.growthcampaign]]
+  identifier = "roadmap"
+  name = "roadmap"
+  title = "roadmap"
+  url = "#roadmap"
+  weight = -95.0
+
+  [[menu.growthcampaign]]
+  identifier = "collaborators"
+  name = "collaborators"
+  title = "collaborators"
+  url = "#collaborators"
+  weight = -94.0
+
+  [[menu.growthcampaign]]
+  identifier = "press"
+  name = "press"
+  title = "press"
+  url = "#press"
+  weight = -93.0

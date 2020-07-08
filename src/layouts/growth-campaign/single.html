@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="w-100 ph1 ph3-ns pt2 pt4-l relative z-9090">
+  {{ partial "components/titleblock" . }}
+</section>
+
+<section class="w-100 pt2 pt4-l flex">
+  {{ partial "components/nav-growthcampaign.html" . }}
+
+  <main id="scroll-trigger" class="w-80 h-auto">
+    {{ partial "growth-campaign/who" . }}
+
+    {{ partial "growth-campaign/why" . }}
+
+    {{ partial "growth-campaign/how" . }}
+
+    {{ partial "growth-campaign/token" . }}
+
+    {{ partial "growth-campaign/roadmap" . }}
+
+    {{ partial "sections/press" . }}
+
+    {{ partial "growth-campaign/subfooter-tge" . }}
+  </main>
+</section>
+{{end}}

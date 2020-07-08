@@ -1,0 +1,13 @@
+<article id="why" tabindex="1" class="pt4 z-9999 relative">
+  <h3 class="f1">Why</h3>
+  <div class="w-100 flex flex-column flex-row-l bg-black white pv4 mb4 border-box">
+    <p class="f4 lh-copy">The music industry must change. The pandemic has shown more clearly that music-making cannot be sustained by a digital streaming model that does not pay fairly.  Artists everywhere are looking for an alternative that plays fair, treats their music as art, and builds a sense of community.</p>
+    </div>
+  <span class="f4 pr5-l dib">
+  {{ range .Params.paragraphs_2 }}
+    <span class="paragraphs dib">
+     {{ partial "components/paragraph.html" . }}
+   </span>
+  {{ end }}
+  </span>
+</article>
