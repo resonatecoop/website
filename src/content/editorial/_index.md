@@ -1,1 +1,4 @@
-This is the editorial section.
+---
+title: "Editorial"
+layout: single
+---

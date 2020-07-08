@@ -1,0 +1,11 @@
+<input class="dn" id="menu-switch" type="checkbox" />
+<nav class="fixed z-max bg-near-black white overflow-auto top-0 h-100 pt6 ph4" id="push-menu">
+  <ul class="w-100 list ma0 pa0 flex flex-column">
+    {{ $currentPage := . }}
+    {{ range after 2 .Site.Menus.main }}
+    <li class="w-100 pv2">
+      <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline pa1 ttc body2 body-l lh-copy" title="{{ .Name }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

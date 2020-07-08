@@ -1,5 +1,6 @@
 ---
 layout: single
+title: "Manifesto"
 paragraphs:
   - num: 1
     paragraph: "The music industry is broken. Power has become consolidated in the hands of a small number of technology companies and dominant major labels."

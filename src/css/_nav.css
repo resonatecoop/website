@@ -37,3 +37,51 @@ nav > ul > li > a.active {
 #nav-logo.scrolled + span {
   display: none;
 }
+
+#push-menu {
+  right: -300px;
+  width: 300px;
+  box-sizing: border-box;
+	transition: all .3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media screen and (min-width: 60em) {
+  #push-menu {
+    right: -33%;
+    width: 33%;
+  }
+}
+
+#menu-switch:checked ~ #push-menu {
+  right: 0;
+}
+
+.page-wrap {
+  box-sizing: border-box;
+	transition: all .3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#menu-switch:checked ~ body {
+  overflow: hidden;
+}  
+
+@media screen and (min-width: 60em) {
+  #menu-switch:checked ~ .page-wrap {
+    margin-right: 33%;
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+#menu-toggle:focus {
+  outline: none;
+}
+
+#menu-toggle {
+  cursor: pointer;
+  border: none;
+	transition: transform 0.3s cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#menu-switch:checked ~ .page-wrap #menu-toggle {
+  transform: rotate(45deg);
+}

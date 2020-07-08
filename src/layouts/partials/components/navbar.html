@@ -1,13 +1,16 @@
-<header id="sticky-nav" class="z-9999 flex w-100 ph3-ns overflow-hidden ph2 items-center">
+<header class="z-max flex w-100 ph3-ns overflow-hidden ph2 items-center">
   <a href="/" id="nav-logo" class="icon--lg dib no-underline pv1 border-box flex items-center">
-    {{ partial "icons/svg.html" (dict "svg" "logo" "color" "fill-black") }}
+    {{ partial "icons/svg.html" (dict "svg" "logo" "color" "fill-current-color") }}
   </a>
   {{ if eq .Section ""}}
   <span class="w4 dn border-box flex-ns items-center overflow-hidden pv1 pl2" style="height: 58px;">
-    {{ partial "icons/svg.html" (dict "svg" "logotype" "color" "fill-black") }}
+    {{ partial "icons/svg.html" (dict "svg" "logotype" "color" "fill-current-color") }}
   </span>
   {{ end }}
 
   <div class="flex flex-auto justify-center items-center"></div>
   {{ partial "components/nav" . }}
+  <label class="relative w2 h2 ml3 dib bn" for="menu-switch" id="menu-toggle">
+    {{ partial "icons/svg.html" (dict "svg" "toggle" "stroke" "currentcolor") }}
+  </label>
 </header>

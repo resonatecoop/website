@@ -1,1 +1,4 @@
-This is the contact section.
+---
+title: "Contact"
+layout: single
+---
