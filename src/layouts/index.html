@@ -4,9 +4,7 @@
 </section>
 
 <section class="w-100 ph1 ph3-ns">
-  {{ $release := .Site.Data.featured.release }}
-  {{ $hash := .Site.Data.images.hash }}
-  {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
+  {{ partial "components/player" }}
 
   <div class="w-100 pt3 pt5-l mb4 mb5-l flex">
     <div id="scroll-trigger" class="f3 w-100 w-60-l">
