@@ -1,0 +1,38 @@
+ {{ define "main" }}
+<section id="contact" class="w-100 ph1 ph6-ns pt2 pt5-l">
+  <form action="https://contact.apis.resonate.coop" method="POST">
+      <fieldset class="bn ma0 pa0">
+          <legend class="lh-title f3 fw4 mb3">Contact</legend>
+          <div class="mb5">
+              <div class="flex flex-column flex-column-reverse">
+                  <input
+                      value=""
+                      autocomplete="false"
+                      id="email"
+                      type="text"
+                      name="email"
+                      placeholder=""
+                      required="required"
+                      class="bg-black white bg-white--dark black--dark bg-black--light white--light placeholder--dark-gray input-reset w-100 bn pa3 valid"
+                  />
+                  <label for="email" class="f4 db mv2">
+                      <div class="flex items-center"><span>E-mail</span></div>
+                  </label>
+              </div>
+              <p class="lh-copy f5 red"></p>
+          </div>
+          <div class="mb5">
+              <div class="flex flex-column flex-column-reverse">
+                  <textarea name="message" maxlength="200" rows="4" placeholder="" required="required" text="undefined" class="w-100 db bn bg-black white pa2 ma0 ba bw1 valid"></textarea>
+
+                  <label for="message" class="f4 db mv2">
+                      <div class="flex items-center"><span>Message</span></div>
+                  </label>
+              </div>
+              <p class="lh-copy f5 red"></p>
+          </div>
+          <button type="submit" class="bg-white ba bw b--dark-gray f5 b pv3 ph5 grow flex-shrink-0 f5 grow">Send</button>
+      </fieldset>
+  </form>
+</section>
+{{end}}

@@ -6,6 +6,7 @@ import choo from 'nanochoo' // resonatecoop/nanochoo (fork of nanochoo with adde
 import html from 'nanohtml'
 import Player from '@resonate/player-component'
 import Track from '@resonate/track-component'
+import Contact from './components/contact'
 
 const imagePlaceholder = (w, h) => {
   return `data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'${w}' height%3D'${h}' viewBox%3D'0 0 ${w} ${h}'%2F%3E`
@@ -16,7 +17,35 @@ document.addEventListener('DOMContentLoaded', DOMContentLoaded)
 function DOMContentLoaded () {
   nav()
   tabbing()
+  contact('#contact')
   player('#player')
+}
+
+async function contact (selector) {
+  if (!document.querySelector(selector)) {
+    console.log(`${selector} element not found`)
+    return
+  }
+
+  const _state = {}
+
+  const app = choo()
+
+  app.use((state, emitter, app) => {
+    Object.assign(state, _state)
+  })
+
+  app.view((state, emit) => {
+    Object.assign(state, _state)
+
+    return html`
+      <section id="contact" class="w-100 ph1 ph6-ns pt2 pt5-l">
+        ${state.cache(Contact, 'contact-form').render()}
+      </section>
+    `
+  })
+
+  app.mount(selector)
 }
 
 /**
