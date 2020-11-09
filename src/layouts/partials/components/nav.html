@@ -1,13 +1,17 @@
-<nav class="w-70 flex items-center">
-  <ul class="w-100 list ma0 pa0 flex flex-end justify-between tr">
+<nav class="w-50 flex items-center">
+  <ul class="w-100 list ma0 pa0 flex flex-end justify-between items-center tr">
     {{ $currentPage := . }}
-    {{ range first 2 .Site.Menus.main }}
-    <li class="w-30 pv2 tr">
+    {{ range first 3 .Site.Menus.main }}
+    <li class="pv2 tc">
       <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline pa1 ttc body2 body-l lh-copy" title="{{ .Name }}">{{ .Name }}</a>
     </li>
     {{ end }}
-    <li class="w-30 pv2 tr">
-      <a href="https://id.resonate.coop" class="no-underline pa1 ttc body2 body-l lh-copy" title="Join us">Join Us</a>
+    
+    <li class="pv2 tr">
+    <div class="flex flex-auto justify-center items-center"></div>
+    <label class="relative w2 h2 ml3 dib bn" for="menu-switch" id="menu-toggle">
+      {{ partial "icons/svg.html" (dict "svg" "toggle" "stroke" "currentcolor") }}
+    </label>
     </li>
   </ul>
 </nav>
