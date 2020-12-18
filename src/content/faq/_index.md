@@ -1,9 +1,7 @@
 ---
-title: "FAQ"
-subhead: ""
 layout: single
-sections:
-  - paragraphs:
+title: "FAQ"
+---
       Q: How much does it cost exactly to stream a track on Resonate?
 
       A:
