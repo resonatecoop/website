@@ -24,18 +24,32 @@ pygmentsUseClasses = true
 
 [menu]
   [[menu.main]]
+  identifier = "listen"
+  name = "Listen"
+  title = "Player"
+  url = "https://beta.resonate.is/"
+  weight = -111.0
+
+  [[menu.main]]
   identifier = "about"
   name = "About"
   title = "About Resonate"
-  url = "/about/"
+  url = "https://resonate.is/about/"
   weight = -110.0
 
   [[menu.main]]
   identifier = "pricing"
   name = "Pricing"
   title = "Resonate Pricing"
-  url = "/pricing/"
+  url = "https://resonate.is/stream2own/"
   weight = -109.0
+
+  [[menu.main]]
+  identifier = "join"
+  name = "Join"
+  title = "Join Resonate"
+  url = "https://resonate.is/join/listener/"
+  weight = -108.0
 
   [[menu.footer1]]
   identifier = "manifesto"
