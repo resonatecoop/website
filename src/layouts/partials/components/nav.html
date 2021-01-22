@@ -6,12 +6,5 @@
       <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} no-underline pa1 ttc body2 body-l lh-copy" title="{{ .Name }}">{{ .Name }}</a>
     </li>
     {{ end }}
-
-    <li class="pv2 tr">
-    <div class="flex flex-auto justify-center items-center"></div>
-    <label class="relative w2 h2 ml3 dib bn" for="menu-switch" id="menu-toggle">
-      {{ partial "icons/svg.html" (dict "svg" "toggle" "stroke" "currentcolor") }}
-    </label>
-    </li>
   </ul>
 </nav>
