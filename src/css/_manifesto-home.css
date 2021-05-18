@@ -1,5 +1,7 @@
 // Home page
 .f2-home {
+  font-family: 'Graphik';
+  font-weight: 400;
   font-size: $font-size-2;
   font-weight: 400;
   letter-spacing: 0px;
@@ -9,6 +11,8 @@
 
 @media screen and (min-width: 30em) {
   .f2-home {
+    font-family: 'Graphik';
+    font-weight: 400;
     font-size: 11.13rem;
     letter-spacing: -15px;
     line-height: 11.13rem;
