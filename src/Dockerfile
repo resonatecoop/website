@@ -1,6 +1,10 @@
+ARG HUGO_VERSION 0.88.0
+ARG NODE_ENV development
+
 FROM node:12-alpine as builder
 
-ENV HUGO_VERSION 0.67.0
+ARG HUGO_VERSION
+ENV HUGO_VERSION $HUGO_VERSION
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 RUN set -x && \
@@ -21,6 +25,9 @@ ENV NODE_ENV=development
 RUN npm install
 
 RUN npm install -g gulp
+
+ARG NODE_ENV
+ENV NODE_ENV=$NODE_ENV
 
 RUN gulp
 
