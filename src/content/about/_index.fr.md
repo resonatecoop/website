@@ -1,6 +1,7 @@
 ---
-title: "Rewiring the music industry"
+title: "Faites partie de l’avenir de la musique"
 subhead: "Resonate is building a new music industry based on fairness, transparency and cooperation."
+subhead2: "Resonate gives everyone the chance to own something real in the digital age."
 layout: single
 paragraphs:
   - icon: "listeners"
