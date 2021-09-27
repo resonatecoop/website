@@ -29,7 +29,7 @@ gulp
 ### Server
 
 ```sh
-hugo server --config config.toml --baseURL http://localhost:1314 --port 1314
+hugo server --config config.yaml --baseURL http://localhost:1314 --port 1314
 ```
 
 ## Docker
@@ -45,6 +45,7 @@ docker-compose -f docker-compose-dev.yml up -d website
 - Jase <jase@jasecoop.com>
 - Alex Crane <alex@resonate.is>
 - Augustin Godiscal <auggod@resonate.is>
+- Timothée Goguely <timothee@goguely.com>
 
 ## See also
 
