@@ -1,21 +1,22 @@
-.mani-black,
-.mani-white {
-
+/* Play fair. */
+#manifesto-header h1 > strong {
+  display: block;
+  font-weight: normal;
+  color: var(--black);
+  font-size: 30vw;
+  line-height: 1;
+  letter-spacing: -.05em;
+  margin-left: -.066em;
 }
 
-.mani-white {
-  z-index: 1;
-  background: #fff;
+@media (min-width: 30rem) {
+  #manifesto-header h1 > strong {
+    font-size: 17.666vw;
+  }
 }
 
-.mani-black {
-  background: #000;
-}
-
-.mani-black .f-mani span {
-  border-color: #fff;
-}
-
-.mani-outro {
-  background: #000;
+@media (min-width: 60rem) {
+  #manifesto-header h1 > strong {
+    font-size: 10.395625rem; /* 166.333px */
+  }
 }

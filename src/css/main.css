@@ -1,4 +1,6 @@
 @import '@resonate/tachyons';
+@import '_variables';
+@import '_typography';
 @import '_fills';
 @import '_code';
 @import '_hugo-internal-templates';
@@ -9,8 +11,9 @@
 @import '_forms';
 @import '_buttons';
 @import '_grid';
+@import '_header';
+@import '_footer';
 @import '_nav';
 
 @import '_marketing';
-@import '_manifesto-home';
 @import '_manifesto';
