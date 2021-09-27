@@ -1,36 +1,76 @@
 {{ define "main" }}
-<section class="w-100">
-  {{ partial "components/titleblock" . }}
-</section>
 
-<section class="w-100 ph1 ph3-ns">
-  {{ $release := .Site.Data.featured.release }}
-  {{ $hash := .Site.Data.images.hash }}
-  {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
+{{ $hash := .Site.Data.images.hash }}
 
-  <div class="w-100 pt3 pt5-l mb4 mb5-l flex">
-    <div id="scroll-trigger" class="f3 w-100 w-60-l">
-      {{ range .Params.paragraphs }}
-        <span class="paragraphs dib">
-         {{ partial "components/paragraph" . }}
-       </span>
+{{ with .Params.hero }}
+<header id="hero" class="bg-black white">
+  <div class="flex flex-column-reverse flex-row-ns items-center bb b--near-black pv3 ph2 ph3-ns">
+    <div class="w-100 w-70-m w-60-l lh-title f4 ph2 ph3-ns">
+      <p class="tracked-tight" style="max-width:20em">{{ .p1 | markdownify }}</p>
+    </div>
+    <div class="w-100 w-30-m w-40-l pa4">
+      <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1 invert--dark">
+        <span role="img" style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');" class="aspect-ratio--object cover random-logo"></span>
+        <figcaption class="clip">Resonate Coop Logo</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="flex flex-column flex-row-ns">
+    <div class="w-100 w-60-ns ph3 ph4-ns pt3 pb4 bb br-ns b--near-black">
+      <p class="f5 lh-copy mw7">{{ .p2 | markdownify }}</p>
+    </div>
+    <div class="w-100 w-40-ns ph3 ph4-ns pt3 pb4">
+      <p class="f5 lh-copy mw6">{{ .p3 | markdownify }}</p>
+    </div>
+  </div>
+</header>
+{{ end }}
+
+{{ with .Params.playfair }}
+<section id="playfair" class="w-100 ph2 ph3-ns pv5">
+  <header class="flex flex-column flex-row-ns items-end">
+    <div class="w-100 w-60-m w-60-l">
+      <p class="f4 near-black pl3"><span class="tracked-tight">{{ .text }}</span></p>
+      <h1 class="f1 f1-vw-m lh-solid tracked-tight normal black ma0 mb3 ph1 ph2-m" style="margin-top:-0.125em;">{{ .title }}</h1>
+    </div>
+    <div class="w-100 w-40-m w-40-l ph2 ph3-ns pb3-ns mb1-l">
+      {{ range .links }}
+      <p class="f4 mv3">
+        <span aria-hidden="true" class="mr2">●</span> <strong><a href="{{ .href }}">{{ .text }}</a></strong>
+      </p>
       {{ end }}
     </div>
-    <aside class="w-40 dn db-l">
-      {{ partial "components/sticky-sidebar" . }}
-    </aside>
+  </header>
+  <div class="cf pv4 pv5-l">
+    <div class="fl w-100 w-40-l ph2 pl3-ns pr0-ns">
+      <p>{{ range .features }}{{ . }}<br>{{ end }}</p>
+    </div>
+    <div class="fr fl-l w-100 w-40-m w-20-l pv3 pv0-ns ph2 ph3-ns mt1">
+      {{ $image := "illustrations/Playfair_2.png" }}
+      <img class="db center-l h-auto" src="/images/{{ index $hash $image }}" srcset="/images/{{ index $hash (replace $image ".png" "@2x.png") }} 2x" width="118" height="118" alt="">
+    </div>
+    <div class="fl w-100 w-60-m w-40-l pl2 pl3-ns pt3">
+      <a href="/join" class="link ph4 pv2 b dib ba b--mid-gray mt1 mb2 near-black">Become a member</a>
+      <p class="mt3"><a href="" class="b">Login to the player</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section id="player" class="w-100 ph2 ph3-ns">
+  <div class="ph2 ph3-ns">
+    {{ $release := .Site.Data.featured.release }}
+    {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
   </div>
 </section>
 
-<span class="f4 pb1 ph1 ph3-ns dib mid-gray">As seen in</span>
-<section class="w-100 flex flex-wrap">
-  {{ $press := .Site.Data.sections.press }}
-  {{ $hash := .Site.Data.images.hash }}
-  {{ range $press.presslogos }}
-    {{ $img := .image }}
-    <a class="flex item-center w-50 w-20-ns tc bt br b--mid-gray dib relative overflow-hidden logoimage-wrapper" href="{{ .link }}" target="_blank" alt="{{ .title }}">
-      <img class="ma0 pa0 db absolute logoimage" src='/images/{{ index $hash $img }}' />
-    </a>
+{{ with .Params.features }}
+<section id="features" class="w-100 pa2 pa3-ns">
+  {{ range . }}
+  {{ partial "components/feature" ( dict "feature" . "hash" $hash ) }}
   {{ end }}
+  {{ partial "components/illustrations-credits" }}
 </section>
-{{end}}
+{{ end }}
+
+{{ end }}

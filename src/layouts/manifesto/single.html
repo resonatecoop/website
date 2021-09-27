@@ -1,75 +1,40 @@
 {{ define "main" }}
 
-<div class="mani-white fl overflow-hidden">
-  <div class="pa5 pb0">
-    <div class="f-mani mb6">
-      Streaming has brought about a massive paradigm shift in music.
-      <br/>
-      <br/> We think it’s time for another.
-    </div>
+{{ $hash := .Site.Data.images.hash }}
 
-    <div class="manifesto">
-      {{ range .Params.paragraphs }}
-         {{ partial "manifesto/paragraph" . }}
+<div class="center mw8 pa2 pa3-ns">
+  {{ with .Params.hero }}
+  <header id="manifesto-header" class="flex flex-column flex-row-ns items-center">
+    <h1 class="w-100 w-70-m w-60-l normal near-black f4 ph2 ph3-ns">{{ .title | markdownify }}</h1>
+    <div class="w-100 w-30-m w-40-l ph2 ph3-ns">
+      {{ with .img }}
+      <img class="db center w-full h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="360" height="360" alt="">
       {{ end }}
     </div>
+  </header>
+  {{ end }}
 
-  </div>
-</div>
-
-{{ partial "manifesto/halftone_img_horz" . }}
-<!--<div class="mani-outro pa5 fl white">
-  <div class="cta w-75 mt4">
-    <h2 class="f3">
-      We are building a music streaming network that will replace broken industry models with fairness, transparency, and cooperation.
-      <br />
-      <br />
-      <strong>Join the closed beta now.</strong>
-    </h2>
-    <form class="form-white">
-        <input class="g2" type="text" placeholder="Email" />
-        <br />
-        <button class="btn g2 mt1 btn-white" type="submit" />
-          Join
-        </button>
-    </form>
-  </div>
-
-
-  <div class="cta w-100 mt5 mb5 white overflow-hidden fl">
-
-    <h2 class="f3">
-      Token Generation Event
-      <br />
-      <strong>Be part of a fairer future.</strong>
-    </h2>
-
-    <div class="counter-big fl w-100">
-      <div class="g1 tc fl br b--white">
-        <div class="f2">01</div>
-        <div>DAYS</div>
-      </div>
-      <div class="g1 tc fl br b--white">
-        <div class="f2">01</div>
-        <div>HOURS</div>
-      </div>
-      <div class="g1 tc fl br b--white">
-        <div class="f2">01</div>
-        <div>MINUTES</div>
-      </div>
-      <div class="g1 tc fl">
-        <div class="f2">01</div>
-        <div>SECONDS</div>
-      </div>
+  {{ with .Params.paragraphs }}
+  <section class="relative flex flex-row-reverse-ns justify-center items-baseline mb6">
+    <div id="toc" class="w-40 relative sticky dn db-l" style="top:5rem">
+      <ol class="near-black ma0 pl5 pr2 pr3-ns">
+        {{ range $index, $paragraph := . }}
+        {{ $i :=add $index 1 }}
+        <li class="mb2"><a href="#{{ $i }}" class="no-underline">{{ $paragraph.title }}</a></li>
+        {{ end }}
+      </ol>
     </div>
-
-    <div class="w-100 fl mt3">
-      <a href="/tge" class="btn g1 mt1 btn-white"/>
-        Learn more
-      </a>
-    </div>
-
-  </div>-->
-
+    <ol class="list-ol w-100 w-60-l mw7- f4 lh-copy ma0 ph2 ph3-ns">
+      {{ range $index, $paragraph := . }}
+      {{ $i :=add $index 1 }}
+      <li id="{{ $i }}" class="list pt5">
+        <h2 class="di f4">{{ $paragraph.title | markdownify }}</h2>
+        <p class="di f4">{{ $paragraph.text | markdownify }}</p>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
 </div>
-{{end}}
+{{ end }}
+
+{{ end }}
