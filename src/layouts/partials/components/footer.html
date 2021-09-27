@@ -1,41 +1,93 @@
-<section class="w-100 white bg-black">
-  <div class="flex justify-center w-100">
-    <div class="w-100 w-60-l pv3 pv5-l pa2 pl3-l">
-      <span class="f2 lh-title ph0">Be part of the future of music</span><br>
-      <span class="f3 lh-title ph0 dib pt2">Real change begins with you</span>
-      <div class="mt4">
-        <a href="/join" class="link white b--white pa3 ba bw"/>
-          JOIN NOW
-        </a>
-      </div>
+<section id="join" class="bt b--gray">
+  <div class="center mw8 cf mt3 mb4 ph2 ph3-ns">
+    <div class="fl w-100 w-70-m w-40-l ph2 ph3-ns mt4">
+      <a href="/join" class="link ph4 pv2 b dib ba b--mid-gray mb2 near-black">Join now</a>
+      <p class="mw6"><strong>Create a listening account</strong>, and get 0.128 Resonate credits (about 4 hours streaming) for free.</p>
     </div>
-  </div>
-  <div class="flex flex-column flex-row-l w-100 pt3 pb1 pt5-l pb2-l">
-    <div class="w-80 w-20-l ph2 pb3 ph3-l">
-      <div class="w4 v-top flex items-center overflow-hidden" style="height: 23px;">
-      {{ partial "icons/svg.html" (dict "svg" "logotype" "color" "fill-white") }}
-      </div>
+    <div class="fl w-100 w-30-m w-20-l ph2 ph3-ns mt4">
+      {{ $hash := .Site.Data.images.hash }}
+      {{ $image := "illustrations/Peer2peer1_transparent.png" }}
+      <img class="db center w-full h-auto" src="/images/{{ index $hash $image }}" srcset="/images/{{ index $hash (replace $image ".png" "@2x.png") }} 2x" width="118" height="118" alt="">
     </div>
-
-    <div class="w-100 w-80-l pl2 pl0-l">
-      <nav class="flex ttu">
-        <ul class="list ma0 pa0 pr2 flex flex-column">
-          {{ range .Site.Menus.footer1 }}
-          <li class="">
-            <a href="{{ .URL }}" class="white dib no-underline pl0 ph3-l pt0 pb2" title="{{ .Name }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-          <li class="body2 dark-gray pl0 ph3-l pt4 pb2">&copy; {{ now.Format "2006" }} Resonate</li>
-        </ul>
-        <ul class="list ma0 pa0 flex flex-column pl4 pl0-l">
-          {{ range .Site.Menus.footer2 }}
-          <li class="">
-            <a href="{{ .URL }}" class="white dib no-underline pl0 ph3-l pt0 pb2" title="{{ .Name }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-          <li class="body2 dark-gray pl0 ph3-l pt4 pb2">Terms + Conditions</li>
-        </ul>
-      </nav>
+    <div class="fl w-100 w-70-m w-40-l ph2 ph3-ns mt4">
+      <a href="/the-coop" class="link ph4 pv2 b dib ba b--mid-gray mb2 near-black">Become a member</a>
+      <p class="mw6"><strong>Join as an artist</strong> to become eligible as a member of the co-op and own your streaming platform.</p>
     </div>
   </div>
 </section>
+
+<footer id="footer" class="footer-component bg-black white pt4 pb5" role="contentinfo">
+  <div class="center mw8 cf ph2 ph3-ns">
+    <div class="fl-ns w-100 w-20-ns" style="margin-top:1px">
+      <a class="logo link flex items-center flex-shrink-0 h-100 mb3 pl2-ns pr3-ns" href="/" aria-label="Homepage">
+        <svg viewBox="0 0 233 100" width="116.5" height="50" class="icon icon-resonate dn" aria-hidden="true"><use xlink:href="#icon-resonate"></use></svg>
+      </a>
+    </div>
+    <div class="fl-ns w-100 w-80-ns pt3">
+      <nav id="footer-nav" class="flex flex-auto flex-wrap flex-row items-start">
+        <div class="w-50 w-25-l ph3-ns mb3">
+          <h3 class="normal ttu mb2 mt0">{{ T "learn" }}</h3>
+          <ul class="list pl0">
+            {{ range .Site.Menus.footer1 }}
+            <li class="ma0 pb2">
+              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="w-50 w-25-l ph3-ns mb3">
+          <h3 class="normal ttu mb2 mt0">{{ T "community" }}</h3>
+          <ul class="list pl0">
+            {{ range .Site.Menus.footer2 }}
+            <li class="ma0 pb2">
+              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="w-50 w-25-l ph3-ns mb3">
+          <h3 class="normal ttu mb2 mt0">{{ T "connect" }}</h3>
+          <ul class="list pl0">
+            <li aria-label="Social links">
+              <ul class="list pb2 pl0 di">
+                {{ range .Site.Params.social }}
+                <li class="dib ma0 pb2 mr1">
+                  <a class="link normal mid-gray pa0 lh-copy ttu" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferer"{{ end }} title="{{ .title }}">{{ .name }}</a>
+                </li>
+                {{ end }}
+              </ul>
+            </li>
+            {{ range .Site.Menus.footer3 }}
+            <li class="ma0 pb2">
+              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="w-50 w-25-l ph3-ns mb3">
+          <h3 class="normal ttu mb2 mt0">{{ T "code" }}</h3>
+          <ul class="list pl0">
+            {{ range .Site.Menus.footer4 }}
+            <li class="ma0 pb2">
+              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </nav>
+      <div class="flex flex-auto flex-wrap flex-row-m items-start dark-gray f5 ttu normal">
+        <div class="w-100 w-50-m w-25-l ph3-ns">
+          <span>© <time datetime="2015">2015</time>–<time datetime="{{ now.Format "2006"}}">{{ now.Format "2006"}}</time> {{ .Site.Params.legal}}</span>
+        </div>
+        {{ range .Site.Menus.footer }}
+        <div class="w-100 w-50-m w-25-l ph3-ns">
+          <a class="link ttu" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+        <div class="w-100 w-50-m w-25-l ph3-ns">
+          <span>7.0.2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

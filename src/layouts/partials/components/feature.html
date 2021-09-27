@@ -1,0 +1,22 @@
+<div {{ with .feature.id }}id="{{ . }}"{{ end }} class="feature flex flex-column-reverse flex-row-ns mv5">
+  <div class="w-100 w-60-ns ph2 ph3-ns">
+    {{ with .feature.title }}<h3 class="sr-only">{{ . }}</h3>{{ end }}
+    <p class="f4">
+      <span aria-hidden="true">●</span> {{ .feature.text | markdownify }}
+    </p>
+    {{ with .feature.details }}
+    <p class="f5">{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .feature.link }}
+    <p class="f5">
+      <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg>
+      <a href="{{ .url | absURL }}">{{ .text | markdownify }}</a>
+    </p>
+    {{ end }}
+  </div>
+  <figure class="w-100 h-auto w-40-ns ma0 ph2 ph3-ns">
+    <div class="center" style="max-width: 17.5rem;max-height: 17.5rem">
+      <img class="h-auto" src="/images/{{ index .hash .feature.img.src }}"{{ if in .img.src ".png" }} srcset="/images/{{ index .hash (replace .feature.img.src ".png" "@2x.png") }} 2x"{{ end }} width="280" height="280" alt="">
+    </div>
+  </figure>
+</div>

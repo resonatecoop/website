@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-    <title>Resonate | {{ .Title }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ .Description }}">
-    <link rel="stylesheet" href="/dist/css/{{ index .Site.Data.css.hash "main.css" }}" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ if .IsHome }}{{ .Site.Title }} | {{ .Site.Params.description }} {{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  {{- with .Description | default .Params.subtitle | default .Summary -}}
+  <meta name="description" content="{{ . }}">
+  {{- end -}}
+
+  {{ hugo.Generator }}
+  <meta name="robots" content="index,follow">
+  
+  <link rel="preload" href="https://static.resonate.is/fonts/Graphik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://static.resonate.is/fonts/Graphik-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/dist/css/{{ index .Site.Data.css.hash "main.css" }}" />
+
+  {{ if .IsTranslated -}}
+    {{ range .Translations -}}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{- end }}
+  {{ end }}
 </head>
