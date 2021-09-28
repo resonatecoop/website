@@ -29,7 +29,7 @@ gulp
 ### Server
 
 ```sh
-hugo server --config config.yaml --baseURL http://localhost:1314 --port 1314
+hugo server --baseURL http://localhost:1314 --port 1314
 ```
 
 ## Docker
