@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+{{ $hash := .Site.Data.images.hash }}
+
+<header class="flex items-center justify-between pa3 pa4-ns">
+  <h1 class="f1 normal mv5 mw6">{{ .Title | markdownify }}</h1>
+  <figure class="ma0">
+    {{ with .Params.img }}
+    <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+    {{ end }}
+  </figure>
+</header>
+
+<section class="mb6">
+  <div class="flex flex-column flex-row-ns justify-between ph2 ph3-ns mb5">
+    <div class="w-100 w-60-ns ph2 ph3-ns mw7">
+      <div class="f4">{{ .Params.text | markdownify }}</div>
+      <div class="f5">{{ .Params.details | markdownify }}</div>
+    </div>
+    <div class="w-100 w-40-ns ph2 ph3-ns">
+      {{ with .Params.links }}
+      <h2 class="f4 normal">{{ .title }}</h2>
+      <p class="f5">{{ .text | markdownify }}</a></p>
+      {{ end }}
+      {{ with .Params.news }}
+      <h2 class="f4 normal">{{ .title }}</h2>
+      <p class="f5">{{ .text | markdownify }}</a></p>
+      {{ end }}
+      {{ with .Params.contact }}
+      <h2 class="f4 normal">{{ .title }}</h2>
+      <p class="f5">{{ .text | markdownify }}</a></p>
+      {{ end }}
+    </div>
+  </div>
+  {{ with .Params.video }}
+  <figure class="mh0 pa3 pa4-ns">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube_id }}?controls=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </figure>
+  {{ end }}
+</section>
+
+{{ end }}
