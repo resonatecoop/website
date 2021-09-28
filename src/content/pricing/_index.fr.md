@@ -55,7 +55,7 @@ community_credentials:
         A system like this could allow members of one co-op or service to be recognized by others without personal information being exposed or stored in centralized databases. 
       link:
         text: "Learn more about Community Credentials"
-        href: "/community-crendentials"
+        href: "/community-credentials"
     - text: "**Resonate is building these privacy- respecting validation tools** to help co-operatives work together."
       details: |-
         We imagine a future with many life supporting services provided by different co-ops sharing this kind of safe authentication. 
