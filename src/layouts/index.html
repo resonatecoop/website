@@ -57,12 +57,31 @@
 </section>
 {{ end }}
 
+<section id="featured" class="ph2 ph3-ns">
+  <h2 class="f4 normal near-black ph2 ph3-ns">Featured releases</h2>
+  {{ $featured := getJSON "https://stream.resonate.coop/api/v2/trackgroups?limit=20&page=1&featured=true" }}
+  <div class="cf flex flex-wrap">
+    {{ range first 5 $featured.data }}
+    <div class="fl w-100 w-33-m w-20-l pa3 mb3">
+    {{ partial "components/release" ( dict "release" . ) }}
+    </div>
+    {{ end }}
+    {{ range first 1 (after 5 $featured.data) }}
+    <div class="fl w-100 w-33-m w-20-l pa3 mb3 dn-l">
+    {{ partial "components/release" ( dict "release" . ) }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!--
 <section id="player" class="w-100 ph2 ph3-ns">
   <div class="ph2 ph3-ns">
     {{ $release := .Site.Data.featured.release }}
     {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
   </div>
 </section>
+-->
 
 {{ with .Params.features }}
 <section id="features" class="w-100 pa2 pa3-ns">

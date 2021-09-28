@@ -23,6 +23,7 @@ playfair:
       href: "/stream2own"
   cta: "Become a member"
   link: "Login to the player"
+featured_title: "Featured releases"
 features:
   - id: stream2own
     title: "Stream2own"
