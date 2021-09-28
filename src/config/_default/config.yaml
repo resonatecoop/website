@@ -1,0 +1,11 @@
+title: Resonate
+baseURL: /
+languageCode: en-us
+DefaultContentLanguage: en
+Paginate: 10
+googleAnalytics: ''
+enableRobotsTXT: true
+relativeurls: true
+removePathAccents: true
+pygmentsUseClasses: true
+metaDataFormat: yaml
