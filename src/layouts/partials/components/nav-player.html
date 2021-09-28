@@ -15,7 +15,7 @@
         </li>
         <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mv3"></li>
         <li role="menuitem" class="dn items-center ph3">
-          <div class="flex flex-column"><label for="credits">Credits</label><input disabled="disabled" tabindex="-1" name="credits" type="number" value="0" readonly="readonly" class="bn br0 bg-transparent b red"></div>
+          <div class="flex flex-column"><label for="credits">Credits</label><input disabled="disabled" tabindex="-1" name="credits" id="credits" type="number" value="0" readonly="readonly" class="bn br0 bg-transparent b red"></div>
           <div class="flex flex-auto justify-end"><button type="button" style="outline:solid 1px var(--near-black);outline-offset:-1px" class="pv2 ph3 ttu near-black near-black--light near-white--dark bg-transparent bn bn b flex-shrink-0 f6">Add credits</button></div>
         </li>
         <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mt3 mb2"></li>
@@ -24,9 +24,31 @@
             <fieldset class="ma0 pa0 bn">
               <legend class="lh-copy f5 clip">Theme</legend>
               <div class="flex w-100">
-                <div class="flex items-center flex-auto"><input tabindex="-1" type="radio" name="theme" id="chooseDark" value="dark"><label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseDark"><div class="pv3 flex justify-center w-100 flex-auto"><svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg></div><div class="pv3 flex w-100 flex-auto">Dark</div></label></div>
-                <div class="flex items-center flex-auto"><input tabindex="-1" type="radio" name="theme" checked="checked" id="chooseLight" value="light"><label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseLight"><div class="pv3 flex justify-center w-100 flex-auto"><svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg></div><div class="pv3 flex w-100 flex-auto">Light</div></label></div>
-                <div class="flex items-center flex-auto"><input tabindex="-1" type="checkbox" name="theme" id="chooseAuto" value="auto"><label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseAuto"><div class="pv3 flex justify-center w-100 flex-auto"><svg viewBox="0 0 16 16" class="icon icon-square icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-square"></use></svg></div><div class="flex flex-auto w-100 pv3">Auto</div></label></div>
+                <div class="flex items-center flex-auto">
+                  <input tabindex="-1" type="radio" name="theme" id="chooseDark" value="dark">
+                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseDark">
+                    <span class="pv3 flex justify-center w-100 flex-auto">
+                      <svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg>
+                    </span>
+                    <span class="pv3 flex w-100 flex-auto">Dark</span>
+                  </label>
+                </div>
+                <div class="flex items-center flex-auto">
+                  <input tabindex="-1" type="radio" name="theme" checked="checked" id="chooseLight" value="light">
+                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseLight">
+                    <span class="pv3 flex justify-center w-100 flex-auto"><svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg></span>
+                    <span class="pv3 flex w-100 flex-auto">Light</span>
+                  </label>
+                </div>
+                <div class="flex items-center flex-auto">
+                  <input tabindex="-1" type="checkbox" name="theme" id="chooseAuto" value="auto">
+                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseAuto">
+                    <span class="pv3 flex justify-center w-100 flex-auto">
+                      <svg viewBox="0 0 16 16" class="icon icon-square icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-square"></use></svg>
+                    </span>
+                    <span class="flex flex-auto w-100 pv3">Auto</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
           </div>
