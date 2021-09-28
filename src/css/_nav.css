@@ -54,7 +54,6 @@ nav > ul > li > a.active {
 
 .page-wrap {
   box-sizing: border-box;
-	/*transition: all .3s cubic-bezier(0.22, 1, 0.36, 1);*/
 }
 
 #menu-switch:checked ~ body {
