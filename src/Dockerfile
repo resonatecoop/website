@@ -1,5 +1,5 @@
-ARG HUGO_VERSION 0.88.0
-ARG NODE_ENV development
+ARG HUGO_VERSION=0.88.0
+ARG NODE_ENV=development
 
 FROM node:12-alpine as builder
 
