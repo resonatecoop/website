@@ -21,6 +21,8 @@ WORKDIR /build
 
 ARG RELEASE_TAG
 
+RUN apk --no-cache add git
+
 RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/resonatecoop/website
 
 ENV NODE_ENV development
