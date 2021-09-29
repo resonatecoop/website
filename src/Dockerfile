@@ -1,3 +1,4 @@
+ARG RELEASE_TAG=develop
 ARG HUGO_VERSION=0.88.0
 ARG NODE_ENV=development
 
@@ -16,14 +17,17 @@ RUN set -x && \
   apk del wget ca-certificates && \
   rm /var/cache/apk/*
 
-WORKDIR /var/www/website
+WORKDIR /build
 
-COPY . .
+ARG RELEASE_TAG
 
-ENV NODE_ENV=development
+RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/resonatecoop/website
+
+ENV NODE_ENV development
+
+WORKDIR /build/website/src
 
 RUN npm install
-
 RUN npm install -g gulp
 
 ARG NODE_ENV
@@ -35,8 +39,8 @@ RUN hugo -d ./public
 
 FROM alpine:latest
 
-WORKDIR /var/www/website
+WORKDIR /build
 
 COPY --from=builder /usr/bin/hugo /usr/bin/
 
-COPY --from=builder /var/www/website /var/www/website
+COPY --from=builder /build/website /build/website
