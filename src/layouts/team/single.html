@@ -1,18 +1,64 @@
 {{ define "main" }}
-<section class="ph1 ph3-ns pt2 pt6-l">
-  {{ $hash := .Site.Data.images.hash }}
-  {{ $img := .Params.img }}
-  <section class="flex flex-column flex-row-l">
-    <div class="w-100 w-50-m w-25-l mr4 relative">
-      <div class="absolute ba b--black w-90" style="left: 5%; top: 5%; padding-bottom:88%;"></div>
-      <img class="w-100 h-auto ma0 db" src='/images/{{ index $hash $img }}' />
+
+{{ $hash := .Site.Data.images.hash }}
+
+<header class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb5">
+  <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
+    <h1 class="f1 normal">{{ .Title }}</h1>
+    <p class="f4">{{ .Params.subtitle | markdownify }}</p>
+    <p class="f5">{{ .Params.text | markdownify }}</p>
+  </div>
+  <div class="w-100 w-30-m w-40-l">
+    <figure class="ma0">
+      {{ with .Params.img }}
+      <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+      {{ end }}
+    </figure>
+  </div>
+</header>
+
+{{ with .Params.board }}
+<section id="{{ .title | anchorize }}" class="ph2 ph3-ns mb5 bt b--gray">
+  <header class="ph2 ph3-ns">
+    <h2 class="f2 normal">{{ .title }}</h2>
+  </header>
+  {{ range $.Site.Data.sections.team.board }}
+  <div class="flex flex-row-reverse justify-end mb5">
+    <div class="w-80 ph2 ph3-ns">
+      <h3 class="f4 mv0">{{ .name }}</h3>
+      <p class="f4 mt0">{{ .title }}</p>
+      <details class="f5 near-black">
+        <summary class="">Bio</summary>
+        {{ .bio | markdownify }}
+      </details>
     </div>
-    <div>
-    {{ partial "components/titleblock" . }}
-    </div>
-  </section>
-  <section class="w-50-l pt3 pb5">
-    {{ .Content }}
-  </section>
+    <figure class="w-20 ph2 ph3-ns h-100 ma0">
+      {{ with .img }}
+      <img class="db w-100 h-auto grayscale" src="/images/{{ index $hash . }}" srcset="/images/{{ index $hash (replace . ".png" "@2x.png") }} 2x" width="192" height="192" alt="" loading="lazy">
+      {{ end }}
+    </figure>
+  </div>
+  {{ end }}
 </section>
-{{end}}
+{{ end }}
+
+{{ with .Params.network }}
+<section id="{{ .title | anchorize }}" class="bt b--gray" style="margin-bottom: -1px">
+  <header class="ph3 ph4-ns mb4">
+    <h2 class="f2 normal">{{ .title }}</h2>
+    <p class="f4 mw6">{{ .subtitle | markdownify }}</p>
+    <p class="f5">{{ .text | markdownify }}</p>
+  </header>
+  <div class="flex flex-wrap bt b--gray" style="margin-right: -1px">
+    {{ range $.Site.Data.sections.network }}
+    <a href="{{ .link }}" target="_blank" rel="noopener" class="w-20 ph3 ph4 pv3 bb br b--gray" title="{{ .name }}">
+      <figure class="ma0">
+        <img class="db w-100 object-contain" src="/images/{{ index $hash .img }}" srcset="/images/{{ index $hash (replace .img ".png" "@2x.png") }} 2x" width="140" height="140" alt="{{ .name }}" loading="lazy" style="height: 140px">
+      </figure>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
