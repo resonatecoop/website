@@ -11,6 +11,14 @@ html {
 	filter: invert(1);
 }
 
+.grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.object-contain {
+  object-fit: contain;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -26,6 +34,13 @@ html {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
+}
+
+.link-full::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
 }
 
 .list-ol {
