@@ -1,7 +1,66 @@
+board:
+  - name: "Rich"
+    title: "Co-op Executive"
+    img: "team/rich.jpg"
+    bio: |-
+      An early collaborator with the independent K and Sub Pop cassette-based music labels in Olympia, Washington USA in the 1980s, Rich later built the business infrastructure for Sub Pop in Seattle, establishing its rise as a showcase for many artists to follow. With Chris Takino in 1993, Rich co-founded Up Records, associated with breakthrough work of artists such as Modest Mouse, Built to Spill, The Pastels, Quasi, and Duster. That year he also launched Sub Pop Advanced Media (SPAM), leading that label in early 1994 to obtain one of the earliest music URLs. In 2009, comrades in the band YACHT released a version of his 1987 song ‘Psychic City’ to modest commercial success. In 2014, Rich joined forces with Brodie Stevens to form Cabin Games, a Native American-owned music and management company. Currently based in Seattle, Rich is pleased to bring his experience supporting diverse emerging artists and peer-to-peer cultural forms to the urgent work to cultivate music-based interdependence through cooperative community-owned networks like Resonate. ~ Credo: Make music not war.
+    url: ""
+  - name: "Peter Harris"
+    title: "Founder"
+    img: "team/peterharris.jpg"
+    bio: |-
+      Active as a web developer since the 90s, Peter has built hundreds of sites across dozens of industries. He has focused especially on the music industry, collaborating with numerous musicians, from struggling artists to mid-level bands (and even a few platinum-selling superstars).
+      
+      Working by day as a web dev, Peter had a night hobby as a DJ and electronica producer. This led to experiments with virtually every web and music publishing platform available. Exploring all of their weaknesses and strengths, this combination of background and insight eventually birthed Resonate’s fundamental features.
+
+      He has spoken at the following festivals and conferences about Resonate and the blockchain: re:publica, Sonar+D, Reeperbahn, Music Tech Fest, Elevate, Most Wanted Music, Reworks, Supermarkt, Platform Cooperativism, Pop Kultur and From Me 2 U.
+  - name: "Greg Heuss"
+    title: ""
+    img: "team/gregheuss.jpg"
+    bio: |-
+      Greg is a co-founder and the Managing Partner at Reflective Venture Partners. Prior to creating Reflective Ventures he co-led the successful private token sale of RChain Co-op. Greg has been involved with technology companies for over 20 years and has helped build some of the largest brands in the world. He was an early pioneer with Amazon where he led the sales and marketing efforts of new product, brand and special events.
+
+      Greg went on to help create one of the first online dating sites; Kiss.com which he sold to Match.com. He later helped build and direct multiple companies to a point of merger, sale and/or public offering. He has a deep background and understanding of the music industry having spent multiple years promoting major music tours. Some of his recent successes have come from specializing in the structure, go-to-market and fund raising efforts within the blockchain community. Greg holds a degree in Business and Marketing from Washington State University.
+  - name: "Kalam Ali"
+    title: ""
+    img: "team/kalamali.jpg"
+    bio: |-
+      Kalam Ali is a restless entrepreneur who establishes business associations with innovators working at the intersection of tech and art. He previously led venture partnerships with music tech innovators at Native Instruments & is a co-founder of Marathon Artists LABs, a music tech startup accelerator run by independent music label Marathon Artists. He has worked with startups, VC and accelerators for over a decade across London, Berlin and Israel. Kalam is dedicated to bringing technologists & artists together to explore new forms of expression, and new ways for creators to monetise their work.
+  - name: "Melissa Taylor"
+    title: ""
+    img: "team/melissataylor.jpg"
+    bio: |-
+      Melissa Taylor has worked in the independent electronic music scene since 1999 - in public relations, as a freelance journalist, for nightclubs, in artist management, running labels, consultant, as an occasional artist, and raver.
+
+      She is the founder and head publicist of the independent music communication agency, Tailored Communication, based in Berlin. Tailored has been at the forefront of electronic music and nightlife culture for 17 years focused on supporting independent artists and labels.
+
+      She is committed to the launch of an anti-capitalist collective patronage platform for independent music called ERIS - which aligns strongly with the Resonate goal of digital dignity. Community Credentials offers a new road-map for how ERIS can rise and serve the artistic community.
+
+      Melissa joined Resonate coop as a volunteer in 2020, committed to bringing more artists and labels onto Resonate, to help build the alternative music economy and educate artists about their choices, value and benefits of supporting anti-capitalist platforms and coops. She joined the board in January 2021 and is currently taking on the position of Editorial Director.
+  - name: "Hakanto"
+    title: "Member Services Coordinator, Designer, Artist"
+    img: "team/hakanto.jpg"
+    bio: |-
+      Hakanto is a singer-songwriter, pianist, and visual/conceptual artist living in Houston Texas. He discovered Resonate in spring 2020 while doing intensive research into co-operative business and workplace democratization. Starting summer 2020, he contributed as a full-time volunteer until becoming hired by the co-op in spring 2021 as a full-time worker. His work background is in hospitality, foodservice, and teaching -- skills he leans on when improving onboarding, orientation, documentation, communication, & collaboration at the co-op. In his day-to-day work at Resonate, he coordinates and contributes to member services, artist onboarding, facilitation, platform administration/design. His primary passions at Resonate are to build the co-op into a thriving democratic organization and to ensure it be practical, useful, and accountable to its users and membership. He was elected to the board in Jan 2021 and elected Chairperson in August 2021. His introductory letter can be found here: https://resonate.is/board-hakanto/
+
+  - name: "Nati Linares"
+    title: ""
+    img: "team/natilinares.jpg"
+    bio: |-
+      Nati grew up on the island of Shaolin, also known as Staten Island, New York City — close to both the world’s largest garbage dump and the oldest continuously inhabited free Black community in the United States. She’s the child of Cuban and Colombian immigrants who landed in Queens in the late 1960s, benefited from low-cost public college and raised her with a love of learning, exploration and music. As a mami, she strives to raise a son who can resist the patriarchy to become a full human being and embrace life’s contradictions. She comes to the solidarity economy movement after a decade witnessing inequities in the music and media industry while working with diasporadical and misrepresented artists. Nati tells the stories of people resisting Capitalism and building new systems, especially those creating a culture of revolution.
+  - name: "Z"
+    title: ""
+    img: "team/z.jpg"
+    bio: |-
+      Z is a music and visual artist with bases in NYC and Tokyo, and co-founder of Black Socialists in America (BSA), a revolutionary education and tech-focused organization that has received praise from ex-Panthers like Kent Ford, world-renowned thinkers like Noam Chomsky, and many others.
+
+      After studying in NYC and Sophia University (上智大学) in Tokyo, Japan, Z struggled as a Sales Associate at Opening Ceremony, focusing on his own music and visuals in his spare time, and working on music videos for artists like A$AP Rocky, Future, The Weeknd, and others as both a PA and treatment writer.
+
+      While in Japan teaching English in early 2017, Z decided to pursue full-time creative work back in the United States. In December of 2017, Z started the BSA social media platform, which garnered a following of over 10,000 people in just six weeks, and became the foundation for the organization founded in April of 2018. 
 management:
   - name: "Peter Harris"
     title: "CEO + Founder"
-    img: "team/peterharris.png"
+    img: "team/peterharris.jpg"
     url: "peterharris.html"
   - name: "Ignacio Baigorria"
     title: "COO"
@@ -51,12 +110,10 @@ design:
   - name: "Darryl Neudorf"
     title: "Community Strategies"
     img: "team/darrylneudorf.png"
-
-
 team:
   - name: "Peter Harris"
     title: "CEO + Founder"
-    img: "team/peterharris.png"
+    img: "team/peterharris.jpg"
     url: "peterharris.html"
   - name: "Ignacio Baigorria"
     title: "COO"
@@ -76,9 +133,6 @@ team:
   - name: "Wilson Fanestil"
     title: "Catalog Management"
     img: "team/wilsonfanestil.png"
-  - name:
-    title:
-    img:
   - name: "Luke Dubuis"
     title: "Head of Marketing"
     img: "team/lukedubuis.png"
