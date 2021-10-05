@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="pa3 pa4-ns">
+  <header class="mb5">
+    <h1 class="f1 mb3 normal">{{ .Title }}</h1>
+    <p class="f5 mt1 dark-gray">
+      <time datetime="{{ time.Format "2006-01-02" .Date }}">{{  time.Format "January 2, 2006" .Date }}</time>
+    </p>
+  </header>
+  <div class="center mw6 f5 mb5">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}
