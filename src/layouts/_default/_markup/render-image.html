@@ -1,0 +1,8 @@
+{{ $hash := site.Data.images.hash }}
+<figure class="w-100 mb5 mh0 pa0">
+  <img class="db w-100 h-auto bg-gray" src="/images/{{ index $hash .Destination }}" alt="{{ .Text }}" loading="lazy">
+  {{ with .Title }}
+  <figcaption class="mt3 dark-gray">{{ . | markdownify }}</figcaption>
+  {{ end }} 
+</figure>
+
