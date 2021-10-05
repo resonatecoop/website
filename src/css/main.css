@@ -15,5 +15,7 @@
 @import '_footer';
 @import '_nav';
 
+@import '@resonate/search-component/index.css';
+
 @import '_marketing';
 @import '_manifesto';

@@ -12,8 +12,10 @@
   "author": "Resonate Coop <members@resonate.is>",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@resonate/search-component": "^1.0.0",
     "@resonate/tachyons": "^1.3.4",
     "nanoanimation": "^2.1.0",
+    "nanochoo": "git+https://github.com/resonatecoop/nanochoo.git",
     "nanohtml": "^1.9.1",
     "on-intersect": "^2.0.0"
   },
