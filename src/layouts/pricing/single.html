@@ -4,7 +4,7 @@
 
 <header id="hero" class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb6">
   <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
-    <h1 class="f1 normal ">{{ .Title }}</h1>
+    <h1 class="f1 normal">{{ .Title }}</h1>
     <p class="f4">{{ .Params.subtitle | markdownify }}</p>
     {{ with .Params.hero }}
     <p class="f5">{{ .p1 | markdownify }}</p>
@@ -22,7 +22,7 @@
 </header>
 
 {{ with .Params.pricing }}
-<section id="{{ .id }}" class="mb5">
+<section id="{{ .title | anchorize }}" class="mb5">
   <figure class="ma0">
     <div class="w-100 pv5 flex flex-column flex-row-ns justify-between items-center bg-black white ph3 ph4-ns">
       <svg class="w-100 w-50-m w-60-l ph2 ph3-ns mb5 mb0-ns" width="258" height="368" viewBox="0 0 258 368" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -73,7 +73,7 @@
 {{ end }}
 
 {{ with .Params.community_credentials }}
-<section id="{{ .id }}">
+<section id="{{ .title | anchorize }}">
   <div class="flex flex-column flex-row-l flex-wrap items-strech bt b--gray">
     <header class="flex items-center justify-between pa3 pa4-ns">
       <h2 class="f1 normal mv5">{{ .title | markdownify }}</h2>
@@ -85,7 +85,7 @@
     </header>
     <div class="flex flex-column flex-row-l flex-wrap items-strech">
       {{ range $i, $block := .blocks }}
-      <div class="ph3 ph4-ns pt2 pb4 bt b--gray w-100 {{ if (modBool $i 2) }}w-40-l{{ else }}w-60-l bl{{ end }}">
+      <div class="ph3 ph4-ns pt2 pb4 bt b--gray w-100 {{ if (modBool $i 2) }}w-40-l{{ else }}w-60-l bl-l{{ end }}">
         <p class="f4 mb4">{{ $block.text | markdownify }}</p>
         <p class="f5">{{ $block.details | markdownify }}</p>
         {{ with $block.link }}

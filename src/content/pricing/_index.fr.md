@@ -10,7 +10,6 @@ hero:
     text: "Open a new account and we’ll give you around 4 hours of free credit"
     href: "/join"
 pricing:
-  id: "pricing"
   table: |-
     | Stream | Credits | €      |
     | ------ | ------- | ------ |
@@ -44,7 +43,6 @@ pricing:
         src: "illustrations/Wallet.png"
 community_credentials:
   title: "Community Credentials"
-  id: "community-credentials"
   img:
     src: "illustrations/Verified.png"
   blocks:
