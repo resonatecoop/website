@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Resonate manifesto",
   "scripts": {
-    "build": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
   "keywords": [
@@ -27,18 +27,8 @@
     "browserify": "^16.2.3",
     "critical": "^2.0.0-27",
     "cssnano": "^4.1.8",
-    "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-hash": "^4.2.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-run": "^1.7.1",
-    "gulp-uglify-es": "^1.0.4",
-    "gulplog": "^1.0.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
-    "tachyons": "^4.11.1",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "tachyons": "^4.11.1"
   }
 }

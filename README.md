@@ -24,7 +24,6 @@ npm install gulp-cli --global
 cd src && \
 npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x && \
 npm install
-gulp images
 ```
 
 ### Server
