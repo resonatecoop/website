@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <div class="">
   <header id="about-header" class="ph2 ph3-ns mb6">
     <h1 class="w-100 w-70-m w-60-l f1 normal ph2 ph3-ns">{{ .Title }}</h1>
@@ -34,7 +32,8 @@
       </div>
       <figure class="ma0 w-100 w-30-m w-20-l ph2 ph3-ns">
         {{ with .img }}
-        <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="160" height="160" alt="">
+        {{- $img := resources.Get .src -}}
+        <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="160" height="160" alt="">
         {{ end }}
       </figure>
     </div>
@@ -48,7 +47,8 @@
       <h2 class="w-100 w-80-m w-60-l mw6 f1 normal mv5">{{ .title | markdownify }}</h2>
       <figure class="ma0 w-100 w-20-m w-40-l">
         {{ with .img }}
-        <img class="db center-ns h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+        {{- $img := resources.Get .src -}}
+        <img class="db center-ns h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
         {{ end }}
       </figure>
     </header>
@@ -77,7 +77,8 @@
       <h2 class="f1 normal mv5">{{ .title | markdownify }}</h2>
       <figure class="ma0">
         {{ with .img }}
-        <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+        {{- $img := resources.Get .src -}}
+        <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
         {{ end }}
       </figure>
     </header>
@@ -95,7 +96,7 @@
   {{ with .Params.features }}
   <section id="features" class="w-100 pa2 pa3-ns">
     {{ range . }}
-    {{ partial "components/feature" ( dict "feature" . "hash" $hash ) }}
+    {{ partial "components/feature" ( dict "feature" . ) }}
     {{ end }}
     {{ partial "components/illustrations-credits" }}
   </section>

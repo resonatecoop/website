@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 {{ with .Params.hero }}
 <header id="hero" class="bg-black white">
   <div class="flex flex-column-reverse flex-row-ns items-center bb b--near-black pv3 ph2 ph3-ns">
@@ -46,8 +44,9 @@
       <p>{{ range .features }}{{ . }}<br>{{ end }}</p>
     </div>
     <div class="fr fl-l w-100 w-40-m w-20-l pv3 pv0-ns ph2 ph3-ns mt1">
-      {{ $image := "illustrations/Playfair_2.png" }}
-      <img class="db center-l h-auto" src="/images/{{ index $hash $image }}" srcset="/images/{{ index $hash (replace $image ".png" "@2x.png") }} 2x" width="118" height="118" alt="">
+      {{- $img := resources.Get "images/illustrations/Playfair_2.png" -}}
+      {{- $img2x := resources.Get "images/illustrations/Playfair_2@2x.png" -}}
+      <img class="db center-l h-auto" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118" height="118" alt="">
     </div>
     <div class="fl w-100 w-60-m w-40-l pl2 pl3-ns pt3">
       <a href="/join" class="link ph4 pv2 b dib ba b--mid-gray mt1 mb2 near-black">Become a member</a>
@@ -78,7 +77,7 @@
 <section id="player" class="w-100 ph2 ph3-ns">
   <div class="ph2 ph3-ns">
     {{ $release := .Site.Data.featured.release }}
-    {{ partial "components/player" ( dict "release" $release "hash" $hash ) }}
+    {{ partial "components/player" ( dict "release" $release ) }}
   </div>
 </section>
 -->
@@ -86,7 +85,7 @@
 {{ with .Params.features }}
 <section id="features" class="w-100 pa2 pa3-ns">
   {{ range . }}
-  {{ partial "components/feature" ( dict "feature" . "hash" $hash ) }}
+  {{ partial "components/feature" ( dict "feature" . ) }}
   {{ end }}
   {{ partial "components/illustrations-credits" }}
 </section>

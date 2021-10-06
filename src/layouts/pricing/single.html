@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <header id="hero" class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb6">
   <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
     <h1 class="f1 normal">{{ .Title }}</h1>
@@ -63,7 +61,10 @@
     </div>
     <figure class="w-100 h-auto w-40-ns ma0 ph2 ph3-ns">
       <div class="center" style="max-width: 17.5rem;max-height: 17.5rem">
-        <img class="h-auto" src="/images/{{ index $hash .img.src }}"{{ if in .img.src ".png" }} srcset="/images/{{ index $hash (replace .img.src ".png" "@2x.png") }} 2x"{{ end }} width="280" height="280" alt="">
+        {{ with .Params.img }}
+        {{- $img := resources.Get .src -}}
+        <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+        {{ end }}
       </div>
     </figure>
   </div>
@@ -79,7 +80,8 @@
       <h2 class="f1 normal mv5">{{ .title | markdownify }}</h2>
       <figure class="ma0">
         {{ with .img }}
-        <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+        {{- $img := resources.Get .src -}}
+        <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
         {{ end }}
       </figure>
     </header>

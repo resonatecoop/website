@@ -5,9 +5,9 @@
       <p class="mw6"><strong>Create a listening account</strong>, and get 0.128 Resonate credits (about 4 hours streaming) for free.</p>
     </div>
     <div class="fl w-100 w-30-m w-20-l ph2 ph3-ns mt4">
-      {{ $hash := .Site.Data.images.hash }}
-      {{ $image := "illustrations/Peer2peer1_transparent.png" }}
-      <img class="db center w-full h-auto" src="/images/{{ index $hash $image }}" srcset="/images/{{ index $hash (replace $image ".png" "@2x.png") }} 2x" width="118" height="118" alt="">
+      {{- $img := resources.Get "images/illustrations/Peer2peer1_transparent.png" -}}
+      {{- $img2x := resources.Get "images/illustrations/Peer2peer1_transparent@2x.png" -}}
+      <img class="db center w-full h-auto" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118" height="118" alt="">
     </div>
     <div class="fl w-100 w-70-m w-40-l ph2 ph3-ns mt4">
       <a href="/the-coop" class="link ph4 pv2 b dib ba b--mid-gray mb2 near-black">Become a member</a>

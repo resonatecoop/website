@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <header id="hero">
   <div class="flex flex-column-reverse flex-row-ns items-center bb b--gray ph2 ph3-ns">
     <div class="w-100 w-70-m w-60-l lh-title f4 ph2 ph3-ns">
@@ -43,7 +41,8 @@
     </div>
     <figure class="w-100 w-40-l h-auto  ma0 ph2 ph3-ns">
       <picture class="db center" style="max-width: 17.5rem;max-height: 17.5rem">
-        <img class="h-auto" src="/images/{{ index $hash .img.src }}"{{ if in .img.src ".png" }} srcset="/images/{{ index $hash (replace .img.src ".png" "@2x.png") }} 2x"{{ end }} width="280" height="280" alt="">
+        {{- $img := resources.Get .img.src -}}
+        <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .img.src ".png" }}{{ $img2x := resources.Get (replace .img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
       </picture>
     </figure>
   </div>

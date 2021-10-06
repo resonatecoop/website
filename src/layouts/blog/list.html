@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <header class="ph3 ph4-ns">
   <h1 class="f1 normal">{{ .Title }}</h1>
 </header>
@@ -19,7 +17,8 @@
     </div>
     <figure class="w-40-l h-100 ma0 mb4 ph2 ph3-ns">
       {{ with .Params.image }}
-      <img class="db w-100 h-auto bg-gray" src="/images/{{ index $hash . }}" width="360" height="200" alt="" loading="lazy">
+      {{- $img := resources.Get . -}}
+      <img class="db w-100 h-auto bg-gray" src="{{ $img.Permalink }}" width="360" height="200" alt="" loading="lazy">
       {{ end }}
     </figure>
   </article>

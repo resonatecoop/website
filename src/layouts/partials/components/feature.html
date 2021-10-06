@@ -16,7 +16,8 @@
   </div>
   <figure class="w-100 h-auto w-40-ns ma0 ph2 ph3-ns">
     <div class="center" style="max-width: 17.5rem;max-height: 17.5rem">
-      <img class="h-auto" src="/images/{{ index .hash .feature.img.src }}"{{ if in .img.src ".png" }} srcset="/images/{{ index .hash (replace .feature.img.src ".png" "@2x.png") }} 2x"{{ end }} width="280" height="280" alt="">
+      {{- $img := resources.Get .feature.img.src -}}
+      <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .feature.img.src ".png" }}{{ $img2x := resources.Get (replace .feature.img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
     </div>
   </figure>
 </div>
