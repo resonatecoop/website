@@ -35,7 +35,7 @@ RUN npm install -g gulp
 ARG NODE_ENV
 ENV NODE_ENV=$NODE_ENV
 
-RUN gulp
+RUN gulp images
 
 RUN hugo -d ./public
 

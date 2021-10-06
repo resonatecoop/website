@@ -22,14 +22,15 @@ npm install gulp-cli --global
 
 ```sh
 cd src && \
-npm install && \
-gulp
+npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x && \
+npm install
+gulp images
 ```
 
 ### Server
 
 ```sh
-hugo server --baseURL http://localhost:1314 --port 1314
+hugo server --baseURL http://localhost:1314 --environment development --port 1314
 ```
 
 ## Docker

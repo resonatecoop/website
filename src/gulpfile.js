@@ -1,36 +1,10 @@
-const browserify = require('browserify')
 const gulp = require('gulp')
-const source = require('vinyl-source-stream')
-const buffer = require('vinyl-buffer')
 const hash = require('gulp-hash')
-const uglify = require('gulp-uglify-es').default
 const del = require('del')
 const postcss = require('gulp-postcss')
 const critical = require('critical').stream
 const logger = require('gulplog')
 const htmlmin = require('gulp-htmlmin')
-// const run = require('gulp-run')
-
-function javascript () {
-  const b = browserify({
-    entries: './js/main.js',
-    debug: true,
-    transform: [
-      ['babelify', { presets: ['@babel/preset-env'] }]
-    ]
-  })
-
-  del(['static/dist/js/**/*'])
-
-  return b.bundle()
-    .pipe(source('main.js'))
-    .pipe(buffer())
-    .pipe(hash())
-    .pipe(uglify())
-    .pipe(gulp.dest('static/dist/js'))
-    .pipe(hash.manifest('hash.json'))
-    .pipe(gulp.dest('data/js'))
-}
 
 function images () {
   return gulp.src('images/**/*')
@@ -97,7 +71,6 @@ function inlineCritical () {
     .pipe(gulp.dest('./public'))
 }
 
-gulp.task('javascript', javascript)
 gulp.task('images', images)
 gulp.task('css', css)
 gulp.task('critical', inlineCritical)
@@ -105,7 +78,6 @@ gulp.task('minify-html', minifyHtml)
 
 gulp.task('watch', () => {
   gulp.watch('./css/**/*', css)
-  gulp.watch('./js/**/*', javascript)
 })
 
-gulp.task('default', gulp.series(gulp.parallel('javascript', 'css', 'images')))
+gulp.task('default', gulp.series(gulp.parallel('css', 'images')))
