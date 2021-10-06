@@ -1,7 +1,0 @@
-.footer-component li > .link {
-  padding-bottom: .1rem;
-}
-
-.footer-component li > .link:hover {
-  border-bottom: 1px solid currentcolor;
-}
