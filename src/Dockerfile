@@ -29,6 +29,7 @@ ENV NODE_ENV development
 
 WORKDIR /build/website/src
 
+RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x
 RUN npm install
 
 ARG NODE_ENV
