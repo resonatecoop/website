@@ -2,12 +2,12 @@
 title: "Tech and Infrastructure Needs: 02/2021"
 desctiption: ""
 date: 2021-02-06
-image: "blog/Resonate-Tech-and-Infrastructure-Needs-02-2021-Promo-2048x1152.jpg"
+image: "images/blog/Resonate-Tech-and-Infrastructure-Needs-02-2021-Promo-2048x1152.jpg"
 summary: "In working our way toward producing a mobile and desktop Resonate app, we could definitely use more help on the development side of things, but: trying to think outside of the box means having to account for a few extra things in the development process."
 
 ---
 
-![](Resonate-Tech-and-Infrastructure-Needs-02-2021-Promo-2048x1152.jpg)
+![](images/blog/Resonate-Tech-and-Infrastructure-Needs-02-2021-Promo-2048x1152.jpg)
 
 
 In working our way toward producing a mobile and desktop Resonate app, we could definitely use more help on the development side of things, but:

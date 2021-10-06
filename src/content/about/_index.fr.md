@@ -12,7 +12,7 @@ for:
       - text: "Learn more about pricing"
         href: "/pricing"
     img:
-      src: "illustrations/Happymusician.png"
+      src: "images/illustrations/Happymusician.png"
   - id: "industry"
     title: "For industry"
     text: "**We are rewiring the terms of business**, transforming an industry that’s currently based on exclusivity and inequity into one based on openness, transparency, and collaboration." 
@@ -21,7 +21,7 @@ for:
       - text: "Join a global community of creativity"
         href: "/join"
     img:
-      src: "illustrations/Collaboration.png"
+      src: "images/illustrations/Collaboration.png"
   - id: "everyone"
     title: "For everyone"
     text: "**Co-own and govern the platform.** The one-member, one-vote system gives everyone a voice, and supports the community with deeply considered, core values."
@@ -31,11 +31,11 @@ for:
         text: "We’re doing things differently — learn more"
         href: "/the-coop"      
     img:
-      src: "illustrations/Badge.png"
+      src: "images/illustrations/Badge.png"
 why:
   title: "Why Resonate?"
   img:
-    src: "illustrations/P2P.png"
+    src: "images/illustrations/P2P.png"
   texts:
     - "**Resonate provides a space online where the ancient social power of music can connect people** to organize and trade resources in ‘digital dignity’ without the market pressure for ever-increasing profits, data surveillance and resource extraction."
     - "Although music is an ethereal art, **for Resonate part of being ‘human-powered’ means being concerned for the physical health of people’s bodies, minds and material environments**. We are therefore greatly inspired by how Repaired Nations focuses on social relations to the life-giving land and concrete conditions of ‘rootedness’."
@@ -49,7 +49,7 @@ why:
 how:
   title: "How is Resonate different?"
   img:
-    src: "illustrations/Peer2Peer.png"
+    src: "images/illustrations/Peer2Peer.png"
   blocks:
     - text: "**The co-operative model** fundamentally differentiates Resonate from other services."
       details: "A one-member, one-share, one-vote system brings democracy to the platform, and gives all active members and artists a voice."
@@ -81,7 +81,7 @@ features:
       text: "Learn more about our Community Credentials project"
       url: "/community-credentials"
     img:
-      src: "illustrations/Verified.png"
+      src: "images/illustrations/Verified.png"
   - id: "collaboration-solidarity"
     title: "Collaboration & solidarity"
     text: "**COLLABORATION & SOLIDARITY** puts control back in the hands of users. Choose who your data is shared with and how; verify your identity without exposing sensitive information, or surveillance."
@@ -89,7 +89,7 @@ features:
       text: "Lear more about our partners"
       url: "/team"
     img:
-      src: "illustrations/Knowyourcooperator.png"
+      src: "images/illustrations/Knowyourcooperator.png"
   - id: open-source""
     title: "Open-source"
     text: "**OPEN-SOURCE** puts control back in the hands of users. Choose who your data is shared with and how; verify your identity without exposing sensitive information, or surveillance."
@@ -97,11 +97,11 @@ features:
       text: "Explore our GitHub"
       url: "https://github.com/resonatecoop/"
     img:
-      src: "illustrations/Privacy.png"
+      src: "images/illustrations/Privacy.png"
   - id: "ethics"
     title: "Ethics comes first"
     text: "**ETHICS comes first.** We consider the impact of everything that we do, from ensuring our operation is environmentally-friendly to making an effort to build an inclusive platform, globally, for communities disadvantaged by big streaming and historically abused by Captialism and Colonialism."
     img:
-      src: "illustrations/Music_ecosystem.png"
+      src: "images/illustrations/Music_ecosystem.png"
 
 ---

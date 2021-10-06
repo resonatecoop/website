@@ -29,7 +29,7 @@ features:
     text: "Donate"
     href: "https://opencollective.com/resonate"
   img:
-    src: "illustrations/Badge.png"
+    src: "images/illustrations/Badge.png"
 active_membership:
   title: "Active Membership"
   text: |-

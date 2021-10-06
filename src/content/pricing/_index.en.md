@@ -31,7 +31,7 @@ pricing:
 
         Stream2own makes for a better relationship between listeners and artists, where they can find representative reward from those who value their music and build a trusted relationship with listeners who will be their advocates.
       img:
-        src: "illustrations/Ethical_streaming.gif"
+        src: "images/illustrations/Ethical_streaming.gif"
     - text: "**The first rule of Resonate is artists always get paid for every play unless they specify otherwise.** Providing total control for musicians and fair trade trust for fans."
       details: |-
         With subscription streaming, artists are forced into a new form of digital servitude as listeners would have to stream a song hundreds of times to equal the price of a single download.    
@@ -40,11 +40,11 @@ pricing:
 
         Our members, who are are artists and listeners, and our owners, are currently discussing future plans and ideas for new ways to pay, listen and enjoy art on Resonate. Including pay what you want, direct fan support for artists, collective and high streamer subscription offers. Watch this space and contribute your ideas via the topic in the [forum](https://community.resonate.is).
       img:
-        src: "illustrations/Wallet.png"
+        src: "images/illustrations/Wallet.png"
 community_credentials:
   title: "Community Credentials"
   img:
-    src: "illustrations/Verified.png"
+    src: "images/illustrations/Verified.png"
   blocks:
     - text: "**Protecting online spaces privacy** is an important part of keeping them safe for people."
       details: |-
