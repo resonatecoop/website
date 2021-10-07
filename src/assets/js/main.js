@@ -1,6 +1,5 @@
 import 'regenerator-runtime/runtime.js'
 import Nanocomponent from 'nanocomponent'
-import morph from 'nanomorph'
 import nanostate from 'nanostate'
 import choo from 'nanochoo' // resonatecoop/nanochoo (fork of nanochoo with added support for cached components)
 import html from 'nanohtml'
