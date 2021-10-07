@@ -113,6 +113,10 @@ function search (selector) {
     state.params = {} // nanochoo does not have a router
 
     state.cache(Search, 'search')
+
+    emitter.on('search', (q) => {
+      window.open(`https://beta.stream.resonate.coop/search?q=${q}`, '_blank')
+    })
   })
 
   app.view((state, emit) => {
