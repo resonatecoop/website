@@ -6,12 +6,6 @@
 
 [nodejs.org](https://nodejs.org)
 
-### Gulp
-
-```sh
-npm install gulp-cli --global
-```
-
 ### Hugo
 
 [gohugo.io](https://gohugo.io) The world’s fastest framework for building websites
