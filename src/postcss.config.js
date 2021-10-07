@@ -7,13 +7,6 @@ module.exports = {
         browsers: ['last 1 version'],
         'nesting-rules': true
       }
-    }),
-    require('cssnano')({
-      preset: ['default', {
-        discardComments: {
-          removeAll: true
-        }
-      }]
     })
   ]
 }

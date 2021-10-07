@@ -25,7 +25,6 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.15.6",
     "browserify": "^17.0.0",
-    "cssnano": "^4.1.11",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
     "tachyons": "^4.11.1"
