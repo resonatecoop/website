@@ -2,12 +2,12 @@
 title: "Winds of Change: In Conversation with Pink Siifu"
 desctiption: ""
 date: 2021-01-22
-image: "blog/Pink-Siifu-2048x1366.jpg"
+image: "images/blog/Pink-Siifu-2048x1366.jpg"
 summary: "Pink Siifu has been in hibernation mode this year. That hasn’t stopped his creative juices from flowing or his creative output, though. In 2020, the Alabama-born emcee dropped his second full-length album _Negro_."
 
 ---
 
-![Portrait of Pink Siifu](blog/Pink-Siifu-2048x1366.jpg "Photo by [Texas Isaiah](https://www.instagram.com/kingtexas/)")
+![Portrait of Pink Siifu](images/blog/Pink-Siifu-2048x1366.jpg "Photo by [Texas Isaiah](https://www.instagram.com/kingtexas/)")
 
 [Pink Siifu](https://stream.resonate.is/artists/16122) has been in hibernation mode this year. That hasn’t stopped his creative juices from flowing or his creative output, though.
 

@@ -29,15 +29,13 @@ ENV NODE_ENV development
 
 WORKDIR /build/website/src
 
+RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x
 RUN npm install
-RUN npm install -g gulp
 
 ARG NODE_ENV
 ENV NODE_ENV=$NODE_ENV
 
-RUN gulp
-
-RUN hugo -d ./public
+RUN hugo -d ./public -e ${NODE_ENV}
 
 FROM alpine:latest
 

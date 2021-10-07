@@ -96,3 +96,14 @@ ul.menu.flex-column li.active::after {
     top: 100%;
   }
 }
+
+.right-4 {
+  right: 4rem;
+}
+
+@media (--breakpoint-large) {
+  .initial-l {
+    position: static;
+    position: initial;
+  }
+}

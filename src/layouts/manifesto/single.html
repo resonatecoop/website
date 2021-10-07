@@ -1,14 +1,13 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <div class="center mw8 pa2 pa3-ns">
   {{ with .Params.hero }}
   <header id="manifesto-header" class="flex flex-column flex-row-ns items-center">
     <h1 class="w-100 w-70-m w-60-l normal near-black f4 ph2 ph3-ns">{{ .title | markdownify }}</h1>
     <div class="w-100 w-30-m w-40-l ph2 ph3-ns">
       {{ with .img }}
-      <img class="db center w-full h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="360" height="360" alt="">
+      {{- $img := resources.Get .src -}}
+      <img class="db center w-full h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="360" height="360" alt="">
       {{ end }}
     </div>
   </header>

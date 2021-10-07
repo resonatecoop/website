@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <header class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb5">
   <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
     <h1 class="f1 normal">{{ .Title }}</h1>
@@ -11,7 +9,8 @@
   <div class="w-100 w-30-m w-40-l">
     <figure class="ma0">
       {{ with .Params.img }}
-      <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+      {{- $img := resources.Get .src -}}
+      <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
       {{ end }}
     </figure>
   </div>
@@ -34,7 +33,8 @@
     </div>
     <figure class="w-20 ph2 ph3-ns h-100 ma0">
       {{ with .img }}
-      <img class="db w-100 h-auto grayscale" src="/images/{{ index $hash . }}" srcset="/images/{{ index $hash (replace . ".png" "@2x.png") }} 2x" width="192" height="192" alt="" loading="lazy">
+      {{- $img := resources.Get . -}}
+      <img class="db w-100 h-auto grayscale" src="{{ $img.Permalink }}"{{ if in . ".png" }}{{ $img2x := resources.Get (replace . ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="192" height="192" alt="" loading="lazy">
       {{ end }}
     </figure>
   </div>
@@ -53,7 +53,11 @@
     {{ range $.Site.Data.sections.network }}
     <a href="{{ .link }}" target="_blank" rel="noopener" class="w-20 ph3 ph4 pv3 bb br b--gray" title="{{ .name }}">
       <figure class="ma0">
-        <img class="db w-100 object-contain" src="/images/{{ index $hash .img }}" srcset="/images/{{ index $hash (replace .img ".png" "@2x.png") }} 2x" width="140" height="140" alt="{{ .name }}" loading="lazy" style="height: 140px">
+        {{- $name := .name -}}
+        {{ with .img }}
+        {{- $img := resources.Get . -}}
+        <img class="db w-100 object-contain" src="{{ $img.Permalink }}"{{ if in . ".png" }}{{ $img2x := resources.Get (replace . ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="140" height="140" alt="{{ $name }}" loading="lazy" style="height: 140px">
+        {{ end }}
       </figure>
     </a>
     {{ end }}

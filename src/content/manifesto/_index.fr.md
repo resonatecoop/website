@@ -5,7 +5,7 @@ layout: "single"
 hero: 
   title: "It’s time to **Play fair.**"
   img:
-    src: "illustrations/Playfair_2.png"
+    src: "images/illustrations/Playfair_2.png"
 paragraphs:
   - title: "Music is art, not content."
     text: "Creativity should be in the hands of its creators, not those looking to extract or exploit its value."

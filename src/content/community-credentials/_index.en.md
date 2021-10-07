@@ -3,7 +3,7 @@ title: "Community Credentials"
 description: ""
 layout: "single"
 img:
-  src: "illustrations/Verified.png"
+  src: "images/illustrations/Verified.png"
 text: |-
   **Resonate’s Community Credentials** project helps communities to award simple badge-like credentials that can be proven and recognised across organisations.
 

@@ -1,6 +1,7 @@
 <div class="w-100 mw9 center h-auto mt2 mt3-l bg-black flex flex-wrap items-start white">
   <figure class="w-60-ns w-100-m w-100 pa0 ma0">
-    <img class="w-100 h-auto ma0 db" src="/images/{{ index .hash .release.track.image }}" loading="lazy" alt="{{ .release.track.trackname }} artwork, by {{ .release.track.artwork }}" />
+    {{- $img := resources.Get .release.track.image -}}
+    <img class="w-100 h-auto ma0 db" src="{{ $img.Permalink }}" loading="lazy" alt="{{ .release.track.trackname }} artwork, by {{ .release.track.artwork }}" />
   </figure>
   <div class="w-40-ns w-100-m w-100 flex flex-column pa4 mt3">
     <span class="w-100 mid-gray mb3">Featured</span>

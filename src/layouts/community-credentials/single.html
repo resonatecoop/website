@@ -1,12 +1,11 @@
 {{ define "main" }}
 
-{{ $hash := .Site.Data.images.hash }}
-
 <header class="flex items-center justify-between pa3 pa4-ns">
   <h1 class="f1 normal mv5 mw6">{{ .Title | markdownify }}</h1>
   <figure class="ma0">
     {{ with .Params.img }}
-    <img class="db center h-auto" src="/images/{{ index $hash .src }}" srcset="/images/{{ index $hash (replace .src ".png" "@2x.png") }} 2x" width="280" height="280" alt="">
+    {{- $img := resources.Get .src -}}
+    <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
     {{ end }}
   </figure>
 </header>
