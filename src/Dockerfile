@@ -35,7 +35,7 @@ RUN npm install
 ARG NODE_ENV
 ENV NODE_ENV=$NODE_ENV
 
-RUN hugo -d ./public
+RUN hugo -d ./public -e ${NODE_ENV}
 
 FROM alpine:latest
 
