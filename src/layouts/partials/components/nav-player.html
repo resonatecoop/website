@@ -1,67 +1,17 @@
-<nav role="navigation" aria-label="Player navigation" class="dropdown-navigation flex w-100 flex-auto justify-end-l">
+<nav role="navigation" aria-label="Player navigation" class="dropdown-navigation flex w-100 w-40-l flex-auto justify-end-l">
   <ul role="menu" class="flex list ma0 pa0 w-100 w-75-l justify-around items-center mr3-l">
-    <li role="menuitem" class="flex flex-auto w-100 justify-center relative"><a href="https://stream.resonate.ninja/artists" class="dn db-l link near-black near-black--light near-white--dark pv2 ph3">Browse</a> <button title="Open Browse Menu" class="db dn-l bg-transparent bn near-black near-black--light near-white--dark pa0"><span class="flex justify-center items-center">Browse</span></button></li>
-    <li role="menuitem" class="flex flex-auto w-100 justify-center relative"><a href="https://stream.resonate.ninja/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Discover</a></li>
-    <li role="menuitem" class="flex w-100 justify-center clip-l"><button class="dn-l bn bg-transparent pa0"><svg viewBox="0 0 16 16" class="icon icon-search icon--sm"><use xlink:href="#icon-search"></use></svg></button></li>
-    <li role="divider" class="flex flex-auto w-100 justify-center"></li>
-    <li role="menuitem" class="flex flex-auto justify-center w-100"><a href="https://stream.resonate.ninja/api/v2/user/connect/resonate" class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b">Log In</a></li>
-    <li role="divider" class="dn flex-auto w-100 justify-center"></li>
-    <li role="menuitem" class="dn flex-auto justify-center w-100"><button title="Open menu" class="bg-transparent bn dropdown-toggle w-100 pa2"><span class="flex justify-center items-center"> <div class="fl w-100 mw2"><div class="db aspect-ratio aspect-ratio--1x1 bg-dark-gray bg-dark-gray--dark"><figure class="ma0"><img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' width%3D'60' height%3D'60' viewBox%3D'0 0 60 60'%2F%3E" class="aspect-ratio--object z-1" width="60" height="60"><figcaption class="clip"></figcaption></figure></div></div><div class="ph2"><svg viewBox="0 0 16 16" class="icon icon-caret-down icon--xxs"><use xlink:href="#icon-caret-down"></use></svg></div></span></button>
-      <ul style="width:100vw;left:auto;max-width:18rem;margin-top:-1px;" role="menu" class="bg-white black bg-black--dark white--dark bg-white--light black--light ba bw b--mid-gray b--mid-gray--light b--near-black--dark list ma0 pa0 absolute right-0 dropdown z-999">
-        <li role="menuitem" class="pt3">
-          <a href="https://id.resonate.ninja/account-settings" title="Account settings" class="link flex flex-auto items-center ph3 dim"> <span class="b"></span>
-            <div class="flex flex-auto justify-end"><span class="br-pill pv1 ph2 bg-light-gray bg-light-gray--light bg-near-black--dark"></span></div>
-          </a>
-        </li>
-        <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mv3"></li>
-        <li role="menuitem" class="dn items-center ph3">
-          <div class="flex flex-column"><label for="credits">Credits</label><input disabled="disabled" tabindex="-1" name="credits" id="credits" type="number" value="0" readonly="readonly" class="bn br0 bg-transparent b red"></div>
-          <div class="flex flex-auto justify-end"><button type="button" style="outline:solid 1px var(--near-black);outline-offset:-1px" class="pv2 ph3 ttu near-black near-black--light near-white--dark bg-transparent bn bn b flex-shrink-0 f6">Add credits</button></div>
-        </li>
-        <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mt3 mb2"></li>
-        <li role="menuitem" class="mb1">
-          <div class="theme-switcher-component flex flex-column w-100 pa2" id="ncid-cd29" data-nanocomponent="ncid-cd29" data-onloadidql7yirhfwp="o0">
-            <fieldset class="ma0 pa0 bn">
-              <legend class="lh-copy f5 clip">Theme</legend>
-              <div class="flex w-100">
-                <div class="flex items-center flex-auto">
-                  <input tabindex="-1" type="radio" name="theme" id="chooseDark" value="dark">
-                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseDark">
-                    <span class="pv3 flex justify-center w-100 flex-auto">
-                      <svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg>
-                    </span>
-                    <span class="pv3 flex w-100 flex-auto">Dark</span>
-                  </label>
-                </div>
-                <div class="flex items-center flex-auto">
-                  <input tabindex="-1" type="radio" name="theme" checked="checked" id="chooseLight" value="light">
-                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseLight">
-                    <span class="pv3 flex justify-center w-100 flex-auto"><svg viewBox="0 0 16 16" class="icon icon-circle icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-circle"></use></svg></span>
-                    <span class="pv3 flex w-100 flex-auto">Light</span>
-                  </label>
-                </div>
-                <div class="flex items-center flex-auto">
-                  <input tabindex="-1" type="checkbox" name="theme" id="chooseAuto" value="auto">
-                  <label tabindex="0" class="flex flex-auto items-center justify-center w-100" for="chooseAuto">
-                    <span class="pv3 flex justify-center w-100 flex-auto">
-                      <svg viewBox="0 0 16 16" class="icon icon-square icon--sm icon icon--sm fill-white fill-black--dark fill-white--light"><use xlink:href="#icon-square"></use></svg>
-                    </span>
-                    <span class="flex flex-auto w-100 pv3">Auto</span>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-        </li>
-        <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mv2"></li>
-        <li role="menuitem" class="mb1"><a href="/faq" class="link db pv2 pl3">FAQ</a></li>
-        <li role="menuitem" class="mb1"><a target="blank" rel="noreferer noopener" href="https://resonate.is/support" class="link db pv2 pl3">Support</a></li>
-        <li role="menuitem" class="mb1"><a href="/settings" class="link db pv2 pl3">Settings</a></li>
-        <li role="separator" class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mb3"></li>
-        <li role="menuitem" class="dn pr3 pb3">
-          <div class="flex justify-end"><button type="button" class="ttu near-black near-black--light near-white--dark f6 ba b--mid-gray b--mid-gray--light b--dark-gray--dark pv2 ph4 bg-transparent bn bn b flex-shrink-0 f5" style="outline:solid 1px var(--near-black);outline-offset:-1px">Log out</button></div>
-        </li>
-      </ul>
+    <li role="menuitem" class="flex flex-auto w-100 justify-center relative">
+      <a href="https://stream.resonate.ninja/artists" class="dn db-l link near-black near-black--light near-white--dark pv2 ph3">Browse</a>
+      <button title="Open Browse Menu" class="db dn-l bg-transparent bn near-black near-black--light near-white--dark pa0">
+      <span class="flex justify-center items-center">Browse</span></button>
     </li>
+    <li role="menuitem" class="flex flex-auto w-100 justify-center relative">
+      <a href="https://stream.resonate.ninja/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Discover</a>
+    </li>
+    <li role="divider" class="flex flex-auto w-100 justify-center"></li>
+    <li role="menuitem" class="flex flex-auto justify-center w-100">
+      <a href="https://stream.resonate.ninja/api/v2/user/connect/resonate" class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b">Log In</a>
+    </li>
+    <li role="divider" class="dn flex-auto w-100 justify-center"></li>
   </ul>
 </nav>

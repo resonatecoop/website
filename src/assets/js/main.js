@@ -8,15 +8,31 @@ import Search from '@resonate/search-component'
 
 import './tabbing.js'
 
-document.addEventListener('DOMContentLoaded', DOMContentLoaded)
+const app = choo()
 
-function DOMContentLoaded () {
-  // nav()
-  search('.search')
-}
+app.use((state, emitter, app) => {
+  state.search = state.search || {
+    q: ''
+  }
 
-// Search outer
-class SearchOuter extends Nanocomponent {
+  state.user = {}
+  state.params = {} // nanochoo does not have a router
+
+  state.cache(Search, 'search')
+
+  emitter.on('search', (q) => {
+    window.open(`https://beta.stream.resonate.coop/search?q=${q}`, '_blank')
+  })
+})
+
+app.view((state, emit) => {
+  return state.cache(Header, 'header').render()
+})
+
+app.mount('.search')
+
+// Header component
+class Header extends Nanocomponent {
   constructor (id, state, emit) {
     super(id)
 
@@ -68,13 +84,13 @@ class SearchOuter extends Nanocomponent {
           onclick: (e) => {
             this.local.machine.emit('search:toggle')
           },
-          class: 'js bn dn db-l bg-transparent'
+          class: 'bn mr4 mr0-l pa0 bg-transparent'
         }
         return html`
           <button ${attrs}>
-            <div class="flex items-center">
+            <div class="flex items-center justify-center">
               ${icon('search', { size: 'sm' })}
-              <span class="db pl3 near-black near-black--light near-white--dark">Search</span>
+              <span class="dn db-l pl3 near-black near-black--light near-white--dark">Search</span>
             </div>
           </button>
         `
@@ -82,46 +98,13 @@ class SearchOuter extends Nanocomponent {
     }[this.local.machine.state.search]
 
     return html`
-      <div class="search flex-l flex-auto-l w-100-l justify-center-l">
+      <li role="menuitem" class="search flex w-100 flex-auto justify-end justify-center-l">
         ${machine()}
-      </div>
+      </li>
     `
   }
 
   update () {
     return false
   }
-}
-
-function search (selector) {
-  if (!document.querySelector(selector)) {
-    console.log(`${selector} element not found`)
-    return
-  }
-
-  const app = choo()
-
-  app.use((state, emitter, app) => {
-    state.search = state.search || {
-      notFound: false,
-      q: '',
-      results: [],
-      placeholder: 'search by name, artist, album, tag'
-    }
-
-    state.user = {}
-    state.params = {} // nanochoo does not have a router
-
-    state.cache(Search, 'search')
-
-    emitter.on('search', (q) => {
-      window.open(`https://beta.stream.resonate.coop/search?q=${q}`, '_blank')
-    })
-  })
-
-  app.view((state, emit) => {
-    return state.cache(SearchOuter, 'header').render()
-  })
-
-  app.mount(selector)
 }
