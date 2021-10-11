@@ -10,3 +10,7 @@
   translation: "Ilustraciones de"
 - id: continue_reading
   translation: "Sigue leyendo"
+- id: join_now
+  translation: "Únete ahora"
+- id: login_player
+  translation: "Login to the player"
