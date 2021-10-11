@@ -42,7 +42,7 @@ why:
     - "**As our networked world progressed over the past decades, the way people listen to music changed drastically.** The current result is an unsustainable corporate controlled streaming model of value extraction that can’t support the independent music industry ecosystem long-term and is designed to be opaque and inequitable."
   details:
     - "**Streaming services wield too much power over discovery, and “big pool” methods of splitting royalties are unfair and inequitable.** <br> Music has been turned into content, and fans into passive consumers. Artists are immaterial to these companies who serve and centre their advertisers and shareholders. Fake plays and payola game the system and degrade culture."
-    - "**Inequities have been exacerbated.** <br> Power has been consolidated not in the hands of creators, but in those of dominant tech companies, platform capitalists and major labels. Independent artists find themselves competing on an unlevel playfield against artists backed by labels who own the very system they are forced to be a part of."    
+    - "**Inequities have been exacerbated.** <br> Power has been consolidated not in the hands of creators, but in those of dominant tech companies, platform capitalists and major labels. Independent artists find themselves competing on an unlevel playfield against artists backed by labels who own the very system they are forced to be a part of."
     - "**Inefficiencies plague the music industry and often lead to slow, inaccurate royalty payouts.** <br> Artists suffer from a complete lack of transparency from payments and stream royalty rates to the working of algorithms and playlisting."
     - "**Privacy is abused.** <br> Fans and artists often need to surrender personal information to stay informed and have become the product, as companies harvest vast amounts of data on individuals, often with bare knowledge or consent."
     - "**Control is needed by all.**  <br>Artists should have a say in how their music is distributed, listeners should have control over how their data is used. Instead of accepting the crumbs from the billion dollar banquets of big tech, artists and creators whose work is the backbone of the success of these platforms deserve a seat at the table and a share of the pie."
@@ -56,14 +56,14 @@ how:
     - text: "**We aim to decolonize and democratize community spaces** and creative channels that are currently the domain of private capital."
       details: "Replacing corporate and venture capital governance with co-operative services to build accountability across communities. Providing a model for growing the reach and depth of intentional local cultural life support while building security against speculation, hostile takeover and market pressure."
     - text: "**We reject the historical basis of property in divine right** and human supremacy in ecological relations."
-      details: >
+      details: |-
         We’ve seen this “divine right” over property lead to the commodification and extraction of not only most of the Earth’s life support systems, but has also led to the birth of human commodities.
 
         In order to redress these historical harms of the Trans-Atlantic Slave Trade, colonisation, the creation of ‘underdeveloped peoples,’ the genocide of Indigenous Peoples, among others, we must engage and align ourselves with dispossessed communities constructing a visionary-life affirming economy because we realise that these historical harms were fundamental the expansion and success of our modern-day extractive economy.
 
         Democratizing, decentralizing, diversifying economic activity while also lessening consumption, and (re)distributing resources and power further helps us move in right relationship not only with one another, but with this planet.
     - text: "**Protecting online spaces privacy** is an important part of keeping them safe for people."
-      details: >
+      details: |-
         To do this, Resonate is testing a kind of decentralized membership or [Community Credentials](/community-credentials) that allows co-op memberships, special purchases and simple agreements between Members to be validated without exposing the private data of the people involved. 
 
         A system like this could allow members of one co-op or service to be recognized by others without personal information being exposed or stored in centralized databases. 
