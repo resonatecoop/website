@@ -4,7 +4,7 @@ description: "Resonate is the world’s first co-operative music streaming servi
 subtitle: "The community-owned music streaming service."
 hero:
   p1: "**Resonate is the world’s first <br>co-operative music streaming service** <br>— a multi-stakeholder platform co-operative, democratically governed by its members: artists, listeners and workers."
-  p2: "**We are unique in streaming, designed to put music and artists first, with a community committed to building the social power of music.** As stewards of creativity, we are providing a vital corner-stone of the new music eco-system based on fairness, transparency, dignity, agency and community."
+  p2: "**We are unique in streaming, designed to put music and artists first, with a community committed to building the social power of music.** <br>As stewards of creativity, we are providing a vital corner-stone of the new music eco-system based on fairness, transparency, dignity, agency and community."
   p3: "**We respect the common and indigenous sources of all wealth and culture**, building with communities in solidarity to resist and repair from the social and ecological effects of capital accumulation and colonialism."
 playfair:
   text: "It’s time to"
@@ -20,7 +20,7 @@ playfair:
     - text: "The Co-op"
       href: "/the-coop"
     - text: "stream2own"
-      href: "/stream2own"
+      href: "/pricing"
   cta: "Become a member"
   link: "Login to the player"
 featured_title: "Featured releases"
