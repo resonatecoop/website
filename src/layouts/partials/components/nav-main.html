@@ -1,0 +1,37 @@
+<nav role="navigation" aria-label="Main navigation" class="flex-l flex-auto-l w-60-l relative dropdown-navigation--focus">
+  <ul role="menu" class="list ma0 pa0 bg-white bg-white--light bg-black--dark bg-transparent-l fixed w-100 top-0 left-0 flex flex-auto w-100 relative-l flex-l bb bb-0-l bw b--mid-gray b--mid-gray--light b--near-black--dark" style="height: 3rem;">
+    <li class="dn db-ns">
+      <a class="link flex items-center flex-shrink-0 h-100 ph2 ml2 overflow-hidden" href="/" title="Resonate">
+        <svg viewBox="0 0 16 16" class="icon icon-logo-wordmark icon--sm">
+          <use xlink:href="#icon-logo-wordmark"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="db dn-ns">
+      <a class="link flex items-center flex-shrink-0 h-100 ph2 ml2 overflow-hidden" href="/" title="Resonate">
+        <svg viewBox="0 0 16 16" class="icon icon-logo icon--sm">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+    </li>
+    <li id="learn">
+      <button title="Open learn menu" class="bg-transparent near-black near-black--light near-white--dark bn dropdown-toggle pa3">
+        <div class="flex justify-center items-center">
+          <span>{{ T "learn" }}</span> 
+          <div class="ph2">
+            <svg viewBox="0 0 16 16" class="icon icon-caret-down icon--xxs"><use xlink:href="#icon-caret-down"></use></svg>
+          </div>
+        </div>
+      </button>
+      <ul role="menu" style="width:120px;left:0;" class="bg-white black bg-black--dark white--dark bg-white--light black--light ba bw b--mid-gray b--mid-gray--light b--near-black--dark list ma0 pa0 absolute right-0 dropdown z-999 top-100">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li role="menuitem" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+          <a href="{{ .URL | absLangURL }}" class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </li>
+    {{ partial "components/search" . }}
+  </ul>
+</nav>

@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#toc a:hover,
+#toc a:focus {
+  color: var(--black);
+}
+
+.invert--dark {
+	filter: invert(1);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.object-contain {
+  object-fit: contain;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.link-full::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
+
+.list-ol {
+  counter-reset: index;
+}
+.list-ol > li::before {
+  counter-increment: index;
+  content: counter(index);
+  font-size: larger;
+  border: 1px solid var(--black);
+  text-align: center;
+  padding: 0 .2em;
+  margin-right: .25em;
+  min-width: 2rem;
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  font-weight: normal;
+  color: var(--dark-gray);
+  text-align: left;
+}
+table tr > * {
+  border: 1px solid var(--mid-gray);
+  padding: .25em 1em;
+}
+.bg-black table th {
+  color: var(--mid-gray);
+}
+.bg-black table tr > * {
+  border-color: var(--dark-gray);
+}
+
+@media screen and (min-width: 60rem ) {
+  .feature img {
+    max-width: 25vw;
+  }
+}

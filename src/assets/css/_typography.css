@@ -1,0 +1,65 @@
+ul, ol {
+	padding-left: 1em;
+}
+
+p {
+	max-width: 33em;
+}
+
+.tracked-normal { letter-spacing: 0 }
+
+.f1 {
+	font-size: var(--font-size-1);
+	line-height: 1;
+	letter-spacing: -.045em;
+	margin-left: -.045em;
+}
+.f2 {
+	font-size: var(--font-size-2);
+	line-height: 112%;
+	letter-spacing: -.03em;
+	margin-left: -.03em;
+}
+.f3 {
+	font-size: var(--font-size-3);
+	letter-spacing: -.02em;
+	line-height: 1.36;
+}
+.f4 {
+	font-size: var(--font-size-4);
+	line-height: 1.36;
+	letter-spacing: -.01em;
+}
+.f5 {
+	font-size: var(--font-size-5);
+	line-height: 1.46666;
+	letter-spacing: 0;
+}
+.f6 {
+	font-size: var(--font-size-6);
+	line-height: 1.6923076923;
+}
+
+@media screen and (min-width: 30rem) {
+	.f1-vw-m { font-size: var(--font-size-vw-1) }
+	.f2-vw-m { font-size: var(--font-size-vw-2) }
+	.f3-vw-m { font-size: var(--font-size-vw-3) }
+	.f4-vw-m { font-size: var(--font-size-vw-4) }
+	.f5-vw-m { font-size: var(--font-size-vw-5) }
+	.f6-vw-m { font-size: var(--font-size-vw-6) }
+	.f7-vw-m { font-size: var(--font-size-vw-7) }
+}
+
+@media screen and (min-width: 64rem) {
+	.f1-vw-l { font-size: var(--font-size-vw-1) }
+	.f2-vw-l { font-size: var(--font-size-vw-2) }
+	.f3-vw-l { font-size: var(--font-size-vw-3) }
+	.f4-vw-l { font-size: var(--font-size-vw-4) }
+	.f5-vw-l { font-size: var(--font-size-vw-5) }
+	.f6-vw-l { font-size: var(--font-size-vw-6) }
+	.f7-vw-l { font-size: var(--font-size-vw-7) }
+	.icon-arrow-tr {
+		width: 0.666em;
+		height: 0.666em;
+	}
+}

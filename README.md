@@ -6,12 +6,6 @@
 
 [nodejs.org](https://nodejs.org)
 
-### Gulp
-
-```sh
-npm install gulp-cli --global
-```
-
 ### Hugo
 
 [gohugo.io](https://gohugo.io) The world’s fastest framework for building websites
@@ -22,14 +16,14 @@ npm install gulp-cli --global
 
 ```sh
 cd src && \
-npm install && \
-gulp
+npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x && \
+npm install
 ```
 
 ### Server
 
 ```sh
-hugo server --config config.toml --baseURL http://localhost:1314 --port 1314
+hugo server --baseURL http://localhost:1314 --environment development --port 1314
 ```
 
 ## Docker
@@ -45,6 +39,7 @@ docker-compose -f docker-compose-dev.yml up -d website
 - Jase <jase@jasecoop.com>
 - Alex Crane <alex@resonate.is>
 - Augustin Godiscal <auggod@resonate.is>
+- Timothée Goguely <timothee@goguely.com>
 
 ## See also
 

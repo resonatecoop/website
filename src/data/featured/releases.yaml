@@ -1,0 +1,13 @@
+url: https://stream.resonate.coop/api/v2/trackgroups?limit=20&page=1&featured=true
+track:
+  image: "images/becoming-none-566x570.jpg"
+  artist: "Littlebabyangel"
+  trackname: "GADA"
+  label: "LuckyMe"
+  producers:
+    - producer: "Cameron Morse"
+    - producer: "Stephen Armstrong"
+  artwork: "Littlebabyangel"
+  genres:
+    - genre: "grime"
+  year: "2018"

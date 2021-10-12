@@ -1,0 +1,9 @@
+<script type="application/ld+json">
+  {{ dict 
+    "@context" "http://schema.org" 
+    "@type" "Website"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+    | jsonify (dict "prefix" "  " "indent" "  ") 
+    | safeJS
+  }}</script>

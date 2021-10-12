@@ -1,0 +1,30 @@
+.btn {
+  background: none;
+  border: solid 1px var(--mid-gray);
+  color: var(--near-black);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: var(--spacing-small) var(--spacing-large)
+}
+
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.btn-white {
+  background: none;
+  border-color: var(--light-gray);
+  color: var(--light-gray);
+}
+
+.btn-white:hover {
+  border-color: var(--white);
+  color: var(--white);
+}

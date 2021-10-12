@@ -1,0 +1,19 @@
+favicon: ''
+body_classes: color-scheme--light
+description: Play fair.
+legal: Resonate
+logo: "images/logo/logo-icon-circle.png"
+social:
+- name: fb
+  title: Facebook
+  url: https://www.facebook.com/resonatecoop
+- name: tw
+  title: Twitter
+  url: https://twitter.com/resonatecoop
+- name: ig
+  title: Instagram
+  url: https://www.instagram.com/resonate_coop/
+rss:
+- name: RSS
+  title: Blog RSS feed
+  url: /blog/index.xml

@@ -1,0 +1,122 @@
+.icon-logo {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-resonate {
+  width: 110px;
+  height: 50px;
+}
+
+.icon-logo-wordmark {
+  width: 132px;
+  height: 132px;
+}
+
+@media (--breakpoint-large) {
+  .bg-transparent-l {
+    background-color: transparent!important; /* TODO should be in @resonate/tachyons */
+  }
+}
+
+#header .link {
+  flex-shrink: 0;
+}
+
+.dropdown-navigation li, .dropdown-navigation--focus li {
+  position: relative;
+  transition-duration: 0.2s;
+}
+
+.dropdown-navigation li:focus-within a, .dropdown-navigation--focus li:focus-within a {
+  outline: none;
+}
+
+.dropdown-navigation ul[role="menu"] li ul[role="menu"], .dropdown-navigation--focus ul[role="menu"] li ul[role="menu"] {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  transition: all 0.2s ease;
+  left: 0;
+  display: none;
+}
+
+@media (--breakpoint-large) {
+  #header .logo .icon-resonate {
+    display: block;
+  }
+  .dropdown-navigation ul[role="menu"] li ul[role="menu"], .dropdown-navigation--focus ul[role="menu"] li ul[role="menu"] {
+    bottom: auto;
+    margin-top: -1px;
+  }
+}
+
+.dropdown-navigation ul li ul[role="menu"] a, .dropdown-navigation--focus ul[role="menu"] li ul[role="menu"] a {
+  width: 100%;
+}
+
+.dropdown-navigation ul[role="menu"] li:hover > ul[role="menu"],
+.dropdown-navigation ul[role="menu"] li:focus-within > ul[role="menu"],
+.dropdown-navigation ul[role="menu"] li ul[role="menu"]:hover,
+.dropdown-navigation ul[role="menu"] li ul[role="menu"]:focus {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-navigation--focus ul[role="menu"] li:focus-within > ul[role="menu"],
+.dropdown-navigation--focus ul[role="menu"] li ul[role="menu"]:focus {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-navigation ul[role="menu"] li ul[role="menu"] li, .dropdown-navigation--focus ul[role="menu"] li ul[role="menu"] li {
+  clear: both;
+  width: 100%;
+}
+
+@media (--breakpoint-large) {
+  .dropdown-navigation ul[role="menu"], .dropdown-navigation--focus ul[role="menu"] {
+    top: 100%;
+  }
+}
+
+.right-4 {
+  right: 4rem;
+}
+
+@media (--breakpoint-large) {
+  .initial-l {
+    position: static;
+    position: initial;
+  }
+}
+
+.bottom-100 {
+  bottom: 100%;
+}
+
+.top-100 {
+  top: 100%;
+}
+
+@media (--breakpoint-large) {
+  .top-100-l {
+    top: 100%;
+  }
+}
+
+/* ajust spacing for fixed|sticky header */
+
+.page-wrap {
+  padding-top: 3rem;
+}
+
+@media (--breakpoint-large) {
+  .page-wrap {
+    padding-top: 0;
+  }
+}

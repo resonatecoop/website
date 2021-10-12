@@ -7,11 +7,11 @@ services:
     networks:
       - hugo-network
     volumes:
-      - /var/www/website
+      - /build/website
     restart: always
     ports: 
       - "1313:1313"
-    command: hugo server -s /var/www/website --config /var/www/website/config.toml --baseURL https://resonate.localhost/ --bind "0.0.0.0" --appendPort=false --verbose
+    command: hugo server -s /build/website/src --baseURL https://resonate.space/ --bind "0.0.0.0" --appendPort=false --verbose
 
   webserver:
     image: nginx:mainline-alpine

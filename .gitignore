@@ -7,11 +7,12 @@ nginx-conf/
 
 docker-compose-*
 
-public/
-static/
 src/data/css/hash.json
 src/data/js/hash.json
 src/data/images/hash.json
+src/public/
+src/static/dist/
+src/resources/
 
 # Compiled source #
 ###################

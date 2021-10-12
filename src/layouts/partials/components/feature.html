@@ -1,0 +1,18 @@
+<div {{ with .feature.id }}id="{{ . }}"{{ end }} class="feature flex flex-column-reverse items-start items-center-l flex-row-ns mb5">
+  <div class="w-100 w-70-m w-60-l ph3 ph4-ns">
+    {{ with .feature.title }}<h3 class="sr-only">{{ . }}</h3>{{ end }}
+    <p class="f4 f4-vw-l">
+      <span aria-hidden="true">●</span> {{ .feature.text | markdownify }}
+    </p>
+    {{ with .feature.details }}
+    <p class="f5 f5-vw-l">{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .feature.link }}
+    {{ partial "components/link" . }}
+    {{ end }}
+  </div>
+  <figure class="ma0 w-100 w-30-m w-40-l pr4-ns">
+    {{- $img := resources.Get .feature.img.src -}}
+    <img class="db center w-100-ns h-auto" src="{{ $img.Permalink }}"{{ if in .feature.img.src ".png" }}{{ $img2x := resources.Get (replace .feature.img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+  </figure>
+</div>

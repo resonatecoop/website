@@ -1,28 +1,105 @@
 {{ define "main" }}
-<section class="w-100 ph1 ph3-ns pt2 pt6-l">
-  {{ partial "components/titleblock.html" . }}
 
-  <section class="f5 f4-ns lh-copy pt3 pt5-l mb4 mb5-l ">
-    {{ range .Params.paragraphs }}
-    <div class="paragraphs w-100 flex flex-column flex-row-l pr5-l">
-        <div class="w-100 w-20-l">
-          <div class="w4 center-l pa2">
-            {{ if .icon }}
-            {{ $icon := .icon }}
-            {{ partial "icons/svg.html" (dict "svg" $icon "color" "fill-black") }}
-            {{ end }}
-          </div>
-        </div>
-        <div class="w-100 w-80-l">
-       {{ partial "components/paragraph" . }}
-       {{ if .links }}
-       {{ range .links }}
-       {{ partial "components/link" . }}
-       {{ end }}
-       {{ end }}
-       </div>
-     </div>
-     {{ end }}
-  </section>
+<header id="about-header" class="pa2 pa3-ns mb6">
+  <h1 class="w-100 w-70-m w-60-l f1 f1-vw-l normal ph2 ph3-ns">{{ .Title }}</h1>
+  <p class="f3 f3-vw-l ph2 ph3-ns">{{ .Params.subtitle | markdownify }}</p>
+</header>
+
+{{ with .Params.for }}
+<section class="mb6">
+  {{ range . }}
+  <div id="{{ .id }}" class="flex flex-column-reverse flex-row-reverse-ns items-start mb5 ph2 ph3-ns">
+    <div class="w-100 w-70-m w-80-l ph2 ph3-ns f5 f5-vw-l">
+      <div style="max-width: 37.5em">
+        <h2 class="di f4 f4-vw-l outline normal ph2 mr1">{{ .title | markdownify }}</h2>
+        <p class="di f4 f4-vw-l">{{ .text | markdownify }}</p>
+        <p class="mt3">{{ .details | markdownify }}</p>
+        {{ with .links }}
+        <ul class="pl0">
+          {{ range . }}
+          <li class="list list-arrow-tr lh-copy">
+            {{ with .title }}<p>{{ . }}</p>{{ end }}
+            {{ partial "components/link" . }}
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+    <figure class="ma0 w-100 w-30-m w-20-l mb4 ph2 ph3-ns">
+      {{ with .img }}
+      {{- $img := resources.Get .src -}}
+      <img class="db center w-100-ns h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="160" height="160" alt="">
+      {{ end }}
+    </figure>
+  </div>
+  {{ end }}
 </section>
-{{end}}
+{{ end }}
+
+{{ with .Params.why }}
+<section id="why" class="bg-black white pa2 pa3-ns">
+  <header class="flex flex-column-reverse flex-row-l items-center-l justify-between pa2 pa3-ns">
+    <h2 class="f2 f2-vw-l w-100 w-80-m w-40-l normal mt3 mb5">{{ .title | markdownify }}</h2>
+    <figure class="ma0 w-100 w-40-l mt5 mt0-ns">
+      {{ with .img }}
+      {{- $img := resources.Get .src -}}
+      <img class="db center-l h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+      {{ end }}
+    </figure>
+  </header>
+  <div class="flex flex-column flex-row-l items-baseline mb5">
+    {{ with .texts }}
+    <div class="ph2 ph3-ns w-100 w-60-l">
+      {{ range . }}
+      <p class="f4 f4-vw-l mb4"><span aria-hidden="true">●</span> {{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ with .details }}
+    <div class="ph2 ph3-ns w-100 w-40-l">
+      {{ range . }}
+      <p class="f6 f6-vw-l mw6">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.how }}
+<section id="how">
+  <header class="flex flex-column-reverse flex-row-l items-center-l justify-between pa3 pa4-ns">
+    <h2 class="f2 f2-vw-l w-100 w-80-m w-60-l normal mt3 mb5">{{ .title | markdownify }}</h2>
+    <figure class="ma0 w-100 w-40-l mt5 mt0-ns">
+      {{ with .img }}
+      {{- $img := resources.Get .src -}}
+      <img class="db center-l h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+      {{ end }}
+    </figure>
+  </header>
+  <div class="flex flex-column flex-row-l flex-wrap items-strech mb5 bt b--gray">
+    {{ range $i, $block := .blocks }}
+    <div class="ph3 ph4-ns pt2 pb5 bb b--gray f5 f5-vw-l w-100 {{ if (modBool $i 2) }}w-40-l{{ else }}w-60-l bl{{ end }}">
+      <p class="f4 f4-vw-l mb4">{{ $block.text | markdownify }}</p>
+      {{- if lt $i 2 }}
+      <p>{{ $block.details | markdownify }}</p>
+      {{- else -}}
+      {{ $block.details | markdownify }}
+      {{- end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.features }}
+<section id="features">
+  {{ range . }}
+  {{ partial "components/feature" ( dict "feature" . ) }}
+  {{ end }}
+  <div class="ph3 ph4-ns mv5">{{ partial "components/illustrations-credits" }}</div>
+</section>
+{{ end }}
+
+{{ end }}

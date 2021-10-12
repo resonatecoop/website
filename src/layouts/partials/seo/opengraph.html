@@ -1,0 +1,16 @@
+  {{- with .Title | default .Site.Title }}
+  <meta property="og:title" content="{{ . }}" />
+  {{- end }}
+  {{- with .Description | default .Params.subtitle | default .Summary }}
+  <meta property="og:description" content="{{ . }}">
+  {{- end }}
+  {{- with .Params.image | default .Site.Params.image }}
+  {{- $img := (resources.Get .).Fit "1200x628" -}}
+  <link rel="image_src" href="{{ $img.Permalink | absURL }}">
+  <meta property="og:image" content="{{ $img.Permalink | absURL }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+  {{- end }}
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />

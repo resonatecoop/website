@@ -1,0 +1,16 @@
+- id: learn
+  translation: "Apprendre"
+- id: community
+  translation: "Communauté"
+- id: connect
+  translation: "Se connecter"
+- id: code
+  translation: "Code"
+- id: illustrations_by
+  translation: "Illustrations par"
+- id: continue_reading
+  translation: "Lire la suite"
+- id: join_now
+  translation: "Rejoignez-nous maintenant"
+- id: login_player
+  translation: "Se connecter au player"

@@ -1,14 +1,14 @@
 {{ partial "head.html" . }}
 <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-  {{ partial "components/nav-push" . }}
+  <!--{{ partial "components/nav-push" . }}-->
   <div class="page-wrap">
-    <section id="site-wrap">
-      {{ partial "components/navbar" . }}
-      {{ block "main" . -}}
-      {{- end }}
-    </section>
+    {{ partial "components/header" . }}
+    <main role="main">
+    {{ block "main" . -}}
+    {{- end }}
+  	</main>
     {{ partial "components/footer" . }}
   </div>
-  <script type="text/javascript" src="/dist/js/{{ index .Site.Data.js.hash "main.js" }}"></script>
-  </body>
-<html>
+  {{ partial "icons/icons" . }}
+</body>
+</html>

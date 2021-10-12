@@ -1,7 +1,8 @@
-ARG HUGO_VERSION 0.88.0
-ARG NODE_ENV development
+ARG RELEASE_TAG=develop
+ARG HUGO_VERSION=0.88.0
+ARG NODE_ENV=development
 
-FROM node:12-alpine as builder
+FROM node:14-alpine as builder
 
 ARG HUGO_VERSION
 ENV HUGO_VERSION $HUGO_VERSION
@@ -16,27 +17,30 @@ RUN set -x && \
   apk del wget ca-certificates && \
   rm /var/cache/apk/*
 
-WORKDIR /var/www/website
+WORKDIR /build
 
-COPY . .
+ARG RELEASE_TAG
 
-ENV NODE_ENV=development
+RUN apk --no-cache add git
 
+RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/resonatecoop/website
+
+ENV NODE_ENV development
+
+WORKDIR /build/website/src
+
+RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x
 RUN npm install
-
-RUN npm install -g gulp
 
 ARG NODE_ENV
 ENV NODE_ENV=$NODE_ENV
 
-RUN gulp
-
-RUN hugo -d ./public
+RUN hugo -d ./public -e ${NODE_ENV}
 
 FROM alpine:latest
 
-WORKDIR /var/www/website
+WORKDIR /build
 
 COPY --from=builder /usr/bin/hugo /usr/bin/
 
-COPY --from=builder /var/www/website /var/www/website
+COPY --from=builder /build/website /build/website

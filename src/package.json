@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Resonate manifesto",
   "scripts": {
-    "build": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
   "keywords": [
@@ -12,30 +12,26 @@
   "author": "Resonate Coop <members@resonate.is>",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@resonate/api-service": "^1.0.0",
+    "@resonate/icon-element": "^1.4.0",
+    "@resonate/play-count-component": "^1.0.0",
+    "@resonate/search-component": "^1.0.0",
+    "@resonate/svg-image-placeholder": "^1.0.0",
     "@resonate/tachyons": "^1.3.4",
-    "nanoanimation": "^2.1.0",
+    "browser-or-node": "^1.3.0",
+    "nanochoo": "git+https://github.com/resonatecoop/nanochoo.git",
+    "nanocomponent": "^6.6.0",
     "nanohtml": "^1.9.1",
-    "on-intersect": "^2.0.0"
+    "nanostate": "^1.2.1",
+    "regenerator-runtime": "^0.13.9",
+    "shallow-clone": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
-    "critical": "^2.0.0-27",
-    "cssnano": "^4.1.8",
-    "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-hash": "^4.2.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-run": "^1.7.1",
-    "gulp-uglify-es": "^1.0.4",
-    "gulplog": "^1.0.0",
+    "@babel/preset-env": "^7.15.6",
+    "browserify": "^17.0.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
-    "tachyons": "^4.11.1",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "tachyons": "^4.11.1"
   }
 }
