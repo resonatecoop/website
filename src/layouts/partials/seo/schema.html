@@ -1,0 +1,8 @@
+{{- partial "seo/structured/website" . }}
+{{- partial "seo/structured/organization" . }}
+{{- if or .IsPage (eq .Type "blog") }}
+{{- partial "seo/structured/breadcrumb" . }}
+  {{- if and (eq .Type "blog") (eq .Kind "page") }}
+  {{- partial "seo/structured/post" . }}
+  {{- end }}
+{{- end }}
