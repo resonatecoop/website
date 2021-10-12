@@ -77,3 +77,9 @@ table tr > * {
 .bg-black table tr > * {
   border-color: var(--dark-gray);
 }
+
+@media screen and (min-width: 60rem ) {
+  .feature img {
+    max-width: 25vw;
+  }
+}

@@ -1,93 +1,30 @@
 .btn {
-  height: 44px;
   background: none;
-  border: solid 1px $near-black;
-  color: $near-black;
+  border: solid 1px var(--mid-gray);
+  color: var(--near-black);
   text-align: center;
-  font-family: 'Graphik';
-  font-weight: 600;
-  letter-spacing: 0px;
-  padding: 0 $spacing-medium;
+  font-weight: bold;
   cursor: pointer;
+  padding: var(--spacing-small) var(--spacing-large)
 }
 
 a.btn {
   display: inline-block;
-  line-height: 44px;
   text-decoration: none;
 }
 
 .btn:hover {
-  border: solid 1px $black;
-  color: $black;
-}
-
-.btn-noPad {
-  padding: 0;
+  border-color: var(--black);
+  color: var(--black);
 }
 
 .btn-white {
   background: none;
-  border-color: $light-gray;
-  color: $light-gray;
+  border-color: var(--light-gray);
+  color: var(--light-gray);
 }
 
 .btn-white:hover {
-  border-color: $white;
-  color: $white;
-}
-
-.btn-true-white {
-  background: none;
-  border-color: $white;
-  color: $white;
-}
-
-.btn-true-white:hover {
-  border-color: $light-gray;
-  color: $light-gray;
-}
-
-.section-black .btn,
-.section-white .btn {
-  font-size: 1rem;
-}
-
-.btn-fat {
-  height: 66px;
-  letter-spacing: 0;
-}
-
-a.btn-fat {
-  line-height: 66px;
-}
-
-.btn-fat-reponsive {
-  height: 34px;
-  letter-spacing: 0;
-}
-
-a.btn-fat-reponsive {
-  line-height: 32px;
-}
-
-.btn-sml {
-  height: 36px;
-  font-weight: 400;
-  padding: 0 $spacing-small;
-}
-
-a.btn-sml {
-  line-height: 36px;
-}
-
-@media screen and (min-width: 30em) {
-  .btn-fat-reponsive {
-    height: 66px;
-    letter-spacing: 0;
-  }
-
-  a.btn-fat-reponsive {
-    line-height: 66px;
-  }
+  border-color: var(--white);
+  color: var(--white);
 }

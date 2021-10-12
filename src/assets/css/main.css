@@ -17,5 +17,6 @@
 
 @import '@resonate/search-component/index.css';
 
-@import 'assets/css/_marketing';
+@import 'assets/css/_homepage';
 @import 'assets/css/_manifesto';
+@import 'assets/css/_pricing';
