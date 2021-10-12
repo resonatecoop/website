@@ -3,7 +3,7 @@
 <div class="center mw8 pa2 pa3-ns">
   {{ with .Params.hero }}
   <header id="manifesto-header" class="flex flex-column flex-row-ns items-center">
-    <h1 class="w-100 w-70-m w-60-l normal near-black f4 ph2 ph3-ns">{{ .title | markdownify }}</h1>
+    <h1 class="w-100 w-70-m w-60-l normal near-black f4 f4-vw-l ph2 ph3-ns">{{ .title | markdownify }}</h1>
     <div class="w-100 w-30-m w-40-l ph2 ph3-ns">
       {{ with .img }}
       {{- $img := resources.Get .src -}}
@@ -27,8 +27,8 @@
       {{ range $index, $paragraph := . }}
       {{ $i :=add $index 1 }}
       <li id="{{ $i }}" class="list pt5">
-        <h2 class="di f4">{{ $paragraph.title | markdownify }}</h2>
-        <p class="di f4">{{ $paragraph.text | markdownify }}</p>
+        <h2 class="di f4 f4-vw-l">{{ $paragraph.title | markdownify }}</h2>
+        <p class="di f4 f4-vw-l">{{ $paragraph.text | markdownify }}</p>
       </li>
       {{ end }}
     </ol>

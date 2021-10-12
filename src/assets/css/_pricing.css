@@ -1,0 +1,6 @@
+/* Pricing */
+@media screen and (min-width: 60em) {
+  #community-credentials p.f4 {
+    max-width: 16em;
+  }
+}

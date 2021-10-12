@@ -1,33 +1,33 @@
 {{ define "main" }}
 
-<header class="flex items-center justify-between pa3 pa4-ns">
-  <h1 class="f1 normal mv5 mw6">{{ .Title | markdownify }}</h1>
-  <figure class="ma0">
+<header class="flex flex-column-reverse flex-row-ns items-center-ns justify-between pa3 pa4-ns">
+  <h1 class="w-100 w-70-m w-60-l f2 f1-vw-m f1-vw-l normal mt3 mt5-ns mb5">{{ .Title | markdownify }}</h1>
+  <figure class="w-100 w-30-m w-40-l ma0">
     {{ with .Params.img }}
     {{- $img := resources.Get .src -}}
-    <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+    <img class="db center-ns h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
     {{ end }}
   </figure>
 </header>
 
 <section class="mb6">
-  <div class="flex flex-column flex-row-ns justify-between ph2 ph3-ns mb5">
+  <div class="flex flex-column flex-row-ns items-baseline justify-between ph2 ph3-ns mb5 f5 f5-vw-l">
     <div class="w-100 w-60-ns ph2 ph3-ns mw7">
-      <div class="f4">{{ .Params.text | markdownify }}</div>
-      <div class="f5">{{ .Params.details | markdownify }}</div>
+      <div class="f4 f4-vw-l">{{ .Params.text | markdownify }}</div>
+      <div>{{ .Params.details | markdownify }}</div>
     </div>
     <div class="w-100 w-40-ns ph2 ph3-ns">
       {{ with .Params.links }}
-      <h2 class="f4 normal">{{ .title }}</h2>
-      <p class="f5">{{ .text | markdownify }}</a></p>
+      <h2 class="f4 f4-vw-l normal mb0">{{ .title }}</h2>
+      <p class="pt1 mt2 mb4">{{ .text | markdownify }}</p>
       {{ end }}
       {{ with .Params.news }}
-      <h2 class="f4 normal">{{ .title }}</h2>
-      <p class="f5">{{ .text | markdownify }}</a></p>
+      <h2 class="f4 f4-vw-l normal mb0">{{ .title }}</h2>
+      <p class="pt1 mt2 mb4">{{ .text | markdownify }}</p>
       {{ end }}
       {{ with .Params.contact }}
-      <h2 class="f4 normal">{{ .title }}</h2>
-      <p class="f5">{{ .text | markdownify }}</a></p>
+      <h2 class="f4 f4-vw-l normal mb0">{{ .title }}</h2>
+      <p class="pt1 mt2 mb4">{{ .text | markdownify }}</p>
       {{ end }}
     </div>
   </div>

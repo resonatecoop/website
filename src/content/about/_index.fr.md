@@ -56,14 +56,14 @@ how:
     - text: "**We aim to decolonize and democratize community spaces** and creative channels that are currently the domain of private capital."
       details: "Replacing corporate and venture capital governance with co-operative services to build accountability across communities. Providing a model for growing the reach and depth of intentional local cultural life support while building security against speculation, hostile takeover and market pressure."
     - text: "**We reject the historical basis of property in divine right** and human supremacy in ecological relations."
-      details: >
+      details: |-
         We’ve seen this “divine right” over property lead to the commodification and extraction of not only most of the Earth’s life support systems, but has also led to the birth of human commodities.
 
         In order to redress these historical harms of the Trans-Atlantic Slave Trade, colonisation, the creation of ‘underdeveloped peoples,’ the genocide of Indigenous Peoples, among others, we must engage and align ourselves with dispossessed communities constructing a visionary-life affirming economy because we realise that these historical harms were fundamental the expansion and success of our modern-day extractive economy.
 
         Democratizing, decentralizing, diversifying economic activity while also lessening consumption, and (re)distributing resources and power further helps us move in right relationship not only with one another, but with this planet.
     - text: "**Protecting online spaces privacy** is an important part of keeping them safe for people."
-      details: >
+      details: |-
         To do this, Resonate is testing a kind of decentralized membership or [Community Credentials](/community-credentials) that allows co-op memberships, special purchases and simple agreements between Members to be validated without exposing the private data of the people involved. 
 
         A system like this could allow members of one co-op or service to be recognized by others without personal information being exposed or stored in centralized databases. 

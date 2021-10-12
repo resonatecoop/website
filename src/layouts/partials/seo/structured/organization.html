@@ -1,0 +1,17 @@
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "social" slice -}}
+{{- range .Site.Params.social -}}
+  {{- $scratch.Add "social" .url -}}
+{{- end }}
+{{- $logo := resources.Get .Site.Params.logo -}}
+  <script type="application/ld+json">
+  {{- dict 
+    "@context" "http://schema.org" 
+    "@type" "Organization"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+    "logo" $logo.Permalink
+    "sameAs" ($scratch.Get "social")
+    | jsonify (dict "prefix" "  " "indent" "  ") 
+    | safeJS
+  }}</script>

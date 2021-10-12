@@ -3,8 +3,10 @@
   <!--{{ partial "components/nav-push" . }}-->
   <div class="page-wrap">
     {{ partial "components/header" . }}
+    <main role="main">
     {{ block "main" . -}}
     {{- end }}
+  	</main>
     {{ partial "components/footer" . }}
   </div>
   {{ partial "icons/icons" . }}

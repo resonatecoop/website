@@ -1,23 +1,18 @@
-<div {{ with .feature.id }}id="{{ . }}"{{ end }} class="feature flex flex-column-reverse flex-row-ns mv5">
-  <div class="w-100 w-60-ns ph2 ph3-ns">
+<div {{ with .feature.id }}id="{{ . }}"{{ end }} class="feature flex flex-column-reverse items-start items-center-l flex-row-ns mb5">
+  <div class="w-100 w-70-m w-60-l ph3 ph4-ns">
     {{ with .feature.title }}<h3 class="sr-only">{{ . }}</h3>{{ end }}
-    <p class="f4">
+    <p class="f4 f4-vw-l">
       <span aria-hidden="true">●</span> {{ .feature.text | markdownify }}
     </p>
     {{ with .feature.details }}
-    <p class="f5">{{ . | markdownify }}</p>
+    <p class="f5 f5-vw-l">{{ . | markdownify }}</p>
     {{ end }}
     {{ with .feature.link }}
-    <p class="f5">
-      <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg>
-      <a href="{{ .url | absURL }}">{{ .text | markdownify }}</a>
-    </p>
+    {{ partial "components/link" . }}
     {{ end }}
   </div>
-  <figure class="w-100 h-auto w-40-ns ma0 ph2 ph3-ns">
-    <div class="center" style="max-width: 17.5rem;max-height: 17.5rem">
-      {{- $img := resources.Get .feature.img.src -}}
-      <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .feature.img.src ".png" }}{{ $img2x := resources.Get (replace .feature.img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
-    </div>
+  <figure class="ma0 w-100 w-30-m w-40-l pr4-ns">
+    {{- $img := resources.Get .feature.img.src -}}
+    <img class="db center w-100-ns h-auto" src="{{ $img.Permalink }}"{{ if in .feature.img.src ".png" }}{{ $img2x := resources.Get (replace .feature.img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
   </figure>
 </div>

@@ -4,6 +4,7 @@ desctiption: ""
 date: 2021-01-22
 image: "images/blog/Pink-Siifu-2048x1366.jpg"
 summary: "Pink Siifu has been in hibernation mode this year. That hasn’t stopped his creative juices from flowing or his creative output, though. In 2020, the Alabama-born emcee dropped his second full-length album _Negro_."
+author: Z
 
 ---
 

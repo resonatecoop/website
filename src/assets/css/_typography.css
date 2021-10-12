@@ -2,125 +2,64 @@ ul, ol {
 	padding-left: 1em;
 }
 
-.tracked-normal {
-	letter-spacing: 0;
+p {
+	max-width: 33em;
 }
 
+.tracked-normal { letter-spacing: 0 }
+
 .f1 {
+	font-size: var(--font-size-1);
+	line-height: 1;
 	letter-spacing: -.045em;
 	margin-left: -.045em;
-	line-height: 1;
 }
 .f2 {
+	font-size: var(--font-size-2);
+	line-height: 112%;
 	letter-spacing: -.03em;
 	margin-left: -.03em;
-	line-height: 112%;
 }
 .f3 {
+	font-size: var(--font-size-3);
 	letter-spacing: -.02em;
 	line-height: 1.36;
 }
 .f4 {
-	letter-spacing: -.01em;
-	font-size: 1.516875rem;
+	font-size: var(--font-size-4);
 	line-height: 1.36;
+	letter-spacing: -.01em;
 }
 .f5 {
-	letter-spacing: 0;
-	font-size: .9375rem;
+	font-size: var(--font-size-5);
 	line-height: 1.46666;
+	letter-spacing: 0;
 }
 .f6 {
-	font-size: .8125rem;
+	font-size: var(--font-size-6);
 	line-height: 1.6923076923;
 }
 
-.f1-vw {
-	font-size: 7vw;
-	font-size: var(--font-size-vw-1);
-}
-.f2-vw {
-	font-size: 6vw;
-	font-size: var(--font-size-vw-2);
-}
-.f3-vw {
-	font-size: 5vw;
-	font-size: var(--font-size-vw-3);
-}
-.f4-vw {
-	font-size: 4vw;
-	font-size: var(--font-size-vw-4);
-}
-.f5-vw {
-	font-size: 3vw;
-	font-size: var(--font-size-vw-5);
-}
-.f6-vw {
-	font-size: 2vw;
-	font-size: var(--font-size-vw-6);
-}
-.f7-vw {
-	font-size: 1vw;
-	font-size: var(--font-size-vw-7);
-}
-
 @media screen and (min-width: 30rem) {
-	.f1-vw-m {
-		font-size: 16.25vw;
-	}
-	.f2-vw-m {
-		font-size: 6vw;
-		font-size: var(--font-size-vw-2);
-	}
-	.f3-vw-m {
-		font-size: 5vw;
-		font-size: var(--font-size-vw-3);
-	}
-	.f4-vw-m {
-		font-size: 4vw;
-		font-size: var(--font-size-vw-4);
-	}
-	.f5-vw-m {
-		font-size: 3vw;
-		font-size: var(--font-size-vw-5);
-	}
-	.f6-vw-m {
-		font-size: 2vw;
-		font-size: var(--font-size-vw-6);
-	}
-	.f7-vw-m {
-		font-size: 1vw;
-		font-size: var(--font-size-vw-7);
-	}
+	.f1-vw-m { font-size: var(--font-size-vw-1) }
+	.f2-vw-m { font-size: var(--font-size-vw-2) }
+	.f3-vw-m { font-size: var(--font-size-vw-3) }
+	.f4-vw-m { font-size: var(--font-size-vw-4) }
+	.f5-vw-m { font-size: var(--font-size-vw-5) }
+	.f6-vw-m { font-size: var(--font-size-vw-6) }
+	.f7-vw-m { font-size: var(--font-size-vw-7) }
 }
 
-@media screen and (min-width: 60rem) {
-	.f1-vw-l {
-		font-size: 7vw;
-		font-size: var(--font-size-vw-1);
-	}
-	.f2-vw-l {
-		font-size: 6vw;
-		font-size: var(--font-size-vw-2);
-	}
-	.f3-vw-l {
-		font-size: 5vw;
-		font-size: var(--font-size-vw-3);
-	}
-	.f4-vw-l {
-		font-size: 4vw;
-		font-size: var(--font-size-vw-4);
-	}
-	.f5-vw-l {
-		font-size: 3vw;
-		font-size: var(--font-size-vw-5);
-	}
-	.f6-vw-l {
-		font-size: 2vw;
-		font-size: var(--font-size-vw-6);
-	}
-	.f7-vw-l {
-		font-size: 1vw;
-		font-size: var(--font-size-vw-7);
+@media screen and (min-width: 64rem) {
+	.f1-vw-l { font-size: var(--font-size-vw-1) }
+	.f2-vw-l { font-size: var(--font-size-vw-2) }
+	.f3-vw-l { font-size: var(--font-size-vw-3) }
+	.f4-vw-l { font-size: var(--font-size-vw-4) }
+	.f5-vw-l { font-size: var(--font-size-vw-5) }
+	.f6-vw-l { font-size: var(--font-size-vw-6) }
+	.f7-vw-l { font-size: var(--font-size-vw-7) }
+	.icon-arrow-tr {
+		width: 0.666em;
+		height: 0.666em;
 	}
 }

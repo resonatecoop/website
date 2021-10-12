@@ -1,19 +1,19 @@
 {{ define "main" }}
 
-<header id="hero" class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb6">
-  <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
-    <h1 class="f1 normal">{{ .Title }}</h1>
-    <p class="f4">{{ .Params.subtitle | markdownify }}</p>
-    {{ with .Params.hero }}
-    <p class="f5">{{ .p1 | markdownify }}</p>
-    <p class="f5">{{ .p2 | markdownify }}</p>
-    {{ with .link }}
-    <a class="f5" href="{{ .href | absURL }}"><svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg> {{ .text | markdownify }}</a>
-    {{ end }}
-    {{ end }}
-  </div>
-  <div class="w-100 w-30-m w-40-l">
-    <figure class="ma0" aria-hidden="true">
+<header id="hero" class="mb6">
+  <h1 class="f1 f1-vw-l normal ph3 ph4-ns">{{ .Title }}</h1>
+  <div class="flex flex-column-reverse flex-row-ns items-start">
+    <div class="w-100 w-70-m w-60-l f5 f5-vw-l ph3 pl4-ns pr5-ns">
+      <p class="f4 f4-vw-l">{{ .Params.subtitle | markdownify }}</p>
+      {{- with .Params.hero }}
+      <p>{{ .p1 | markdownify }}</p>
+      <p>{{ .p2 | markdownify }}</p>
+      {{- with .link }}
+      <a href="{{ .href | absURL }}"><svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg> {{ .text | markdownify }}</a>
+      {{- end }}
+      {{- end }}
+    </div>
+    <figure class="w-100 w-30-m w-40-l mh0 my3" aria-hidden="true">
       <div class="pa3 mw5 center">{{ partial "icons/stream2own.html" (dict "stream2own" "two") }}</div>
     </figure>
   </div>
@@ -41,27 +41,25 @@
         {{ .table | markdownify }}
       </div>
     </div>
-    <figcaption class="dark-gray pv4 ph3 ph4-ns">{{ .figcaption | markdownify }}</figcaption>
+    <figcaption class="dark-gray pv4 ph3 ph4-ns f5 f5-vw-l">{{ .figcaption | markdownify }}</figcaption>
   </figure>
-
   {{ range .features }}
   <div class="feature flex flex-column-reverse flex-row-ns mv5 ph2 ph3-ns">
-    <div class="w-100 w-60-ns ph2 ph3-ns">
+    <div class="w-100 w-60-ns ph2 ph3-ns f5 f5-vw-l">
       <h3 class="sr-only">{{ .title }}</h3>
-      <p class="f4">{{ .text | markdownify }}</p>
+      <p class="f4 f4-vw-l">{{ .text | markdownify }}</p>
       {{ with .details }}
-      <p class="f5">{{ . | markdownify }}</p>
+      <p>{{ . | markdownify }}</p>
       {{ end }}
       {{ with .link }}
-      <p class="f5">
-        <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg>
-        <a href="{{ .href | absURL }}">{{ .text | markdownify }}</a>
-      </p>
+      <a href="{{ .href | absURL }}">
+        <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg><span>{{ .text | markdownify }}</span>
+      </a>
       {{ end }}
     </div>
     <figure class="w-100 h-auto w-40-ns ma0 ph2 ph3-ns">
       <div class="center" style="max-width: 17.5rem;max-height: 17.5rem">
-        {{ with .Params.img }}
+        {{ with .img }}
         {{- $img := resources.Get .src -}}
         <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
         {{ end }}
@@ -76,25 +74,24 @@
 {{ with .Params.community_credentials }}
 <section id="{{ .title | anchorize }}">
   <div class="flex flex-column flex-row-l flex-wrap items-strech bt b--gray">
-    <header class="flex items-center justify-between pa3 pa4-ns">
-      <h2 class="f1 normal mv5">{{ .title | markdownify }}</h2>
-      <figure class="ma0">
+    <header class="w-100 flex flex-column-reverse flex-row-ns items-center-ns justify-between pa3 pa4-ns">
+      <h2 class="f2 f2-vw-l w-100 w-60-m w-40-l normal mt3 mb5">{{ .title | markdownify }}</h2>
+      <figure class="ma0 w-100 w-30-m w-40-l" style="z-index:-1">
         {{ with .img }}
         {{- $img := resources.Get .src -}}
-        <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+        <img class="db center-l h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
         {{ end }}
       </figure>
     </header>
     <div class="flex flex-column flex-row-l flex-wrap items-strech">
       {{ range $i, $block := .blocks }}
-      <div class="ph3 ph4-ns pt2 pb4 bt b--gray w-100 {{ if (modBool $i 2) }}w-40-l{{ else }}w-60-l bl-l{{ end }}">
-        <p class="f4 mb4">{{ $block.text | markdownify }}</p>
-        <p class="f5">{{ $block.details | markdownify }}</p>
+      <div class="ph3 ph4-ns pt2 pb5 bt b--gray w-100 f5 f5-vw-l {{ if (modBool $i 2) }}w-40-l{{ else }}w-60-l bl-l{{ end }}">
+        <p class="f4 f4-vw-l mb4">{{ $block.text | markdownify }}</p>
+        {{ $block.details | markdownify }}
         {{ with $block.link }}
-        <p class="f5">
-          <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg>
-          <a href="{{ .href | absURL }}">{{ .text | markdownify }}</a>
-        </p>
+        <a ref="{{ .href | absURL }}" class="underline">
+          <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg><span>{{ .text | markdownify }}</span>
+        </a>
         {{ end }}
       </div>
       {{ end }}

@@ -1,11 +1,11 @@
 <article id="{{ .release.id }}">
   <a href="https://stream.resonate.coop/artist/{{ .release.creator_id }}/release/{{ .release.slug }}" title="{{ .release.display_artist }} – {{ .release.title }}" class="db link">
     <figure class="ma0">
-      <picture>
-        <img src="{{ .release.cover }}" class="w-100 h-auto" width="160" height="160" alt="{{ .release.title }} cover" loading="lazy">
+      <picture class="">
+        <img src="{{ .release.cover }}" class="db w-100 h-auto bg-gray" width="160" height="160" alt="" loading="lazy">
       </picture>
-      <figcaption class="">
-        <h3 class="f4 normal truncate mv1">{{ .release.title }}</h3>
+      <figcaption>
+        <h3 class="f4 normal truncate mt2 mb1">{{ .release.title }}</h3>
         <p class="truncate f5 mt0 mb1 dark-gray">{{ .release.display_artist }}</p>
         <dl class="ma0">
           <dt class="sr-only">Tags</dt>
