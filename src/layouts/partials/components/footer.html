@@ -41,6 +41,11 @@
                   <a class="link normal mid-gray pa0 lh-copy ttu" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferer"{{ end }} title="{{ .title }}">{{ .name }}</a>
                 </li>
                 {{ end }}
+                {{ range .Site.Params.rss }}
+                <li class="dib ma0 pb2 mr1">
+                  <a class="link normal mid-gray pa0 lh-copy ttu" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferer"{{ end }} title="{{ .title }}">{{ .name }}</a>
+                </li>
+                {{ end }}
               </ul>
             </li>
             {{ range .Site.Menus.footer3 }}
