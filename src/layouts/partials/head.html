@@ -24,11 +24,8 @@
   <link rel="stylesheet" href="{{ $css.Permalink }}" />
   {{ end }}
 
-  {{ if .IsTranslated -}}
-    {{ range .Translations -}}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-    {{- end }}
-  {{ end }}
+  {{ partial "seo/main" . }}
+  {{ partialCached "favicons.html" . }}
 
   {{ $defines := dict "process.env.NODE_ENV" `"development"` "process.env.APP_HOST" `"beta.stream.resonate.coop"` }}
   {{ $opts := dict "targetPath" "main.js" "defines" $defines }}
