@@ -1,32 +1,32 @@
 {{ define "main" }}
 
-<header class="flex flex-column flex-row-ns items-center ph2 ph3-ns mb5">
-  <div class="w-100 w-70-m w-60-l f4 ph2 ph3-ns">
-    <h1 class="f1 normal">{{ .Title }}</h1>
-    <p class="f4">{{ .Params.subtitle | markdownify }}</p>
-    <p class="f5">{{ .Params.text | markdownify }}</p>
-  </div>
-  <div class="w-100 w-30-m w-40-l">
-    <figure class="ma0">
+<header class="pa3 pa4-ns mb5">
+  <div class="flex flex-column-reverse flex-row-ns items-center-ns justify-between">
+    <h1 class="w-100 w-60-ns f1 f1-vw-l normal mt3 mt5-ns mb5">{{ .Title }}</h1>
+    <figure class="w-100 w-40-ns w-40-l ma0">
       {{ with .Params.img }}
       {{- $img := resources.Get .src -}}
-      <img class="db center h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
+      <img class="db center-ns h-auto" src="{{ $img.Permalink }}"{{ if in .src ".png" }}{{ $img2x := resources.Get (replace .src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
       {{ end }}
     </figure>
+  </div>
+  <div class="w-100 w-70-m w-60-l f5 f5-vw-l">
+    <p class="f4 f4-vw-l">{{ .Params.subtitle | markdownify }}</p>
+    <p>{{ .Params.text | markdownify }}</p>
   </div>
 </header>
 
 {{ with .Params.board }}
 <section id="{{ .title | anchorize }}" class="ph2 ph3-ns mb5 bt b--gray">
   <header class="ph2 ph3-ns">
-    <h2 class="f2 normal">{{ .title }}</h2>
+    <h2 class="f2 f2-vw-l normal">{{ .title }}</h2>
   </header>
   {{ range $.Site.Data.sections.team.board }}
   <div class="flex flex-row-reverse justify-end mb5">
     <div class="w-80 ph2 ph3-ns">
-      <h3 class="f4 mv0">{{ .name }}</h3>
-      <p class="f4 mt0">{{ .title }}</p>
-      <details class="f5 near-black">
+      <h3 class="f4 f4-vw-l mv0">{{ .name }}</h3>
+      <p class="f4 f4-vw-l mt0">{{ .title }}</p>
+      <details class="f5 f5-vw-l near-black">
         <summary class="">Bio</summary>
         {{ .bio | markdownify }}
       </details>
@@ -45,9 +45,9 @@
 {{ with .Params.network }}
 <section id="{{ .title | anchorize }}" class="bt b--gray" style="margin-bottom: -1px">
   <header class="ph3 ph4-ns mb4">
-    <h2 class="f2 normal">{{ .title }}</h2>
-    <p class="f4 mw6">{{ .subtitle | markdownify }}</p>
-    <p class="f5">{{ .text | markdownify }}</p>
+    <h2 class="f2 f2-vw-l normal">{{ .title }}</h2>
+    <p class="f4 f4-vw-l">{{ .subtitle | markdownify }}</p>
+    <p class="f5 f5-vw-l near-black">{{ .text | markdownify }}</p>
   </header>
   <div class="flex flex-wrap bt b--gray" style="margin-right: -1px">
     {{ range $.Site.Data.sections.network }}

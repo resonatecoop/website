@@ -1,24 +1,24 @@
 {{ define "main" }}
 
 <header id="hero">
-  <div class="flex flex-column-reverse flex-row-ns items-center bb b--gray ph2 ph3-ns">
+  <div class="flex flex-column-reverse flex-row-ns items-center bb b--gray ph2 ph3-ns f5 f5-vw-l">
     <div class="w-100 w-70-m w-60-l lh-title f4 ph2 ph3-ns">
-      <h1 class="f1 normal">{{ .Title }}</h1>
+      <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
       <p class="tracked-tight mb5" style="max-width:20em">{{ .Params.hero.p1 | markdownify }}</p>
     </div>
     <div class="w-100 w-30-m w-40-l pa4">
       <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1">
-        <span role="img" style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');" class="aspect-ratio--object cover random-logo"></span>
+        <div role="img" style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');" class="aspect-ratio--object cover random-logo"></div>
         <figcaption class="clip">Resonate Coop Logo</figcaption>
       </figure>
     </div>
   </div>
-  <div class="flex flex-column flex-row-ns">
+  <div class="flex flex-column flex-row-ns f5 f5-vw-l">
     <div class="w-100 w-60-ns ph3 ph4-ns pt3 pb4 bb br-ns b--gray">
-      <p class="f5 mw7">{{ .Params.hero.p2 | markdownify }}</p>
+      <p>{{ .Params.hero.p2 | markdownify }}</p>
     </div>
     <div class="w-100 w-40-ns ph3 ph4-ns pt3 pb4 bb b--gray">
-      <p class="f5 mw6">{{ .Params.hero.p3 | markdownify }}</p>
+      <p>{{ .Params.hero.p3 | markdownify }}</p>
     </div>
   </div>
 </header>
@@ -26,20 +26,20 @@
 {{ with .Params.features }}
 <section id="{{ .title | anchorize }}" class="ph2 ph3-ns pv5">
   <div class="flex flex-column-reverse flex-row-l">
-    <div class="w-100 w-60-l ph2 ph3-ns mw7">
-      <h2 class="f4 mb0">{{ .title }}</h2>
-      <p class="f4 mt0">{{ .subtitle | markdownify }}</p>
-      <div class="f5">{{ .text | markdownify }}</div>
-      <p class="f5 mt5">
+    <div class="w-100 w-60-l ph2 ph3-ns mw7 f5 f5-vw-l">
+      <h2 class="f4 f4-vw-l mb0">{{ .title }}</h2>
+      <p class="f4 f4-vw-l mt0">{{ .subtitle | markdownify }}</p>
+      <div>{{ .text | markdownify }}</div>
+      <p class="mt5">
         {{ with .cta }}
-        <a href="{{ .url }}" class="link ph4 pv2 b dib ba b--mid-gray mr4 near-black">{{ .text }}</a> 
+        <a href="{{ .url }}" class="btn mr4">{{ .text }}</a> 
         {{ end }}
         {{ with .link }}
         <a href="{{ .url }}" class="b">{{ .text }}</a> 
         {{ end }}
       </p>
     </div>
-    <figure class="w-100 w-40-l h-auto  ma0 ph2 ph3-ns">
+    <figure class="w-100 w-40-l h-auto ma0 ph2 ph3-ns">
       <picture class="db center" style="max-width: 17.5rem;max-height: 17.5rem">
         {{- $img := resources.Get .img.src -}}
         <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .img.src ".png" }}{{ $img2x := resources.Get (replace .img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
@@ -50,17 +50,17 @@
 {{ end }}
 
 <section>
-  <div class="flex flex-column flex-row-ns flex-wrap items-strech">
+  <div class="flex flex-column flex-row-ns flex-wrap items-strech f5 f5-vw-l">
     {{ with .Params.active_membership }}
     <div class="ph3 ph4-ns pt2 pb4 bt b--gray w-100 w-50-m w-40-l">
-      <h2 class="f4">{{ .title }}</h2>
-      <div class="f5 mb4">{{ .text | markdownify }}</div>
+      <h2 class="f4 f4-vw-l">{{ .title }}</h2>
+      <div class="mb4">{{ .text | markdownify }}</div>
     </div>
     {{ end }}
     {{ with .Params.profits }}
     <div class="ph3 ph4-ns pt2 pb4 bt b--gray w-100 w-50-m w-60-l bl-ns">
-      <h2 class="f4">{{ .title }}</h2>
-      <div class="f5 mb4">{{ .text | markdownify }}</div>
+      <h2 class="f4 f4-vw-l">{{ .title }}</h2>
+      <div class="mb4">{{ .text | markdownify }}</div>
     </div>
     {{ end }}
   </div>
@@ -68,10 +68,10 @@
 
 {{ with .Params.numbers }}
 <section id="{{ .title | anchorize }}" class="flex flex-column flex-row-l justify-between bg-black white">
-  <div class="w-100 w-60-l pv4 ph3 ph4-ns">
-    <h2 class="f4 mb0">{{ .title }}</h2>
-    <p class="f4 mt0">{{ .subtitle | markdownify }}</p>
-    <p class="f5">{{ .text | markdownify }}</p>
+  <div class="w-100 w-60-l pv4 ph3 ph4-ns f5 f5-vw-l">
+    <h2 class="f4 f4-vw-l mb0">{{ .title }}</h2>
+    <p class="f4 f4-vw-l mt0">{{ .subtitle | markdownify }}</p>
+    <p>{{ .text | markdownify }}</p>
     <figure class="pv4 ma0">
       <svg width="362" height="162" viewBox="0 0 362 162" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="profit-distributions-title profit-distributions-desc" role="img">
         <title id="profit-distributions-title">Resonate co-op profit distributions</title>
@@ -105,25 +105,25 @@
       </svg>
     </figure>
   </div>
-  <div class="w-100 w-40-l pv5 ph3 ph4-ns bt bt0-l bl-l b--dark-gray">
-    <div style="margin-top: 1.875em">{{ .details | markdownify }}</div>
+  <div class="w-100 w-40-l pv5 ph3 ph4-ns bt bt0-l bl-l b--dark-gray f5 f5-vw-l">
+    <div style="margin-top: 2.6em">{{ .details | markdownify }}</div>
   </div>
 </section>
 {{ end }}
 
 <section>
-  <div class="flex flex-column flex-row-ns flex-wrap items-strech">
+  <div class="flex flex-column flex-row-ns flex-wrap items-strech f5 f5-vw-l">
     {{ with .Params.board }}
     <div class="ph3 ph4-ns pt2 pb5 bt b--gray w-100 w-50-m w-60-l">
-      <h2 class="f4">{{ .title }}</h2>
-      <div class="f5 mb4">{{ .text | markdownify }}</div>
+      <h2 class="f4 f4-vw-l">{{ .title }}</h2>
+      <div class="mb4">{{ .text | markdownify }}</div>
       {{ with .link }}{{ partial "components/link" . }}{{ end }}
     </div>
     {{ end }}
     {{ with .Params.handbook }}
     <div class="ph3 ph4-ns pt2 pb5 bt b--gray w-100 w-50-m w-40-l bl-ns">
-      <h2 class="f4">{{ .title }}</h2>
-      <div class="f5 mb4">{{ .text | markdownify }}</div>
+      <h2 class="f4 f4-vw-l">{{ .title }}</h2>
+      <div class="mb4">{{ .text | markdownify }}</div>
       {{ with .link }}{{ partial "components/link" . }}{{ end }}
     </div>
     {{ end }}
@@ -131,16 +131,16 @@
 </section>
 
 {{ with .Params.future }}
-<section class="bt b--gray pt3 mb5">
-  <h2 class="f4 ph3 ph4-ns mb0">{{ .title }}</h2>
+<section class="bt b--gray pt3 mb5 f5 f5-vw-l">
+  <h2 class="f4 f4-vw-l ph3 ph4-ns mb0">{{ .title }}</h2>
   <div class="flex flex-column flex-row-l justify-between items-baseline ph2 ph3-ns">
     <div class="w-100 w-60-l ph2 ph3-ns mw7">
-      <p class="f4">{{ .subtitle | markdownify }}</p>
-      <div class="f5">{{ .text | markdownify }}</div>
+      <p class="f4 f4-vw-l">{{ .subtitle | markdownify }}</p>
+      <div>{{ .text | markdownify }}</div>
     </div>
     {{ with .resources }}
     <div class="w-100 w-40-l ph2 ph3-ns">
-      <p class="f5">{{ .text | markdownify }}</a></p>
+      <p>{{ .text | markdownify }}</a></p>
       {{ range .links }}
       {{ partial "components/link" . }}
       {{ end }}

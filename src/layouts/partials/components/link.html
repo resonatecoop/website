@@ -1,4 +1,3 @@
-<p class="f5">
-  <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg>
-  <a href="{{ .href | absURL }}">{{ .text | markdownify }}</a>
-</p>
+<a href="{{ .href | absURL }}" class="f5 f5-vw-l">
+  <svg width="10" height="10" class="icon-arrow-tr mr2" aria-hidden="true"><use xlink:href="#icon-arrow-tr"></use></svg><span >{{ .text | markdownify }}</span>
+</a>

@@ -1,18 +1,18 @@
 {{ define "main" }}
 
 <header class="ph3 ph4-ns">
-  <h1 class="f1 normal">{{ .Title }}</h1>
+  <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
 </header>
 
 <section class="ph2 ph3-ns">
   {{ range .Pages }}
-  <article class="relative flex flex-column-reverse flex-row-reverse-l mb5">
+  <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
     <div class="w-100 w-60-l ph2 ph3-ns">
-      <h2 class="f4 mv0">{{ .Title }}</h2>
-      <p class="f5 mt1 mb4 dark-gray"><time datetime="{{ time.Format "2006-01-02" .Date }}">{{  time.Format "January 2, 2006" .Date }}</time></p>
-      <p class="f5 near-black">
+      <h2 class="f4 f4-vw-l mv0">{{ .Title }}</h2>
+      <p class="mt1 mb4 dark-gray"><time datetime="{{ time.Format "2006-01-02" .Date }}">{{  time.Format "January 2, 2006" .Date }}</time></p>
+      <p class="near-black">
         {{ .Summary }}
-        <a href="{{ .Permalink }}" class="db link-full f5 normal black mt3">{{ T "continue_reading" }}</a>
+        <a href="{{ .Permalink }}" class="db link-full normal black mt3">{{ T "continue_reading" }}</a>
       </p>
     </div>
     <figure class="w-40-l h-100 ma0 mb4 ph2 ph3-ns">

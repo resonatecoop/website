@@ -1,23 +1,9 @@
-<section id="join" class="bt b--gray">
-  <div class="center mw8 cf mt3 mb4 ph2 ph3-ns">
-    <div class="fl w-100 w-70-m w-40-l ph2 ph3-ns mt4">
-      <a href="/join" class="link ph4 pv2 b dib ba b--mid-gray mb2 near-black">Join now</a>
-      <p class="mw6"><strong>Create a listening account</strong>, and get 0.128 Resonate credits (about 4 hours streaming) for free.</p>
-    </div>
-    <div class="fl w-100 w-30-m w-20-l ph2 ph3-ns mt4">
-      {{- $img := resources.Get "images/illustrations/Peer2peer1_transparent.png" -}}
-      {{- $img2x := resources.Get "images/illustrations/Peer2peer1_transparent@2x.png" -}}
-      <img class="db center w-full h-auto" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118" height="118" alt="">
-    </div>
-    <div class="fl w-100 w-70-m w-40-l ph2 ph3-ns mt4">
-      <a href="/the-coop" class="link ph4 pv2 b dib ba b--mid-gray mb2 near-black">Become a member</a>
-      <p class="mw6"><strong>Join as an artist</strong> to become eligible as a member of the co-op and own your streaming platform.</p>
-    </div>
-  </div>
+<section id="join" class="ph3 ph4-ns bt b--gray text-center flex justify-center items-center pv5">
+  <a href="https://id.resonate.coop/join" class="btn f5 f5-vw-l">{{ T "join_now" }}</a>
 </section>
 
-<footer id="footer" class="footer-component bg-black white pt4 pb5" role="contentinfo">
-  <div class="center mw8 cf ph2 ph3-ns">
+<footer id="footer" class="footer-component bg-black white pt4 pb6 pb5-l f5" role="contentinfo">
+  <div class="cf ph2 ph3-ns">
     <div class="fl-ns w-100 w-20-ns" style="margin-top:1px">
       <a class="logo link flex items-center flex-shrink-0 h-100 mb3 pl2-ns pr3-ns" href="/" aria-label="Homepage">
         <svg viewBox="0 0 233 100" width="116.5" height="50" class="icon icon-resonate dn" aria-hidden="true"><use xlink:href="#icon-resonate"></use></svg>
@@ -25,7 +11,7 @@
     </div>
     <div class="fl-ns w-100 w-80-ns pt3">
       <nav id="footer-nav" class="flex flex-auto flex-wrap flex-row items-start">
-        <div class="w-50 w-25-l ph3-ns mb3">
+        <div class="w-50 w-25-l ph2 ph3-ns mb3">
           <h2 class="f5 normal ttu mb2 mt0">{{ T "learn" }}</h2>
           <ul class="list pl0">
             {{ range .Site.Menus.footer1 }}
@@ -35,7 +21,7 @@
             {{ end }}
           </ul>
         </div>
-        <div class="w-50 w-25-l ph3-ns mb3">
+        <div class="w-50 w-25-l ph2 ph3-ns mb3">
           <h2 class="f5 normal ttu mb2 mt0">{{ T "community" }}</h2>
           <ul class="list pl0">
             {{ range .Site.Menus.footer2 }}
@@ -45,7 +31,7 @@
             {{ end }}
           </ul>
         </div>
-        <div class="w-50 w-25-l ph3-ns mb3">
+        <div class="w-50 w-25-l ph2 ph3-ns mb3">
           <h2 class="f5 normal ttu mb2 mt0">{{ T "connect" }}</h2>
           <ul class="list pl0">
             <li aria-label="Social links">
@@ -64,7 +50,7 @@
             {{ end }}
           </ul>
         </div>
-        <div class="w-50 w-25-l ph3-ns mb3">
+        <div class="w-50 w-25-l ph2 ph3-ns mb3">
           <h2 class="f5 normal ttu mb2 mt0">{{ T "code" }}</h2>
           <ul class="list pl0">
             {{ range .Site.Menus.footer4 }}
@@ -75,16 +61,16 @@
           </ul>
         </div>
       </nav>
-      <div class="flex flex-auto flex-wrap flex-row-m items-start dark-gray f5 ttu normal">
-        <div class="w-100 w-50-m w-25-l ph3-ns">
+      <div class="flex flex-auto flex-wrap flex-row-m items-start dark-gray ttu normal">
+        <div class="w-100 w-50-m w-25-l ph2 ph3-ns">
           <span>© <time datetime="2015">2015</time>–<time datetime="{{ now.Format "2006"}}">{{ now.Format "2006"}}</time> {{ .Site.Params.legal}}</span>
         </div>
         {{ range .Site.Menus.footer }}
-        <div class="w-100 w-50-m w-25-l ph3-ns">
+        <div class="w-100 w-50-m w-25-l ph2 ph3-ns">
           <a class="link ttu" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         </div>
         {{ end }}
-        <div class="w-100 w-50-m w-25-l ph3-ns">
+        <div class="w-100 w-50-m w-25-l ph2 ph3-ns">
           <span>7.0.2</span>
         </div>
       </div>
