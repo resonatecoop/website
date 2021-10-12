@@ -2,6 +2,7 @@ favicon: ''
 body_classes: color-scheme--light sans-serif
 description: Play fair.
 legal: Resonate
+logo: "images/logo/logo-icon-circle.png"
 social:
 - name: fb
   title: Facebook
@@ -12,6 +13,7 @@ social:
 - name: ig
   title: Instagram
   url: https://www.instagram.com/resonate_coop/
-- name: rss
+rss:
+- name: RSS
   title: Blog RSS feed
   url: /blog/index.xml
