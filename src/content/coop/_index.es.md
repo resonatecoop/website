@@ -1,5 +1,5 @@
 ---
-title: "The Co-op"
+title: "Co-op"
 description: "Resonate is the world’s first co-operative music streaming service — a multi-stakeholder platform co-operative, democratically governed by its members: artists, listeners and workers."
 subtitle: "The community-owned music streaming service."
 hero:
@@ -23,8 +23,8 @@ features:
 
     We believe the “one member, one share, one vote” system is democratic, and supports community in a crucial way. Resonate is a co-op because we think that everyone should have the opportunity to own their platform. Everyone involved in the co-op has a say in how platform develops.
   cta: 
-    text: "Join the Co-op"
-    href: "/join"
+    text: "Join now"
+    href: "https://id.resonate.coop/join"
   link: 
     text: "Donate"
     href: "https://opencollective.com/resonate"

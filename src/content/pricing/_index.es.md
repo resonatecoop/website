@@ -8,7 +8,7 @@ hero:
   p2: "To support exploration of new music, Resonate guarantees artists a minimum earning of One Cent per Play while keeping the price so low Listeners can stream dozens of tracks for the first time for pennies (about 4 cents an hour in most cases). This way, listeners start as explorers and become backers."
   link:
     text: "Open a new account and we’ll give you around 4 hours of free credit"
-    href: "/join"
+    href: "https://id.resonate.coop/join"
 pricing:
   table: |-
     | Stream | Credits | €      |

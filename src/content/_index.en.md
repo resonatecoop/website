@@ -18,7 +18,7 @@ playfair:
     - text: "Manifesto"
       href: "/manifesto"
     - text: "The Co-op"
-      href: "/the-coop"
+      href: "/coop"
     - text: "stream2own"
       href: "/pricing"
   cta: "Become a member"
@@ -39,7 +39,7 @@ features:
       src: "images/illustrations/Resonate_Ear.png"
   - id: govern-and-own
     title: "Gover & own your platform"
-    text: "**[GOVERN & OWN your platform](/the-coop)** Join as a co-op member to have a real say in the future of digital audio. Be a part of an active co-operative community; govern the decisions and development, share in the profits, build a fairer future."
+    text: "**[GOVERN & OWN your platform](/coop)** Join as a co-op member to have a real say in the future of digital audio. Be a part of an active co-operative community; govern the decisions and development, share in the profits, build a fairer future."
     details: "Our members are artists, labels, listeners and workers. <br>One member, one share, one vote."
     img:
       src: "images/illustrations/Badge.png"
