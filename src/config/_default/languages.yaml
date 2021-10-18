@@ -13,7 +13,7 @@ en:
       weight: -110
     - name: The Co-op
       title: The Co-op
-      url: /the-coop/
+      url: /coop/
       weight: -109
     - name: Blog
       title: Resonate Blog
@@ -38,16 +38,12 @@ en:
       weight: 1
     - name: The Co-op
       title: The Co-op
-      url: /the-coop/
+      url: /coop/
       weight: 2
-    - name: Blog
-      title: Resonate Blog
-      url: /blog/
-      weight: 3
     - name: Handbook
       title: Handbook
       url: https://community.resonate.is/c/handbook/60
-      weight: 4
+      weight: 3
     footer2:
     - name: Join
       title: Join Resonate
@@ -55,7 +51,7 @@ en:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: /volunteering/
+      url: https://community.resonate.is/
       weight: 2
     - name: Team
       title: Resonate Team
@@ -79,9 +75,9 @@ en:
       url: /contact/
       weight: 4
     footer4:
-    - name: Documentation
-      title: Documentation
-      url: /documentation/
+    - name: Help us build
+      title: Platform - Resonate Community Forum
+      url: https://community.resonate.is/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -97,12 +93,12 @@ en:
       weight: 4
     footer:
     - name: Terms + Conditions
-      title: Documentation
-      url: /terms/
+      title: Terms + Conditions
+      url: https://community.resonate.is/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: /privacy-policy/
+      url: https://community.resonate.is/docs?topic=1863
       weight: 3
 fr:
   weight: 2
@@ -144,7 +140,7 @@ fr:
       weight: 1
     - name: La Coop
       title: La Coop
-      url: /the-coop/
+      url: /coop/
       weight: 2
     - name: Blog
       title: Blog de Resonate
@@ -161,7 +157,7 @@ fr:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: /volunteering/
+      url: https://community.resonate.is/
       weight: 2
     - name: Équipe
       title: Équipe de Resonate
@@ -185,9 +181,9 @@ fr:
       url: /contact/
       weight: 4
     footer4:
-    - name: Documentation
-      title: Documentation
-      url: /documentation/
+    - name: Help us build
+      title: Resonate Community Forum Platform
+      url: https://community.resonate.is/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -203,12 +199,12 @@ fr:
       weight: 4
     footer:
     - name: Terms + Conditions
-      title: Documentation
-      url: /terms/
+      title: Terms + Conditions
+      url: https://community.resonate.is/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: /privacy-policy/
+      url: https://community.resonate.is/docs?topic=1863
       weight: 3
 es:
   weight: 3
@@ -250,16 +246,12 @@ es:
       weight: 1
     - name: The Co-op
       title: The Co-op
-      url: /the-coop/
+      url: /coop/
       weight: 2
-    - name: Blog
-      title: Resonate Blog
-      url: /blog/
-      weight: 3
     - name: Handbook
       title: Handbook
       url: https://community.resonate.is/c/handbook/60
-      weight: 4
+      weight: 3
     footer2:
     - name: Join
       title: Join Resonate
@@ -267,7 +259,7 @@ es:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: /volunteering/
+      url: https://community.resonate.is/
       weight: 2
     - name: Team
       title: Resonate Team
@@ -291,9 +283,9 @@ es:
       url: /contact/
       weight: 4
     footer4:
-    - name: Documentation
-      title: Documentation
-      url: /documentation/
+    - name: Help us build
+      title: Resonate Community Forum Platform
+      url: https://community.resonate.is/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -309,10 +301,10 @@ es:
       weight: 4
     footer:
     - name: Terms + Conditions
-      title: Documentation
-      url: /terms/
+      title: Terms and Conditions
+      url: https://community.resonate.is/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: /privacy-policy/
+      url: https://community.resonate.is/docs?topic=1863
       weight: 3
