@@ -6,7 +6,7 @@
 
 [nodejs.org](https://nodejs.org)
 
-### Hugo
+### Hugo v0.88.1
 
 [gohugo.io](https://gohugo.io) The world’s fastest framework for building websites
 
