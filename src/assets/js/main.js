@@ -41,7 +41,9 @@ function randomLogoApp (selector) {
   const logo = choo()
 
   logo.view((state, emit) => {
-    return state.cache(RandomLogo, 'logo').render()
+    return state.cache(RandomLogo, 'logo').render({
+      invert: window.location.pathname.startsWith('/coop') ? -1 : 1
+    })
   })
 
   logo.mount(selector)
