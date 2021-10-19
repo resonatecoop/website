@@ -4,7 +4,9 @@ import './tabbing.js'
 import Header from './components/header'
 import RandomLogo from './components/logo'
 import Trackgroups from './components/trackgroups'
+import ContactForm from './components/contact'
 import APIService from '@resonate/api-service'
+import loadScript from './lib/load-script'
 
 const { getAPIServiceClient } = APIService({
   apiHost: process.env.APP_HOST || 'https://beta.stream.resonate.coop'
@@ -35,6 +37,20 @@ function headerSearchApp (selector) {
   app.mount(selector)
 }
 
+async function contactApp (selector) {
+  if (!document.querySelector(selector)) return
+
+  await loadScript('https://js.hcaptcha.com/1/api.js')
+
+  const contact = choo()
+
+  contact.view((state, emit) => {
+    return state.cache(ContactForm, 'contact').render()
+  })
+
+  contact.mount(selector)
+}
+
 function randomLogoApp (selector) {
   if (!document.querySelector(selector)) return
 
@@ -52,6 +68,7 @@ function randomLogoApp (selector) {
 document.addEventListener('DOMContentLoaded', DOMContentLoaded)
 
 function DOMContentLoaded () {
+  contactApp('.contact-form')
   randomLogoApp('.random-logo-component')
   releasesApp('.trackgroups')
 }

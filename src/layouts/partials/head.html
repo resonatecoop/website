@@ -27,7 +27,7 @@
   {{ partial "seo/main" . }}
   {{ partialCached "favicons.html" . }}
 
-  {{ $defines := dict "process.env.NODE_ENV" `"development"` "process.env.APP_HOST" `"https://beta.stream.resonate.coop"` }}
+  {{ $defines := dict "process.env.SITE_KEY" `"8b6343fc-cdb0-4770-bf6e-bc714086208a"` "process.env.NODE_ENV" `"development"` "process.env.APP_HOST" `"https://beta.stream.resonate.coop"` }}
   {{ $opts := dict "targetPath" "main.js" "defines" $defines }}
   {{ $js := resources.Get "js/main.js" | js.Build $opts }}
   {{ if hugo.IsProduction }}
