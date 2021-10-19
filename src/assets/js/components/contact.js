@@ -226,7 +226,7 @@ class ContactForm extends Component {
           `
         }
         return html`
-          <select class="form-control" onchange=${handler} name=${name}>
+          <select class="form-control" required="required" onchange=${handler} name=${name}>
             ${options.map(option)}
           </select>
         `
@@ -340,18 +340,18 @@ class ContactForm extends Component {
   }
 
   load () {
-    this.validator.field('reason', (data) => {
+    this.validator.field('reason', { required: true }, (data) => {
       if (isEmpty(data)) return new Error('Reason is required')
       if (!['feedback', 'volunteer', 'general', 'copyright'].includes(data)) {
         return new Error('Reason is invalid')
       }
     })
     this.validator.field('subject', { required: false })
-    this.validator.field('email', (data) => {
+    this.validator.field('email', { required: true }, (data) => {
       if (isEmpty(data)) return new Error('Email is required')
       if (!isEmail(data)) return new Error('Email is invalid')
     })
-    this.validator.field('message', (data) => {
+    this.validator.field('message', { required: true }, (data) => {
       if (isEmpty(data)) return new Error('Message is required')
       if (!isLength(data, { min: 0, max: 200 })) return new Error('Message should be no more than 200 characters')
     })
