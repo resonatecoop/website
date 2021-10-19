@@ -19,7 +19,7 @@ for:
     details: "Resonate stands in solidarity with artists and independent labels fighting the commodification of music and the excessive profits of the majors and tech giants."
     links:
       - text: "Join a global community of creativity"
-        href: "/join"
+        href: "https://id.resonate.coop/join"
     img:
       src: "images/illustrations/Collaboration.png"
   - id: "everyone"
@@ -29,7 +29,7 @@ for:
     links:
       - title: "Why we’re a coop"
         text: "We’re doing things differently — learn more"
-        href: "/the-coop"      
+        href: "/coop"      
     img:
       src: "images/illustrations/Badge.png"
 why:

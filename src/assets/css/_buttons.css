@@ -18,12 +18,20 @@ a.btn {
   color: var(--black);
 }
 
+.btn-black {
+  border-color: var(--black);
+  background: var(--black);
+  color: var(--near-white);
+}
+.btn-black:hover {
+  color: var(--white);
+}
+
 .btn-white {
   background: none;
   border-color: var(--light-gray);
   color: var(--light-gray);
 }
-
 .btn-white:hover {
   border-color: var(--white);
   color: var(--white);
