@@ -34,7 +34,7 @@ en:
       weight: -111
     - name: Pricing
       title: Resonate Pricing
-      url: /stream2own/
+      url: /pricing/
       weight: 1
     - name: The Co-op
       title: The Co-op
@@ -111,7 +111,7 @@ fr:
       weight: -111
     - name: Tarifs
       title: Tarifs de Resonate
-      url: /stream2own/
+      url: /pricing/
       weight: -110
     - name: La Coop
       title: La Coop
@@ -136,7 +136,7 @@ fr:
       weight: -111
     - name: Tarifs
       title: Tarifs de Resonate
-      url: /stream2own/
+      url: /pricing/
       weight: 1
     - name: La Coop
       title: La Coop
@@ -217,7 +217,7 @@ es:
       weight: -111
     - name: Principio 
       title: Principio de Resonate
-      url: /stream2own/
+      url: /pricing/
       weight: -110
     - name: La Coop
       title: La Coop
@@ -242,7 +242,7 @@ es:
       weight: -111
     - name: Pricing
       title: Resonate Pricing
-      url: /stream2own/
+      url: /pricing/
       weight: 1
     - name: The Co-op
       title: The Co-op
