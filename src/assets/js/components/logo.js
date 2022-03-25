@@ -30,7 +30,9 @@ class RandomLogo extends Nanocomponent {
     this.local.pos = this.local.positions[this.local.current]
   }
 
-  createElement () {
+  createElement (props) {
+    this.local.invert = props.invert
+
     const attrs = {
       oncontextmenu: e => {
         e.preventDefault()
@@ -54,12 +56,12 @@ class RandomLogo extends Nanocomponent {
 
         img.style.backgroundPosition = `0 ${this.local.pos}%`
       },
-      class: 'mx3 grow ma0 db aspect-ratio aspect-ratio--1x1 invert--dark'
+      class: 'mx3 grow ma0 db aspect-ratio aspect-ratio--1x1'
     }
 
     const src = ASSETS_PATH + '/sprite_optimized.png'
 
-    const style = `background-position:0 ${this.local.pos}%;background-repeat:no-repeat;background-image:url(${src});`
+    const style = `background-position:0 ${this.local.pos}%;background-repeat:no-repeat;background-image:url(${src});filter:invert(${this.local.invert})`
 
     return html`
       <div class="random-logo-component w-100 w-30-m w-40-l pa4">

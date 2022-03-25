@@ -1,5 +1,5 @@
 ARG RELEASE_TAG=develop
-ARG HUGO_VERSION=0.88.0
+ARG HUGO_VERSION=0.88.1
 ARG NODE_ENV=development
 
 FROM node:14-alpine as builder

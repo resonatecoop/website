@@ -51,7 +51,12 @@ class Header extends Nanocomponent {
 
   createElement () {
     const machine = {
-      on: () => this.state.cache(Search, 'search').render({ tags: this.local.tags }),
+      on: () => {
+        return this.state.cache(Search, 'search').render({
+          tags: this.local.tags,
+          applicationHost: process.env.APP_HOST
+        })
+      },
       off: () => {
         const attrs = {
           onclick: (e) => {
