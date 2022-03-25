@@ -74,8 +74,6 @@ class ContactForm extends Component {
       try {
         this.local.machine.emit('request:start')
 
-        const url = new URL('/api', 'https://resonate.localhost')
-
         const captcha = new HCaptchaAsync(this.element.querySelector('.hcaptcha'), {
           theme: 'dark',
           size: 'compact',
@@ -85,13 +83,15 @@ class ContactForm extends Component {
         const token = await captcha.execute()
         const payload = Object.assign({}, this.local.data, { token })
 
-        await (await fetch(url.href, {
+        const response = await (await fetch('/contact', {
           body: JSON.stringify(payload),
           headers: {
             'Content-Type': 'Application/json'
           },
           method: 'POST'
         })).json()
+
+        console.log(response)
 
         this.local.machine.emit('request:resolve')
       } catch (err) {
@@ -102,8 +102,6 @@ class ContactForm extends Component {
 
     this.local.machine.on('form:invalid', () => {
       log.info('Form is invalid')
-
-      console.log(this.form)
 
       const invalidInput = document.querySelector('.invalid')
 
@@ -311,7 +309,16 @@ class ContactForm extends Component {
         <div class="contact-form">
           ${body}
           ${fields.map((elem) => elem)}
-          <button ${attrs}>Send</button>
+          ${fields.length ? html`<button ${attrs}>Send</button>` : ''}
+
+          ${fields.length
+            ? html`
+              <p class="lh-copy">
+                This site is protected by hCaptcha and its
+                <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
+                <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
+              </p>`
+            : ''}
         </div>
       `
     }
@@ -327,12 +334,6 @@ class ContactForm extends Component {
             ${renderForm(data)}
           </fieldset>
         </form>
-
-        <p class="lh-copy">
-          This site is protected by hCaptcha and its
-          <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
-          <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
-        </p>
 
         <div class="hcaptcha"></div>
       </div>
@@ -384,17 +385,14 @@ function HCaptchaAsync (element, config = {}) {
   })
 
   function onSuccess (response) {
-    console.log(response)
     res(response)
   };
 
   function onError (message) {
-    console.log(message)
     rej(message)
   }
 
   function onClose () {
-    console.log('user closed challenge.')
     rej(new Error('hCaptcha user closed challenge'))
   }
 
