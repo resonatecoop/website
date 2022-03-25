@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Resonate manifesto",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:lint",
+    "test:lint": "standard ./assets/js/**/*.js"
   },
+  "main": "./assets/js/main.js",
   "private": true,
   "keywords": [
     "hugo"
