@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Resonate manifesto",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:lint",
+    "test:lint": "standard ./assets/js/**/*.js"
   },
+  "main": "./assets/js/main.js",
   "private": true,
   "keywords": [
     "hugo"
@@ -36,6 +38,7 @@
     "browserify": "^17.0.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
+    "standard": "^16.0.4",
     "tachyons": "^4.11.1"
   }
 }
