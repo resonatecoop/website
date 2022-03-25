@@ -19,7 +19,7 @@ playfair:
       href: "/manifesto"
     - text: "The Co-op"
       href: "/coop"
-    - text: "stream2own"
+    - text: "Pricing"
       href: "/pricing"
   cta: "Become a member"
   link: "Login to the player"
