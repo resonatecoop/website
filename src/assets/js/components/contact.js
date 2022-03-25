@@ -12,6 +12,7 @@ import isLength from 'validator/lib/isLength'
 import isEmail from 'validator/lib/isEmail'
 import validateFormdata from 'validate-formdata'
 import nanostate from 'nanostate'
+import morph from 'nanomorph'
 
 import inputField from '../elements/input-field'
 
@@ -50,7 +51,7 @@ class ContactForm extends Component {
     })
 
     this.local.data = {
-      reason: 'volunteer'
+      reason: 'feedback'
     }
 
     this.local.machine.on('form:reset', () => {
@@ -125,7 +126,7 @@ class ContactForm extends Component {
         }
       }
 
-      this.rerender()
+      morph(this.element.querySelector('.contact-form'), this.renderForm())
 
       if (this.form.valid) {
         return this.local.machine.emit('form:valid')
@@ -139,13 +140,63 @@ class ContactForm extends Component {
   }
 
   createElement (props) {
-    const pristine = this.form.pristine
-    const errors = this.form.errors
     const values = this.form.values
 
     for (const [key, value] of Object.entries(this.local.data)) {
       values[key] = value
     }
+
+    return html`
+      <div class="flex flex-column w-100 pt3 pb6">
+        ${messages(this.state, this.form)}
+
+        <form novalidate onsubmit=${(e) => { e.preventDefault(); this.local.machine.emit('form:submit') }}>
+          <fieldset class="bn ma0 pa0">
+            <legend class="lh-title f3 fw4 mb3">Contact</legend>
+            ${this.selectInput()}
+            ${this.renderForm()}
+          </fieldset>
+        </form>
+
+        <div class="hcaptcha"></div>
+      </div>
+    `
+  }
+
+  selectInput () {
+    const values = this.form.values
+
+    const options = [
+      { value: 'feedback', label: 'Feedback' },
+      { value: 'volunteer', label: 'Volunteer' },
+      { value: 'general', label: 'General' },
+      { value: 'copyright', label: 'Copyright Violation' }
+    ]
+
+    const onchange = (e) => {
+      this.validator.validate(e.target.name, e.target.value)
+      this.local.data.reason = e.target.value
+      morph(this.element.querySelector('.contact-form'), this.renderForm())
+    }
+
+    return html`
+      <select class="form-control" required="required" onchange=${onchange} name="reason">
+        <option value="" selected disabled="true">Please choose</option>
+        ${options.map(({ value, label, disabled = false }) => {
+          return html`
+            <option value=${value} disabled=${disabled} selected=${values.reason === value}>
+              ${label}
+            </option>
+          `
+        })}
+      </select>
+    `
+  }
+
+  renderForm () {
+    const pristine = this.form.pristine
+    const errors = this.form.errors
+    const values = this.form.values
 
     const data = {
       volunteer: {
@@ -188,6 +239,11 @@ class ContactForm extends Component {
             name: 'subject'
           },
           {
+            type: 'email',
+            labelText: 'E-mail',
+            value: values.email
+          },
+          {
             type: 'textarea',
             value: values.message,
             placeholder: 'Write your message here'
@@ -214,128 +270,78 @@ class ContactForm extends Component {
       }
     }[values.reason]
 
-    const selectInput = (reason) => {
-      function renderOptions (handler, options, selected, name) {
-        const option = ({ value, label, disabled = false }) => {
-          return html`
-            <option value=${value} disabled=${disabled} selected=${selected === value}>
-              ${label}
-            </option>
-          `
-        }
-        return html`
-          <select class="form-control" required="required" onchange=${handler} name=${name}>
-            ${options.map(option)}
-          </select>
-        `
-      }
+    const body = typeof data.body === 'object' ? raw(data.body.html) : data.body
+    const fields = []
 
-      const options = [
-        { value: 'feedback', label: 'Feedback' },
-        { value: 'volunteer', label: 'Volunteer' },
-        { value: 'general', label: 'General' },
-        { value: 'copyright', label: 'Copyright Violation' }
-      ]
+    data.fields.forEach(field => {
+      if (field.type === 'textarea') {
+        const invalid = errors.message && !pristine.message
 
-      const onchange = (e) => {
-        this.validator.validate(e.target.name, e.target.value)
-        this.local.data.reason = e.target.value
-        this.rerender()
-      }
-
-      return renderOptions(onchange, options, reason, 'reason')
-    }
-
-    const renderForm = (data) => {
-      const body = typeof data.body === 'object' ? raw(data.body.html) : data.body
-      const fields = []
-
-      data.fields.forEach(field => {
-        if (field.type === 'textarea') {
-          const invalid = errors.message && !pristine.message
-
-          const attrs = {
-            name: 'message',
-            maxlength: 200,
-            rows: 4,
-            class: `w-100 db bn bg-black white pa2 ma0 ba bw1 ${invalid ? 'invalid' : 'valid'}`,
-            placeholder: field.placeholder,
-            required: true,
-            text: values.message,
-            onchange: (e) => {
-              this.validator.validate(e.target.name, e.target.value)
-              this.local.data[e.target.name] = e.target.value
-              this.rerender()
-            }
+        const attrs = {
+          name: 'message',
+          maxlength: 200,
+          rows: 4,
+          class: `w-100 db bn bg-black white pa2 ma0 ba bw1 ${invalid ? 'invalid' : 'valid'}`,
+          placeholder: field.placeholder,
+          required: true,
+          text: values.message,
+          onchange: (e) => {
+            this.validator.validate(e.target.name, e.target.value)
+            this.local.data[e.target.name] = e.target.value
+            morph(this.element.querySelector('.contact-form'), this.renderForm())
           }
-
-          const el = inputField(html`<textarea ${attrs}>${values.message}</textarea>`, this.form)({
-            labelText: 'Message',
-            inputName: 'message',
-            displayErrors: true
-          })
-
-          fields.push(el)
-        } else {
-          const name = field.name || field.type
-          const el = inputField(input({
-            type: field.type,
-            name: name,
-            invalid: errors[name] && !pristine[name],
-            placeholder: field.placeholder,
-            value: values[name],
-            onchange: (e) => {
-              this.validator.validate(e.target.name, e.target.value)
-              this.local.data[e.target.name] = e.target.value
-              this.rerender()
-            }
-          }), this.form)({
-            labelText: field.labelText,
-            inputName: name,
-            displayErrors: true
-          })
-          fields.push(el)
         }
-      })
 
-      // submit button attrs
-      const attrs = {
-        type: 'submit',
-        class: 'bg-white ba bw b--dark-gray f5 b pv3 ph5 grow h-captcha',
-        'data-sitekey': process.env.SITE_KEY
+        const el = inputField(html`<textarea ${attrs}>${values.message}</textarea>`, this.form)({
+          labelText: 'Message',
+          inputName: 'message',
+          displayErrors: true
+        })
+
+        fields.push(el)
+      } else {
+        const name = field.name || field.type
+        const el = inputField(input({
+          type: field.type,
+          name: name,
+          invalid: errors[name] && !pristine[name],
+          placeholder: field.placeholder,
+          value: values[name],
+          onchange: (e) => {
+            this.validator.validate(e.target.name, e.target.value)
+            this.local.data[e.target.name] = e.target.value
+            morph(this.element.querySelector('.contact-form'), this.renderForm())
+          }
+        }), this.form)({
+          labelText: field.labelText,
+          inputName: name,
+          displayErrors: true
+        })
+        fields.push(el)
       }
+    })
 
-      return html`
-        <div class="contact-form">
-          ${body}
-          ${fields.map((elem) => elem)}
-          ${fields.length ? html`<button ${attrs}>Send</button>` : ''}
-
-          ${fields.length
-            ? html`
-              <p class="lh-copy">
-                This site is protected by hCaptcha and its
-                <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
-                <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
-              </p>`
-            : ''}
-        </div>
-      `
+    // submit button attrs
+    const attrs = {
+      type: 'submit',
+      class: 'bg-white ba bw b--dark-gray f5 b pv3 ph5 grow',
+      'data-sitekey': process.env.SITE_KEY
     }
 
     return html`
-      <div class="flex flex-column w-100 pt3 pb6">
-        ${messages(this.state, this.form)}
+      <div class="contact-form">
+        ${body}
+        ${fields.map((elem) => elem)}
+        ${fields.length ? html`<button ${attrs}>Send</button>` : ''}
 
-        <form novalidate onsubmit=${(e) => { e.preventDefault(); this.local.machine.emit('form:submit') }}>
-          <fieldset class="bn ma0 pa0">
-            <legend class="lh-title f3 fw4 mb3">Contact</legend>
-            ${selectInput(values.reason)}
-            ${renderForm(data)}
-          </fieldset>
-        </form>
-
-        <div class="hcaptcha"></div>
+        ${fields.length
+          ? html`
+            <p class="lh-copy">
+              This site is protected by hCaptcha and its
+              <a href="https://hcaptcha.com/privacy">Privacy Policy</a> and
+              <a href="https://hcaptcha.com/terms">Terms of Service</a> apply.
+            </p>`
+          : ''}
       </div>
     `
   }
@@ -364,7 +370,7 @@ class ContactForm extends Component {
     }
   }
 
-  update (props) {
+  update () {
     return false
   }
 }
