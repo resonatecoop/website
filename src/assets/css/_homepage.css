@@ -1,4 +1,15 @@
 /* Homepage */
+
+#playfair2 {
+  display: grid;
+  grid-template:
+    ". t ." auto
+    "l m r" auto
+    "b b b" auto
+    / 1fr auto 1fr;
+  column-gap: 0.5rem;
+}
+
 #featured .release:nth-child(1n+7) {
   display: none;
 }

@@ -9,17 +9,20 @@ hero:
 playfair:
   text: "It’s time to"
   title: "Play fair."
-  features: 
+  features:
     - "Pay as you play with no monthly subscription fees. "
     - "Artist centred and user-centric stream2own payments. "
     - "Governed by our artists, members & workers. "
     - "Privacy respecting architecture for digital dignity."
-  links: 
-    - text: "Manifesto"
+  links:
+    manifesto:
+      text: "Manifesto"
       href: "/manifesto"
-    - text: "The Co-op"
+    coop:
+      text: "The Co-op"
       href: "/coop"
-    - text: "Pricing"
+    pricing:
+      text: "Pricing"
       href: "/pricing"
   cta: "Become a member"
   link: "Login to the player"

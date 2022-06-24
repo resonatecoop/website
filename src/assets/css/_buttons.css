@@ -5,7 +5,11 @@
   text-align: center;
   font-weight: bold;
   cursor: pointer;
-  padding: var(--spacing-small) var(--spacing-large)
+  padding: var(--spacing-small) var(--spacing-large);
+}
+
+.btn-narrow {
+  padding: var(--spacing-small) var(--spacing-medium);
 }
 
 a.btn {

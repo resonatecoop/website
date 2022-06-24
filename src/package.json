@@ -37,8 +37,10 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.15.6",
     "browserify": "^17.0.0",
-    "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.5.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-preset-env": "^7.6.0",
     "standard": "^16.0.4",
     "tachyons": "^4.11.1"
   }
