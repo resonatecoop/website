@@ -37,7 +37,9 @@ ENV NODE_ENV=$NODE_ENV
 
 RUN hugo -d ./public -e ${NODE_ENV}
 
-FROM alpine:latest
+FROM node:14-alpine
+
+RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x
 
 WORKDIR /build
 
