@@ -39,7 +39,7 @@ RUN hugo -d ./public -e ${NODE_ENV}
 
 FROM node:14-alpine
 
-RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x
+RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x @resonate/tachyons @resonate/search-component
 
 WORKDIR /build
 
