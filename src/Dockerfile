@@ -2,7 +2,7 @@ ARG RELEASE_TAG=develop
 ARG HUGO_VERSION=0.88.1
 ARG NODE_ENV=development
 
-FROM node:14-alpine as builder
+FROM node:14-alpine
 
 ARG HUGO_VERSION
 ENV HUGO_VERSION $HUGO_VERSION
@@ -36,13 +36,3 @@ ARG NODE_ENV
 ENV NODE_ENV=$NODE_ENV
 
 RUN hugo -d ./public -e ${NODE_ENV}
-
-FROM node:14-alpine
-
-RUN npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x @resonate/tachyons @resonate/search-component
-
-WORKDIR /build
-
-COPY --from=builder /usr/bin/hugo /usr/bin/
-
-COPY --from=builder /build/website /build/website
