@@ -9,3 +9,10 @@ relativeurls: true
 removePathAccents: true
 pygmentsUseClasses: true
 metaDataFormat: yaml
+security:
+  exec:
+    allow:
+      - ^go$
+      - ^npx$
+      - ^postcss$
+      - ^babel$
