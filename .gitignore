@@ -13,6 +13,7 @@ src/data/images/hash.json
 src/public/
 src/static/dist/
 src/resources/
+src/.hugo_build.lock
 
 # Compiled source #
 ###################
