@@ -14,6 +14,8 @@
 
 ### Setup
 
+Install [Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) on your machine.
+
 ```sh
 cd src && \
 npm install -g @babel/cli @babel/core postcss@7.x postcss-cli@7.x && \
