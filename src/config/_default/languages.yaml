@@ -21,11 +21,11 @@ en:
       weight: -108
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: -107
     - name: Forum
       title: Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: -106
     footer1:
     - name: About
@@ -42,7 +42,7 @@ en:
       weight: 2
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: 3
     footer2:
     - name: Join
@@ -51,7 +51,7 @@ en:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 2
     - name: Team
       title: Resonate Team
@@ -59,7 +59,7 @@ en:
       weight: 3
     - name: Forum
       title: Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 4
     footer3:
     - name: Blog
@@ -77,7 +77,7 @@ en:
     footer4:
     - name: Help us build
       title: Platform - Resonate Community Forum
-      url: https://community.resonate.is/c/platform
+      url: https://community.resonate.coop/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -94,11 +94,11 @@ en:
     footer:
     - name: Terms + Conditions
       title: Terms + Conditions
-      url: https://community.resonate.is/docs?topic=1865
+      url: https://community.resonate.coop/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: https://community.resonate.is/docs?topic=1863
+      url: https://community.resonate.coop/docs?topic=1863
       weight: 3
 fr:
   weight: 2
@@ -123,11 +123,11 @@ fr:
       weight: -108
     - name: Handbook
       title: Resonate Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: -107
     - name: Forum
       title: Resonate Community Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: -106
     footer1:
     - name: À propos
@@ -148,7 +148,7 @@ fr:
       weight: 3
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: 4
     footer2:
     - name: Rejoindre
@@ -157,7 +157,7 @@ fr:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 2
     - name: Équipe
       title: Équipe de Resonate
@@ -165,7 +165,7 @@ fr:
       weight: 3
     - name: Forum
       title: Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 4
     footer3:
     - name: Blog
@@ -183,7 +183,7 @@ fr:
     footer4:
     - name: Help us build
       title: Resonate Community Forum Platform
-      url: https://community.resonate.is/c/platform
+      url: https://community.resonate.coop/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -200,11 +200,11 @@ fr:
     footer:
     - name: Terms + Conditions
       title: Terms + Conditions
-      url: https://community.resonate.is/docs?topic=1865
+      url: https://community.resonate.coop/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: https://community.resonate.is/docs?topic=1863
+      url: https://community.resonate.coop/docs?topic=1863
       weight: 3
 es:
   weight: 3
@@ -229,11 +229,11 @@ es:
       weight: -108
     - name: Handbook
       title: Resonate Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: -107
     - name: Forum
       title: Resonate Community Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: -106
     footer1:
     - name: About
@@ -250,7 +250,7 @@ es:
       weight: 2
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.is/c/handbook/60
+      url: https://community.resonate.coop/c/handbook/60
       weight: 3
     footer2:
     - name: Join
@@ -259,7 +259,7 @@ es:
       weight: 1
     - name: Volunteering
       title: Volunteering
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 2
     - name: Team
       title: Resonate Team
@@ -267,7 +267,7 @@ es:
       weight: 3
     - name: Forum
       title: Forum
-      url: https://community.resonate.is/
+      url: https://community.resonate.coop/
       weight: 4
     footer3:
     - name: Blog
@@ -285,7 +285,7 @@ es:
     footer4:
     - name: Help us build
       title: Resonate Community Forum Platform
-      url: https://community.resonate.is/c/platform
+      url: https://community.resonate.coop/c/platform
       weight: 1
     - name: GitHub
       title: Resonate GitHub
@@ -302,9 +302,9 @@ es:
     footer:
     - name: Terms + Conditions
       title: Terms and Conditions
-      url: https://community.resonate.is/docs?topic=1865
+      url: https://community.resonate.coop/docs?topic=1865
       weight: 2
     - name: Privacy Policy
       title: Privacy Policy
-      url: https://community.resonate.is/docs?topic=1863
+      url: https://community.resonate.coop/docs?topic=1863
       weight: 3

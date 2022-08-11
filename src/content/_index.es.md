@@ -36,7 +36,7 @@ features:
       src: "images/illustrations/Ethical_streaming.png"
   - id: discover
     title: "Discover"
-    text: "**[DISCOVER](https://stream.resonate.is/discover)** Immerse yourself in new sounds and genres from artists and labels all over the world. Our shuffle everything function and playlists open up a world of music."
+    text: "**[DISCOVER](https://stream.resonate.coop/discover)** Immerse yourself in new sounds and genres from artists and labels all over the world. Our shuffle everything function and playlists open up a world of music."
     details: "Use our player on desktop or mobile phone.  <br>Native apps are coming soon."
     img:
       src: "images/illustrations/Resonate_Ear.png"

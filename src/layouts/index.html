@@ -6,23 +6,15 @@
     <div class="w-100 w-70-m w-60-l lh-title ph2 ph3-ns">
       <p class="f4 f4-vw-l tracked-tight" style="max-width:20em">{{ .p1 | markdownify }}</p>
       <nav class="flex items-baseline justify-end justify-start-ns ga3 f5 ph3 ph4-ns ml5">
-        {{/*  <span role="presentation" class="btn btn-white btn-narrow">?</span>  */}}
+        {{/* <span role="presentation" class="btn btn-white btn-narrow">?</span> */}}
         <a href="https://id.resonate.coop/join" class="btn btn-white">{{ T "join" }}</a>
-        <a href="https://stream.resonate.coop/api/v2/user/connect/resonate" class="b">{{ T "player" }}</a>
-        <a href="https://community.resonate.is/" class="b">{{ T "forum" }}</a>
+        <a href="https://stream.resonate.coop/api/v3/user/connect/resonate" class="b">{{ T "player" }}</a>
+        <a href="https://community.resonate.coop/" class="b">{{ T "forum" }}</a>
       </nav>
       <div class="pl3 pb4">
-        <svg
-          class="ml3"
-          style="margin-top: -72px;"
-          width="24"
-          viewBox="0 0 24 72"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="transparent"
-          stroke="white"
-          stroke-width="2"
-        >
-          <path d="M 12,2 L 12,70 M 22,60 L 12,70 2,60"/>
+        <svg class="ml3" style="margin-top: -72px;" width="24" viewBox="0 0 24 72" xmlns="http://www.w3.org/2000/svg"
+          fill="transparent" stroke="white" stroke-width="2">
+          <path d="M 12,2 L 12,70 M 22,60 L 12,70 2,60" />
         </svg>
         <div class="mw6">
           <p class="f5 lh-copy">{{ .coop.text | markdownify }}</p>
@@ -34,7 +26,9 @@
     </div>
     <div class="random-logo-component w-100 w-30-m w-40-l ph4 pa4-ns">
       <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1">
-        <span role="img" style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');filter:invert(1);" class="aspect-ratio--object cover random-logo"></span>
+        <span role="img"
+          style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');filter:invert(1);"
+          class="aspect-ratio--object cover random-logo"></span>
         <figcaption class="clip">Resonate Coop Logo</figcaption>
       </figure>
     </div>
@@ -46,40 +40,32 @@
 <section id="playfair2" class="ph3 pv4" style="">
   {{- $img := resources.Get "images/illustrations/Playfair_2.png" -}}
   {{- $img2x := resources.Get "images/illustrations/Playfair_2@2x.png" -}}
-  <img class="h-auto db center-l" style="grid-area: m;" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118" height="118" alt="">
+  <img class="h-auto db center-l" style="grid-area: m;" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x"
+    width="118" height="118" alt="">
   <p class="f5 f7-vw-l tc mv0" style="grid-area: b; justify-self: center;">
     {{ range .features }}{{ . }}<br>{{ end }}
   </p>
-  <a
-    class="f5 f5-vw-l b"
-    style="grid-area: t; justify-self: center;"
-    href="{{ .links.manifesto.href | markdownify }}"
-  >
+  <a class="f5 f5-vw-l b" style="grid-area: t; justify-self: center;" href="{{ .links.manifesto.href | markdownify }}">
     {{ .links.manifesto.text | markdownify }}
   </a>
-  <a
-    class="f5 f5-vw-l b self-center"
-    style="grid-area: l; justify-self: end;"
-    href="{{ .links.coop.href | markdownify }}"
-  >
+  <a class="f5 f5-vw-l b self-center" style="grid-area: l; justify-self: end;"
+    href="{{ .links.coop.href | markdownify }}">
     {{ .links.coop.text | markdownify }}
   </a>
-  <a
-    class="f5 f5-vw-l b self-center"
-    style="grid-area: r; justify-self: start;"
-    href="{{ .links.pricing.href | markdownify }}"
-  >
+  <a class="f5 f5-vw-l b self-center" style="grid-area: r; justify-self: start;"
+    href="{{ .links.pricing.href | markdownify }}">
     {{ .links.pricing.text | markdownify }}
   </a>
 </section>
 {{ end }}
 
-{{/*  {{ with .Params.playfair }}
+{{/* {{ with .Params.playfair }}
 <section id="playfair" class="w-100 ph2 ph3-ns pv5">
   <header class="flex flex-column flex-row-ns items-end">
     <div class="w-100 w-60-m w-60-l">
       <p class="f4 f4-vw-l near-black pl3"><span class="tracked-tight">{{ .text }}</span></p>
-      <h1 class="f1 f1-vw-l lh-solid tracked-tight normal black ma0 mb3 pl3" style="margin-top:-0.125em;">{{ .title }}</h1>
+      <h1 class="f1 f1-vw-l lh-solid tracked-tight normal black ma0 mb3 pl3" style="margin-top:-0.125em;">{{ .title }}
+      </h1>
     </div>
     <div class="w-100 w-40-m w-40-l ph2 ph3-ns pb3-ns mb1-l">
       {{ range .links }}
@@ -96,24 +82,26 @@
     <div class="fr fl-l w-100 w-40-m w-20-l pv3 pv0-ns ph3 ph4-ns mt1">
       {{- $img := resources.Get "images/illustrations/Playfair_2.png" -}}
       {{- $img2x := resources.Get "images/illustrations/Playfair_2@2x.png" -}}
-      <img class="h-auto db center-l" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118" height="118" alt="">
+      <img class="h-auto db center-l" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x" width="118"
+        height="118" alt="">
     </div>
     <div class="fl w-100 w-60-m w-40-l pl2 pl3-ns pt3 f5 f5-vw-l">
       <a href="https://id.resonate.coop/join" class="btn btn-black">{{ T "join_now" }}</a>
-      <p class="mt3"><a href="https://stream.resonate.coop/api/v2/user/connect/resonate" class="b">{{ T "login_player" }}</a></p>
+      <p class="mt3"><a href="https://stream.resonate.coop/api/v3/user/connect/resonate" class="b">{{ T "login_player"
+          }}</a></p>
     </div>
   </div>
 </section>
-{{ end }}  */}}
+{{ end }} */}}
 
-{{/*  {{ with .Params.features }}
+{{/* {{ with .Params.features }}
 <section id="features">
   {{ range . }}
   {{ partial "components/feature" ( dict "feature" . ) }}
   {{ end }}
   <div class="pa3 pa4-ns pt0">{{ partial "components/illustrations-credits" }}</div>
 </section>
-{{ end }}  */}}
+{{ end }} */}}
 
 <script>
   var releases = document.querySelector(".releases");
