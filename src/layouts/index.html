@@ -106,26 +106,14 @@
 </section>
 {{ end }}  */}}
 
-<section id="featured" class="ph2 ph3-ns mb5">
-  <h2 class="f4 f4-vw-l normal near-black ph2 ph3-ns">Featured releases</h2>
-  {{ $featured := getJSON $.Site.Data.featured.releases.url }}
-  <div class="releases cf flex flex-wrap">
-    {{ range first 20 $featured.data }}
-    <div class="release fl w-100 w-33-m w-20-l pa3 mb3">
-    {{ partial "components/release" ( dict "release" . ) }}
-    </div>
-    {{ end }}
-  </div>
-</section>
-
-{{ with .Params.features }}
+{{/*  {{ with .Params.features }}
 <section id="features">
   {{ range . }}
   {{ partial "components/feature" ( dict "feature" . ) }}
   {{ end }}
   <div class="pa3 pa4-ns pt0">{{ partial "components/illustrations-credits" }}</div>
 </section>
-{{ end }}
+{{ end }}  */}}
 
 <script>
   var releases = document.querySelector(".releases");

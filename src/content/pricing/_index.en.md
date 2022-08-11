@@ -1,14 +1,54 @@
 ---
-title: "Stream to own"
+title: "Pricing"
 description: ""
 layout: "single"
-subtitle: "**Resonate is not a subscription service.** <br> Instead, Listeners pay each time they play a track until they own it."
+subtitle: "**No subscription.
+
+No ads.
+
+No corporation selling your data.
+
+No bots telling you what to like.**"
 hero:
-  p1: "Our unique stream2own system splits the cost across 9 plays that start very low (a fifth of a penny) and increase each time that track is played. If Listeners love a track, they have the option to pay the full price (about 1.25 €) or “buy now”."
-  p2: "To support exploration of new music, Resonate guarantees artists a minimum earning of One Cent per Play while keeping the price so low Listeners can stream dozens of tracks for the first time for pennies (about 4 cents an hour in most cases). This way, listeners start as explorers and become backers."
-  link:
-    text: "Open a new account and we’ll give you around 4 hours of free credit"
-    href: "https://id.resonate.coop/join"
+  subtitle1: "Fair for listeners"
+  p1: "Pay as you play. A few hours of new music a day costs less than a streaming service.
+
+  As you replay, the cost goes up, and you own a track once you’ve paid about $1.40.
+
+  Stream from your collection for free, forever."
+  subtitle2: "Fair for artists"
+  p2: "Make many times more than the norm, and at least a penny on every stream.
+
+  Cash out after about $11 in earnings.
+
+  Get a 70% cut for artists and rights-holders.
+
+  <small>The other 30% goes back into the co-op. Profits are shared among members, including artists.</small>
+
+  Or release for free, if that’s your thing."
+  subtitle3: "Own a track after 9 listens"
+  p3: "Pay 1/4 of a penny the first time you play, then a little more each time you replay.
+
+  Then it’s yours forever."
+footer:
+  title: "Fair for everyone, 
+
+  and getting fairer"
+  p1: "Stream2own has a big future.
+
+  [Join the forum](https://community.resonate.coop/) to share ideas, stories, or time to build it with us."
+  subtitle1: "On our minds lately"
+  p2: "Long-form music and podcasts
+
+  Lossless downloads for the tracks you own
+
+  Artist-controlled pricing
+
+  Connecting listeners and artists
+
+  Collaboration across like-minded platforms
+
+  Amplifying the social power of music"
 pricing:
   table: |-
     | Stream | Credits | €      |
