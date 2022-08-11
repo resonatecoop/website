@@ -78,7 +78,7 @@ pricing:
 
         To listen, you just buy credit (5, 10, 20€) and stream or buy now.
 
-        Our members, who are are artists and listeners, and our owners, are currently discussing future plans and ideas for new ways to pay, listen and enjoy art on Resonate. Including pay what you want, direct fan support for artists, collective and high streamer subscription offers. Watch this space and contribute your ideas via the topic in the [forum](https://community.resonate.is).
+        Our members, who are are artists and listeners, and our owners, are currently discussing future plans and ideas for new ways to pay, listen and enjoy art on Resonate. Including pay what you want, direct fan support for artists, collective and high streamer subscription offers. Watch this space and contribute your ideas via the topic in the [forum](https://community.resonate.coop).
       img:
         src: "images/illustrations/Wallet.png"
 community_credentials:
