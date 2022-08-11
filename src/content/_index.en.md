@@ -3,23 +3,29 @@ title: "Play fair."
 description: "Resonate is the world’s first co-operative music streaming service — a multi-stakeholder platform co-operative, democratically governed by its members: artists, listeners and workers."
 subtitle: "The community-owned music streaming service."
 hero:
-  p1: "**Resonate is the world’s first <br>co-operative music streaming service** <br>— a multi-stakeholder platform co-operative, democratically governed by its members: artists, listeners and workers."
-  p2: "**We are unique in streaming, designed to put music and artists first, with a community committed to building the social power of music.** <br>As stewards of creativity, we are providing a vital corner-stone of the new music eco-system based on fairness, transparency, dignity, agency and community."
-  p3: "**We respect the common and indigenous sources of all wealth and culture**, building with communities in solidarity to resist and repair from the social and ecological effects of capital accumulation and colonialism."
+  p1: "**A&nbsp;music&nbsp;platform we&nbsp;can&nbsp;all&nbsp;control.** <br><u>No, really.</u>"
+  coop:
+    text: "**Resonate is the first community-owned music streaming service** — a multi-stakeholder platform co-operative, democratically governed by our members: artists, listeners, and workers."
+    more:
+      text: "More on cooperatives"
+      href: "/coop"
 playfair:
   text: "It’s time to"
   title: "Play fair."
-  features: 
-    - "Pay as you play with no monthly subscription fees. "
-    - "Artist centred and user-centric stream2own payments. "
-    - "Governed by our artists, members & workers. "
+  features:
+    - "Pay as you play with no monthly subscription fees."
+    - "Artist centred and user-centric stream2own payments."
+    - "Governed by our artists, members & workers."
     - "Privacy respecting architecture for digital dignity."
-  links: 
-    - text: "Manifesto"
+  links:
+    manifesto:
+      text: "Manifesto"
       href: "/manifesto"
-    - text: "The Co-op"
+    coop:
+      text: "The Co-op"
       href: "/coop"
-    - text: "Pricing"
+    pricing:
+      text: "Pricing"
       href: "/pricing"
   cta: "Become a member"
   link: "Login to the player"

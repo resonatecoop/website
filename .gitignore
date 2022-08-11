@@ -13,6 +13,7 @@ src/data/images/hash.json
 src/public/
 src/static/dist/
 src/resources/
+src/.hugo_build.lock
 
 # Compiled source #
 ###################
@@ -51,3 +52,8 @@ src/resources/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Editors #
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

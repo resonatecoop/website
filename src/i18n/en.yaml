@@ -10,7 +10,13 @@
   translation: "Illustrations by"
 - id: continue_reading
   translation: "Continue reading"
+- id: forum
+  translation: Forum
+- id: join
+  translation: Join
 - id: join_now
   translation: "Join now"
 - id: login_player
   translation: "Login to the player"
+- id: player
+  translation: Player

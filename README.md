@@ -24,6 +24,8 @@ npm install
 
 ### Server
 
+While still in the `src` directory
+
 ```sh
 hugo server --baseURL http://localhost:1314 --environment development --port 1314
 ```
