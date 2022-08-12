@@ -44,6 +44,9 @@ en:
       title: Handbook
       url: https://community.resonate.coop/c/handbook/60
       weight: 3
+    - name: Help desk
+      title: Help desk
+      url: https://community.resonate.coop/search?q=%23helpdesk
     footer2:
     - name: Join
       title: Join Resonate

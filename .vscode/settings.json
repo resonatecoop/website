@@ -6,5 +6,6 @@
       "other": "on"
     }
   },
-  "prettier.enable": false
+  "prettier.enable": false,
+  "yaml.format.enable": false
 }
