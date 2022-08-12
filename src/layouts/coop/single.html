@@ -23,32 +23,6 @@
   </div>
 </header>
 
-{{ with .Params.features }}
-<section id="{{ .title | anchorize }}" class="ph2 ph3-ns pv5">
-  <div class="flex flex-column-reverse flex-row-l">
-    <div class="w-100 w-60-l ph2 ph3-ns mw7 f5 f5-vw-l">
-      <h2 class="f4 f4-vw-l mb0">{{ .title }}</h2>
-      <p class="f4 f4-vw-l mt0">{{ .subtitle | markdownify }}</p>
-      <div>{{ .text | markdownify }}</div>
-      <p class="mt5">
-        {{ with .cta }}
-        <a href="{{ .url }}" class="btn btn-black mr4">{{ .text }}</a> 
-        {{ end }}
-        {{ with .link }}
-        <a href="{{ .url }}" class="b">{{ .text }}</a> 
-        {{ end }}
-      </p>
-    </div>
-    <figure class="w-100 w-40-l h-auto ma0 ph2 ph3-ns">
-      <picture class="db center" style="max-width: 17.5rem;max-height: 17.5rem">
-        {{- $img := resources.Get .img.src -}}
-        <img class="h-auto" src="{{ $img.Permalink }}"{{ if in .img.src ".png" }}{{ $img2x := resources.Get (replace .img.src ".png" "@2x.png") }} srcset="{{ $img2x.Permalink }} 2x"{{ end }} width="280" height="280" alt="">
-      </picture>
-    </figure>
-  </div>
-</section>
-{{ end }}
-
 <section>
   <div class="flex flex-column flex-row-ns flex-wrap items-strech f5 f5-vw-l">
     {{ with .Params.active_membership }}
