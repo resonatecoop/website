@@ -21,7 +21,7 @@ en:
       weight: -108
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: -107
     - name: Forum
       title: Forum
@@ -42,7 +42,7 @@ en:
       weight: 2
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: 3
     - name: Help desk
       title: Help desk
@@ -126,7 +126,7 @@ fr:
       weight: -108
     - name: Handbook
       title: Resonate Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: -107
     - name: Forum
       title: Resonate Community Forum
@@ -151,7 +151,7 @@ fr:
       weight: 3
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: 4
     footer2:
     - name: Rejoindre
@@ -232,7 +232,7 @@ es:
       weight: -108
     - name: Handbook
       title: Resonate Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: -107
     - name: Forum
       title: Resonate Community Forum
@@ -253,7 +253,7 @@ es:
       weight: 2
     - name: Handbook
       title: Handbook
-      url: https://community.resonate.coop/c/handbook/60
+      url: https://community.resonate.coop/docs
       weight: 3
     footer2:
     - name: Join
