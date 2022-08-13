@@ -17,7 +17,7 @@ en:
       weight: -109
     - name: Blog
       title: Resonate Blog
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: -108
     - name: Handbook
       title: Handbook
@@ -67,7 +67,7 @@ en:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
@@ -122,7 +122,7 @@ fr:
       weight: -109
     - name: Blog
       title: Blog de Resonate
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: -108
     - name: Handbook
       title: Resonate Handbook
@@ -147,7 +147,7 @@ fr:
       weight: 2
     - name: Blog
       title: Blog de Resonate
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: 3
     - name: Handbook
       title: Handbook
@@ -173,7 +173,7 @@ fr:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
@@ -228,7 +228,7 @@ es:
       weight: -109
     - name: Blog
       title: Resonate blog 
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: -108
     - name: Handbook
       title: Resonate Handbook
@@ -275,7 +275,7 @@ es:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: /blog/
+      url: https://community.resonate.coop/c/blog/104
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
