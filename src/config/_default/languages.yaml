@@ -3,10 +3,6 @@ en:
   languageName: English
   menu:
     main:
-    - name: About
-      title: About Resonate
-      url: /about/
-      weight: -111
     - name: Pricing
       title: Resonate Pricing
       url: /pricing/
@@ -48,22 +44,18 @@ en:
       title: Help desk
       url: https://community.resonate.coop/search?q=%23helpdesk
     footer2:
-    - name: Join
-      title: Join Resonate
-      url: https://id.resonate.coop/join
-      weight: 1
-    - name: Volunteering
-      title: Volunteering
-      url: https://community.resonate.coop/
-      weight: 2
-    - name: Team
-      title: Resonate Team
-      url: /team/
-      weight: 3
-    - name: Forum
-      title: Forum
-      url: https://community.resonate.coop/
-      weight: 4
+      - name: Join
+        title: Join Resonate
+        url: https://id.resonate.coop/join
+        weight: 1
+      - name: Volunteering
+        title: Volunteering
+        url: https://community.resonate.coop/
+        weight: 2
+      - name: Forum
+        title: Forum
+        url: https://community.resonate.coop/
+        weight: 4
     footer3:
     - name: Blog
       title: Resonate Blog
@@ -77,48 +69,45 @@ en:
       title: Contact
       url: /contact/
       weight: 4
+
     footer4:
-    - name: Help us build
-      title: Platform - Resonate Community Forum
-      url: https://community.resonate.coop/c/platform
-      weight: 1
-    - name: GitHub
-      title: Resonate GitHub
-      url: https://github.com/resonatecoop/
-      weight: 2
-    - name: Report an issue
-      title: Report an issue
-      url: https://github.com/resonatecoop/website/issues
-      weight: 3
-    - name: Donate
-      title: Donate
-      url: https://opencollective.com/resonate
-      weight: 4
+      - name: Help us build
+        title: Platform - Resonate Community Forum
+        url: https://community.resonate.coop/c/platform
+        weight: 1
+      - name: GitHub
+        title: Resonate GitHub
+        url: https://github.com/resonatecoop/
+        weight: 2
+      - name: Report an issue
+        title: Report an issue
+        url: https://github.com/resonatecoop/website/issues
+        weight: 3
+      - name: Donate
+        title: Donate
+        url: https://opencollective.com/resonate
+        weight: 4
     footer:
-    - name: Terms + Conditions
-      title: Terms + Conditions
-      url: https://community.resonate.coop/docs?topic=1865
-      weight: 2
-    - name: Privacy Policy
-      title: Privacy Policy
-      url: https://community.resonate.coop/docs?topic=1863
-      weight: 3
+      - name: Terms + Conditions
+        title: Terms + Conditions
+        url: https://community.resonate.coop/docs?topic=1865
+        weight: 2
+      - name: Privacy Policy
+        title: Privacy Policy
+        url: https://community.resonate.coop/docs?topic=1863
+        weight: 3
 fr:
   weight: 2
   languageName: Français
   menu:
     main:
-    - name: À propos
-      title: À propos de Resonate
-      url: /a-propos/
-      weight: -111
     - name: Tarifs
       title: Tarifs de Resonate
       url: /pricing/
       weight: -110
     - name: La Coop
       title: La Coop
-      url: /la-coop/
+      url: /coop/
       weight: -109
     - name: Blog
       title: Blog de Resonate
@@ -133,10 +122,6 @@ fr:
       url: https://community.resonate.coop/
       weight: -106
     footer1:
-    - name: À propos
-      title: À propos de Resonate
-      url: /about/
-      weight: -111
     - name: Tarifs
       title: Tarifs de Resonate
       url: /pricing/
@@ -154,22 +139,18 @@ fr:
       url: https://community.resonate.coop/docs
       weight: 4
     footer2:
-    - name: Rejoindre
-      title: Rejoignez Resonate
-      url: https://id.resonate.coop/join
-      weight: 1
-    - name: Volunteering
-      title: Volunteering
-      url: https://community.resonate.coop/
-      weight: 2
-    - name: Équipe
-      title: Équipe de Resonate
-      url: /team/
-      weight: 3
-    - name: Forum
-      title: Forum
-      url: https://community.resonate.coop/
-      weight: 4
+      - name: Rejoindre
+        title: Rejoignez Resonate
+        url: https://id.resonate.coop/join
+        weight: 1
+      - name: Volunteering
+        title: Volunteering
+        url: https://community.resonate.coop/
+        weight: 2
+      - name: Forum
+        title: Forum
+        url: https://community.resonate.coop/
+        weight: 4
     footer3:
     - name: Blog
       title: Resonate Blog
@@ -183,48 +164,45 @@ fr:
       title: Contact
       url: /contact/
       weight: 4
+
     footer4:
-    - name: Help us build
-      title: Resonate Community Forum Platform
-      url: https://community.resonate.coop/c/platform
-      weight: 1
-    - name: GitHub
-      title: Resonate GitHub
-      url: https://github.com/resonatecoop/
-      weight: 2
-    - name: Report an issue
-      title: Report an issue
-      url: https://github.com/resonatecoop/website/issues
-      weight: 3
-    - name: Doner
-      title: Doner
-      url: https://opencollective.com/resonate
-      weight: 4
+      - name: Help us build
+        title: Resonate Community Forum Platform
+        url: https://community.resonate.coop/c/platform
+        weight: 1
+      - name: GitHub
+        title: Resonate GitHub
+        url: https://github.com/resonatecoop/
+        weight: 2
+      - name: Report an issue
+        title: Report an issue
+        url: https://github.com/resonatecoop/website/issues
+        weight: 3
+      - name: Doner
+        title: Doner
+        url: https://opencollective.com/resonate
+        weight: 4
     footer:
-    - name: Terms + Conditions
-      title: Terms + Conditions
-      url: https://community.resonate.coop/docs?topic=1865
-      weight: 2
-    - name: Privacy Policy
-      title: Privacy Policy
-      url: https://community.resonate.coop/docs?topic=1863
-      weight: 3
+      - name: Terms + Conditions
+        title: Terms + Conditions
+        url: https://community.resonate.coop/docs?topic=1865
+        weight: 2
+      - name: Privacy Policy
+        title: Privacy Policy
+        url: https://community.resonate.coop/docs?topic=1863
+        weight: 3
 es:
   weight: 3
   languageName: Español
   menu:
     main:
-    - name: Sobre
-      title: Sobre Resonate
-      url: /a-propos/
-      weight: -111
     - name: Principio 
       title: Principio de Resonate
       url: /pricing/
       weight: -110
     - name: La Coop
       title: La Coop
-      url: /la-coop/
+      url: /coop/
       weight: -109
     - name: Blog
       title: Resonate blog 
@@ -239,10 +217,6 @@ es:
       url: https://community.resonate.coop/
       weight: -106
     footer1:
-    - name: About
-      title: About Resonate
-      url: /about/
-      weight: -111
     - name: Pricing
       title: Resonate Pricing
       url: /pricing/
@@ -255,23 +229,24 @@ es:
       title: Handbook
       url: https://community.resonate.coop/docs
       weight: 3
+
     footer2:
-    - name: Join
-      title: Join Resonate
-      url: https://id.resonate.coop/join
-      weight: 1
-    - name: Volunteering
-      title: Volunteering
-      url: https://community.resonate.coop/
-      weight: 2
-    - name: Team
-      title: Resonate Team
-      url: /team/
-      weight: 3
-    - name: Forum
-      title: Forum
-      url: https://community.resonate.coop/
-      weight: 4
+      - name: Join
+        title: Join Resonate
+        url: https://id.resonate.coop/join
+        weight: 1
+      - name: Volunteering
+        title: Volunteering
+        url: https://community.resonate.coop/
+        weight: 2
+      - name: Team
+        title: Resonate Team
+        url: /team/
+        weight: 3
+      - name: Forum
+        title: Forum
+        url: https://community.resonate.coop/
+        weight: 4
     footer3:
     - name: Blog
       title: Resonate Blog
@@ -286,28 +261,28 @@ es:
       url: /contact/
       weight: 4
     footer4:
-    - name: Help us build
-      title: Resonate Community Forum Platform
-      url: https://community.resonate.coop/c/platform
-      weight: 1
-    - name: GitHub
-      title: Resonate GitHub
-      url: https://github.com/resonatecoop/
-      weight: 2
-    - name: Report an issue
-      title: Report an issue
-      url: https://github.com/resonatecoop/website/issues
-      weight: 3
-    - name: Donate
-      title: Donate
-      url: https://opencollective.com/resonate
-      weight: 4
+      - name: Help us build
+        title: Resonate Community Forum Platform
+        url: https://community.resonate.coop/c/platform
+        weight: 1
+      - name: GitHub
+        title: Resonate GitHub
+        url: https://github.com/resonatecoop/
+        weight: 2
+      - name: Report an issue
+        title: Report an issue
+        url: https://github.com/resonatecoop/website/issues
+        weight: 3
+      - name: Donate
+        title: Donate
+        url: https://opencollective.com/resonate
+        weight: 4
     footer:
-    - name: Terms + Conditions
-      title: Terms and Conditions
-      url: https://community.resonate.coop/docs?topic=1865
-      weight: 2
-    - name: Privacy Policy
-      title: Privacy Policy
-      url: https://community.resonate.coop/docs?topic=1863
-      weight: 3
+      - name: Terms + Conditions
+        title: Terms and Conditions
+        url: https://community.resonate.coop/docs?topic=1865
+        weight: 2
+      - name: Privacy Policy
+        title: Privacy Policy
+        url: https://community.resonate.coop/docs?topic=1863
+        weight: 3
