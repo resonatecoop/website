@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<header class="pa3 pa4-ns mb5">
+  <div class="flex flex-column-reverse flex-row-ns items-center-ns justify-between">
+    <h1 class="w-100 w-60-ns f1 f1-vw-l normal mt3 mt5-ns mb5">{{ .Title }}</h1>
+  </div>
+  <div class="w-100 w-70-m w-60-l f5 f5-vw-l">
+    <p>{{ .Params.description }}. <a href="/" class="link bb b--gray">Get back to home</a>.</p>
+  </div>
+</header>
+
+{{ end }}
