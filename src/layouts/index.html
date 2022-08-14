@@ -40,15 +40,15 @@
 {{ end }}
 
 {{ with .Params.playfair }}
-<section class="center mw8 ph3 pv4" style="">
-  <div class="flex flex-column flex-row-ns items-start">
-    <div class="w-100 w-30-m w-40-l" >
-      <figure style="animation: rotate 40s infinite linear; transform: scale(2);">
+<section id="description" class="center mw8 ph3 pv4">
+  <div class="flex flex-column flex-row-l items-start">
+    <div class="w-100 w-100-m w-40-l flex-m justify-center-m" >
+      <figure>
         {{ readFile "/assets/images/illustrations/PlayFair.svg" | safeHTML }}  
       </figure>
     </div>
-    <div class="w-0 w-10-m w-10-l"></div>
-    <div class="w-100 w-60-m w-50-l">
+    <div class="w-0 w-10-l"></div>
+    <div class="w-100 w-100-m w-50-l tc tc-m tl-l">
       <div class="mb5">
         <a class="f4 f5-vw-l b pr2" href="{{ .links.manifesto.href | markdownify }}">
           {{ .links.manifesto.text | markdownify }}
