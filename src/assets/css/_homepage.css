@@ -13,25 +13,13 @@
 #featured .release:nth-child(1n+7) {
   display: none;
 }
-
 @media screen and (min-width: 60rem) {
   #featured .release:nth-child(1n+6) {
     display: none;
   }
 }
-
 @media screen and (min-width: 25rem) and (max-width: 29.9375rem) {
   .release {
     width: 50%;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0)
-  }
-
-  100% {
-    transform: rotate(360deg)
   }
 }

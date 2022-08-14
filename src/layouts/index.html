@@ -2,72 +2,60 @@
 
 {{ with .Params.hero }}
 <header id="hero" class="bg-black white">
-  <div class="center mw8 pa2 pa3-ns">
-    <div class="mw-100 flex flex-column-reverse flex-row-ns items-center b--near-black pv4 ph2 pa3-ns">
-      <div class="w-100 w-70-m w-60-l lh-title ph2 ph3-ns">
-        <p class="f4 f4-vw-l tracked-tight" style="max-width:20em">{{ .p1 | markdownify }}</p>
-        <nav class="flex items-baseline justify-end justify-start-ns ga3 f5 ph3 ph4-ns ml5">
-          {{/* <span role="presentation" class="btn btn-white btn-narrow">?</span> */}}
-          <a href="https://id.resonate.coop/join" class="btn btn-white">{{ T "join" }}</a>
-          <a href="https://stream.resonate.coop/api/v3/user/connect/resonate" class="b">{{ T "player" }}</a>
-          <a href="https://community.resonate.coop/" class="b">{{ T "forum" }}</a>
-        </nav>
-        <div class="pl3 pb4">
-          <svg class="ml3" style="margin-top: -72px;" width="24" viewBox="0 0 24 72" xmlns="http://www.w3.org/2000/svg"
-            fill="transparent" stroke="white" stroke-width="2">
-            <path d="M 12,2 L 12,70 M 22,60 L 12,70 2,60" />
-          </svg>
-          <div class="mw6">
-            <p class="f5 lh-copy">{{ .coop.text | markdownify }}</p>
-            <a href="{{ .coop.more.href | markdownify }}" class="btn btn-white f7">
-              {{ .coop.more.text | markdownify }}
-            </a>
-          </div>
+  <div class="flex flex-column-reverse flex-row-ns items-center bb b--near-black pv4 ph2 pa3-ns">
+    <div class="w-100 w-70-m w-60-l lh-title ph2 ph3-ns">
+      <p class="f4 f4-vw-l tracked-tight" style="max-width:20em">{{ .p1 | markdownify }}</p>
+      <nav class="flex items-baseline justify-end justify-start-ns ga3 f5 ph3 ph4-ns ml5">
+        {{/* <span role="presentation" class="btn btn-white btn-narrow">?</span> */}}
+        <a href="https://id.resonate.coop/join" class="btn btn-white">{{ T "join" }}</a>
+        <a href="https://stream.resonate.coop/api/v3/user/connect/resonate" class="b">{{ T "player" }}</a>
+        <a href="https://community.resonate.coop/" class="b">{{ T "forum" }}</a>
+      </nav>
+      <div class="pl3 pb4">
+        <svg class="ml3" style="margin-top: -72px;" width="24" viewBox="0 0 24 72" xmlns="http://www.w3.org/2000/svg"
+          fill="transparent" stroke="white" stroke-width="2">
+          <path d="M 12,2 L 12,70 M 22,60 L 12,70 2,60" />
+        </svg>
+        <div class="mw6">
+          <p class="f5 lh-copy">{{ .coop.text | markdownify }}</p>
+          <a href="{{ .coop.more.href | markdownify }}" class="btn btn-white f7">
+            {{ .coop.more.text | markdownify }}
+          </a>
         </div>
       </div>
-      <div class="random-logo-component w-100 w-30-m w-40-l ph4 pa4-ns">
-        <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1">
-          <span role="img"
-            style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');filter:invert(1);"
-            class="aspect-ratio--object cover random-logo"></span>
-          <figcaption class="clip">Resonate Coop Logo</figcaption>
-        </figure>
-      </div>
+    </div>
+    <div class="random-logo-component w-100 w-30-m w-40-l ph4 pa4-ns">
+      <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1">
+        <span role="img"
+          style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');filter:invert(1);"
+          class="aspect-ratio--object cover random-logo"></span>
+        <figcaption class="clip">Resonate Coop Logo</figcaption>
+      </figure>
     </div>
   </div>
-
 </header>
 {{ end }}
 
 {{ with .Params.playfair }}
-<section class="center mw8 ph3 pv4" style="">
-  <div class="flex flex-column flex-row-ns items-start">
-    <div class="w-100 w-30-m w-40-l" >
-      <figure style="animation: rotate 40s infinite linear; transform: scale(2);">
-        {{ readFile "/assets/images/illustrations/PlayFair.svg" | safeHTML }}  
-      </figure>
-    </div>
-    <div class="w-0 w-10-m w-10-l"></div>
-    <div class="w-100 w-60-m w-50-l">
-      <div class="mb5">
-        <a class="f4 f5-vw-l b pr2" href="{{ .links.manifesto.href | markdownify }}">
-          {{ .links.manifesto.text | markdownify }}
-        </a>
-        <a class="f4 f5-vw-l b self-center pr2"
-          href="{{ .links.coop.href | markdownify }}">
-          {{ .links.coop.text | markdownify }}
-        </a>
-        <a class="f4 f5-vw-l b self-center pr2"
-          href="{{ .links.pricing.href | markdownify }}">
-          {{ .links.pricing.text | markdownify }}
-        </a>
-      </div>
-      <p class="f4 f7-vw- mv0">
-        {{ range .features }}{{ . }}<br>{{ end }}
-      </p>
-      
-    </div>
-  </div>
+<section id="playfair2" class="ph3 pv4" style="">
+  {{- $img := resources.Get "images/illustrations/Playfair_2.png" -}}
+  {{- $img2x := resources.Get "images/illustrations/Playfair_2@2x.png" -}}
+  <img class="h-auto db center-l" style="grid-area: m;" src="{{ $img.Permalink }}" srcset="{{ $img2x.Permalink }} 2x"
+    width="118" height="118" alt="">
+  <p class="f5 f7-vw-l tc mv0" style="grid-area: b; justify-self: center;">
+    {{ range .features }}{{ . }}<br>{{ end }}
+  </p>
+  <a class="f5 f5-vw-l b" style="grid-area: t; justify-self: center;" href="{{ .links.manifesto.href | markdownify }}">
+    {{ .links.manifesto.text | markdownify }}
+  </a>
+  <a class="f5 f5-vw-l b self-center" style="grid-area: l; justify-self: end;"
+    href="{{ .links.coop.href | markdownify }}">
+    {{ .links.coop.text | markdownify }}
+  </a>
+  <a class="f5 f5-vw-l b self-center" style="grid-area: r; justify-self: start;"
+    href="{{ .links.pricing.href | markdownify }}">
+    {{ .links.pricing.text | markdownify }}
+  </a>
 </section>
 {{ end }}
 
