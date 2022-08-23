@@ -6,12 +6,18 @@
       <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
       <p class="tracked-tight mb5" style="max-width:20em">{{ .Params.hero.p1 | markdownify }}</p>
     </div>
-    <div class="random-logo-component w-100 w-30-m w-40-l pa4">
-      <figure class="mx3 grow ma0 db aspect-ratio aspect-ratio--1x1">
-        <div role="img" style="background-position: 0px 25%; background-repeat: no-repeat; background-image: url('https://static.resonate.is/pwa_assets/sprite_optimized.png');filter:invert(-1);" class="aspect-ratio--object cover random-logo"></div>
-        <figcaption class="clip">Resonate Coop Logo</figcaption>
-      </figure>
-    </div>
+    {{- $img := resources.Get "images/illustrations/SharesDiagram.png" -}}
+      <div class="w-100 w-30-m w-40-l pa4">
+        <figure>
+          <figure class="mx3 ma0 db aspect-ratio aspect-ratio--1x1">
+          <img
+            alt="diagram illustrating co-op shares, Listeners own it: 35% of profit share, Artists own it: 45% of profit share, Workers own it: 20% of profit share"
+            aria-label="diagram illustrating co-op shares, Listeners own it: 35% of profit share, Artists own it: 45% of profit share, Workers own it: 20% of profit share"
+            src="{{ $img.Permalink }}"
+          />
+          <figcaption class="clip">Resonate Shares Diagram</figcaption>
+        </figure>
+      </div>
   </div>
   <div class="flex flex-column flex-row-ns f5 f5-vw-l">
     <div class="w-100 w-60-ns ph3 ph4-ns pt3 pb4 bb br-ns b--gray">
