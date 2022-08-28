@@ -24,10 +24,6 @@ en:
       url: https://community.resonate.coop/
       weight: -106
     footer1:
-    - name: About
-      title: About Resonate
-      url: /about/
-      weight: -111
     - name: Pricing
       title: Resonate Pricing
       url: /pricing/
