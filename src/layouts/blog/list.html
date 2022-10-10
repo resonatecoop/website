@@ -1,10 +1,58 @@
 {{ define "main" }}
 
 <header class="ph3 ph4-ns">
-  <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
+  <h1 class="f1 f1-vw-l normal" style="">{{ .Title }}</h1>
 </header>
 
-<section class="ph2 ph3-ns">
+<style media="screen">
+  .rssblog h1 {
+    font-size: 1.2em;
+  }
+</style>
+
+<!-- AJAX/FETCH METHOD -->
+<section>
+  <script type="text/javascript">
+    const RSS_URL = `https://community.resonate.coop/c/blog/104.rss`;
+
+    $.ajax(RSS_URL, {
+      accepts: {
+        xml: "application/rss+xml"
+      },
+
+      dataType: "xml",
+
+      success: function(data) {
+        $(data)
+          .find("item")
+          .each(function() {
+            const el = $(this);
+
+            const template = `
+                  <section class="ph2 ph3-ns">
+            <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
+              <div class="w-100 w-60-l ph2 ph3-ns">
+                <img src="${el.find("link").text()}/image/large.png" alt="">
+                <h2 class="f4 f4-vw-l mv0" style="text-decoration:none;">${el.find("title").text()}</h2>
+                <p class="mt1 mb4 dark-gray"><time datetime="">${el.find("pubDate").text()}</time></p>
+                <p class="near-black">
+                ${el.find("description").text()}
+                <a href="${el.find("link").text()}" class="db link-full normal black mt3">Continue Reading</a>
+                </p>
+              </div>
+            </article>
+            </section>
+            `;
+
+            document.body.insertAdjacentHTML("beforeend", template);
+          });
+      }
+    });
+  </script>
+</section>
+
+<!-- HUGO BLOG -->
+<!-- <section class="ph2 ph3-ns">
   {{ range .Pages }}
   <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
     <div class="w-100 w-60-l ph2 ph3-ns">
@@ -23,6 +71,6 @@
     </figure>
   </article>
   {{ end }}
-</section>
+</section> -->
 
 {{ end }}
