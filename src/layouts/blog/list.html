@@ -2,6 +2,7 @@
 
 <header class="ph3 ph4-ns">
   <h1 class="f1 f1-vw-l normal" style="">{{ .Title }}</h1>
+  <div id="blog-content"></div>
 </header>
 
 <style media="screen">
@@ -13,64 +14,49 @@
 <!-- AJAX/FETCH METHOD -->
 <section>
   <script type="text/javascript">
-    const RSS_URL = `https://community.resonate.coop/c/blog/104.rss`;
+    const RSS_URL = "https://community.resonate.coop/c/blog/104.rss";
+    console.log('hi')
+    const test = async () => {
+      await fetch(RSS_URL)
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+          .then(data => {
+            console.log('data', data)
+            const items = data.querySelectorAll("item");
 
-    $.ajax(RSS_URL, {
-      accepts: {
-        xml: "application/rss+xml"
-      },
+            let html = ``;
+            items.forEach(el => {
+              console.log('el', el)
+              // FIXME: is there a nicer way to get these?
+              const link = el.children[4].firstChild.textContent
+              const title = el.children[0].firstChild.textContent
+              const pubDate = new Date(el.children[5].firstChild.textContent)
+              const description = el.children[3].firstChild.textContent
+              const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+              const dateString = pubDate.toLocaleDateString(undefined, options)
 
-      dataType: "xml",
-
-      success: function(data) {
-        $(data)
-          .find("item")
-          .each(function() {
-            const el = $(this);
-
-            const template = `
-                  <section class="ph2 ph3-ns">
-            <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
-              <div class="w-100 w-60-l ph2 ph3-ns">
-                <img src="${el.find("link").text()}/image/large.png" alt="">
-                <h2 class="f4 f4-vw-l mv0" style="text-decoration:none;">${el.find("title").text()}</h2>
-                <p class="mt1 mb4 dark-gray"><time datetime="">${el.find("pubDate").text()}</time></p>
-                <p class="near-black">
-                ${el.find("description").text()}
-                <a href="${el.find("link").text()}" class="db link-full normal black mt3">Continue Reading</a>
-                </p>
-              </div>
-            </article>
-            </section>
-            `;
-
-            document.body.insertAdjacentHTML("beforeend", template);
-          });
+              document.getElementById
+              html += `
+                <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
+                  <div class="w-100 w-60-l ph2 ph3-ns">
+                    <img src="${link}/image/large.png" alt="">
+                    <h2 class="f4 f4-vw-l mv0" style="text-decoration:none;">${title}</h2>
+                    <p class="mt1 mb4 dark-gray"><time datetime="" style="text-transform: capitalize;">${dateString} </time></p>
+                    <p class="near-black">
+                    ${description}
+                    <a href="${link}" class="db link-full normal black mt3">Continue Reading</a>
+                    </p>
+                  </div>
+                </article>
+              `;
+            });
+            document.getElementById('blog-content').insertAdjacentHTML("beforeend", html);
+          })
       }
-    });
+
+    test()
+
   </script>
 </section>
-
-<!-- HUGO BLOG -->
-<!-- <section class="ph2 ph3-ns">
-  {{ range .Pages }}
-  <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
-    <div class="w-100 w-60-l ph2 ph3-ns">
-      <h2 class="f4 f4-vw-l mv0">{{ .Title }}</h2>
-      <p class="mt1 mb4 dark-gray"><time datetime="{{ time.Format "2006-01-02" .Date }}">{{  time.Format "January 2, 2006" .Date }}</time></p>
-      <p class="near-black">
-        {{ .Summary }}
-        <a href="{{ .Permalink }}" class="db link-full normal black mt3">{{ T "continue_reading" }}</a>
-      </p>
-    </div>
-    <figure class="w-40-l h-100 ma0 mb4 ph2 ph3-ns">
-      {{ with .Params.image }}
-      {{- $img := resources.Get . -}}
-      <img class="db w-100 h-auto bg-gray" src="{{ $img.Permalink }}" width="360" height="200" alt="" loading="lazy">
-      {{ end }}
-    </figure>
-  </article>
-  {{ end }}
-</section> -->
 
 {{ end }}
