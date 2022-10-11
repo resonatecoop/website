@@ -7,13 +7,45 @@
 
 <style media="screen">
   .rssblog h1 {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 0;
+    text-transform: Capitalize;
   }
-</style>
+  .descriptionp h1, h3 {
+    display: none;
+  }
+  .descriptionp p {
+    margin: 0 !important;
+    font-style: normal !important;
+  }
+  .descriptionp em {
+    margin: 0 !important;
+    font-style: normal !important;
+  }
+  .descriptionp img {
+    display: none;
+  }
+  .descriptionp a {
+    pointer-events: none;
+    text-decoration: none;
+    color: grey;
+  }
+  a[href="https://community.resonate.coop/t/about-the-blog-category/2358"] {
+    display:none;
+  }
+  .flex-item:last-child {
+    margin-right: auto;
+    background-color: red;
+    display: none;
+  }
 
+</style>
 <!-- AJAX/FETCH METHOD -->
-<section>
+<section >
+
   <script type="text/javascript">
+
+
     const RSS_URL = "https://community.resonate.coop/c/blog/104.rss";
     console.log('hi')
     const test = async () => {
@@ -37,17 +69,26 @@
 
               document.getElementById
               html += `
-                <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
-                  <div class="w-100 w-60-l ph2 ph3-ns">
-                    <img src="${link}/image/large.png" alt="">
+                <article class="rssblog relative flex flex-column-reverse flex-row-reverse-l flex-item mb5 f5 f5-vw-l">
+                  <div class="w-100 w-60-l ph2 ph3-ns" >
                     <h2 class="f4 f4-vw-l mv0" style="text-decoration:none;">${title}</h2>
-                    <p class="mt1 mb4 dark-gray"><time datetime="" style="text-transform: capitalize;">${dateString} </time></p>
-                    <p class="near-black">
-                    ${description}
+                    <p class="mt1 mb4 dark-gray"><time datetime="" style="text-transform: capitalize;">${dateString} </time>
+                    <div class="descriptionp" style="
+
+                    -webkit-box-orient: vertical;
+                    display: block;
+                    display: -webkit-box;
+                    overflow: hidden !important;
+                    -webkit-line-clamp: 6;
+                    ">
+                    <span class="near-black" style="">${description}</span>
+                    </div>
                     <a href="${link}" class="db link-full normal black mt3">Continue Reading</a>
                     </p>
                   </div>
+
                 </article>
+
               `;
             });
             document.getElementById('blog-content').insertAdjacentHTML("beforeend", html);
@@ -57,6 +98,7 @@
     test()
 
   </script>
+
 </section>
 
 {{ end }}
