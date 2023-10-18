@@ -55,7 +55,7 @@ en:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
