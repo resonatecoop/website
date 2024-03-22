@@ -1,109 +1,28 @@
 {{ define "main" }}
-<header class="bg-black db white mb4" style="">
-    <div class="mw-100 w-60-l center flex flex-column-reverse b--near-black ph3 ph0-l">
-        <div class="ph3 ph4-l">
-          <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
-          <!--<div id="blog-content"></div>-->
-        </div>
-    </div>
+
+<header class="ph3 ph4-ns">
+  <h1 class="f1 f1-vw-l normal">{{ .Title }}</h1>
 </header>
-<div class="ph3 ph4-l">
-  <div id="blog-content"></div>
-</div>
 
-
-<style media="screen">
-  .rssblog h1 {
-    font-size: 1em;
-    margin: 0;
-    text-transform: Capitalize;
-  }
-  .descriptionp h1, h3 {
-    display: none;
-  }
-  .descriptionp p {
-    margin: 0;
-    font-style: normal !important;
-  }
-  .descriptionp em {
-    margin: 0;
-    font-style: normal !important;
-  }
-  .descriptionp img {
-    display: none;
-  }
-  .descriptionp a {
-    pointer-events: none;
-    text-decoration: none;
-    color: grey;
-  }
-  a[href="https://community.resonate.coop/t/about-the-blog-category/2358"] {
-    display:none;
-  }
-  .flex-item:last-child {
-    margin-right: auto;
-    background-color: red;
-    display: none;
-  }
-  .descriptionp {
-    -webkit-box-orient: vertical;
-    display: block;
-    display: -webkit-box;
-    overflow: hidden !important;
-    -webkit-line-clamp: 6;
-  }
-</style>
-<!-- AJAX/FETCH METHOD -->
-<section class="">
-
-  <script type="text/javascript">
-
-
-    const RSS_URL = "https://community.resonate.coop/c/blog/104.rss";
-    console.log('hi')
-    const test = async () => {
-      await fetch(RSS_URL)
-        .then(response => response.text())
-        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-          .then(data => {
-            console.log('data', data)
-            const items = data.querySelectorAll("item");
-
-            let html = ``;
-            items.forEach(el => {
-              console.log('el', el)
-              // FIXME: is there a nicer way to get these?
-              const link = el.children[4].firstChild.textContent
-              const title = el.children[0].firstChild.textContent
-              const pubDate = new Date(el.children[5].firstChild.textContent)
-              const description = el.children[3].firstChild.textContent
-              const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-              const dateString = pubDate.toLocaleDateString(undefined, options)
-
-              document.getElementById
-              html += `
-                <article class="rssblog w-100 w-60-l center relative flex flex-column-reverse flex-item mb5 f5 f5-vw-l">
-                  <div class="w-100 ph2 ph3-ns" >
-                    <h2 class="f4 f4-vw-l mv0" style="text-decoration:none;">${title}</h2>
-                    <p class="mt1 mb4 dark-gray"><time datetime="" style="text-transform: capitalize;">${dateString} </time>
-                    <div class="descriptionp">
-                    <span class="near-black" style="">${description}</span>
-                    </div>
-                    <a href="${link}" class="db normal black mt3">Continue Reading</a>
-                    </p>
-                  </div>
-                </article>
-
-              `;
-            });
-            document.getElementById('blog-content').insertAdjacentHTML("beforeend", html);
-          })
-      }
-
-    test()
-
-  </script>
-
+<section class="ph2 ph3-ns">
+  {{ range .Pages }}
+  <article class="relative flex flex-column-reverse flex-row-reverse-l mb5 f5 f5-vw-l">
+    <div class="w-100 w-60-l ph2 ph3-ns">
+      <h2 class="f4 f4-vw-l mv0">{{ .Title }}</h2>
+      <p class="mt1 mb4 dark-gray"><time datetime="{{ time.Format "2006-01-02" .Date }}">{{  time.Format "January 2, 2006" .Date }}</time></p>
+      <p class="near-black">
+        {{ .Summary }}
+        <a href="{{ .Permalink }}" class="db link-full normal black mt3">{{ T "continue_reading" }}</a>
+      </p>
+    </div>
+    <figure class="w-40-l h-100 ma0 mb4 ph2 ph3-ns">
+      {{ with .Params.image }}
+      {{- $img := resources.Get . -}}
+      <img class="db w-100 h-auto bg-gray" src="{{ $img.Permalink }}" width="360" height="200" alt="" loading="lazy">
+      {{ end }}
+    </figure>
+  </article>
+  {{ end }}
 </section>
 
 {{ end }}
