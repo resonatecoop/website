@@ -6,20 +6,6 @@ date: 2016-11-02T13:48:49+00:00
 excerpt: The Resonate crowd campaign launched last week. Apart from a few device-specific bugs, the biggest feedback we got was around the language for investor shares. The answer is NO. Investors do NOT get extra votes.
 url: /crowd-campaign-update/
 featured_image: /wp-content/uploads/2016/11/campaign-launch.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/11/campaign-launch.jpg
-essb_pc_facebook:
-  - 7
-essb_pc_twitter:
-  - 9
-essb_pc_flattr:
-  - 7
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

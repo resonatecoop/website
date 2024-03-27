@@ -6,20 +6,6 @@ date: 2017-02-21T20:07:24+00:00
 excerpt: When I did a quick search for "road" on pexels.com this one really stuck out, because it pretty much sums up everything at Resonate right now.
 url: /the-road-ahead/
 featured_image: /wp-content/uploads/2017/02/road-ahead-24992.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/02/road-ahead-24992.jpg
-essb_pc_facebook:
-  - 6
-essb_pc_twitter:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

@@ -6,12 +6,6 @@ date: 2017-09-14T13:53:35+00:00
 excerpt: 'The #stream2own beta player has been running a few months now and due to the patience and support of the community, we’re now close to releasing our next major update. Thanks to everyone who has written in with feedback and bug reports, we’ve redesigned key elements of the player.'
 url: /upcoming-player-revisions/
 featured_image: /wp-content/uploads/2017/09/player-full-screen.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/09/player-full-screen.jpg
-essb_pc_facebook:
-  - 2
-essb_pc_twitter:
-  - 1
 categories:
   - archive
 

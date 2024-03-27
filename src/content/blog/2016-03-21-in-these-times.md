@@ -5,8 +5,6 @@ type: post
 date: 2016-03-21T08:18:27+00:00
 url: /in-these-times/
 featured_image: /wp-content/uploads/2016/04/in-these-times.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/in-these-times.jpg
 categories:
   - press-archive
 

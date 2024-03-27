@@ -6,8 +6,6 @@ date: 2015-11-09T17:02:02+00:00
 excerpt: Resonate founder Peter Harris will be appearing at the Platform Cooperativism conference in New York City at 6pm on November 13th. Peter will be presenting Resonate along with a number of other startups in this emerging niche. The event is free and is also being streamed live.
 url: /peter-to-present-resonate-in-nyc-november-13th/
 featured_image: /wp-content/uploads/2015/11/skyline-buildings-new-york-skyscrapers.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/11/skyline-buildings-new-york-skyscrapers.jpg
 categories:
   - archive
 

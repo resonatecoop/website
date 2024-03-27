@@ -6,16 +6,6 @@ date: 2016-01-17T18:50:41+00:00
 excerpt: "Contrary to the design and user experience of most streaming apps and services, music can't be reduced to simple functions such as play, skip, shuffle and like. Music inspires movements, dictates trends in all other art forms and even shifts entire cultures in new directions."
 url: /building-a-more-robust-music-community/
 featured_image: /wp-content/uploads/2016/01/street-guitar-player.jpg
-essb_pc_twitter:
-  - 6
-essb_pc_facebook:
-  - 8
-essb_pc_google:
-  - 3
-essb_pc_linkedin:
-  - 3
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/01/street-guitar-player.jpg
 categories:
   - archive
 

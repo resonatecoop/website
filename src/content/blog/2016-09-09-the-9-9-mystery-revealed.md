@@ -6,20 +6,6 @@ date: 2016-09-09T03:38:16+00:00
 excerpt: We have a bit of news to reveal, but first, some back story is in order because it relates to all the 9/9 hype.
 url: /the-9-9-mystery-revealed/
 featured_image: /wp-content/uploads/2016/09/man-hands-reading-boy.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/09/man-hands-reading-boy.jpg
-essb_pc_facebook:
-  - 6
-essb_pc_twitter:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

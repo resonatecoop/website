@@ -5,16 +5,6 @@ type: post
 date: 2018-06-11T11:53:38+00:00
 excerpt: Resonate is committed to changing the music industry for the better, and we consider the wider impact of everything that we do. As we build a new, direct artist-to-fan music platform, we want to ensure that all people and communities are supported. It’s important to us to build a welcoming environment for all.
 url: /in-pursuit-of-an-inclusive-platform/
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/06/res-lavender.png
-essb_pc_flattr:
-  - 2
-essb_pc_linkedin:
-  - 1
-essb_pc_twitter:
-  - 1
-essb_pc_google:
-  - 1
 opening:
   - Resonate is committed to changing the music industry for the better, and we consider the wider impact of everything that we do.
 um_content_restriction:

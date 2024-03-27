@@ -6,8 +6,6 @@ date: 2018-07-11T12:39:51+00:00
 excerpt: "Resonate is committed to an ethical, sustainable operation on all fronts. We're pleased to announce that we're donating to Eden Reforestation Projects to plant trees to offset our carbon footprint!"
 url: /building-the-greenest-platform-possible/
 featured_image: /wp-content/uploads/2018/07/treesres.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/07/treesres.jpg
 opening:
   - Resonate is committed to an ethical, sustainable operation on all fronts.
 categories:

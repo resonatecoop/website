@@ -6,20 +6,6 @@ date: 2016-07-12T10:12:23+00:00
 excerpt: 'Let me drop a dazzling question, much as you might drop a track on a crowd about to hit a massive peak of orgiastic dance frenzy: What technology could usher in a new era of unparalleled creative freedom, artistic control and collaborative expression?'
 url: /building-a-blockchain-for-djs-and-producers/
 featured_image: /wp-content/uploads/2016/07/vintage-technology-old-sound.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/07/vintage-technology-old-sound.jpg
-essb_pc_twitter:
-  - 13
-essb_pc_facebook:
-  - 10
-essb_pc_google:
-  - 7
-essb_pc_linkedin:
-  - 8
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 7
 opening:
   - 'Let me drop a dazzling question, much as you might drop a track on a crowd about to hit a massive peak of orgiastic dance frenzy:'
 um_content_restriction:

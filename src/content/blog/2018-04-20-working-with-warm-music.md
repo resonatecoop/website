@@ -6,8 +6,6 @@ date: 2018-04-20T11:01:22+00:00
 excerpt: "We are really excited about all the progress that Resonate is making, and today we're delighted to announce yet another development: Resonate is collaborating with WARM Music, the first large-scale radio airplay monitor."
 url: /working-with-warm-music/
 featured_image: /wp-content/uploads/2018/04/mic-WARM-final.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/mic-WARM-final.jpg
 opening:
   - "We are really excited about all the progress that Resonate is making, and today we're delighted to announce yet another development: Resonate is collaborating with WARM Music."
 categories:

@@ -7,8 +7,6 @@ excerpt: "Very excited to announce our second indie label partner – Berlin's S
 draft: true
 url: /?p=968
 featured_image: /wp-content/uploads/2015/12/stil-vor-talent.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/12/stil-vor-talent.jpg
 categories:
   - archive
 

@@ -5,8 +5,6 @@ type: post
 date: 2017-06-26T12:56:00+00:00
 url: /musicpreneur/
 featured_image: /wp-content/uploads/2017/06/musicpreneur.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/06/musicpreneur.jpg
 categories:
   - press-podcasts
 

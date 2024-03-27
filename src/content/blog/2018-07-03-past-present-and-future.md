@@ -6,18 +6,6 @@ date: 2018-07-03T15:56:04+00:00
 excerpt: 'As Resonate grows, our situation has changed substantially. Most of our staff only joined this past March, and it’s been a tricky but exciting transition to get the whole team up and running. We’ve been contextualizing what we’re working on now, figuring out how it fits into the bigger picture. '
 url: /past-present-and-future/
 featured_image: /wp-content/uploads/2018/07/growth-stages.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/07/growth-stages.jpg
-essb_pc_twitter:
-  - 3
-essb_pc_flattr:
-  - 1
-essb_pc_facebook:
-  - 1
-essb_pc_reddit:
-  - 2
-essb_c_twitter:
-  - 3
 opening:
   - Communicating the Resonate vision to all of our members can be difficult.
 categories:

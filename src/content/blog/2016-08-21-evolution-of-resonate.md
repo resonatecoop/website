@@ -6,20 +6,6 @@ date: 2016-08-21T09:33:38+00:00
 excerpt: This post explores how Resonate has evolved from the seed of an idea to it’s current status and roadmap. Business development Began in Spring of 2015 with the seed of an idea… to solve problems of engagement and accountability in music startups by using the cooperative business structure.
 url: /evolution-of-resonate/
 featured_image: /wp-content/uploads/2016/08/Resonate-evolution.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/08/Resonate-evolution.png
-essb_pc_facebook:
-  - 6
-essb_pc_twitter:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

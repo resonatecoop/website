@@ -5,8 +5,6 @@ type: post
 date: 2015-11-08T09:10:07+00:00
 url: /next-system-project/
 featured_image: /wp-content/uploads/2016/04/next-system.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/next-system.jpg
 categories:
   - press-archive
 

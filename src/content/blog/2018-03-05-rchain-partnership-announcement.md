@@ -6,18 +6,6 @@ date: 2018-03-05T13:29:45+00:00
 excerpt: Resonate is thrilled to announce a new partnership that will help us achieve our goal of building a fair, transparent and accountable future of digital music distribution. A new blockchain system called RChain is investing $1M US into Resonate through their investment arm Reflective Ventures.
 url: /rchain-partnership-announcement/
 featured_image: /wp-content/uploads/2018/03/sunset-photo-248159.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/03/sunset-photo-248159.jpg
-essb_pc_twitter:
-  - 8
-essb_pc_linkedin:
-  - 3
-essb_pc_facebook:
-  - 2
-essb_pc_flattr:
-  - 4
-essb_pc_google:
-  - 1
 opening:
   - Since Resonate’s inception, founder Peter Harris identified blockchain technology as a paramount necessity for the future of digital music distribution.
 um_content_restriction:

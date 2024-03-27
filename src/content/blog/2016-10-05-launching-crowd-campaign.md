@@ -6,20 +6,6 @@ date: 2016-10-05T20:59:23+00:00
 excerpt: It’s what you’ve all been waiting for, you knew it was coming in October, so… the Resonate crowd-owning campaign is starting on the 25th! For just $5 music fans can secure their ownership share in a new streaming music service that everyone owns.
 url: /launching-crowd-campaign/
 featured_image: /wp-content/uploads/2016/10/campaign-launch-25th.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/10/campaign-launch-25th.jpg
-essb_pc_twitter:
-  - 7
-essb_pc_linkedin:
-  - 7
-essb_pc_google:
-  - 7
-essb_pc_facebook:
-  - 7
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 um_content_restriction:
   - 'a:8:{s:26:"_um_custom_access_settings";s:1:"0";s:14:"_um_accessible";s:1:"0";s:19:"_um_noaccess_action";s:1:"0";s:30:"_um_restrict_by_custom_message";s:1:"0";s:27:"_um_restrict_custom_message";s:0:"";s:19:"_um_access_redirect";s:1:"0";s:23:"_um_access_redirect_url";s:0:"";s:28:"_um_access_hide_from_queries";s:1:"0";}'
 categories:

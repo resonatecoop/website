@@ -6,8 +6,6 @@ date: 2018-05-02T09:42:19+00:00
 excerpt: "We've been featured in this Billboard piece on how blockchain and co-ops can help artists get paid."
 url: /billboard/
 featured_image: /wp-content/uploads/2018/05/billboard.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/05/billboard.jpg
 categories:
   - press
 

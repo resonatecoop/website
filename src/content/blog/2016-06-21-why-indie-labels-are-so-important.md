@@ -6,14 +6,6 @@ date: 2016-06-21T12:08:39+00:00
 excerpt: Through all the chaotic changes in the digital age of music, one institution has been consistently the target of criticism – the record label. While it’s now technologically possible for artists to self produce and distribute, we think the role of the (independent) record label has never been so important.
 url: /why-indie-labels-are-so-important/
 featured_image: /wp-content/uploads/2015/11/man-mixing-board1.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/11/man-mixing-board1.jpg
-essb_pc_twitter:
-  - 7
-essb_pc_facebook:
-  - 3
-essb_pc_reddit:
-  - 2
 opening:
   - Through all the chaotic changes in the digital age of music, one institution has been consistently the target of criticism – the record label.
 categories:

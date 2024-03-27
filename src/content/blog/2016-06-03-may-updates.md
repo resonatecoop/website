@@ -6,20 +6,6 @@ date: 2016-06-03T11:41:11+00:00
 excerpt: Significant milestones for May... introducing Shane Morris, our new head of Artist Curator and Development, organizing a Blockchain Lab at Music Tech Fest in Berlin and lots of other juicy developments.
 url: /may-updates/
 featured_image: /wp-content/uploads/2016/06/progress-report2.jpg
-essb_pc_twitter:
-  - 8
-essb_pc_linkedin:
-  - 7
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/06/progress-report2.jpg
-essb_pc_facebook:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

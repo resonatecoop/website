@@ -6,14 +6,6 @@ date: 2017-03-15T10:22:45+00:00
 excerpt: "If you haven't read many of the numerous stories through the years about losses in the streaming music market, then the headline may seem like an odd question at first."
 url: /asking-can-a-streaming-service-be-profitable/
 featured_image: /wp-content/uploads/2017/03/vintage-music-business-shop.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/03/vintage-music-business-shop.jpg
-essb_pc_flattr:
-  - 1
-essb_pc_facebook:
-  - 2
-essb_pc_twitter:
-  - 3
 categories:
   - archive
 

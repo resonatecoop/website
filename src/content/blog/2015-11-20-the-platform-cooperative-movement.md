@@ -6,16 +6,6 @@ date: 2015-11-20T13:34:07+00:00
 excerpt: A movement is building and a new global community is forming. Last week I had the great privilege of presenting Resonate to an eager crowd at the Platform Cooperativism conference in New York City.
 url: /the-platform-cooperative-movement/
 featured_image: /wp-content/uploads/2015/11/umbrella-sky.jpg
-essb_pc_twitter:
-  - 4
-essb_pc_facebook:
-  - 6
-essb_pc_google:
-  - 1
-essb_pc_linkedin:
-  - 1
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/11/umbrella-sky.jpg
 categories:
   - archive
 

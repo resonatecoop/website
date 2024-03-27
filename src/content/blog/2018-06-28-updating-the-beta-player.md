@@ -6,10 +6,6 @@ date: 2018-06-28T11:29:05+00:00
 excerpt: 'We’re pleased to announce that we’re launching a new version of our player! Thanks to our dev team, #stream2own beta has a host of new, exciting features.'
 url: /updating-the-beta-player/
 featured_image: /wp-content/uploads/2018/06/Player-Beta-HOME-1200x630.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/06/Player-Beta-HOME-1200x630.jpg
-essb_pc_twitter:
-  - 1
 categories:
   - archive
 

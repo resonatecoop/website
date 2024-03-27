@@ -6,18 +6,6 @@ date: 2016-11-21T14:03:29+00:00
 excerpt: For music blogs, the possibility for extra income beyond ads. For artists, creative potential to curate a "label for a day". Resonate embeddable playlists.
 url: /building-embeddable-playlists-curators/
 featured_image: /wp-content/uploads/2016/11/smartphone-vintage-technology-music.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/11/smartphone-vintage-technology-music.jpg
-essb_pc_facebook:
-  - 2
-essb_pc_twitter:
-  - 1
-essb_c_twitter:
-  - 1
-essb_pc_flattr:
-  - 1
-essb_c_flattr:
-  - 1
 categories:
   - strategies
 tags:

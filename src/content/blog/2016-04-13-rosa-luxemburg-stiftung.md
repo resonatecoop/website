@@ -5,8 +5,6 @@ type: post
 date: 2016-04-13T13:02:29+00:00
 url: /rosa-luxemburg-stiftung/
 featured_image: /wp-content/uploads/2016/04/trebor-scholz.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/trebor-scholz.jpg
 categories:
   - press-archive
 

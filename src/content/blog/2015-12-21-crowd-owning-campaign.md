@@ -6,20 +6,6 @@ date: 2015-12-21T11:41:10+00:00
 excerpt: Given that all startups require capital to develop and that cooperatives cannot sell off a portion of the company to investors, Resonate will need to raise funds through the crowd. We will also need to crowd-source our own campaign, seeking volunteers to participate, contributing as little as an hour a month.
 url: /crowd-owning-campaign/
 featured_image: /wp-content/uploads/2015/12/sunset-hands-love-woman.jpg
-essb_pc_facebook:
-  - 5
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/12/sunset-hands-love-woman.jpg
-essb_pc_twitter:
-  - 3
-essb_pc_google:
-  - 3
-essb_pc_linkedin:
-  - 3
-essb_pc_flattr:
-  - 3
-essb_pc_reddit:
-  - 3
 categories:
   - archive
 

@@ -5,8 +5,6 @@ type: post
 date: 2017-08-28T20:43:50+00:00
 url: /shareable/
 featured_image: /wp-content/uploads/2017/08/shraeable2.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/08/shraeable2.png
 categories:
   - press
 

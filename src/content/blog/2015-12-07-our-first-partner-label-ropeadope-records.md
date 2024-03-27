@@ -7,8 +7,6 @@ excerpt: |
   Very excited to announce our first indie label partnership with Philadelphia-based Ropeadope Records. Ropeadope's artists span many genres – jazz, afrobeat, hip-hop and r&b – releasing "historically significant records with celebrity names to completely unknown artists".
 url: /our-first-partner-label-ropeadope-records/
 featured_image: /wp-content/uploads/2015/11/ropeadope.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/11/ropeadope.jpg
 categories:
   - archive
 

@@ -6,8 +6,6 @@ date: 2018-04-09T08:22:03+00:00
 excerpt: 'Resonate has always been focused on blockchain technology, but early on we came across a major problem: scalability. A problem solved with BigchainDB and COALA IP for our catalog and licensing system. Building towards true scalability with RChain in late 2018.'
 url: /blockchain-dev-status-update/
 featured_image: /wp-content/uploads/2018/04/networked-interactive-163064-1.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/networked-interactive-163064-1.jpg
 um_content_restriction:
   - 'a:8:{s:26:"_um_custom_access_settings";s:1:"0";s:14:"_um_accessible";s:1:"0";s:19:"_um_noaccess_action";s:1:"0";s:30:"_um_restrict_by_custom_message";s:1:"0";s:27:"_um_restrict_custom_message";s:0:"";s:19:"_um_access_redirect";s:1:"0";s:23:"_um_access_redirect_url";s:0:"";s:28:"_um_access_hide_from_queries";s:1:"0";}'
 categories:

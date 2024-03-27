@@ -6,20 +6,6 @@ date: 2015-11-23T20:24:18+00:00
 excerpt: All startups need money to build stuff. Fairly obvious, right? What is not always obvious to the general public is the degree to which investors exert control over the way those projects are run. Being a cooperative means that every listener, musician and worker owns a single share.
 url: /financing-strategy/
 featured_image: /wp-content/uploads/2015/11/magic.jpg
-essb_pc_facebook:
-  - 4
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/11/magic.jpg
-essb_pc_twitter:
-  - 3
-essb_pc_google:
-  - 3
-essb_pc_linkedin:
-  - 3
-essb_pc_flattr:
-  - 3
-essb_pc_reddit:
-  - 3
 categories:
   - archive
 

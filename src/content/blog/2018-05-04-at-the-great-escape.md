@@ -6,8 +6,6 @@ date: 2018-05-04T09:50:06+00:00
 excerpt: "Resonate will be appearing at The Great Escape's AIM House, hosting a fireside chat with Imogen Heap and Matt Black. Together with Resonate's own Terry Tyldesley, these pioneering artists will talk about the future of the music industry, and technology's role within it. "
 url: /at-the-great-escape/
 featured_image: /wp-content/uploads/2018/05/AIM-MUSIC-blog-post.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/05/AIM-MUSIC-blog-post.png
 categories:
   - archive
 

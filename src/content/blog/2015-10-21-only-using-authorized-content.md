@@ -7,8 +7,6 @@ excerpt: 'Another week, another story published about the abuses of the other st
 draft: true
 url: /?p=536
 featured_image: /wp-content/uploads/2015/10/person-woman-hand-rainy.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/10/person-woman-hand-rainy.jpg
 categories:
   - the blog
 

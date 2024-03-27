@@ -6,10 +6,6 @@ date: 2018-04-18T09:07:29+00:00
 excerpt: Resonate and lifeID are thrilled to announce a new collaboration. The ethical music streaming co-op and blockchain-based identity platform will be working together to develop a comprehensive solution for managing identity online.
 url: /lifeid-collaboration/
 featured_image: /wp-content/uploads/2018/04/life-ID-blog-pic.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/life-ID-blog-pic.png
-essb_pc_facebook:
-  - 1
 opening:
   - 'Resonate and lifeID are excited to announce a new collaboration: The ethical music streaming co-op and blockchain-based identity platform will be working together to develop a comprehensive solution for managing identity online.'
 um_content_restriction:

@@ -6,20 +6,6 @@ date: 2018-11-27T09:34:37+00:00
 excerpt: "A set of unforeseen events has dramatically affected our ability to operate and execute on the plans set forth earlier this year. While we'll explore those adversities and solicit your engagement, we'd first like to highlight what has been accomplished to date."
 url: /restructuring-resonate/
 featured_image: /wp-content/uploads/2018/11/restructuring.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/11/restructuring.jpg
-essb_pc_twitter:
-  - 12
-essb_pc_facebook:
-  - 4
-essb_pc_flattr:
-  - 1
-essb_c_flattr:
-  - 1
-essb_pc_reddit:
-  - 2
-essb_c_twitter:
-  - 12
 opening:
   - A set of unforeseen events has dramatically affected our ability to operate and execute on the plans set forth earlier this year.
 um_content_restriction:

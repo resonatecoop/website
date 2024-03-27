@@ -6,8 +6,6 @@ date: 2018-04-20T10:41:21+00:00
 excerpt: We are tremendously excited to be announcing yet another partnership. Resonate will be working with Off Axis, a platform that brings brilliant artists to new audiences.
 url: /collaborating-with-off-axis/
 featured_image: /wp-content/uploads/2018/04/Off-Axis-Ninght-Wave-blog.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/Off-Axis-Ninght-Wave-blog.png
 opening:
   - We are tremendously excited to be announcing yet another partnership. Resonate will be working with Off Axis, a platform that brings brilliant artists to new audiences.
 categories:

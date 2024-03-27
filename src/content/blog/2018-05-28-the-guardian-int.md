@@ -6,8 +6,6 @@ date: 2018-05-28T09:14:13+00:00
 excerpt: "The Guardian also published Isabelle Morrison's article on us. Read about #stream2own can empower artists here."
 url: /the-guardian-int/
 featured_image: /wp-content/uploads/2018/05/guardian-resonate.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/05/guardian-resonate.jpg
 categories:
   - press-featured
 

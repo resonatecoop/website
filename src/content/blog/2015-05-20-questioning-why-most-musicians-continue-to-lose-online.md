@@ -6,18 +6,6 @@ date: 2015-05-20T21:58:59+00:00
 excerpt: 'The digital revolution forever changed the means of production for the vast majority of musicians. Producing a high-quality album in your bedroom became de rigueur just after the turn of the millennium, but that was only half the battle. '
 url: /questioning-why-most-musicians-continue-to-lose-online/
 featured_image: /wp-content/uploads/2015/05/black-and-white-music-headphones-life.jpg
-essb_pc_linkedin:
-  - 1
-essb_pc_facebook:
-  - 3
-essb_pc_google:
-  - 1
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/05/black-and-white-music-headphones-life.jpg
-essb_pc_twitter:
-  - 2
-essb_c_twitter:
-  - 2
 categories:
   - archive
 

@@ -6,8 +6,6 @@ date: 2019-02-26T11:11:24+00:00
 excerpt: Exploration of platform cooperatives that arise in opposition of commercial services extracting value from other people’s labour.
 url: /the-independent/
 featured_image: /wp-content/uploads/2019/02/independent.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2019/02/independent.jpg
 categories:
   - press-featured
 

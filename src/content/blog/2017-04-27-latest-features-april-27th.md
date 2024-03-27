@@ -4,20 +4,6 @@ author: Resonate
 type: post
 date: 2017-04-27T20:03:14+00:00
 url: /latest-features-april-27th/
-essb_pc_facebook:
-  - 3
-essb_pc_twitter:
-  - 3
-essb_pc_google:
-  - 3
-essb_pc_linkedin:
-  - 3
-essb_pc_flattr:
-  - 3
-essb_pc_reddit:
-  - 3
-essb_off:
-  - 'true'
 categories:
   - support
 

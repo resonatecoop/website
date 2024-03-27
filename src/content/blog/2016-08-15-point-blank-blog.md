@@ -5,8 +5,6 @@ type: post
 date: 2016-08-15T14:41:20+00:00
 url: /point-blank-blog/
 featured_image: /wp-content/uploads/2016/08/pointblank.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/08/pointblank.jpg
 categories:
   - press-archive
 

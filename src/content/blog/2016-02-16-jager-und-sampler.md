@@ -5,8 +5,6 @@ type: post
 date: 2016-02-16T08:56:03+00:00
 url: /jager-und-sampler/
 featured_image: /wp-content/uploads/2016/04/jager-und-sampler.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/jager-und-sampler.jpg
 categories:
   - press-archive
 

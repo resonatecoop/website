@@ -6,12 +6,6 @@ date: 2018-03-07T10:04:41+00:00
 excerpt: 'Plenty of big things are happening here at Resonate! Last month we quietly released the anticipated upgrade to our #stream2own player, featuring a wide range of new features and improvements. '
 url: /major-player-updates/
 featured_image: /wp-content/uploads/2018/03/player-2018.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/03/player-2018.jpg
-essb_pc_facebook:
-  - 1
-essb_pc_twitter:
-  - 1
 categories:
   - archive
 

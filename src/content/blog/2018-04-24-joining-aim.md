@@ -6,12 +6,6 @@ date: 2018-04-24T15:23:42+00:00
 excerpt: "We're pleased to announce that Resonate has officially joined the Association of Independent Music — a non-profit trade organization dedicated to supporting independent music in the UK."
 url: /joining-aim/
 featured_image: /wp-content/uploads/2018/04/AIM-Logo.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/AIM-Logo.png
-essb_pc_flattr:
-  - 1
-essb_pc_reddit:
-  - 1
 categories:
   - archive
 tags:

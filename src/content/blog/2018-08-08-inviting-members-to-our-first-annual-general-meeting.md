@@ -6,14 +6,6 @@ date: 2018-08-08T14:05:20+00:00
 excerpt: We are pleased to invite you to our first AGM! This marks a major milestone in our development, and is a key part of democratic co-operative governance.
 url: /inviting-members-to-our-first-annual-general-meeting/
 featured_image: /wp-content/uploads/2018/08/agm-berlin.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/08/agm-berlin.jpg
-essb_pc_reddit:
-  - 1
-essb_pc_twitter:
-  - 1
-essb_pc_facebook:
-  - 2
 opening:
   - Resonate is pleased to invite all members to our first Annual General Meeting!
 categories:

@@ -6,10 +6,6 @@ date: 2018-03-16T11:02:28+00:00
 excerpt: 'We’re pleased to announce that we’ll be sponsoring this year’s edition of Music Connected - the Association of Independent Music’s digital music conference, which is also the leading conference of its kind in the UK.'
 url: /aims-music-connected/
 featured_image: /wp-content/uploads/2018/03/Music-Connected-1200x630.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/03/Music-Connected-1200x630.jpg
-essb_pc_twitter:
-  - 1
 categories:
   - archive
 

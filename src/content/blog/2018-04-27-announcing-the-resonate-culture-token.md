@@ -7,8 +7,6 @@ excerpt: To celebrate International Workers’ Day, Resonate is pleased to annou
 draft: true
 url: /?p=5201
 featured_image: /wp-content/uploads/2018/04/token-announcement-final-image.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/token-announcement-final-image.jpg
 categories:
   - Uncategorized
 

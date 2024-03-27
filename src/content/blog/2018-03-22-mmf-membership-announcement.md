@@ -6,8 +6,6 @@ date: 2018-03-22T09:26:35+00:00
 excerpt: 'Resonate is continuing to build connections all over the industry. Today, we’re announcing our new role as an associate of the Music Managers Forum - the world’s largest community of professional music managers.'
 url: /mmf-membership-announcement/
 featured_image: /wp-content/uploads/2018/03/mmf-1.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/03/mmf-1.jpg
 categories:
   - archive
 tags:

@@ -5,8 +5,6 @@ type: post
 date: 2016-10-01T20:21:26+00:00
 url: /the-future-of-what/
 featured_image: /wp-content/uploads/2016/10/future-what.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/10/future-what.jpg
 categories:
   - press-podcasts
 

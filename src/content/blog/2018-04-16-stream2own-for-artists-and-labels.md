@@ -6,12 +6,6 @@ date: 2018-04-16T11:54:01+00:00
 excerpt: 'You probably have an idea of how #stream2own works – what makes it new, and why it’s exciting. But maybe you’re still wondering what exactly Resonate membership means for artists and labels. This can be broken down into two basic areas: the streaming side of things, and the co-op side of things.'
 url: /stream2own-for-artists-and-labels/
 featured_image: /wp-content/uploads/2018/04/stream2own-for-artists-and-labels-02.png
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/stream2own-for-artists-and-labels-02.png
-essb_pc_twitter:
-  - 1
-essb_pc_facebook:
-  - 1
 categories:
   - strategies
 

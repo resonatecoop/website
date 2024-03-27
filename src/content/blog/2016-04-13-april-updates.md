@@ -6,20 +6,6 @@ date: 2016-04-13T11:28:42+00:00
 excerpt: "So much has been happening in the last few weeks that it's hard to keep track of who knows what about which particular development. So, in no particular order, a list of milestones for Resonate in the last few weeks."
 url: /april-updates/
 featured_image: /wp-content/uploads/2016/04/progress-report.jpg
-essb_pc_twitter:
-  - 7
-essb_pc_facebook:
-  - 7
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/progress-report.jpg
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

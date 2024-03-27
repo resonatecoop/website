@@ -6,8 +6,6 @@ date: 2018-06-13T10:10:06+00:00
 excerpt: "Peter Harris speaks to Oliver Sylvester-Bradley from OPEN on #stream2own, Resonate's collaborators and more. "
 url: /open-resonation/
 featured_image: /wp-content/uploads/2018/07/resonation-open.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/07/resonation-open.jpg
 categories:
   - press-archive
 

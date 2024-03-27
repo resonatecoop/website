@@ -6,20 +6,6 @@ date: 2016-01-29T15:41:11+00:00
 excerpt: Imagine for a moment that embedded within music files was a smart contract that could run 24/7, sending out automated licensing, usage and payment agreements to hundreds of parties around the world without phone calls, emails or face to face contract-signing.
 url: /using-blockchains-for-metadata-and-licensing/
 featured_image: /wp-content/uploads/2016/01/stack-of-records.jpg
-essb_pc_twitter:
-  - 14
-essb_pc_linkedin:
-  - 9
-essb_pc_google:
-  - 9
-essb_pc_facebook:
-  - 11
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/01/stack-of-records.jpg
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 opening:
   - 'In a previous strategy document we outlined the opportunity for utilizing blockchain technology for <a href="https://resonate.is/cooperating-using-the-blockchain/">cooperative governance.</a>'
 um_content_restriction:

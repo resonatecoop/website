@@ -6,12 +6,6 @@ date: 2017-09-29T07:37:10+00:00
 excerpt: Since we have released our beta application we have been thinking a great deal about the legal framework it operates under and specifically the Terms of Use for our site and music player. Although clicking an “agree to terms” checkbox has become a boring, bureaucratic step...
 url: /open-sourcing-our-terms-conditions/
 featured_image: /wp-content/uploads/2017/09/pexels-photo-301792.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/09/pexels-photo-301792.jpg
-essb_pc_facebook:
-  - 1
-essb_pc_twitter:
-  - 1
 categories:
   - strategies
 

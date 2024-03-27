@@ -6,18 +6,6 @@ date: 2018-05-17T10:24:00+00:00
 excerpt: "Our team has been working hard to deliver the co-op with a viable service that accords with our values and aims. Resonate's membership system will be revamped later this year."
 url: /changing-the-membership-system/
 featured_image: /wp-content/uploads/2018/05/membership-system.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/05/membership-system.jpg
-essb_pc_twitter:
-  - 4
-essb_pc_linkedin:
-  - 1
-essb_pc_facebook:
-  - 2
-essb_pc_flattr:
-  - 1
-essb_pc_reddit:
-  - 1
 categories:
   - archive
 

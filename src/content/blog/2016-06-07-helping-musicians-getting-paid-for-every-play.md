@@ -6,14 +6,6 @@ date: 2016-06-07T09:58:40+00:00
 excerpt: The first rule of Resonate is artists always get paid for every play unless they specify otherwise. Providing total control for musicians and fair trade trust for fans.
 url: /helping-musicians-getting-paid-for-every-play/
 featured_image: /wp-content/uploads/2016/06/guitar-road-89908.jpg
-essb_pc_twitter:
-  - 2
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/06/guitar-road-89908.jpg
-essb_pc_facebook:
-  - 7
-essb_pc_linkedin:
-  - 2
 categories:
   - strategies
 tags:

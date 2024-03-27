@@ -6,8 +6,6 @@ date: 2018-04-12T14:39:10+00:00
 excerpt: 'There are plenty of big things happening at Resonate, and today we’re excited to announce yet another: we’re joining the Association of American Independent Music.'
 url: /a2im-membership-announcement/
 featured_image: /wp-content/uploads/2018/04/a2im-blog.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2018/04/a2im-blog.jpg
 categories:
   - archive
 tags:

@@ -6,12 +6,6 @@ date: 2017-05-23T12:46:25+00:00
 excerpt: 'New quicklists: top 100 tracks, most favorited, recommended by Resonate, latest songs. New "more info" showing song details and more!'
 url: /new-features-stream2own-player/
 featured_image: /wp-content/uploads/2017/05/stream2own-update.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/05/stream2own-update.jpg
-essb_pc_facebook:
-  - 1
-essb_pc_flattr:
-  - 1
 categories:
   - archive
 

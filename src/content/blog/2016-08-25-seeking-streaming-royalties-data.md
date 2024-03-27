@@ -6,10 +6,6 @@ date: 2016-08-25T10:42:56+00:00
 excerpt: Recently I got into an extended email discussion with a very well known indie label that I was seriously hoping to recruit into the Resonate coop. The short version is that it was quite eye-opening to find out how much they loved...
 url: /seeking-streaming-royalties-data/
 featured_image: /wp-content/uploads/2016/08/black-and-white-art-building-window.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/08/black-and-white-art-building-window.jpg
-essb_pc_reddit:
-  - 1
 opening:
   - Recently I got into an extended email discussion with a very well known indie label that I was seriously hoping to recruit into the Resonate co-op.
 categories:

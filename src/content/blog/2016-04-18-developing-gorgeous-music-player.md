@@ -6,10 +6,6 @@ date: 2016-04-18T12:48:43+00:00
 draft: true
 url: /?p=1623
 featured_image: /wp-content/uploads/2016/04/mobile-phone-iphone-music-38295.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/04/mobile-phone-iphone-music-38295.jpg
-essb_pc_twitter:
-  - 1
 categories:
   - strategies
 

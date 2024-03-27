@@ -6,20 +6,6 @@ date: 2017-05-07T13:31:05+00:00
 excerpt: While this article is primarily targeted towards our music makers we thought it would be interesting for fans to explore the topic as well. Building a robust, easily searchable music application is crazy complex. After all, look at all the different ways one common music genre can be tagged…
 url: /the-importance-of-tagging/
 featured_image: /wp-content/uploads/2017/05/genres-tagging.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/05/genres-tagging.jpg
-essb_pc_facebook:
-  - 6
-essb_pc_twitter:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 opening:
   - While this article is primarily targeted towards our music makers we thought it would be interesting for fans to explore the topic as well.
 categories:

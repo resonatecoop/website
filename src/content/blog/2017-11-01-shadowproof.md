@@ -5,8 +5,6 @@ type: post
 date: 2017-11-01T07:33:27+00:00
 url: /shadowproof/
 featured_image: /wp-content/uploads/2017/11/shadowproof.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/11/shadowproof.jpg
 categories:
   - press
 

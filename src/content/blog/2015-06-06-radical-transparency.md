@@ -7,8 +7,6 @@ excerpt: 'It’s a phrase I’d been seeing in random places… co-working facil
 draft: true
 url: /?p=345
 featured_image: /wp-content/uploads/2015/06/transparency.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/06/transparency.jpg
 categories:
   - archive
 

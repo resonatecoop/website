@@ -6,10 +6,6 @@ date: 2016-08-03T16:19:31+00:00
 excerpt: 'While our main focus is on building a wicked streaming music player, we’ve always had video in mind for our long-term strategy. Thanks to a new partner, it’s looking like video may kill beat out the streaming star. Introducing PopChest. '
 url: /considering-micro-payments-video/
 featured_image: /wp-content/uploads/2016/08/video-29737.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/08/video-29737.jpg
-essb_pc_facebook:
-  - 1
 categories:
   - archive
 

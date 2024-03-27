@@ -6,10 +6,6 @@ date: 2015-10-03T10:01:19+00:00
 excerpt: 'A new form of internet startup is emerging – the “platform co-operative” – an attempt to merge the most equitable form of capitalism yet devised with the distributed, international, software-driven ambitions of Silicon Valley. '
 url: /about-platform-cooperatives-and-the-investor-problem/
 featured_image: /wp-content/uploads/2015/10/fashion-men-vintage-colorful.jpg
-essb_pc_twitter:
-  - 1
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/10/fashion-men-vintage-colorful.jpg
 categories:
   - archive
 

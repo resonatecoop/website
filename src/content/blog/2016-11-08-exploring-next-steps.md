@@ -6,20 +6,6 @@ date: 2016-11-08T19:37:55+00:00
 excerpt: "We face a number of unique challenges... building a service based on very new technology, not being of interest to the VC community that funds the majority of startups, seeking fairness and justice as a cooperative... and the fact that we're up against competitors with essentially unlimited resources."
 url: /exploring-next-steps/
 featured_image: /wp-content/uploads/2016/11/winter-road-arrow-74780.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/11/winter-road-arrow-74780.jpg
-essb_pc_facebook:
-  - 7
-essb_pc_twitter:
-  - 6
-essb_pc_google:
-  - 6
-essb_pc_linkedin:
-  - 6
-essb_pc_flattr:
-  - 6
-essb_pc_reddit:
-  - 6
 categories:
   - archive
 

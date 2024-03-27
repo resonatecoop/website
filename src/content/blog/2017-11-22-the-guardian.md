@@ -5,8 +5,6 @@ type: post
 date: 2017-11-22T06:15:45+00:00
 url: /the-guardian/
 featured_image: /wp-content/uploads/2017/12/the-guardian.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/12/the-guardian.jpg
 categories:
   - press
 

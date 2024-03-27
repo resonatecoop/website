@@ -6,24 +6,6 @@ date: 2019-02-14T10:41:05+00:00
 excerpt: 'We have listened carefully to you, our members, and have an announcement to make - the first of several that will come this year. Starting in March Resonate is going open source!'
 url: /going-open-source/
 featured_image: /wp-content/uploads/2019/02/open-source.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2019/02/open-source.jpg
-essb_pc_flattr:
-  - 3
-essb_pc_reddit:
-  - 1
-essb_pc_linkedin:
-  - 2
-essb_c_flattr:
-  - 3
-essb_pc_twitter:
-  - 5
-essb_pc_facebook:
-  - 1
-essb_c_linkedin:
-  - 2
-essb_c_twitter:
-  - 5
 opening:
   - We want to say a big thank you to all of you who got in touch following our last update, to offer support and make suggestions.
   - We want to say a big thank you to all of you who got in touch following our last update, to offer support and make suggestions.

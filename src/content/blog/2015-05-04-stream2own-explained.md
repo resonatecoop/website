@@ -6,20 +6,6 @@ date: 2015-05-04T20:01:02+00:00
 excerpt: "Explore this unique model from Resonate, the world's first streaming music cooperative. A method that turns casual listeners into dedicated fans without expensive monthly subscriptions."
 url: /stream2own-explained/
 featured_image: /wp-content/uploads/2015/12/stream-to-own.jpg
-essb_pc_facebook:
-  - 26
-essb_pc_linkedin:
-  - 10
-essb_pc_twitter:
-  - 23
-essb_pc_google:
-  - 6
-essb_pc_reddit:
-  - 4
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2015/12/stream-to-own.jpg
-essb_pc_flattr:
-  - 3
 categories:
   - strategies
 

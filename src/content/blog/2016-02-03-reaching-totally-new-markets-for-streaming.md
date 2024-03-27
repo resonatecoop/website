@@ -6,14 +6,6 @@ date: 2016-02-03T21:57:40+00:00
 excerpt: "The streaming giants are pricing their services for the high end of the curve – those listeners that spend far more than the average of $153 a year. That's not a sustainable business model. Ours is."
 url: /reaching-totally-new-markets-for-streaming/
 featured_image: /wp-content/uploads/2016/02/music-music-music.jpg
-essb_pc_twitter:
-  - 8
-essb_pc_facebook:
-  - 6
-essb_pc_google:
-  - 3
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/02/music-music-music.jpg
 categories:
   - archive
 

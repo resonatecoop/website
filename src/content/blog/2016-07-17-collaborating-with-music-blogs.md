@@ -6,14 +6,6 @@ date: 2016-07-17T18:56:21+00:00
 excerpt: Our proposal to join forces with music-oriented blogs to achieve two goals – promotional support for Resonate leading to the creation of a new portal for their content. Through our innovative stream to own model and desire to build more robust music communities, Resonate envisions creating a fully immersive...
 url: /collaborating-with-music-blogs/
 featured_image: /wp-content/uploads/2016/01/people-coffee-notes-tea.jpg
-essb_pc_facebook:
-  - 5
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2016/01/people-coffee-notes-tea.jpg
-essb_pc_twitter:
-  - 1
-essb_pc_reddit:
-  - 1
 categories:
   - strategies
 tags:

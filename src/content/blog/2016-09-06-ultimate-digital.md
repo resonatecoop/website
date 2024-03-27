@@ -5,8 +5,6 @@ type: post
 date: 2016-09-06T13:25:55+00:00
 url: /ultimate-digital/
 featured_image: /wp-content/uploads/2017/01/ultimate-digital.jpg
-essb_cached_image:
-  - https://resonate.is/wp-content/uploads/2017/01/ultimate-digital.jpg
 categories:
   - press-archive
 
