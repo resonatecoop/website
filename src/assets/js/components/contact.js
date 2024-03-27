@@ -1,22 +1,22 @@
-/* global fetch, hcaptcha */
+/* global hcaptcha */
 
 import html from 'nanohtml'
 import Component from 'nanocomponent'
 import raw from 'nanohtml/raw'
 import input from '@resonate/input-element'
 import messages from '../elements/messages'
-import logger from 'nanologger'
+// import logger from 'nanologger'
 
 import isEmpty from 'validator/lib/isEmpty'
-import isLength from 'validator/lib/isLength'
-import isEmail from 'validator/lib/isEmail'
+// import isLength from 'validator/lib/isLength'
+// import isEmail from 'validator/lib/isEmail'
 import validateFormdata from 'validate-formdata'
 import nanostate from 'nanostate'
 import morph from 'nanomorph'
 
 import inputField from '../elements/input-field'
 
-const log = logger('form:create')
+// const log = logger('form:create')
 
 /**
  * Little contact form to send a quick message to support team
@@ -51,9 +51,10 @@ class ContactForm extends Component {
     })
 
     this.local.data = {
-      reason: 'feedback'
+      reason: 'general'
     }
 
+    /*
     this.local.machine.on('form:reset', () => {
       this.validator = validateFormdata()
       this.form = this.validator.state
@@ -134,6 +135,7 @@ class ContactForm extends Component {
 
       return this.local.machine.emit('form:invalid')
     })
+    */
 
     this.validator = validateFormdata()
     this.form = this.validator.state
@@ -167,7 +169,7 @@ class ContactForm extends Component {
     const values = this.form.values
 
     const options = [
-      { value: 'feedback', label: 'Feedback' },
+      // { value: 'feedback', label: 'Feedback' },
       { value: 'volunteer', label: 'Volunteer' },
       { value: 'general', label: 'General' },
       { value: 'copyright', label: 'Copyright Violation' }
@@ -201,7 +203,16 @@ class ContactForm extends Component {
     const data = {
       volunteer: {
         title: 'Volunteering',
-        body: 'If you\'d like to help out on the project please fill out the form below, sharing a few details about your background and how you\'d like to get involved.',
+        // body: 'If you\'d like to help out on the project please fill out the form below, sharing a few details about your background and how you\'d like to get involved.',
+        body: {
+          html: `
+            <p>
+              If you're interested in helping with the project, take a look at our <a target="_blank" href="https://github.com/resonatecoop">github</a> or visit our community forum.
+            </p>
+          `
+        },
+        fields: []
+        /*
         fields: [
           {
             type: 'email',
@@ -214,23 +225,18 @@ class ContactForm extends Component {
             placeholder: 'Write your message here'
           }
         ]
-      },
-      feedback: {
-        title: 'Beta app Feedback',
-        fields: [
-          {
-            type: 'email',
-            labelText: 'E-mail',
-            value: values.email
-          },
-          {
-            type: 'textarea',
-            value: values.message,
-            placeholder: 'Share your thoughts or technical challenges with the beta app here.'
-          }
-        ]
+        */
       },
       general: {
+        body: {
+          html: `
+            <p>
+              Please reach us by E-mail: members [at] resonate.coop.
+            </p>
+          `
+        },
+        fields: []
+        /*
         fields: [
           {
             type: 'text',
@@ -249,12 +255,13 @@ class ContactForm extends Component {
             placeholder: 'Write your message here'
           }
         ]
+        */
       },
       copyright: {
         fields: [],
         body: {
           html: `
-            <p>If you believe that content on Resonate infringes your copyright, please contact our Copyright Team on copyright [at] resonate.is and include the following  information. </p>
+            <p>If you believe that content on Resonate infringes your copyright, please contact our Copyright Team on copyright [at] resonate.coop and include the following  information. </p>
               <ol type="1">
               <li>The full URL and/or name/artist of the track(s) concerned</li>
               <li>Your full name, address, email and telephone number</li>
@@ -353,6 +360,7 @@ class ContactForm extends Component {
         return new Error('Reason is invalid')
       }
     })
+    /*
     this.validator.field('subject', { required: false })
     this.validator.field('email', { required: true }, (data) => {
       if (isEmpty(data)) return new Error('Email is required')
@@ -362,12 +370,15 @@ class ContactForm extends Component {
       if (isEmpty(data)) return new Error('Message is required')
       if (!isLength(data, { min: 0, max: 200 })) return new Error('Message should be no more than 200 characters')
     })
+    */
   }
 
   unload () {
+    /*
     if (this.local.machine.state.form !== 'idle') {
       this.local.machine.emit('form:reset')
     }
+    */
   }
 
   update () {
