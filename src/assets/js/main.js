@@ -3,14 +3,8 @@ import choo from 'nanochoo' // resonatecoop/nanochoo (fork of nanochoo with adde
 import './tabbing.js'
 import Header from './components/header'
 import RandomLogo from './components/logo'
-import Trackgroups from './components/trackgroups'
 import ContactForm from './components/contact'
-import APIService from '@resonate/api-service'
-import loadScript from './lib/load-script'
-
-const { getAPIServiceClient } = APIService({
-  apiHost: process.env.APP_HOST || 'https://beta.stream.resonate.coop'
-})
+// import loadScript from './lib/load-script'
 
 function headerSearchApp (selector) {
   if (!document.querySelector(selector)) return
@@ -45,7 +39,7 @@ function headerSearchApp (selector) {
 async function contactApp (selector) {
   if (!document.querySelector(selector)) return
 
-  await loadScript('https://js.hcaptcha.com/1/api.js')
+  // await loadScript('https://js.hcaptcha.com/1/api.js')
 
   const contact = choo()
 
@@ -75,61 +69,5 @@ document.addEventListener('DOMContentLoaded', DOMContentLoaded)
 function DOMContentLoaded () {
   contactApp('.contact-form')
   randomLogoApp('.random-logo-component')
-  releasesApp('.trackgroups')
+  headerSearchApp('.search')
 }
-
-function releasesApp (selector) {
-  if (!document.querySelector(selector)) return
-
-  const releases = choo()
-
-  releases.use(async (state, emitter, app) => {
-    emitter.on(state.events.DOMCONTENTLOADED, async () => {
-      state.trackgroups = state.trackgroups || []
-
-      const component = state.components.trackgroups
-      const { machine } = component
-
-      if (machine.state.request === 'loading') {
-        return
-      }
-
-      const loaderTimeout = setTimeout(() => {
-        machine.state.loader === 'off' && machine.emit('loader:toggle')
-      }, 300)
-
-      machine.emit('request:start')
-
-      try {
-        const client = await getAPIServiceClient('trackgroups')
-        const result = await client.getTrackgroups({ limit: 12 })
-
-        const { body: response } = result
-
-        state.trackgroups = response.data
-
-        machine.emit('request:resolve')
-
-        emitter.emit(state.events.RENDER)
-      } catch (err) {
-        component.error = err
-        machine.emit('request:reject')
-        emitter.emit('error', err)
-      } finally {
-        machine.state.loader === 'on' && machine.emit('loader:toggle')
-        clearTimeout(loaderTimeout)
-      }
-    })
-  })
-
-  releases.view((state, emit) => {
-    return state.cache(Trackgroups, 'trackgroups').render({
-      items: state.trackgroups || [],
-      filters: []
-    })
-  })
-
-  releases.mount(selector)
-}
-
-headerSearchApp('.search')
