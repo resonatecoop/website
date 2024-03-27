@@ -16,6 +16,9 @@
       </p>
     </div>
     <figure class="w-40-l h-100 ma0 mb4 ph2 ph3-ns">
+      {{ with .Params.featured_image }}
+      <img class="db w-100 h-auto bg-gray" src ="https://resonate.is{{ . }}" width="360" height="200" loading="lazy">
+      {{ end }}
       {{ with .Params.image }}
       {{- $img := resources.Get . -}}
       <img class="db w-100 h-auto bg-gray" src="{{ $img.Permalink }}" width="360" height="200" alt="" loading="lazy">
