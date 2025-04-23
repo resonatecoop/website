@@ -7,13 +7,9 @@ en:
       title: Resonate Pricing
       url: /pricing/
       weight: -110
-    - name: The Co-op
-      title: The Co-op
-      url: /coop/
-      weight: -109
     - name: Blog
       title: Resonate Blog
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: -108
     - name: Handbook
       title: Handbook
@@ -107,7 +103,7 @@ fr:
       weight: -109
     - name: Blog
       title: Blog de Resonate
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: -108
     - name: Handbook
       title: Resonate Handbook
@@ -128,7 +124,7 @@ fr:
       weight: 2
     - name: Blog
       title: Blog de Resonate
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: 3
     - name: Handbook
       title: Handbook
@@ -150,7 +146,7 @@ fr:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
@@ -202,7 +198,7 @@ es:
       weight: -109
     - name: Blog
       title: Resonate blog 
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: -108
     - name: Handbook
       title: Resonate Handbook
@@ -246,7 +242,7 @@ es:
     footer3:
     - name: Blog
       title: Resonate Blog
-      url: https://community.resonate.coop/c/blog/104
+      url: /blog/
       weight: 2
     - name: Newsletter
       title: Resonate Newsletter
