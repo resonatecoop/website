@@ -53,10 +53,10 @@ en:
       title: Resonate Blog
       url: /blog/
       weight: 2
-    - name: Newsletter
-      title: Resonate Newsletter
-      url: /newsletter/
-      weight: 3
+    #- name: Newsletter
+    #  title: Resonate Newsletter
+    #  url: /newsletter/
+    #  weight: 3
     - name: Contact
       title: Contact
       url: /contact/
