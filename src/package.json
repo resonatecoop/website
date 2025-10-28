@@ -31,7 +31,7 @@
     "regenerator-runtime": "^0.13.9",
     "shallow-clone": "^3.0.1",
     "validate-formdata": "^2.1.0",
-    "validator": "^13.6.0"
+    "validator": "^13.15.20"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
