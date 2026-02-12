@@ -63,22 +63,10 @@ en:
       weight: 4
 
     footer4:
-      - name: Help us build
-        title: Platform - Resonate Community Forum
-        url: https://community.resonate.coop/c/platform
-        weight: 1
       - name: GitHub
         title: Resonate GitHub
         url: https://github.com/resonatecoop/
         weight: 2
-      - name: Report an issue
-        title: Report an issue
-        url: https://github.com/resonatecoop/website/issues
-        weight: 3
-      - name: Donate
-        title: Donate
-        url: https://opencollective.com/resonate
-        weight: 4
     footer:
       - name: Terms + Conditions
         title: Terms + Conditions

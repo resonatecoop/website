@@ -1,5 +1,18 @@
 {{ define "main" }}
 
+{{ with .Params.announcement }}
+<header id="announcement">
+  <div class="center mw8">
+    <article class="measure-wide mb4">
+      <p class="f4 f4-vw-l tracked-tight">
+        {{ .p1 | markdownify }}
+      </p>
+      <a class="btn btn-black" href="{{ .link.href }}">{{ .link.text }}</a>
+    </article>
+  </div>
+</header>
+{{ end }}
+
 {{ with .Params.hero }}
 <header id="hero" class="bg-black white">
   <div class="center mw8 pa2 pa3-ns">
