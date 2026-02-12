@@ -1,7 +1,3 @@
-<section id="join" class="ph3 ph4-ns bt b--gray text-center flex justify-center items-center pv5">
-  <a href="https://id.resonate.coop/join" class="btn btn-black f5 f5-vw-l">{{ T "join_now" }}</a>
-</section>
-
 <footer id="footer" class="footer-component bg-black white pt4 pb6 pb5-l f5" role="contentinfo">
   <div class="cf ph2 ph3-ns">
     <div class="fl-ns w-100 w-20-ns" style="margin-top:1px">
@@ -12,51 +8,7 @@
     <div class="fl-ns w-100 w-80-ns pt3">
       <nav id="footer-nav" class="flex flex-auto flex-wrap flex-row items-start">
         <div class="w-50 w-25-l ph2 ph3-ns mb3">
-          <h2 class="f5 normal ttu mb2 mt0">{{ T "learn" }}</h2>
-          <ul class="list pl0">
-            {{ range .Site.Menus.footer1 }}
-            <li class="ma0 pb2">
-              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="w-50 w-25-l ph2 ph3-ns mb3">
-          <h2 class="f5 normal ttu mb2 mt0">{{ T "community" }}</h2>
-          <ul class="list pl0">
-            {{ range .Site.Menus.footer2 }}
-            <li class="ma0 pb2">
-              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="w-50 w-25-l ph2 ph3-ns mb3">
-          <h2 class="f5 normal ttu mb2 mt0">{{ T "connect" }}</h2>
-          <ul class="list pl0">
-            <li aria-label="Social links">
-              <ul class="list pb2 pl0 di">
-                {{ range .Site.Params.social }}
-                <li class="dib ma0 pb2 mr1">
-                  <a class="link normal mid-gray pa0 lh-copy ttu" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferer"{{ end }} title="{{ .title }}">{{ .name }}</a>
-                </li>
-                {{ end }}
-                {{ range .Site.Params.rss }}
-                <li class="dib ma0 pb2 mr1">
-                  <a class="link normal mid-gray pa0 lh-copy ttu" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener noreferer"{{ end }} title="{{ .title }}">{{ .name }}</a>
-                </li>
-                {{ end }}
-              </ul>
-            </li>
-            {{ range .Site.Menus.footer3 }}
-            <li class="ma0 pb2">
-              <a class="link normal mid-gray pa0 lh-copy" href="{{ .URL | absLangURL }}"{{ if hasPrefix .URL "http" }} target="_blank" rel="noopener noreferer"{{ end }}>{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="w-50 w-25-l ph2 ph3-ns mb3">
-          <h2 class="f5 normal ttu mb2 mt0">{{ T "code" }}</h2>
+          <h2 class="f5 normal ttu mb2 mt0">Infos</h2>
           <ul class="list pl0">
             {{ range .Site.Menus.footer4 }}
             <li class="ma0 pb2">

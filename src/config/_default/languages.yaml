@@ -3,22 +3,18 @@ en:
   languageName: English
   menu:
     main:
-    - name: Pricing
-      title: Resonate Pricing
-      url: /pricing/
+    - name: Contact
+      title: Contact
+      url: /contact
       weight: -110
-    - name: Blog
-      title: Resonate Blog
-      url: /blog/
-      weight: -108
-    - name: Handbook
-      title: Handbook
-      url: https://community.resonate.coop/docs
-      weight: -107
     - name: Forum
       title: Forum
       url: https://community.resonate.coop/
       weight: -106
+    - name: Code
+      title: Code
+      url: https://github.com/resonatecoop
+      weight: -104
     footer1:
     - name: Pricing
       title: Resonate Pricing
@@ -63,22 +59,18 @@ en:
       weight: 4
 
     footer4:
-      - name: Help us build
-        title: Platform - Resonate Community Forum
-        url: https://community.resonate.coop/c/platform
+      - name: Contact
+        title: Contact
+        url: /contact
         weight: 1
-      - name: GitHub
-        title: Resonate GitHub
-        url: https://github.com/resonatecoop/
+      - name: Forum
+        title: Forum
+        url: https://community.resonate.coop
         weight: 2
-      - name: Report an issue
-        title: Report an issue
-        url: https://github.com/resonatecoop/website/issues
+      - name: Code
+        title: Code
+        url: https://github.com/resonatecoop/
         weight: 3
-      - name: Donate
-        title: Donate
-        url: https://opencollective.com/resonate
-        weight: 4
     footer:
       - name: Terms + Conditions
         title: Terms + Conditions

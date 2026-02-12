@@ -2,6 +2,11 @@
 title: "Play fair."
 description: "Resonate is the world’s first co-operative music streaming service — a multi-stakeholder platform co-operative, democratically governed by its members: artists, listeners and workers."
 subtitle: "The community-owned music streaming service."
+announcement:
+  p1: "The Resonate co-op has been officially dissolved. A few former board members remain to close out the financials, including potential artist payments. More information can be found in our community forums, which will remain open as long as server funds allow."
+  link:
+    href: "https://community.resonate.coop"
+    text: "Community forums"
 hero:
   p1: "**A&nbsp;music&nbsp;platform we&nbsp;can&nbsp;all&nbsp;control.** <br><u>No, really.</u>"
   coop:
